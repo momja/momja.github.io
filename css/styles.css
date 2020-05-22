@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants hover {
+    .scale-normal { 
+        transition: all .2s ease-in-out;
+        transform: scale(1.0);
+    }
+    .scale-up {
+        transition: all .2s ease-in-out;
+        transform: scale(1.1);
+    }
+}
+
+.fadeIn-fast {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
+    text-transform: none;
+    animation: fadeIn ease 0.5s forwards;
+    animation-delay: 1s;
+    -webkit-animation: fadeIn ease 0.5s forwards;
+    -webkit-animation-delay: 1s;
+}
+
+.fadeIn-slow {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
+    text-transform: none;
+    animation: fadeIn ease 1s forwards;
+    animation-delay: 1.5s;
+    -webkit-animation: fadeIn ease 1s forwards;
+    -webkit-animation-delay: 1.5s;
+
+}
+    
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}

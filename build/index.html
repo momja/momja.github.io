@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maxwell Omdal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" async defer></script>
+  <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="backdrop.js"></script>
+  <style>
+    html {
+      background-color: #3C366B;
+    }
+    body { padding: 0; margin: 0; }
+    #sketch-holder {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:-1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <header>
+    <nav class="fixed w-full shadow-md flex items-center justify-between flex-wrap bg-gray-900 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="index.html">
+          <span class="font-semibold text-xl tracking-tight">Maxwell Omdal</span>
+        </a>
+      </div>
+      <div class="navbar-burger block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="main-nav" class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+            Projects
+          </a>
+        </div>
+        <div class="text-sm lg:flex-grow">
+          <a href="#resume" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+            Resume
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+
+  <div class='h-16'></div>
+
+  <div id="sketch-holder" style="height: 550px;">
+    <!-- Our sketch will go here! -->
+  </div>
+
+  <div class="flex flex-col h-auto items-center bg-color-gray-500">
+    <div
+      class="shadow-lg w-64 h-64 bg-cover bg-top bg-center m-5 rounded-full"
+      style="background-image: url('images/profile.jpg')">
+    </div>
+    <div class="w-full text-blue-300">
+      <div class="px-24">
+        <p class="fadeIn-fast text-5xl text-center md:text-6xl text-white font-extrabold">
+          Hi! I'm Maxwell
+        </p>
+        <p class="fadeIn-slow text-3xl text-center md:text-4xl text-indigo-100 font-extrabold">
+          I’m building new tools for Visualization
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-12 mx-auto px-4 md: px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+      <div class="scale-normal hover:scale-up my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article class="overflow-hidden rounded-lg shadow-lg">
+          <a href="#">
+            <img alt="Project Img" class="block object-cover h-56 w-full" src="images/ar_localization.png">
+          </a>
+
+          <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100">
+            <h1 class="text-lg">
+              <a class="no-underline hover:underline text-black" href="#">
+                AR Localization for Scientific Visualization
+              </a>
+            </h1>
+            <p class="text-grey-darker text-sm">
+              01/20 - Present
+            </p>
+          </header>
+        </article>
+      </div>
+
+      <div class="scale-normal hover:scale-up my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article class="overflow-hidden rounded-lg shadow-lg">
+          <a href="https://github.com/momja/cpu_raycaster">
+            <img alt="Project Img" class="block object-cover h-56 w-full" src="images/raytracer.jpg">
+          </a>
+
+          <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100">
+            <h1 class="text-lg">
+              <a class="no-underline hover:underline text-black" href="https://github.com/momja/cpu_raycaster">
+                CPU Raytracer
+              </a>
+            </h1>
+            <p class="text-grey-darker text-sm">
+              01/20 - 04/20
+            </p>
+          </header>
+        </article>
+      </div>
+
+      <div class="scale-normal hover:scale-up my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article class="overflow-hidden rounded-lg shadow-lg">
+          <a href="Final__CycleGAN_on_Image_Transfer.pdf">
+            <img alt="Project Img" class="block object-cover h-56 w-full" src="images/GAN.jpg">
+          </a>
+
+          <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100">
+            <h1 class="text-lg">
+              <a class="no-underline hover:underline text-black" href="Final__CycleGAN_on_Image_Transfer.pdf">
+                A comparison of CycleGAN and DualGAN
+              </a>
+            </h1>
+            <p class="text-grey-darker text-sm">
+              01/19 - 05/19
+            </p>
+          </header>
+        </article>
+      </div>
+
+      <div class="scale-normal hover:scale-up my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article class="overflow-hidden rounded-lg shadow-lg">
+          <a href="CSCI_5512_Project.pdf">
+            <img alt="Project Img" class="block object-cover h-56 w-full" src="images/avg_rating_per_user.jpg">
+          </a>
+
+          <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100">
+            <h1 class="text-lg">
+              <a class="no-underline hover:underline text-black" href="CSCI_5512_Project.pdf">
+                Slope One algorithm for Yelp rating predictions
+              </a>
+            </h1>
+            <p class="text-grey-darker text-sm">
+              01/20 - Present
+            </p>
+          </header>
+        </article>
+      </div>
+
+      <div class="scale-normal hover:scale-up my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <article class="overflow-hidden rounded-lg shadow-lg">
+          <a href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
+            <img alt="Project Img" class="block object-cover h-56 w-full" src="images/bucketz2.jpg">
+          </a>
+
+          <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100">
+            <h1 class="text-lg">
+              <a class="no-underline hover:underline text-black" href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
+                Bucketz, an iOS game built with Swift
+              </a>
+            </h1>
+            <p class="text-grey-darker text-sm">
+              06/17 - 08/17
+            </p>
+          </header>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-indigo-800 text-white p-12">
+    Max Omdal 2019;
+  </footer>
+</body>
+
+</html>

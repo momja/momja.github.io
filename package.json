@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx postcss css/styles.css -o build/styles.css"
   },
   "author": "Max Omdal",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^1.0.6"
+    "autoprefixer": "^9.8.0",
+    "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2"
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "postcss-cli": "^7.1.1"
   }
 }
