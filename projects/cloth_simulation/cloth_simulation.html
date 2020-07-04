@@ -63,6 +63,13 @@
         connect. For each node, we have a velocity and a position attribute. Using numerical integration (the midpoint method),
         we can estimate the continuous updates in the positions of each node using a discrete technique. For each frame, we can then define the number of time steps we would like to take, or the number of discrete updates per frame. The cloth class is flexible, making it easy for us to add more nodes, change the size, stretch, and color.
     </p>
+    <p>
+        The cloth successfully responds to collisions with spheres. If a cloth collides with a sphere, a portion of its velocity is reflected, to imitate an elastic collision, and a portion of its velocity directed into the sphere is lost, to emulate the transfer of energy to the mesh.
+    </p>
+
+    <iframe src="https://giphy.com/embed/kH0GU6PYsfsgCTGmlO" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/gEYEsB2CgSXKMGp9lv" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/fxfAt7kjCYiKwmJidx" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
     <h3>
         Air Drag
@@ -78,11 +85,17 @@
         Although our simulation is only an approximation of real physical interactions, we wanted it to appear as natural and realistic as possible. To do this, we compared the motion of a towel when a blowdryer was directed at it, and we tried to match this motion as closely as possible with our fan interactions.
     </p>
 
+    <h3>Full Demo</h3>
+
+
     <h3>
         Future Work: Octrees and Complex Meshes
     </h3>
     <p>
         We attempted to create a system for handling triangle-based mesh collisions with the cloth, but we fell short, after not being able to find the proper collision response. One of the challenges with this type of approach is the computational expense of testing thousands of triangles multiple times a frame for multiple nodes. If we have a cloth made up of 2500 nodes, and a mesh with 5000 triangles it would require 2500*5000=12500000 collision tests. In order to reduce this, we implemented octrees that recursively divides our mesh and greatly reduces the number of computations by only checking the triangles in the octant that the node is in. So, for example, if we set the max number of triangles per octant to 20, then there would be  2500*20=50000 triangle-line collision tests and about 2500*3=7500 line-box collision tests for a total of 57500 tests, which is only 0.46% of the tests required without an octree. This is possible because the octree is computed at setup, and only has to be computed once.
     </p>
+    <iframe src="https://giphy.com/embed/l10jtxmwWXiOttBE9Z" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/htROHjPfBOCfUUjNby" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/TJapj69j1l4MA076P7" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </body>
 </html>
