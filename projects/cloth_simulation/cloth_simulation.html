@@ -17,7 +17,7 @@
         Cloth Simulation Using Numerical Integration: Fans
     </h1>
     <h2>
-        Maxwell Omdal & David Kinney
+        A Project By Maxwell Omdal & David Kinney
     </h2>
 
     <p>
@@ -26,6 +26,9 @@
         and velocity of the cloth at each time step. However, in a vacuum, cloth does not behave very interestingly, so we implemented
         air drag and sphere-based collision detection. At the end, we'll introduce our attempt at collision detection on more complex meshes
         using a node-triangle intersection algorithm, and an octree to reduce computation.
+    </p>
+    <p>
+        We downloaded this free image of the earth <a href="http://planetpixelemporium.com/earth.html">here</a>.
     </p>
 
     <div class="py-5 flex justify-center">
@@ -48,11 +51,7 @@
         User Interaction
     </h3>
     <p>
-        We wanted a way for the user to interact with the cloth, and we wanted it to feel playful.
-        Since we had an implementation for air drag on the cloth, and a robust collision detection system,
-        we decided we'd let users click on the screen to cast a fan into the 3D space that would adjust the
-        "wind" direction. To help users visualize the direction of wind, we spawn a particle emitter at the fan's
-        location and blow dust particles in the "wind" direction.
+        We wanted a way for the user to interact with the cloth, and we wanted it to feel playful. Since we had an implementation for air drag on the cloth, and a robust collision detection system, we decided we'd let users click on the screen to cast a fan into the 3D space that would adjust the "wind" direction. To help users visualize the direction of wind, we spawn a particle emitter at the fan's location and blow dust particles in the "wind" direction.
     </p>
 
     <h3>
@@ -60,8 +59,7 @@
     </h3>
     <p>
         The cloth can be modeled as a collection of interconnected springs, and we track the nodes where the springs
-        connect. For each node, we have a velocity and a position attribute. Using numerical integration (the midpoint method),
-        we can estimate the continuous updates in the positions of each node using a discrete technique. For each frame, we can then define the number of time steps we would like to take, or the number of discrete updates per frame. The cloth class is flexible, making it easy for us to add more nodes, change the size, stretch, and color.
+        connect. For each node, we have a velocity and a position attribute. Using numerical integration (the midpoint method), we can estimate the continuous updates in the positions of each node using a discrete technique. Using Hooke's law, as well as the masses assigned to each node, we can calculate every node's acceleration, and integrate to get the velocity and position. For each frame, we can then define the number of time steps we would like to take, or the number of discrete updates per frame. The cloth class is flexible, making it easy for us to add more nodes, change the size, stretch, and color.
     </p>
     <p>
         The cloth successfully responds to collisions with spheres. If a cloth collides with a sphere, a portion of its velocity is reflected, to imitate an elastic collision, and a portion of its velocity directed into the sphere is lost, to emulate the transfer of energy to the mesh.
@@ -74,10 +72,14 @@
         Air Drag
     </h3>
     <p>
-        
+        In addition to the per-vertex physics calculated for the springs, the user can also direct
+        a wind force by holding down the left mouse button near the center of the screen. This
+        places a fan at the mouse's current screen position and blows a current of air in its
+        direction. The force this places on the cloth is calculated using Raleigh's drag equation
+        and is applied to each triangle in its mesh.
     </p>
 
-    <iframe src="https://giphy.com/embed/JSw9YHlntDsw8m6kVh" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/JSw9YHlntDsw8m6kVh" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
     <h3>
         Realistic Simulation
@@ -86,8 +88,9 @@
         Although our simulation is only an approximation of real physical interactions, we wanted it to appear as natural and realistic as possible. To do this, we compared the motion of a towel when a blowdryer was directed at it, and we tried to match this motion as closely as possible with our fan interactions.
     </p>
 
-    <iframe src="https://giphy.com/embed/RgasljzIadccUSrtDx" width="370" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RgasljzIadccUSrtDx">via GIPHY</a></p>
-
+    <iframe src="https://giphy.com/embed/RgasljzIadccUSrtDx" width="370" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/SsISHSSeZnKDlb0SUW" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    
     <h3>Full Demo</h3>
 
 
