@@ -64,8 +64,9 @@
         <p>
             Note that while the rendering is in 3D, the path planning is still in 2 Dimensions. This reduces the complexity of our roadmap, and lets us approximate each obstacle/agent as a circle.
         </p>
+        <img src="images/astar_demo.gif" alt="">
         <img src="images/boids_tether.gif" alt="the tethering point demonstrated">
-
+        
         <h3>
             Crowd Simulation
         </h3>
@@ -81,5 +82,19 @@
         <p>
             Most of the 3D environment was made by myself, but for the characters, I started with a base model on <a href="https://free3d.com/3d-model/base-mesh-ready-to-be-rigged-15483.html">Free3D made by Prodigy114</a> I rigged, added some materials, and gave bat guy a cloak and mask.
         </p>
+
+        <h3>
+            Conclusions and Future Work
+        </h3>
+        <p>
+            This demonstrates several concepts of Crowd simulation and Path planning. There are some known problems. Sometimes, if you do not place at least one of the bat signals during each turn, it may crash the program. Future work on this project could involve higher fidelity animated models, using voronoi maps for the bats to increase their spacing between objects, and creating a response system to handle when the enemy is hit by one of the player's weapons.
+        </p>
+
+        <h3>
+            Demo
+        </h3>
+
+        <iframe width="875" height="579" src="https://www.youtube.com/embed/A5FhCbYbRVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </body>
 </html>
