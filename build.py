@@ -5,8 +5,9 @@ import glob
 import os
 
 if __name__ == "__main__":
+    article_dir = "./posts/"
     # convert md pages to html
-    md_files = glob.glob("./posts_md/*.md")
+    md_files = glob.glob(os.path.join(article_dir, "*.md"), recursive=True)
     convertMDToHTML(md_files)
 
     # build jinja templates
@@ -20,6 +21,7 @@ if __name__ == "__main__":
         {'name': 'Path Planning Game', 'date': '06/20 - 07/20', 'image_path': 'projects/path_planning/images/header.png'},
         {'name': 'Particle Simulation', 'date': '07/20 - 08/20', 'image_path': 'projects/particle_simulation/images/smokestack.png'}
     ]
+
 
     site = Site.make_site(env_globals={'projects':dummy_data})
     site.render(use_reloader=True)
