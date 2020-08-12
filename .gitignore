@@ -1,3 +1,4 @@
+node_modules/
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,python,web,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,python,web,node
@@ -271,21 +272,6 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
-
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.wasm
-*.wat
-*.xhtml
 
 ### Windows ###
 # Windows thumbnail cache files
