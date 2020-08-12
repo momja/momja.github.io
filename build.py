@@ -1,14 +1,22 @@
-import jinja2
 from staticjinja import Site
+import yaml
 from convertMDToHTML import convertMDToHTML
 import glob
 import os
+import argparse
+
+build_path = "./build"
+html_article_path = os.path.join(build_path, "articles/")
 
 if __name__ == "__main__":
-    article_dir = "./posts/"
+    parser = argparse.ArgumentParser(description='Build Site')
+    parser.add_argument('--full', dest='full', default=False, action='store_true')
+
+    args = parser.parse_args()
+    article_dir = "./articles/"
     # convert md pages to html
-    md_files = glob.glob(os.path.join(article_dir, "*.md"), recursive=True)
-    convertMDToHTML(md_files)
+    md_file_dirs = sorted(glob.glob(os.path.join(article_dir, "*/")), key=os.path.getmtime)
+    html_article_files = convertMDToHTML(md_file_dirs, outdir=html_article_path, full=args.full)
 
     # build jinja templates
     dummy_data = [
@@ -22,17 +30,19 @@ if __name__ == "__main__":
         {'name': 'Particle Simulation', 'date': '07/20 - 08/20', 'image_path': 'projects/particle_simulation/images/smokestack.png'}
     ]
 
+    # Pair every html articl with its YAML file
+    article_data = []
+    for i, dir in enumerate(md_file_dirs):
+        data_file = glob.glob(os.path.join(dir, '*.yml'))[0]
+        with open(data_file, 'r') as f:
+            data = yaml.load(f, Loader=yaml.Loader)
+            print(data_file)
+            print(html_article_files)
+            data["path"] = html_article_files[i]
+            article_data.append(data)
 
-    site = Site.make_site(env_globals={'projects':dummy_data})
+
+    site = Site.make_site(env_globals={'projects':dummy_data, 'articles': article_data},
+                          outpath=build_path,
+                          contexts=list(zip(html_article_files, article_data)))
     site.render(use_reloader=True)
-
-    # file_loader = jinja2.FileSystemLoader('templates/')
-    # for file in glob.glob('templates/*'):
-    #     env = jinja2.Environment(loader=file_loader)
-    #     template = env.get_template('index.j2')
-    #     output = template.render(projects = dummy_data)
-    #     basename = os.path.basename(os.path.splitext(file))
-    #     with open(os.path.join('build', basename, '.html'), 'w') as fh:
-    #         fh.write(output)
-
-    
