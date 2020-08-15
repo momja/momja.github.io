@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx postcss css/styles.css -o build/styles.css"
+    "build": "postcss css/tailwind.css -o static/tailwind.css && /usr/local/opt/python/bin/python3.7 build.py --full"
   },
   "author": "Max Omdal",
   "license": "ISC",

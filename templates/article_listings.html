@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
-</head>
-<body>
-    <ol>
-    {% for article in articles %}
-        <li>
-            <a href="{{ article.path }}">
-                <h3>
-                    {{ article.title }}
-                </h3>
-                {{ article.data }}
-            </a>
-        </li>
-    {% endfor %}
-    </ol>
-</body>
-</html>
+{% macro insert_articles() %}
+
+<ol>
+{% for article in articles %}
+    <li>
+        <a href="{{ article.path }}">
+            <h3>
+                {{ article.title }}
+            </h3>
+            {{ article.data }}
+        </a>
+    </li>
+{% endfor %}
+</ol>
+
+{% endmacro %}

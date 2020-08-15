@@ -2,7 +2,7 @@ import markdown2 as md
 import glob
 import os
 
-def convertMDToHTML(md_dirs, outdir='./', full=False):
+def convertMDToHTML(md_dirs, builddir='./static', outdir='./', full=False):
     # Open up files in blog directory
     markdowner = md.Markdown()
 
@@ -12,7 +12,7 @@ def convertMDToHTML(md_dirs, outdir='./', full=False):
     for folder in md_dirs:
         md_file = glob.glob(os.path.join(folder, "*.md"))[0]
         basename = os.path.splitext(os.path.basename(md_file))[0]
-        new_filepath = os.path.join(outdir, basename + ".html")
+        new_filepath = os.path.join(builddir, outdir, basename + ".html")
         # only build for new files
         if (not full and os.path.exists(new_filepath)):
             continue
@@ -22,6 +22,6 @@ def convertMDToHTML(md_dirs, outdir='./', full=False):
             # write files to blog
             with open(new_filepath, "w+") as new_f:
                 new_f.write(html)
-        new_files.append(new_filepath)
+        new_files.append(os.path.join(outdir, basename + ".html"))
     
     return new_files
