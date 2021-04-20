@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="../../tailwind.css">
     <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
     <style>
@@ -61,30 +61,9 @@
             ← Back
         </button>
     </div>
-    <label class="theme-switch switch" for="checkbox">
-    <input type="checkbox" id="checkbox" />
-    <span class="slider round"></span>
-</label>
-
-
-<script>
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-    function switchTheme(e) {
-        console.log("switching themes");
-        if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-        else {
-            document.documentElement.setAttribute('data-theme', 'light');
-        }
-    }
-
-    toggleSwitch.addEventListener('change', switchTheme, false);
-</script>
-
+    {% include 'theme_toggle.html' %}
     <div id="main">
-        
+        {{ content }}
     </div>
 </body>
 

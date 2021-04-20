@@ -1,0 +1,16 @@
+{% macro insert_articles(articles) %}
+
+<ol>
+    {% for article in articles %}
+    <li>
+        <a href="{{ article.path }}">
+            <h3>
+                {{ article.title }}
+            </h3>
+            {{ article.description }}
+        </a>
+    </li>
+    {% endfor %}
+</ol>
+
+{% endmacro %}

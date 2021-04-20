@@ -1,58 +1,65 @@
 [
     {
+        "name": "Virtual Reality Demonstrator",
+        "date": "01/21 - 03/21",
+        "image_path": "images/virtualdemonstrator_sample.png",
+        "description": "A tool for creating spatial presentations in VR",
+        "url": "projects/virtual_demonstrator/IEEE_VR_3DUI_Submission.pdf"
+    },
+    {
         "name": "AR Physicalizations",
         "date": "04/20 - NOW",
         "image_path": "images/ar_localization.png",
-        "description": "Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models.",
+        "description": "Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models",
         "url": "https://www.sculpting-vis.org/index.php/ar-physical-sculpting/"
     },
     {
         "name": "CPU Raytracer",
         "date": "01/20 - 03/20",
         "image_path": "images/raytracer.jpg",
-        "description": "A simple raytracer from scratch written in C++. Runs on up to two cores with multiple samples per pixel, and render primitive shapes as well triangle-based geometry.",
+        "description": "A raytracer from scratch written in C++ on up to two cores with multiple samples per pixel",
         "url": "https://github.com/momja/CPU-Raytracer"
     },
     {
         "name": "Generative Adversarial Networks",
         "date": "01/19 - 05/19",
         "image_path": "images/GAN.jpg",
-        "description": "A comparison of the CycleGAN and DualGAN algorithms for style transfer applications.",
+        "description": "A comparison of the CycleGAN and DualGAN algorithms for style transfer applications",
         "url": "projects/fluid_simulation/fluid_simulation.html"
     },
     {
         "name": "Yelp Rating Predictions",
         "date": "01/20 - 03/20",
         "image_path": "images/avg_rating_per_user.jpg",
-        "description": "Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>.",
+        "description": "Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>",
         "url": "projects/yelp_dataset_analysis/analysis.html"
     },
     {
         "name": "Bucketz",
         "date": "06/17 - 08/17",
         "image_path": "images/bucketz2.jpg",
-        "description": "An iOS game built with Swift and SpriteKit.",
+        "description": "An iOS game built with Swift and SpriteKit",
         "url": "https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130"
     },
     {
         "name": "DineDice",
         "date": "01/17 - 02/17",
         "image_path": "images/dinedice_logo.png",
-        "description": "A randomized local restaurant recommender.",
+        "description": "A randomized local restaurant recommender",
         "url": "https://maxomdal.com/dineDice/"
     },
     {
         "name": "Path Planning Game",
         "date": "06/20 - 07/20",
         "image_path": "projects/path_planning/images/header.png",
-        "description": "A simple interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL.",
+        "description": "An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL",
         "url": "projects/path_planning/path_planning.html"
     },
     {
         "name": "Particle Simulation",
         "date": "07/20 - 08/20",
         "image_path": "projects/particle_simulation/images/smokestack.png",
-        "description": "A simple particle system capable of complex behavior, such as billboarding, streaking, texturing, and more. Written in Java with Processing, which is based on OpenGL.",
+        "description": "A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing",
         "url": "projects/particle_simulation/particle_simulation.html"
     }
 ]

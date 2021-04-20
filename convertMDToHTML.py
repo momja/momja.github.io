@@ -2,7 +2,7 @@ import markdown2 as md
 import glob
 import os
 
-def convertMDToHTML(md_dirs, builddir='./static', outdir='./', full=False):
+def convertMDToHTML(md_dirs, builddir='./src', outdir='./', full=False):
     # Open up files in blog directory
     markdowner = md.Markdown()
 
