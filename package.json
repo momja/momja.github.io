@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.8.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
