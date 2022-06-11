@@ -13,6 +13,6 @@ So the file structure is
 ```
 articles
 └── sample_article
-    ├── sample_article/sample_article.md
-    └── articles/sample_article/sample_article.yml
+    ├── sample_article.md
+    └── sample_article.yml
 ```
