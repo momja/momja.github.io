@@ -10,7 +10,8 @@
     "author": "Max Omdal",
     "license": "ISC",
     "dependencies": {
-        "lodash": "^4.17.21"
+        "lodash": "^4.17.21",
+        "minimist": "^1.2.6"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
