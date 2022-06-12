@@ -911,6 +911,14 @@ input:checked+.slider:before {
 code {
     font-family: 'Courier New', Courier, monospace;
     color: darkgray;
+    background: aliceblue;
+}
+
+.codewrapper {
+    background: aliceblue;
+    padding: 1em;
+    margin: 1em;
+    overflow: auto;
 }
 
 .hover\:border-white:hover {

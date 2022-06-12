@@ -101,7 +101,7 @@
 
 <p>Next and most exciting is the inline native image support. Now some terminals support something called ==<a href="#TODO">sixel graphics</a>==, which I'll admit is pretty neat. Sixel to me is a bandage fix for graphic representation in the terminal because it's not representing imgages as native images, but rather performing some computation to build images out of special ASCII symbols, which means when you try to translate or transform the image in any way, things get weird. Why deal with that when kitty has your back? It can even render GIFs!</p>
 
-<pre><code>kitty +kitten icat ~/Downloads/kitten_falling.gif
+<pre class="codewrapper"><code class="codeblock">kitty +kitten icat ~/Downloads/kitten_falling.gif
 </code></pre>
 
 <p>![[animation.gif|"Kitty terminal output with the icat plugin"]]</p>
@@ -113,7 +113,7 @@
 <p>I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing <code>ctrl-[HJKL]</code> to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press <code>ctrl-opt-[HJKL]</code>
 <br></p>
 
-<pre><code># Create a new window splitting the space used by the existing one so that
+<pre class="codewrapper"><code class="codeblock"># Create a new window splitting the space used by the existing one so that
 # the two windows are placed one above the other
 map ctrl+alt+k launch --location=hsplit --cwd=current
 

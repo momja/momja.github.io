@@ -13,7 +13,7 @@ import datetime
 
 build_path = "./static"
 html_article_dir = "articles/"
-markdowner = md.Markdown('', extras=['fenced-code-blocks'])
+markdowner = md.Markdown('', extras={'fenced-code-blocks':None, 'html-classes':{'code': 'codeblock', 'pre': 'codewrapper'}})
 
 def md_context_for_template(template):
     return md_context(template.filename)
