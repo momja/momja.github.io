@@ -55,7 +55,7 @@ def html_context(template):
 def article_metadata(template):
     articles_data = []
     article_dir = "./src/articles/"
-    md_file_dirs = sorted(glob.glob(os.path.join(article_dir, "*/")), key=os.path.getmtime, reverse=True)
+    md_file_dirs = glob.glob(os.path.join(article_dir, "*/"))
     for i, dir in enumerate(md_file_dirs):
         article_file = glob.glob(os.path.join(dir, '*.md'))
         if not article_file:
@@ -64,11 +64,12 @@ def article_metadata(template):
         else:
             article_file = article_file[0]
         data = md_context(article_file, False)
-        dt = datetime.datetime.fromtimestamp(os.path.getmtime(article_file))
-        data["date"] = dt.strftime('%B %d %Y')
+        if data["publish_date"]:
+            data["date"] = data["publish_date"].strftime('%B %d %Y')
         data["path"] = os.path.join("articles", os.path.basename(os.path.split(dir)[0]), os.path.basename(os.path.splitext(article_file)[0]) + '.html')
         articles_data.append(data)
-    print(articles_data)
+
+    articles_data.sort(key=lambda article: article["publish_date"], reverse=True)
     return {"articles": articles_data}
 
 def render_md(site, template, **kwargs):

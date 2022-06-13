@@ -1,7 +1,7 @@
 ---
 title: "Migrating from tmux to Kitty"
 description: ".txt config files should rule all"
-publish: true
+publish_date: 2022-06-12
 ---
 
 # Migrating from Tmux to Kitty
