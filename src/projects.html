@@ -1,8 +1,0 @@
-{% macro insertProjects() -%}
-{% import "project_card.html" as project_card %}
-
-{% for project in projects -%}
-    {{ project_card.insert_project(project) }}
-{% endfor %}
-
-{% endmacro %}
