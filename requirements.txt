@@ -1,0 +1,4 @@
+markdown2==2.4.3
+python_frontmatter==1.0.0
+PyYAML==6.0
+staticjinja==4.1.3

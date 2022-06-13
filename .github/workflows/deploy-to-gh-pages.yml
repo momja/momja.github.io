@@ -12,11 +12,12 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          pip install -r requirements.txt
           npm install
-          npm run-script build
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: dist
+          folder: static
