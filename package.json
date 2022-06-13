@@ -5,7 +5,7 @@
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "postcss style/tailwind.css -o static/tailwind.css && python build.py --full && cp -R images static/images"
+        "build": "python build.py --full && postcss style/tailwind.css -o static/tailwind.css && cp -R images static/images"
     },
     "author": "Max Omdal",
     "license": "ISC",
