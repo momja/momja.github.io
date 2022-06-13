@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Planning</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <style>
+        #main {
+            margin: auto;
+            text-align: justify;
+            width: 45rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+        
+        h2 {
+            padding-top: 2rem;
+            font-size: 2rem;
+            text-align: left;
+        }
+        
+        h3 {
+            padding-top: 1.5rem;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        
+        h4 {
+            padding-top: 1.5rem;
+            font-size: 1.5rem;
+            text-align: left;
+            color: darkslategray;
+        }
+        
+        p:first-of-type::first-letter {
+            font-size: 4rem;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+        
+        img,
+        video {
+            width: 42rem;
+            margin: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body class="theme">
+    <div class='back-button'>
+        <button class="bg-transparent mt-8 ml-8" onclick="goBack()">
+            ← Back
+        </button>
+    </div>
+    <label class="theme-switch switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <span class="slider round"></span>
+</label>
+
+
+<script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+        console.log("switching themes");
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
+    <div id="main">
+        <img src="../../images/header.png" style="width:100%; height: auto;" alt="">
+<h1>
+    Path Planning : Bat Guy Vs. The Clown
+</h1>
+<h2>
+    Max Omdal
+</h2>
+<p>
+    This Path Planning project is an interactive simulation with several interactive parts. Primarily a superhero
+    and supervillain play a game of cat and mouse. Batma... err.. "Bat Guy" and "The Clown" are caught in this
+    battle. As Bat Guy, you have the ability to control bats by dropping signaling devices that they will navigate
+    their way through a maze of water towers to reach. You also will need to make use of your other Super gadgets,
+    like explosive projectiles, and miniature self-driving probes. Read on to learn about all the features in this
+    application, as well as how it was implemented.
+</p>
+
+<div class="py-5 flex justify-center">
+    <a href="src/PathPlanningProcessing.zip"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex">
+        <i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"></i>
+        <span>Download Source</span>
+    </a>
+</div>
+
+<h3>
+    Features
+</h3>
+<ul>
+    <li>3D rendering and smooth camera navigation</li>
+    <li>Improved Agent & Scene Rendering</li>
+    <li>Orientation Smooth</li>
+    <li>User Scenario Editing</li>
+    <li>Realtime User Interaction</li>
+    <li>Multi-Agent Planning</li>
+    <li>Crowd Simulation</li>
+    <li>Press P to open Debug Mode</li>
+</ul>
+
+<h3>
+    Controls
+</h3>
+<ul>
+    <li>To orbit the camera, use the arrow keys</li>
+    <li>To move your character use WASD keys</li>
+    <li>Use the left mouse button to set destinations and launch probes</li>
+    <li>Use the right mouse button to throw explosive projectiles</li>
+    <li>Press Q to drop a bat signal</li>
+    <li>Press ENTER to activate bat signal. Uh Oh! The Clown has a tag on our bat signal, and when we activate it,
+        he'll track us down!</li>
+</ul>
+
+<h3>
+    Path Planning & 3D Rendering
+</h3>
+<p>
+    This program uses the A* search algorithm with a probabilistic roadmap to provide a planning graph and a system
+    for an agent to travel from a start position to a goal position. The obstacles in the scene are all cylindrical.
+    The bats are simulated using a boids algorithm, and a global tethering point is progressed along a path. A force
+    is then applied to the boids to move it towards the tether point. Because the path planning does not directly
+    place each individual boid out of the way of obstacles, we also check for collisions with the obstacles to
+    avoid.
+</p>
+<p>
+    Note that while the rendering is in 3D, the path planning is still in 2 Dimensions. This reduces the complexity
+    of our roadmap, and lets us approximate each obstacle/agent as a circle.
+</p>
+<img src="../../images/astar_demo.gif" alt="">
+<img src="../../images/boids_tether.gif" alt="the tethering point demonstrated">
+
+<h3>
+    Crowd Simulation
+</h3>
+<p>
+    There are two techniques used here for crowd simulation. The time-to-collision technique is used to handle
+    interactions between the probes and The Clown. When The Clown isn't moving, try sending a probe to his location.
+    You will see how it's path is blocked. Then, as already mentioned all bats are simulated with the boids
+    algorithm. They will all successfully avoid each other and obstacles. Multiple bats can share a single path, so
+</p>
+<img src="../../images/ttc_example.gif" alt="">
+<img src="../../images/boids_separation.gif" alt="">
+
+<h3>
+    3D Modeling
+</h3>
+<p>
+    Most of the 3D environment was made by myself, but for the characters, I started with a base model on <a
+        href="https://free3d.com/3d-model/base-mesh-ready-to-be-rigged-15483.html">Free3D made by Prodigy114</a> I
+    rigged, added some materials, and gave bat guy a cloak and mask.
+</p>
+
+<h3>
+    Conclusions and Future Work
+</h3>
+<p>
+    This demonstrates several concepts of Crowd simulation and Path planning. There are some known problems.
+    Sometimes, if you do not place at least one of the bat signals during each turn, it may crash the program.
+    Future work on this project could involve higher fidelity animated models, using voronoi maps for the bats to
+    increase their spacing between objects, and creating a response system to handle when the enemy is hit by one of
+    the player's weapons.
+</p>
+
+<h3>
+    Demo
+</h3>
+
+<iframe width="875" height="579" src="https://www.youtube.com/embed/A5FhCbYbRVA" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

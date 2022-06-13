@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maxwell Omdal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./tailwind.css">
+  <!-- <script src="./script.js" async defer></script> -->
+  <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+  <!-- <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script> -->
+  <!-- <script language="javascript" type="text/javascript" src="backdrop.js"></script> -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    #sketch-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <header>
+    <nav class="fixed w-full shadow-md flex items-center justify-between flex-wrap bg-gray-900 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="index.html">
+          <span class="font-semibold text-xl tracking-tight">Maxwell Omdal</span>
+        </a>
+      </div>
+      <div class="navbar-burger block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="main-nav" class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+            Projects
+          </a>
+        </div>
+        <div class="text-sm lg:flex-grow">
+          <a href="#resume" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+            Resume
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+
+  <div class='h-16'></div>
+
+  <div style="height:550px">
+    <div id="sketch-holder" style="height: 550px;">
+      <!-- Our sketch will go here! -->
+    </div>
+    <div class="flex flex-col h-auto items-center bg-color-gray-500">
+      <div class="shadow-lg w-64 h-64 bg-cover bg-top bg-center m-5 rounded-full"
+        style="background-image: url('images/profile.jpg')">
+      </div>
+      <div class="w-full">
+        <div class="px-6">
+          <p class="fadeIn-fast text-4xl text-center md:text-5xl font-extrabold">
+            Maxwell Omdal
+          </p>
+          <p class="fadeIn-slow text-xl text-center md:text-2xl text-indigo-800 font-extrabold">
+            I’m building new tools for Visualization
+          </p>
+          <div class="py-5 flex justify-center">
+            <a href="https://www.linkedin.com/in/maxwell-o-38a969101/"
+              class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
+              <i class="fab fa-linkedin fill-current w-4 h-4 md:mr-2 my-auto"></i>
+              <span class="hidden md:inline-block">LinkedIn</span>
+            </a>
+            <a href="mailto:mjomdal@gmail.com"
+              class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
+              <i class="far fa-hand-peace fill-current w-4 h-4 md:mr-2 my-auto"></i>
+              <span class="hidden md:inline-block">mjomdal@gmail.com</span>
+            </a>
+            <a href="https://github.com/momja"
+              class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
+              <i class="fab fa-github fill-current w-4 h-4 md:mr-2 my-auto text-center inline-block"></i>
+              <span class="hidden md:inline-block">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xl px-6 md:px-24">
+    Hello! I’m Maxwell, a graduate student at the University of Minnesota.
+    I’m primarily interested in Computer Science for applications in visualization. I aim to produce tools that enhance
+    individual’s experiences through meaningful visualization techniques.
+  </p>
+
+  
+  <h2 class="text-3xl text-center font-bold m-10">
+    Projects
+  </h2>
+
+  <hr>
+
+  <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+      
+      
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="projects/virtual_demonstrator/IEEE_VR_3DUI_Submission.pdf">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/virtualdemonstrator_sample.png">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="projects/virtual_demonstrator/IEEE_VR_3DUI_Submission.pdf">
+            Virtual Reality Demonstrator
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            01/21 - 03/21
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                A tool for creating spatial presentations in VR
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="https://www.sculpting-vis.org/index.php/ar-physical-sculpting/">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/ar_localization.png">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="https://www.sculpting-vis.org/index.php/ar-physical-sculpting/">
+            AR Physicalizations
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            04/20 - 05/21
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="https://github.com/momja/CPU-Raytracer">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/raytracer.jpg">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="https://github.com/momja/CPU-Raytracer">
+            CPU Raytracer
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            01/20 - 03/20
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                A raytracer from scratch written in C++ on up to two cores with multiple samples per pixel
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="projects/fluid_simulation/fluid_simulation.html">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/GAN.jpg">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="projects/fluid_simulation/fluid_simulation.html">
+            Generative Adversarial Networks
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            01/19 - 05/19
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                A comparison of the CycleGAN and DualGAN algorithms for style transfer applications
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="projects/yelp_dataset_analysis/analysis.html">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/avg_rating_per_user.jpg">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="projects/yelp_dataset_analysis/analysis.html">
+            Yelp Rating Predictions
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            01/20 - 03/20
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/bucketz2.jpg">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
+            Bucketz
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            06/17 - 08/17
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                An iOS game built with Swift and SpriteKit
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="https://maxomdal.com/dineDice/">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/dinedice_logo.png">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="https://maxomdal.com/dineDice/">
+            DineDice
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            01/17 - 02/17
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                A randomized local restaurant recommender
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="projects/path_planning/path_planning.html">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/header.png">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="projects/path_planning/path_planning.html">
+            Path Planning Game
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            06/20 - 07/20
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL
+            </p>
+        </div>
+    </article>
+</div>
+
+
+<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
+    <article class="overflow-hidden rounded-lg shadow-lg">
+        <div class="bg-gray-100">
+            <a href="projects/particle_simulation/particle_simulation.html">
+                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/smokestack.png">
+            </a>
+        </div>
+
+        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="projects/particle_simulation/particle_simulation.html">
+            Particle Simulation
+            </a>
+        </h1>
+        <p class="text-grey text-xs text-right">
+            07/20 - 08/20
+        </p>
+        </header>
+        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
+            <p class="text-grey text-sm">
+                A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing
+            </p>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+  
+
+  
+  <h2 class="text-3xl text-center font-bold m-10">
+    Articles
+  </h2>
+
+  <hr>
+
+
+  <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+      
+      
+
+<ol class="w-full">
+     
+    <li class="scale-normal hover:scale-up w-full my-8">
+        <a href="articles/cloth_simulation/cloth_simulation.html">
+            <div class="flow-root">
+                <h3 class="text-lg float-left">
+                    Cloth Simulation
+                </h3>
+                <span class="float-right">
+                June 13 2022
+            </span>
+            </div>
+            <span class="text-sm">
+            Cloth Simulation
+            </span>
+        </a>
+    </li>
+      
+    <li class="scale-normal hover:scale-up w-full my-8">
+        <a href="articles/particle_simulation/particle_simulation.html">
+            <div class="flow-root">
+                <h3 class="text-lg float-left">
+                    Particle Simulation
+                </h3>
+                <span class="float-right">
+                June 13 2022
+            </span>
+            </div>
+            <span class="text-sm">
+            Particle Simulation
+            </span>
+        </a>
+    </li>
+      
+    <li class="scale-normal hover:scale-up w-full my-8">
+        <a href="articles/fluid_simulation/fluid_simulation.html">
+            <div class="flow-root">
+                <h3 class="text-lg float-left">
+                    Fluid Simulation
+                </h3>
+                <span class="float-right">
+                June 13 2022
+            </span>
+            </div>
+            <span class="text-sm">
+            Fluid Simulation
+            </span>
+        </a>
+    </li>
+      
+    <li class="scale-normal hover:scale-up w-full my-8">
+        <a href="articles/path_planning/path_planning.html">
+            <div class="flow-root">
+                <h3 class="text-lg float-left">
+                    Path Planning
+                </h3>
+                <span class="float-right">
+                June 13 2022
+            </span>
+            </div>
+            <span class="text-sm">
+            A* Path Planning
+            </span>
+        </a>
+    </li>
+      
+    <li class="scale-normal hover:scale-up w-full my-8">
+        <a href="articles/test/tmux-kitty.html">
+            <div class="flow-root">
+                <h3 class="text-lg float-left">
+                    Migrating from tmux to Kitty
+                </h3>
+                <span class="float-right">
+                June 13 2022
+            </span>
+            </div>
+            <span class="text-sm">
+            .txt config files should rule all
+            </span>
+        </a>
+    </li>
+     
+</ol>
+
+
+    </div>
+  </div>
+
+  
+</body>
+
+</html>
