@@ -1,3 +1,10 @@
+<label class="theme-switch switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <span class="slider round"></span>
+</label>
+
+{% block scripts %}
+<script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
@@ -10,3 +17,5 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+{% endblock %}

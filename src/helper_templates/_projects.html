@@ -1,5 +1,5 @@
 {% macro insertProjects() -%}
-{% import "project_card.html" as project_card %}
+{% import "helper_templates/_project_card.html" as project_card %}
 
 {% for project in projects -%}
     {{ project_card.insert_project(project) }}

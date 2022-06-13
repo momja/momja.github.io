@@ -74,7 +74,7 @@ def article_metadata(template):
 def render_md(site, template, **kwargs):
     out = site.outpath / Path(template.name).with_suffix(".html")
     os.makedirs(out.parent, exist_ok=True)
-    site.get_template("article.html").stream(**kwargs).dump(str(out), encoding="utf-8")
+    site.get_template("helper_templates/_article.html").stream(**kwargs).dump(str(out), encoding="utf-8")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Build Site')
