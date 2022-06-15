@@ -457,6 +457,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -532,6 +535,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flow-root {
   display: flow-root;
+}
+.contents {
+  display: contents;
 }
 .hidden {
   display: none;
