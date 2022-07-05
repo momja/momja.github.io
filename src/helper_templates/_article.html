@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
     <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
     <style>
         #main {
@@ -39,7 +40,7 @@
             color: darkslategray;
         }
         
-        p:first-of-type::first-letter {
+        #main > p:first-of-type::first-letter {
             font-size: 4rem;
         }
         
@@ -53,6 +54,10 @@
             margin: auto;
             padding-top: 2rem;
             padding-bottom: 2rem;
+        }
+
+        ol {
+            list-style-type: decimal;
         }
     </style>
     <script>

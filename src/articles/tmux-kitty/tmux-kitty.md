@@ -15,7 +15,7 @@ Next and most exciting is the inline native image support. Now some terminals su
 ```
 kitty +kitten icat ~/Downloads/kitten_falling.gif
 ```
-![[animation.gif|"Kitty terminal output with the icat plugin"]]
+![Kitty terminal output with the icat plugin](../../images/animation.gif)
 
 Another reason I think Kitty is great is that it's text file configurable, which makes it _way_ easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in [my dotfiles repository](https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf)
 

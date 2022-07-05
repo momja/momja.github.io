@@ -189,18 +189,7 @@ input:checked+.slider:before {
     }
 }
 
-
-/* Format code */
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-    color: darkgray;
-    background: aliceblue;
-}
-
-.codewrapper {
-    background: aliceblue;
+.codehilite {
     padding: 1em;
     margin: 1em;
-    overflow: auto;
 }

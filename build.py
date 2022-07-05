@@ -1,5 +1,6 @@
 from genericpath import exists
 from tokenize import String
+from cv2 import Formatter_FMT_CSV
 from staticjinja import Site
 import frontmatter
 import yaml
@@ -10,10 +11,20 @@ import os
 import argparse
 import json
 import datetime
+from pygments import formatters
 
 build_path = "./static"
 html_article_dir = "articles/"
-markdowner = md.Markdown('', extras={'fenced-code-blocks':None, 'html-classes':{'code': 'codeblock', 'pre': 'codewrapper'}})
+markdowner = md.Markdown(
+    '',
+    extras={
+        'fenced-code-blocks': None,
+        'html-classes': {
+            'code': 'codeblock',
+            'pre': 'codewrapper',
+            'ol': 'list-decimal'},
+        'cuddled-lists': None},
+    safe_mode=False)
 
 def md_context_for_template(template):
     return md_context(template.filename)
@@ -105,6 +116,11 @@ if __name__ == "__main__":
             # print(f"Configuration file does not exist for {data_file}. Check README for info.")
     
     # print(list(zip(html_article_files, articles_data)))
+
+    # add pygments css for code highlighting
+    code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
+    with open('static/codestyle.css', 'w+') as css_file:
+        css_file.write(code_style)
 
     site = Site.make_site(searchpath='src',
                           env_globals={'projects':project_data},

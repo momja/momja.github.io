@@ -37,25 +37,30 @@ jobs:
 
 There's very little here we have to change to get this working for us.
 
-1. first, make sure this section matches the branch your github site is hosted on. You can check which branch is currently used by opening your github pages repository then:
-     Settings -> Code and Automation -> Pages -> Source.
+1. First, make sure this section matches the branch your github site is hosted on. You can check which branch is currently used by opening your github pages repository then:
+
+    Settings -> Code and Automation -> Pages -> Source.
 
     ```yaml
     with:
         branch: gh-pages <- make sure this matches "branch"
         folder: build
     ```
-    ![[Pasted image 20220614194517.png]]
-1. Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got [all this configured](https://github.com/momja/momja.github.io/blob/master/package.json) in my 'package.json' file, so whenever I run `npm run build`, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running `npm install` assuming you've correctly set up your packages.
-    
+    ![../../images/setting-gh-pages.png](../../images/setting-gh-pages.png)
+
+2. Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got [all this configured](https://github.com/momja/momja.github.io/blob/master/package.json) in my 'package.json' file, so whenever I run `npm run build`, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running `npm install` assuming you've correctly set up your packages.
+
     For Python, it is a little different. I'm not the biggest fan of dependency management in Python, but I recently came across a tool called [pipreqs](https://github.com/bndr/pipreqs) which solves the challenges I associate with generating package requirements for Python. To build a requirements.txt file with pipreqs, just run `pipreqs` in your project directory. You will want to include this requirements file in your git commit, because we will then use it to install all the pip dependencies on the VM used by Github Actions!
+
     ```yaml
     - name: Install and Build 🔧
       run: |
         npm ci
         npm run build
     ```
+    
     becomes:
+
     ```yaml
     - name: Install and Build 🔧
       run: |
@@ -63,16 +68,20 @@ There's very little here we have to change to get this working for us.
         npm install
         npm run build
     ```
-1. Lastly, I didn't want the `gh-pages` branch to be updated each time a change is made to _any_ branch, so I changed the yaml field at the top of the file for when the action should be triggered:
+
+3. Lastly, I didn't want the `gh-pages` branch to be updated each time a change is made to _any_ branch, so I changed the yaml field at the top of the file for when the action should be triggered:
+  
     ```yaml
-     on: [push]
-     ```
+    on: [push]
+    ```
+
     becomes:
+
     ```yaml
-     on:
-         push:
-             branches:
-                 - master
+    on:
+        push:
+            branches:
+                - master
     ```
 
 And there you have it! Check out the final file [here](https://github.com/momja/momja.github.io/blob/38e1a2985c1983cbd35c07d970318d8743cb63ba/.github/workflows/deploy-to-gh-pages.yml)
