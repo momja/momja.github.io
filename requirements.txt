@@ -1,5 +1,4 @@
 markdown2==2.4.3
-markdown2.egg==info
 opencv_python==4.5.5.64
 Pygments==2.12.0
 python_frontmatter==1.0.0
