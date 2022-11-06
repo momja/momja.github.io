@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migrating from tmux to Kitty</title>
     <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
     <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
     <style>
         #main {
@@ -39,7 +40,7 @@
             color: darkslategray;
         }
         
-        p:first-of-type::first-letter {
+        #main > p:first-of-type::first-letter {
             font-size: 4rem;
         }
         
@@ -53,6 +54,10 @@
             margin: auto;
             padding-top: 2rem;
             padding-bottom: 2rem;
+        }
+
+        ol {
+            list-style-type: decimal;
         }
     </style>
     <script>
@@ -103,13 +108,13 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 <pre class="codewrapper"><code class="codeblock">kitty +kitten icat ~/Downloads/kitten_falling.gif
 </code></pre>
 
-<p>![[animation.gif|"Kitty terminal output with the icat plugin"]]</p>
+<p><img src="../../images/animation.gif" alt="Kitty terminal output with the icat plugin" /></p>
 
 <p>Another reason I think Kitty is great is that it's text file configurable, which makes it <em>way</em> easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in <a href="https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf">my dotfiles repository</a></p>
 
 <h2>Reproducing my tmux configuration in Kitty</h2>
 
-<p>I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing <code>ctrl-[HJKL]</code> to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press <code>ctrl-opt-[HJKL]</code>
+<p>I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing <code class="codeblock">ctrl-[HJKL]</code> to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press <code class="codeblock">ctrl-opt-[HJKL]</code>
 <br></p>
 
 <pre class="codewrapper"><code class="codeblock"># Create a new window splitting the space used by the existing one so that
