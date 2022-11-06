@@ -119,7 +119,11 @@ if __name__ == "__main__":
 
     # add pygments css for code highlighting
     code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
-    with open('static/codestyle.css', 'w+') as css_file:
+    try: 
+        os.mkdir(build_path) 
+    except OSError as error: 
+        print(error)
+    with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
         css_file.write(code_style)
 
     site = Site.make_site(searchpath='src',
