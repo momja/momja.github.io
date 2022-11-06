@@ -117,36 +117,38 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 <p>I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing <code class="codeblock">ctrl-[HJKL]</code> to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press <code class="codeblock">ctrl-opt-[HJKL]</code>
 <br></p>
 
-<pre class="codewrapper"><code class="codeblock"># Create a new window splitting the space used by the existing one so that
-# the two windows are placed one above the other
-map ctrl+alt+k launch --location=hsplit --cwd=current
+<div class="codehilite">
+<pre><span></span><code><span class="c1"># Create a new window splitting the space used by the existing one so that</span>
+<span class="c1"># the two windows are placed one above the other</span>
+map ctrl+alt+k launch --location<span class="o">=</span>hsplit --cwd<span class="o">=</span>current
 
-# Create a new window splitting the space used by the existing one so that
-# the two windows are placed side by side
-map ctrl+alt+l launch --location=vsplit --cwd=current
+<span class="c1"># Create a new window splitting the space used by the existing one so that</span>
+<span class="c1"># the two windows are placed side by side</span>
+map ctrl+alt+l launch --location<span class="o">=</span>vsplit --cwd<span class="o">=</span>current
 
-# Rotate the current split, chaging its split axis from vertical to
-# horizontal or vice versa
+<span class="c1"># Rotate the current split, chaging its split axis from vertical to</span>
+<span class="c1"># horizontal or vice versa</span>
 map ctrl+shift+r layout_action rotate
 
-# Move the active window in the indicated direction
+<span class="c1"># Move the active window in the indicated direction</span>
 map ctrl+shift+h move_window left
 map ctrl+shift+l move_window right
 map ctrl+shift+k move_window up
 map ctrl+shift+j move_window down
 
-# Switch focus to the neighboring window in the indicated direction
+<span class="c1"># Switch focus to the neighboring window in the indicated direction</span>
 map ctrl+h neighboring_window left
 map ctrl+l neighboring_window right
 map ctrl+k neighboring_window up
 map ctrl+j neighboring_window down
 
-# Switch tabs
+<span class="c1"># Switch tabs</span>
 map ctrl+cmd+l next_tab
 map ctrl+cmd+h previous_tab
 
-enabled_layouts splits:split_axis=horizontal
+enabled_layouts splits:split_axis<span class="o">=</span>horizontal
 </code></pre>
+</div>
 
     </div>
 </body>
