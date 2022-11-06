@@ -23,7 +23,7 @@ Another reason I think Kitty is great is that it's text file configurable, which
 I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing `ctrl-[HJKL]` to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press `ctrl-opt-[HJKL]`
 <br>
 
-```
+```bash
 # Create a new window splitting the space used by the existing one so that
 # the two windows are placed one above the other
 map ctrl+alt+k launch --location=hsplit --cwd=current
@@ -54,3 +54,4 @@ map ctrl+cmd+h previous_tab
 
 enabled_layouts splits:split_axis=horizontal
 ```
+
