@@ -1,5 +1,5 @@
-markdown2==2.4.3
+markdown2==2.4.6
 opencv_python==4.5.5.64
-Pygments==2.12.0
+Pygments==2.13.0
 python_frontmatter==1.0.0
 staticjinja==4.1.3
