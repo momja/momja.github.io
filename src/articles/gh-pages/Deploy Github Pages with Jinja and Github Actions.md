@@ -4,12 +4,13 @@ description: Github Pages with Jinja and TailwindCSS
 publish_date: 2022-06-14
 ---
 
+# Deploy Github Pages with Jinja and GH Actions
 
 This blog, like many others is hosted on [Github Pages](https://pages.github.com/). Github Pages is a great (and free) way to post small static sites like personal websites. The annoying thing is that you have to push build code that would _usually_ be included in your `.gitignore` file. So if you don't want to have to build your site locally, and include the build files in your repository, there is an option for you that leverages Github Actions.
 
 Now, if you haven't heard of [Github Actions](https://github.com/features/actions), you should check it out. It's Github's platform for CI/CD, and it's easily configurable with .yaml files. There's nothing special you have to do for a repository, you just include the action files in the `.github/workflows` directory.
 
-[My site repository](https://github.com/momja/momja.github.io) is currently being deployed with a [github action](https://github.com/JamesIves/github-pages-deploy-action) written by [`@JamesIves`](https://github.com/JamesIves). The sample `.yaml` file looks like this:
+[My site repository](https://github.com/momja/momja.github.io) is currently being deployed with a [github action](https://github.com/JamesIves/github-pages-deploy-action) written by [@JamesIves](https://github.com/JamesIves). The sample `.yaml` file looks like this:
 
 ```yaml
 name: Build and Deploy

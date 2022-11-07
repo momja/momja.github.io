@@ -10,52 +10,6 @@
     <link rel="stylesheet" href="../../codestyle.css">
     <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
     <style>
-        #main {
-            margin: auto;
-            text-align: justify;
-            width: 45rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            text-align: center;
-        }
-        
-        h2 {
-            padding-top: 2rem;
-            font-size: 2rem;
-            text-align: left;
-        }
-        
-        h3 {
-            padding-top: 1.5rem;
-            font-size: 1.5rem;
-            text-align: left;
-        }
-        
-        h4 {
-            padding-top: 1.5rem;
-            font-size: 1.5rem;
-            text-align: left;
-            color: darkslategray;
-        }
-        
-        #main > p:first-of-type::first-letter {
-            font-size: 4rem;
-        }
-        
-        p {
-            font-size: 1rem;
-        }
-        
-        img,
-        video {
-            width: 42rem;
-            margin: auto;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-
         ol {
             list-style-type: decimal;
         }
@@ -67,15 +21,16 @@
     </script>
 </head>
 
-<body class="theme">
-    <div class='back-button'>
-        <button class="bg-transparent mt-8 ml-8" onclick="goBack()">
+<body class="bg-white dark:bg-slate-800">
+    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
+        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
             ← Back
         </button>
     </div>
-    {% include 'helper_templates/_theme_toggle.html' %}
-    <div id="main">
-        {{ content }}
+    <div class="m-4 md:flex md:justify-center">
+        <article class="prose lg:prose-xl dark:prose-invert">
+            {{ content }}
+        </article>
     </div>
 </body>
 

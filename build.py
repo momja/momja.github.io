@@ -118,13 +118,13 @@ if __name__ == "__main__":
     # print(list(zip(html_article_files, articles_data)))
 
     # add pygments css for code highlighting
-    code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
-    try: 
-        os.mkdir(build_path) 
-    except OSError as error: 
-        print(error)
-    with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
-        css_file.write(code_style)
+    # # code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
+    # try: 
+    #     os.mkdir(build_path) 
+    # except OSError as error: 
+    #     print(error)
+    # with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
+    #     css_file.write(code_style)
 
     site = Site.make_site(searchpath='src',
                           env_globals={'projects':project_data},

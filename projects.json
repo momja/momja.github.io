@@ -3,14 +3,14 @@
         "date": "01/21 - 03/21",
         "image_path": "images/virtualdemonstrator_sample.png",
         "description": "A tool for creating spatial presentations in VR",
-        "url": "projects/virtual_demonstrator/IEEE_VR_3DUI_Submission.pdf"
+        "url": "https://www.youtube.com/watch?v=VQgD2DCBnjQ"
     },
     {
         "name": "AR Physicalizations",
         "date": "04/20 - 05/21",
         "image_path": "images/ar_localization.png",
         "description": "Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models",
-        "url": "https://www.sculpting-vis.org/index.php/ar-physical-sculpting/"
+        "url": "https://dl.acm.org/doi/10.1145/3488542"
     },
     {
         "name": "CPU Raytracer",
@@ -24,14 +24,14 @@
         "date": "01/19 - 05/19",
         "image_path": "images/GAN.jpg",
         "description": "A comparison of the CycleGAN and DualGAN algorithms for style transfer applications",
-        "url": "projects/fluid_simulation/fluid_simulation.html"
+        "url": "images/FINAL_CycleGAN_on_Image_Transfer.pdf"
     },
     {
         "name": "Yelp Rating Predictions",
         "date": "01/20 - 03/20",
         "image_path": "images/avg_rating_per_user.jpg",
         "description": "Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>",
-        "url": "projects/yelp_dataset_analysis/analysis.html"
+        "url": "articles/yelp_dataset_analysis/analysis.html"
     },
     {
         "name": "Bucketz",
@@ -45,20 +45,20 @@
         "date": "01/17 - 02/17",
         "image_path": "images/dinedice_logo.png",
         "description": "A randomized local restaurant recommender",
-        "url": "https://maxomdal.com/dineDice/"
+        "url": "https://dizzard.net/dineDice/"
     },
     {
         "name": "Path Planning Game",
         "date": "06/20 - 07/20",
         "image_path": "images/header.png",
         "description": "An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL",
-        "url": "projects/path_planning/path_planning.html"
+        "url": "articles/path_planning/path_planning.html"
     },
     {
         "name": "Particle Simulation",
         "date": "07/20 - 08/20",
         "image_path": "images/smokestack.png",
         "description": "A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing",
-        "url": "projects/particle_simulation/particle_simulation.html"
+        "url": "articles/particle_simulation/particle_simulation.html"
     }
 ]
