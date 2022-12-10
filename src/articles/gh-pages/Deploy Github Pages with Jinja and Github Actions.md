@@ -47,7 +47,7 @@ There's very little here we have to change to get this working for us.
         branch: gh-pages <- make sure this matches "branch"
         folder: build
     ```
-    ![../../images/setting-gh-pages.png](../../images/setting-gh-pages.png)
+    ![../../images/setting-gh-pages.jpg](../../images/setting-gh-pages.jpg)
 
 2. Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got [all this configured](https://github.com/momja/momja.github.io/blob/master/package.json) in my 'package.json' file, so whenever I run `npm run build`, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running `npm install` assuming you've correctly set up your packages.
 
