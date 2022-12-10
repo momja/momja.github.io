@@ -9,9 +9,9 @@ from pathlib import Path
 import glob
 import os
 import argparse
-import json
-import datetime
 from pygments import formatters
+
+import projectJSONParser
 
 build_path = "./static"
 html_article_dir = "articles/"
@@ -98,8 +98,7 @@ if __name__ == "__main__":
     # html_article_files = convertMDToHTML(md_file_dirs, builddir='src', outdir='/articles/', full=args.full)
 
     # build jinja templates
-    with open('projects.json', 'r') as f:
-        project_data = json.load(f)
+    project_data = projectJSONParser.parse('projects.json')
 
     # Pair every html article with its YAML file
     # articles_data = []

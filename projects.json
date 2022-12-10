@@ -1,62 +1,71 @@
 [{
         "name": "Virtual Reality Demonstrator",
-        "date": "01/21 - 03/21",
+        "start_date": "01/21",
+        "end_date": "03/21",
         "image_path": "images/virtualdemonstrator_sample.png",
         "description": "A tool for creating spatial presentations in VR",
         "url": "https://www.youtube.com/watch?v=VQgD2DCBnjQ"
     },
     {
         "name": "AR Physicalizations",
-        "date": "04/20 - 05/21",
+        "start_date": "04/20",
+        "end_date": "05/21",
         "image_path": "images/ar_localization.png",
         "description": "Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models",
         "url": "https://dl.acm.org/doi/10.1145/3488542"
     },
     {
         "name": "CPU Raytracer",
-        "date": "01/20 - 03/20",
+        "start_date": "01/20",
+        "end_date": "03/20",
         "image_path": "images/raytracer.jpg",
         "description": "A raytracer from scratch written in C++ on up to two cores with multiple samples per pixel",
         "url": "https://github.com/momja/CPU-Raytracer"
     },
     {
         "name": "Generative Adversarial Networks",
-        "date": "01/19 - 05/19",
+        "start_date": "01/19",
+        "end_date": "05/19",
         "image_path": "images/GAN.jpg",
         "description": "A comparison of the CycleGAN and DualGAN algorithms for style transfer applications",
         "url": "images/FINAL_CycleGAN_on_Image_Transfer.pdf"
     },
     {
         "name": "Yelp Rating Predictions",
-        "date": "01/20 - 03/20",
+        "start_date": "01/20",
+        "end_date": "03/20",
         "image_path": "images/avg_rating_per_user.jpg",
         "description": "Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>",
         "url": "articles/yelp_dataset_analysis/analysis.html"
     },
     {
         "name": "Bucketz",
-        "date": "06/17 - 08/17",
+        "start_date": "06/17",
+        "end_date": "08/17",
         "image_path": "images/bucketz2.jpg",
         "description": "An iOS game built with Swift and SpriteKit",
         "url": "https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130"
     },
     {
         "name": "DineDice",
-        "date": "01/17 - 02/17",
+        "start_date": "01/17",
+        "end_date": "02/17",
         "image_path": "images/dinedice_logo.png",
         "description": "A randomized local restaurant recommender",
         "url": "https://dizzard.net/dineDice/"
     },
     {
         "name": "Path Planning Game",
-        "date": "06/20 - 07/20",
+        "start_date": "06/20",
+        "end_date": "07/20",
         "image_path": "images/header.png",
         "description": "An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL",
         "url": "articles/path_planning/path_planning.html"
     },
     {
         "name": "Particle Simulation",
-        "date": "07/20 - 08/20",
+        "start_date": "07/20",
+        "end_date": "08/20",
         "image_path": "images/smokestack.png",
         "description": "A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing",
         "url": "articles/particle_simulation/particle_simulation.html"
