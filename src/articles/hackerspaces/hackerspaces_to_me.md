@@ -4,6 +4,8 @@ description: "And some other stuff too"
 publish_date: 2022-12-21
 ---
 
+What is a [hackerspace](https://hackerspaces.org/) to me?
+
 It's a free place for a community of individuals to gather, share knowledge and resources, and build the things they want to see in the world. It makes me think of co-housing in a lot of ways. Although there is no required _financial_ obligation, there is a requirement that you treat others well and share your knowledge and skills when you can. [Noisebridge](https://noisebridge.net), the hackerspace in San Francisco I've been finding myself at recently, has only one formal rule: Be excellent to each other. It may sound a bit cheesy, but for the most part, it seems to be working. The space has been running for 15 years.
 
 NB is officially a 501(c)(3) non-profit organization, but the word _organization_ is loosely interpreted here. That is because it's also described as anarchist in its nature meaning there is no formal structure in the space. That's not to say there aren't regular meetings, but there is no hierarchy, no reports. People have self-assigned responsibilities, but there are no obligations. This I think is essential to any well functioning co-space, and I would think the same would be necessary for a healthy cohousing community (if you add a landlord, then the cohousing community just becomes an apartment building that happens to have laundry in the basement).
@@ -16,4 +18,4 @@ Since these hackerspaces are freely accessible to all, they are very much a refl
 
 The hackerspace fits into a theme I've been exploring this past year and I have to write more about as I continue exploring it in 2023. I'm not yet sure how to group these thoughts together, but it circles around some of the ideas I see in socialism, anarchism, communism in a general sense and more specifically third spaces, cohousing, community centers, resource sharing, donation circles, free and open source software, decentralized networks, and the small web. I'll try to share more. I think I need to sort some of these thoughts out, but I just want to find ways for people to share more, because I think it's good for us psychologically and it reduces waste.
 
-Happy Holidays, see you in the new year!
+Happy Holidays, see you in the new year 🥳!
