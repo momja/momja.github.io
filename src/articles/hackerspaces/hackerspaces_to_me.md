@@ -4,6 +4,8 @@ description: "And some other stuff too"
 publish_date: 2022-12-21
 ---
 
+# Thoughts on Hackerspaces
+
 What is a [hackerspace](https://hackerspaces.org/) to me?
 
 It's a free place for a community of individuals to gather, share knowledge and resources, and build the things they want to see in the world. It makes me think of co-housing in a lot of ways. Although there is no required _financial_ obligation, there is a requirement that you treat others well and share your knowledge and skills when you can. [Noisebridge](https://noisebridge.net), the hackerspace in San Francisco I've been finding myself at recently, has only one formal rule: Be excellent to each other. It may sound a bit cheesy, but for the most part, it seems to be working. The space has been running for 15 years.
