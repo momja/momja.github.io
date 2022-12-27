@@ -1,5 +1,5 @@
 ---
-title: "Interesting Bloggs and Bloggers"
+title: "Interesting Blogs and Bloggers"
 description: "Just some bloggers I really like"
 publish_date: 2022-12-27
 ---
