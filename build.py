@@ -76,7 +76,7 @@ def article_metadata(template):
             article_file = article_file[0]
         data = md_context(article_file, False)
         if data["publish_date"]:
-            data["date"] = data["publish_date"].strftime('%B %d %Y')
+            data["date"] = data["publish_date"].strftime('%b %d %Y')
         data["path"] = os.path.join("articles", os.path.basename(os.path.split(dir)[0]), os.path.basename(os.path.splitext(article_file)[0]) + '.html')
         articles_data.append(data)
 
