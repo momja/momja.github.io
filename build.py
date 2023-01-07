@@ -68,17 +68,20 @@ def article_metadata(template):
     article_dir = "./src/articles/"
     md_file_dirs = glob.glob(os.path.join(article_dir, "*/"))
     for i, dir in enumerate(md_file_dirs):
-        article_file = glob.glob(os.path.join(dir, '*.md'))
-        if not article_file:
-            # TODO: Max This is really lazy
-            article_file = glob.glob(os.path.join(dir, '*.html'))[0]
-        else:
-            article_file = article_file[0]
-        data = md_context(article_file, False)
-        if data["publish_date"]:
-            data["date"] = data["publish_date"].strftime('%b %d %Y')
-        data["path"] = os.path.join("articles", os.path.basename(os.path.split(dir)[0]), os.path.basename(os.path.splitext(article_file)[0]) + '.html')
-        articles_data.append(data)
+        try:
+            article_file = glob.glob(os.path.join(dir, '*.md'))
+            if not article_file:
+                # TODO: Max This is really lazy
+                article_file = glob.glob(os.path.join(dir, '*.html'))[0]
+            else:
+                article_file = article_file[0]
+            data = md_context(article_file, False)
+            if data["publish_date"]:
+                data["date"] = data["publish_date"].strftime('%b %d %Y')
+            data["path"] = os.path.join("articles", os.path.basename(os.path.split(dir)[0]), os.path.basename(os.path.splitext(article_file)[0]) + '.html')
+            articles_data.append(data)
+        except:
+            print(f"Failed to load article file in {dir}")
 
     articles_data.sort(key=lambda article: article["publish_date"], reverse=True)
     return {"articles": articles_data}
