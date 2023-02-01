@@ -38,6 +38,7 @@ I will update this from time to time as I find more people I want to share. Thes
 # Unix/Linux Developers and Ricers
 - [Waylon Walker](https://waylonwalker.com/)
     - My go to for #tmux keybinding help. He has some great guides for this. *Update ([[2022-12-17]])*: these days I'm not using tmux, I replaced it with kitty terminal, which fits pretty much all my needs.
+
 # Obsidian
 - [Kevin Quinn](https://kevinquinn.fun/)
 - [Chris Grieser (PseudoMeta)](https://chris-grieser.de/ca0f246f224c457b8d641a665dde1f7d)
