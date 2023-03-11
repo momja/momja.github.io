@@ -37,37 +37,6 @@
 </head>
 
 <body>
-    <!-- <header>
-    <nav class="fixed w-full shadow-md flex items-center justify-between flex-wrap bg-gray-900 p-6">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href="index.html">
-          <span class="font-semibold text-xl tracking-tight">Maxwell Omdal</span>
-        </a>
-      </div>
-      <div class="navbar-burger block lg:hidden">
-        <button
-          class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div id="main-nav" class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
-            Projects
-          </a>
-        </div>
-        <div class="text-sm lg:flex-grow">
-          <a href="#resume" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
-            Resume
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header> -->
-
     <div class='h-16'></div>
 
     <div style="height:550px">
@@ -108,6 +77,22 @@
         </div>
     </div>
 
+    {% if articles|length > 0 %}
+    <h2 class="text-3xl text-center font-bold m-10">
+        Articles
+    </h2>
+
+    <hr>
+
+
+    <div class="container my-12 mx-auto px-4 md:px-12">
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+            {% import "helper_templates/_article_listings.html" as article_listings %} {{ article_listings.insert_articles(articles) }}
+        </div>
+    </div>
+
+    {% endif %}
+
     {% if projects|length > 0 %}
     <h2 class="text-3xl text-center font-bold m-10">
         Projects
@@ -119,19 +104,6 @@
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
             {% import "helper_templates/_projects.html" as project_template %}
             {{ project_template.insertProjects() }}
-        </div>
-    </div>
-    {% endif %} {% if articles|length > 0 %}
-    <h2 class="text-3xl text-center font-bold m-10">
-        Articles
-    </h2>
-
-    <hr>
-
-
-    <div class="container my-12 mx-auto px-4 md:px-12">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">
-            {% import "helper_templates/_article_listings.html" as article_listings %} {{ article_listings.insert_articles(articles) }}
         </div>
     </div>
 

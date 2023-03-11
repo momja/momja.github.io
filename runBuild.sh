@@ -8,3 +8,5 @@ cp -r favicon/144x144.png static/favicon.png
 mogrify -resize 720x720\> -format jpg -path static/images/ images/*.png
 mogrify -resize 720x720\> -path static/images/ images/*.jpg
 mogrify -resize 720x720\> -path static/images/ images/*.gif
+
+echo "Website is published locally at file:///Users/maxwellomdal/Documents/projects/personal_website/static/index.html"
