@@ -4,7 +4,7 @@ description: "A quick example with discord.py's 2.0 framework"
 publish_date: 2023-04-22
 ---
 
-# Writing a Diiscord bot with Python and aiocron
+# Writing a Discord bot with Python and aiocron
 I wanted to write a Discord bot to provide simple scheduled alerts for the [hackerspace](https://noisebridge.net) I am a part of. We have a channel for the woodshop, and every so often, we need to empty the dust collector and scrap bins.
 
 After some basic research, I found it was pretty straightforward how to set up a bot in the discord developer portal, so I'm not going to go through that here, but if you need help, you can check out [this realpython article](https://realpython.com/how-to-make-a-discord-bot-python/).
