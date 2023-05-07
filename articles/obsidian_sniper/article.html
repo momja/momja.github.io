@@ -39,26 +39,15 @@
 
 <p>I just had to come up with a way to identify the files I wanted to include as snippets with as little work as possible, and that is where my little scripts name comes from! Introducing <code class="codeblock">sniper</code>, the handy-dandy tool for cloning your obsidian code blocks in Alfred snippets. All you have to do is prefix a code block with the Sniper keyword "snipe" in a markdown comment. This isn't a "smart" utility, so you got to make sure the comment only contains the word "snipe", and nothing else. Here's an example:</p>
 
-<p>~~~</p>
-
-<h1>Some Markdown file.md</h1>
-
-<p>%%snipe%%</p>
-
-<div class="codehilite">
-<pre><span></span><code><span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;hello world!&#39;</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<p>~~~</p>
+<p><img src="../../images/obsidian_codeblock.jpg" alt="" /></p>
 
 <p>To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -> Features -> Snippets -> Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable <code class="codeblock">$ALFRED_SNIPPETS_DIR</code> so it matches your collection.</p>
 
-<p><img src="../../images/alfred_snippets_collection.png" alt="" /></p>
+<p><img src="../../images/alfred_snippets_collection.jpg" alt="" /></p>
 
 <p>You also need to update <code class="codeblock">$ALFRED_SNIPPETS_DIR</code> so it know where your Alfred config directory is. You can find where your alfred preferences file is by going to "Settings -> Advanced -> Syncing". I keep mine in <code class="codeblock">.config</code> with the rest of my dotfiles</p>
 
-<p><img src="../../images/alfred_preferences.png" alt="" /></p>
+<p><img src="../../images/alfred_preferences.jpg" alt="" /></p>
 
 <p>My directory path looks like:</p>
 
