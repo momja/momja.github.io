@@ -23,11 +23,11 @@ print ('hello world!')
 
 To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -> Features -> Snippets -> Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable `$ALFRED_SNIPPETS_DIR` so it matches your collection.
 
-![](../../images/alfred_snippets_collection.png)
+![](../../images/alfred_snippets_collection.jpg)
 
 You also need to update `$ALFRED_SNIPPETS_DIR` so it know where your Alfred config directory is. You can find where your alfred preferences file is by going to "Settings -> Advanced -> Syncing". I keep mine in `.config` with the rest of my dotfiles
 
-![](../../images/alfred_preferences.png)
+![](../../images/alfred_preferences.jpg)
 
 My directory path looks like:
 
