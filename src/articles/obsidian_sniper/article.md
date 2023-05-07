@@ -15,11 +15,7 @@ I just had to come up with a way to identify the files I wanted to include as sn
 ~~~
 # Some Markdown file.md
 
-%%snipe%%
-```python
-print ('hello world!')
-```
-~~~
+![](../../images/obsidian_codeblock.jpg)
 
 To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -> Features -> Snippets -> Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable `$ALFRED_SNIPPETS_DIR` so it matches your collection.
 
