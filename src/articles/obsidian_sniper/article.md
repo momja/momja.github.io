@@ -16,7 +16,7 @@ I just had to come up with a way to identify the files I wanted to include as sn
 # Some Markdown file.md
 
 %%snipe%%
-````python
+```python
 print ('hello world!')
 ```
 ~~~
