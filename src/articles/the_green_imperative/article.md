@@ -42,7 +42,7 @@ I vibe with this. I still have a hard time realizing this in my own thoughts tho
 
 > One of my design clients in Japan is a subsidiary of a large automobile company. Visiting their design laboratory, I saw a photograph of former President Reagan pinned on a bulletin board. 'Reagan is one of the greatest Japanese car designers, I was told, 'He bullied us into exporting fewer cars to America. So now we produce much larger cars for the American market. We export fewer numbers, but make a much higher profit with these over-sized models.'
 
-Of course Reagan is to blame for this too! This belongs on r/fuckcars. And of course , when you start to think he’s gonna say rationally that importing larger cars to the US is bad because it contributes to visual, noise, and air pollution, without providing much, if any practical benefit, who is allegedly advocating for buying *less* because it is *green* says in the following paragraph:
+Of course Reagan is to blame for this too! This belongs on [r/fuckcars](https://www.reddit.com/r/fuckcars/). And of course , when you start to think he’s gonna say rationally that importing larger cars to the US is bad because it contributes to visual, noise, and air pollution, without providing much, if any practical benefit, who is allegedly advocating for buying *less* because it is *green* says in the following paragraph:
 
 > … tiny is not necessarily better.
 
