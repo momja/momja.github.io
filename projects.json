@@ -1,9 +1,9 @@
 [{
-        "name": "Virtual Reality Demonstrator",
+        "name": "2021 IEEE VR: Virtual Reality Demonstrator",
         "start_date": "01/21",
         "end_date": "03/21",
         "image_path": "images/virtualdemonstrator_sample.jpg",
-        "description": "A tool for creating spatial presentations in VR",
+        "description": "A tool for creating spatial presentations in VR, presented as an extended abstract for IEEE VR 2021",
         "url": "https://www.youtube.com/watch?v=VQgD2DCBnjQ"
     },
     {
