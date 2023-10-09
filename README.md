@@ -13,6 +13,7 @@ If the article is in markdown:
 ```
 title: "Study of ocean currents with physicalized models for interactive querying"
 description: "A discussion on the growing field of physicalization, and its impact on tangible querying of geophysical data like ocean currents by seeding streamlines"
+publish_date: YYYY-MM-dd
 
 ```
 

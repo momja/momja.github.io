@@ -53,10 +53,15 @@ When I'm feeling that stress, I need to remind myself that working with a commun
 This is an excerpt from a book I'm reading [about cohousing](https://worldcat.org/title/429393294), where it is common that several homes will share one workshop. I found some of the outlined principles interesting.
 
 > # Making Workshops Successful
+> 
 > It may be hard to imagine that a workshop used by 50 or 60 persons could possibly function smoothly. Potentially, a shared workshop can help residents save money and produce better work, and it can be more fun in the process. It can also be a chaotic free-for-all. In comparing the systems of different cohousing communities, we found that the following practices promoted the usability and safety, and decreased the frustration, of a shared workshop
+> 
 > A. *Accountability* Keeping the workshop locked and having two or three people "in charge" makes users feel accountable to the person they get the key from, who will be upset if a tool is missing or the shop is left messy.
+> 
 > B. *Buying In*, or varying degrees of investment. Some may want to have better power tools; they should buy and store them separately in a locker or tool box. Others may not even want to invest in a good set of hand tools (and should not plan on borrowing them). Thus, there can be two or three levels of investment. (Cohousers generally advise against various levels of investment for common facilities except when a small group wants to purchase something less than half of the residents are likely to use, such as a table saw or a sailboat.)
+> 
 > C. *Children*. Some feel that children should have full access to the workshop (except power tools), to encourage their spontaneous creativity. For safety and to prevent abandoned projects, others feel that children should be permitted only under adult supervision. Between the permissive and disciplinarian attitudes there is a practical middle ground. Adults should aggressively teach interested children "shop manners" - safety first, how to clean up, and how not to abuse tools. Once they have demonstrated competent shop manners, children should be given equal access. Until then, they might have a separate bench, with their own tools.
-> *Day-Glo*. Successful workshops paint their hand tools the most awful Day-Glo fluorescent colors available, 'so you can see those suckers 50 yards away lying in two feet of grass'. Besides, no self-respecting person would want tools that color in their house.
+> 
+> D. *Day-Glo*. Successful workshops paint their hand tools the most awful Day-Glo fluorescent colors available, 'so you can see those suckers 50 yards away lying in two feet of grass'. Besides, no self-respecting person would want tools that color in their house.
 
 I agree with most of this, but I think *Buying in* would need to be adjusted for a space that wants to welcome those who otherwise could not afford access to such a space, and I don't think the section in children should be just limited to kids. Everyone should have to show some basic competence with respect to safety and clean-up.
