@@ -1,8 +1,8 @@
-- - -
-title: What Does Apple Watch Do
-description: Do they really do what we need?
+---
+title: "What Does Apple Watch Do"
+description: "Do they really do what we need?"
 publish_date: 2023-11-11
-- - -
+---
 
 I’ve worn an Apple Watch on and off since the Series 2, which came out in 2016. I’ve owned two watches. One disappeared one day. I have no idea where it went. For a while, I wore two family members’ watches because they never used them. Then I bought my own. 
 
