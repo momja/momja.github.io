@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Mon, 11 Dec 2023 00:00:00 -0000</lastBuildDate><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Beeswax Candles (Dip)&lt;/h1&gt;
+
+&lt;p&gt;For &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;, I'm running a candlestick making class. I'm not an expert at this, but like most things in life, you just need to be one page ahead in the book to explain to others what is going on. These are my notes on candlestick making.&lt;/p&gt;
+
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;You will need:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[ ] A burner (induction for portability)&lt;/li&gt;
+&lt;li&gt;[ ] Large boiler&lt;/li&gt;
+&lt;li&gt;[ ] 4 Deep jars (alternatively, a double boiler and 2 jars)&lt;/li&gt;
+&lt;li&gt;[ ] Scissors&lt;/li&gt;
+&lt;li&gt;[ ] Cotton wicks&lt;/li&gt;
+&lt;li&gt;[ ] Beeswax (&lt;em&gt;2-3lbs&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;[ ] Cold water&lt;/li&gt;
+&lt;li&gt;[ ] Washers or bolts (any small scrap of metal you can tie a string around)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Steps&lt;/h2&gt;
+
+&lt;ol class="list-decimal"&gt;
+&lt;li&gt;Heat the wax in a double-boiler style. If you don't have a double boiler, just fill jars with wax and place in a pot full of water. Beeswax melts at &lt;em&gt;&lt;a href="https://en.wikipedia.org/wiki/Beeswax"&gt;144 to 147 °F&lt;/a&gt;&lt;/em&gt;, keep this in mind while melting. Low and slow is better, so try not to exceed the temperature significantly. I think as long as the water is not at full boil, you should be in a good range.&lt;/li&gt;
+&lt;li&gt;Once the wax is fully melted, prepare a container, or a couple jars with cold water. Don't make it &lt;em&gt;too&lt;/em&gt; cold, because that will cause issues later. Get some tap water, add one or two ice cubes.&lt;/li&gt;
+&lt;li&gt;Now, cut the string to be twice the depth of your melted beeswax, plus an extra &lt;em&gt;15-20cm&lt;/em&gt;. Tie to each end a couple washers. Since wax floats in water, this will help it sink.&lt;/li&gt;
+&lt;li&gt;Now you start dipping. This is the repetitive part. Dip in the hot wax, let it drip off, dip in the cool water, let it drip off. Then repeat. &lt;/li&gt;
+&lt;li&gt;Continue step 4 until you have your desired candle size. The final candle should be between &lt;em&gt;18-20mm&lt;/em&gt; in diameter to fit in most candlestick holders. You can measure this with a calipers, or mark a string at a &lt;em&gt;56.5mm&lt;/em&gt; ($\pi \times 18$), and wrap around the candle.&lt;/li&gt;
+&lt;/ol&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Mon, 11 Dec 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/beeswax_candles/article.html#1</guid></item><item><title>What Does Apple Watch Do</title><link>http://dizzard.net/articles/apple_watch/article.html</link><description>&lt;![CDATA[&lt;p&gt;I’ve worn an Apple Watch on and off since the Series 2, which came out in 2016. I’ve owned two watches. One disappeared one day. I have no idea where it went. For a while, I wore two family members’ watches because they never used them. Then I bought my own. &lt;/p&gt;
+
+&lt;p&gt;Buying that watch was a really stupid move. I don’t think the Apple Watch is totally stupid, but I think for the vast majority of users, it’s just a glorified pager. &lt;/p&gt;
+
+&lt;p&gt;For myself, I found the most compelling use of the watch was paying for the bus. Something I could also do with my phone in my front pocket or the wallet in my back pocket. &lt;/p&gt;
+
+&lt;p&gt;It’s not that I didn’t try to love the Apple Watch. I wore it every day to see my health trends, I designed and 3D printed a custom dock to minimize the effort to charge it, I even bought a case I could pop on while I was woodworking so it could stay protected and remain on my wrist. I tried using it for Siri, controlling my smart home, sending messages, monitoring workouts (ok this use case is good).&lt;/p&gt;
+
+&lt;p&gt;The problem is that the watch never tried to love me back. The features just aren’t useful. And I think more people need to come to terms with this rather than just buying it because of the Apple hype train. Siri sucks on the wrist, especially if I’ve got a phone near me idk who’s gonna pick up my call to “hey Siri”. When it does pick up, it takes way longer than my phone to provide feedback. Same for controlling my smart home. It doesn’t update nodes in the home app until I actually open the app on the watch, so when i want to turn off my bedroom light, I need to wait 5 seconds for it to realize the bedroom light is currently on in order for me to turn it off. This is just a waste of time to sit there and wait. In fact I’m coming to think smart homes in general are still far from being useful. It’s health monitoring appears to be very detailed and accurate, but as someone who deals with health anxieties that stem from my whacky brain rather than actual diagnosed health issues, having all this data on myself doesn’t actually seem to be benefitting me in any way.&lt;/p&gt;
+
+&lt;p&gt;Regarding workouts, I find the watch makes me &lt;em&gt;less&lt;/em&gt; likely to exercise because I have this pressure to wear the watch every time I leave the house for a run because if I’m not wearing it, then the run &lt;em&gt;never happened&lt;/em&gt;. So if I don’t have a charged watch, or I forgot to load up some music or a podcast on it beforehand, count that run out. &lt;/p&gt;
+
+&lt;p&gt;My least favorite, yet most common use of the watch is for field notifications I don’t need to be looking at in the first place. Why do I need my wrist to buzz every time I get an automated email to my work inbox that I don’t read anyways? Why read “Mom just sent you a photo. Open iPhone to see”? What’s that doing for me? Is it anything positive, or is it just getting me to check my devices more.&lt;/p&gt;
+
+&lt;p&gt;If you use the watch a lot for tracking workouts, or you have some health issues you want to monitor, I think you should by all means go for it and use a watch. But for any other purpose, I’d say it’s not worth the expense, nor is it worth the mental stress the notification machine puts on your brain.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sat, 11 Nov 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/apple_watch/article.html#2</guid></item><item><title>Principles of Operating a Shared Workshop</title><link>http://dizzard.net/articles/shared_workshop/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Principles of Operating a Shared Workshop&lt;/h1&gt;
+
+&lt;p&gt;These are some of the thoughts I have compiled over the last year volunteering my time helping maintain a wood-shop at my local hackerspace, &lt;a href="noisebridge.net"&gt;Noisebridge&lt;/a&gt;. Noisebridge is a very unique space in that it operates as an anarchist space with one guiding principle: &lt;em&gt;Be excellent to each other&lt;/em&gt;. There can often be conflict between passionate people at the space doing their best to make things better, and not being able to agree on what "better" really is. I'm putting &lt;em&gt;my&lt;/em&gt; thoughts down on what I've observed to work. I'm certain not everyone will agree.&lt;/p&gt;
+
+&lt;h2&gt;Everything must have exactly one place of belonging&lt;/h2&gt;
+
+&lt;p&gt;If the space is big enough to require redundant items, each duplicate should be clearly labelled as to where it belongs. I.E. if there are two solder stations, each soldering iron should be labelled with the station it belongs to. Keep in mind that Hackerspaces are rarely big enough to require redundancy. Noisebridge has some duplicate items because of accessibility issues with our multi-floor layout, but beyond that, we strive to be as explicit about where things belong as possible.&lt;/p&gt;
+
+&lt;h2&gt;Floor Space is sacred&lt;/h2&gt;
+
+&lt;p&gt;In a workshop, you are &lt;em&gt;constantly&lt;/em&gt; moving around. For your safety and efficiency, floors and worktops should be cleared at the end of each use.&lt;/p&gt;
+
+&lt;p&gt;Keeping tools and supplies off the floor is also essential. Use vertical space on walls, add shelving, and remove unused tools if necessary. The floors should be the cleanest part of your shop.&lt;/p&gt;
+
+&lt;h2&gt;Maintainers must be ruthless in enforcing rules about keeping things clean**&lt;/h2&gt;
+
+&lt;p&gt;Again, I'm talking from experience at an anarchist hackerspace, where the doors are open and all are welcome. So based on how restricted access your space is, your mileage will vary. &lt;/p&gt;
+
+&lt;p&gt;There should be a zero tolerance policy for things left on work tops. If someone's project is not stored correctly, they must address the problem immediately or the project must be removed from the space. Workspace must be protected at all costs, otherwise the purpose of the space is brought into question. Is it really a workshop if there is no space to work?&lt;/p&gt;
+
+&lt;h2&gt;Agree upon limits to what tools are to be kept in the space&lt;/h2&gt;
+
+&lt;p&gt;Non-industrial spaces are extremely limited in square foot and resources. Having a couple accessible and well-maintained tools should always be prioritized over accumulation of tools in various states of usability. From my experience, the more tools added to the space, the harder it becomes to work because you are trading square footage for more tools. You are also trading time and resources maintaining those tools.&lt;/p&gt;
+
+&lt;h2&gt;Labels and rules should be explicit, but mutable&lt;/h2&gt;
+
+&lt;p&gt;Nothing is set in stone at an anarchist space, or any space for that matter. Assume you will have to make changes in the future, but you should try and mitigate excessive churn. Robustly structured environments should be able to support the activities people expect to use it for, and it should also be able to adapt if the community agrees we want to support new sorts of activities.&lt;/p&gt;
+
+&lt;p&gt;This might manifest itself as putting some of your otherwise stationary tools on casters so you can rearrange the shop easily. However, this should be done carefully. Increasing the flexibility of the space also makes it easier for rogue agents to act in ways that benefit their own interests rather than those of the community. This balancing act is often best addressed in practice by keeping a watchful eye over the space, and mentoring others to do the same. It is also important to define shared values as a community to help individuals know how to behave when working on their own.&lt;/p&gt;
+
+&lt;h2&gt;Project storage rules should be clear and upheld&lt;/h2&gt;
+
+&lt;p&gt;A workshop should not be treated like a U-haul storage locker. This is often the biggest source of accumulation and detrimental to the preservation of floor space. If you even have the space for project storage, with the community to outline how long a project should be allowed to be stored, and stick to the agreement by promptly removing projects that exceed the deadline.&lt;/p&gt;
+
+&lt;p&gt;This may seem harsh and upsetting to an individual who leaves their project longer than the allotted time, but there are sacrifices you make when committing to a project in a shared workshop. Try to work with people &lt;em&gt;before&lt;/em&gt; they reach these deadlines to make sure they are aware of these expectations. This can be one of the hardest things to do because of the time and difficulty associated with contacting individuals for project updates, and even just figuring out who's project is who's.&lt;/p&gt;
+
+&lt;h2&gt;Closing thoughts&lt;/h2&gt;
+
+&lt;p&gt;You don't have the same freedoms as you do in your own space, but if you can give up these freedoms you gain the benefits of more square footage, bigger variety of tools and resources, and most importantly a community to build with. Living in San Francisco as a 23 year old, having access to a wood shop that is solely my own is fiscally impossible.&lt;/p&gt;
+
+&lt;p&gt;Yeah, a lot of the time working with a community is hard. Like, &lt;em&gt;rip out your hair hard&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I'm feeling that stress, I need to remind myself that working with a community doesn't just bring up the bad things. It also brings me tremendous joy to work with other people, teach, and learn alongside them. It's become rare that I will go to the wood shop and just work on whatever personal project I have in mind. Most of the time, I will be working on something for the space or chatting with someone about a project or something unrelated to woodworking altogether. I've come to realize shared workshops are not just about giving people the resources they need to build their own stuff. The community of makers and hackers is &lt;em&gt;itself&lt;/em&gt; something that requires building.&lt;/p&gt;
+
+&lt;h2&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;This is an excerpt from a book I'm reading &lt;a href="https://worldcat.org/title/429393294"&gt;about cohousing&lt;/a&gt;, where it is common that several homes will share one workshop. I found some of the outlined principles interesting.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h1&gt;Making Workshops Successful&lt;/h1&gt;
+  
+  &lt;p&gt;It may be hard to imagine that a workshop used by 50 or 60 persons could possibly function smoothly. Potentially, a shared workshop can help residents save money and produce better work, and it can be more fun in the process. It can also be a chaotic free-for-all. In comparing the systems of different cohousing communities, we found that the following practices promoted the usability and safety, and decreased the frustration, of a shared workshop&lt;/p&gt;
+  
+  &lt;p&gt;A. &lt;em&gt;Accountability&lt;/em&gt; Keeping the workshop locked and having two or three people "in charge" makes users feel accountable to the person they get the key from, who will be upset if a tool is missing or the shop is left messy.&lt;/p&gt;
+  
+  &lt;p&gt;B. &lt;em&gt;Buying In&lt;/em&gt;, or varying degrees of investment. Some may want to have better power tools; they should buy and store them separately in a locker or tool box. Others may not even want to invest in a good set of hand tools (and should not plan on borrowing them). Thus, there can be two or three levels of investment. (Cohousers generally advise against various levels of investment for common facilities except when a small group wants to purchase something less than half of the residents are likely to use, such as a table saw or a sailboat.)&lt;/p&gt;
+  
+  &lt;p&gt;C. &lt;em&gt;Children&lt;/em&gt;. Some feel that children should have full access to the workshop (except power tools), to encourage their spontaneous creativity. For safety and to prevent abandoned projects, others feel that children should be permitted only under adult supervision. Between the permissive and disciplinarian attitudes there is a practical middle ground. Adults should aggressively teach interested children "shop manners" - safety first, how to clean up, and how not to abuse tools. Once they have demonstrated competent shop manners, children should be given equal access. Until then, they might have a separate bench, with their own tools.&lt;/p&gt;
+  
+  &lt;p&gt;D. &lt;em&gt;Day-Glo&lt;/em&gt;. Successful workshops paint their hand tools the most awful Day-Glo fluorescent colors available, 'so you can see those suckers 50 yards away lying in two feet of grass'. Besides, no self-respecting person would want tools that color in their house.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I agree with most of this, but I think &lt;em&gt;Buying in&lt;/em&gt; would need to be adjusted for a space that wants to welcome those who otherwise could not afford access to such a space, and I don't think the section in children should be just limited to kids. Everyone should have to show some basic competence with respect to safety and clean-up.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sun, 08 Oct 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/shared_workshop/article.html#3</guid></item><item><title>The Green Imperative By Victor Papanek</title><link>http://dizzard.net/articles/the_green_imperative/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Green Imperative By Victor Papanek&lt;/h1&gt;
+
+&lt;p&gt;The book focuses much more around Design than I initially expected. It's not very in your face about what I thought would be the immediate demand to put the environment first. &lt;a href="https://en.wikipedia.org/wiki/Victor_Papanek"&gt;Papanek&lt;/a&gt; instead meanders around the influence of design on consumption, with a particularly strong distaste for Mid-Century Modern design and the Bauhaus movement. The connection he draws between simple, undecorated furniture and human consumption is a little unclear to me, but he's spending a lot of time talking about how humans have a long tradition of adding superfluous decorations to objects that would otherwise be purely utility.&lt;/p&gt;
+
+&lt;p&gt;It's actually a lot more related to &lt;a href="https://eyeondesign.aiga.org/in-caps-lock-ruben-pater-untangles-the-relationship-between-graphic-design-and-capitalism/"&gt;Caps Lock&lt;/a&gt; than I expected. Discussions of design collectives, the things that prevent designers from designing for just purposes, etc.&lt;/p&gt;
+
+&lt;p&gt;I just feel that too much has changed since it's original publishing in 1995. The Green Imperative, in my opinion, takes a rather lackadaisical approach to designing for reslilience in the face of climate change, but the world Papanek was living in was different than the world we live in now.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Our biogenetic heritage governs expectations of size, weight, distance, speed and time. 'Old' measurements like mile, pound, yard, foot, stone, reflect what we can lift or carry easily, and how we used our bodies as templates for measurement. As explained in Chapter 4, the eidetic image that we carry with us through life gives us another system for judging harmonious relationships and scale. 'Invented' measuring systems, like the metric system, are as meaningless to us as is the time displayed on a digital watch.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What the hell is Papanek saying here? All units of measure are made up. How does 12” in a foot make it more harmonious? The page before this Papanek is talking about how the slums of Rio are positioned at the highest, most beautiful place in the city because that’s where people would go naturally. I’ve got a few more pages in me before I call bullshit on this goon.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Chapter 6: The lessons of vernacular architecture&lt;/h2&gt;
+
+&lt;p&gt;Honestly, I feel like this whole book so far has mostly been about Papanek’s obsession with vernacular design. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Chapter 7: Form Follows Fun&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What do you do when the real place looks like the copy of a fake - Student&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This dude has some serious distaste for the young and new. He starts the chapter with two quotes from students that gives the impression that youth &lt;em&gt;cannot&lt;/em&gt; appreciate something that is real, and not carefully curated.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Even though designers realize that the objects they bring into life will last only briefly in the marketplace, they still wish that - even in everyday use - their 'babies' might somehow remain unblemished and 'perfect'. At international conferences the design chief of a firm that made cigarette lighters would meet fellow designers who still carried their original black lighter. After years of being kept in a pocket with keys, a penknife or whatever, nicks and scratches on the black finish would cause the original brass casing to glint through. The designer would obligingly offer a free replacement then and there. I remember saying to him myself, 'No thank you, all the scratches are just beginning to give it character, making it unique!' In his search for perfection, he was never able to understand that things can't remain unchanged. In an age in which fortunes are spent on beauty creams and lotions to stretch out a semblance of youth, it is difficult to explain that material choices should be made so that objects can age gracefully once more.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I vibe with this. I still have a hard time realizing this in my own thoughts though. Often I find myself disatisfied with blemishes and marks of wear.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One of my design clients in Japan is a subsidiary of a large automobile company. Visiting their design laboratory, I saw a photograph of former President Reagan pinned on a bulletin board. 'Reagan is one of the greatest Japanese car designers, I was told, 'He bullied us into exporting fewer cars to America. So now we produce much larger cars for the American market. We export fewer numbers, but make a much higher profit with these over-sized models.'&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of course Reagan is to blame for this too! This belongs on &lt;a href="https://www.reddit.com/r/fuckcars/"&gt;r/fuckcars&lt;/a&gt;. And of course , when you start to think he’s gonna say rationally that importing larger cars to the US is bad because it contributes to visual, noise, and air pollution, without providing much, if any practical benefit, who is allegedly advocating for buying &lt;em&gt;less&lt;/em&gt; because it is &lt;em&gt;green&lt;/em&gt; says in the following paragraph:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… tiny is not necessarily better.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;GODDAMMIT! I feel like this entire book wss written just to piss me off. He rounds this section off by saying washing dishes by hand is more water-efficient than dishwashers. I’ll give him the benefit of the doubt here since this book came out in the ‘90’s, but modern dishwashers use significantly less water than hand washing no matter how you cut it.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Tue, 09 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/the_green_imperative/article.html#4</guid></item><item><title>How to capture code snippets from Obsidian and add to Alfred Snippets</title><link>http://dizzard.net/articles/obsidian_sniper/article.html</link><description>&lt;![CDATA[&lt;h1&gt;How to capture code snippets from Obsidian and add to Alfred Snippets&lt;/h1&gt;
+
+&lt;p&gt;At work, I'm often looking through my &lt;a href="https://obsidian.md/"&gt;Obsidian&lt;/a&gt; notes looking for a certain code snippet to run to update a build version, deploy my server, or some other mundane task I can't be bothered to memorize. And it's nice having obsidian because then not only do I have a home for these little snippets of code, but I can also provide some notes on the snippets, like what it does, why it's written a certain way, what to try if it fails, etc. Sometimes I need this context, but a lot of the times I just need the snippet of code.&lt;/p&gt;
+
+&lt;p&gt;Instead of having to take all these snippets, scrub through them to find what's important, and manually add to &lt;a href="https://www.alfredapp.com/"&gt;Alfred&lt;/a&gt;, I thought I could do it in an automated fashion. It seemed like a good opportunity to use &lt;a href="https://en.wikipedia.org/wiki/AWK"&gt;&lt;code class="codeblock"&gt;awk&lt;/code&gt;&lt;/a&gt;, even though I didn't really understand how it was used. All I knew is that &lt;code class="codeblock"&gt;awk&lt;/code&gt; is good for parsing through files in a stream, and really that was all I needed to know.&lt;/p&gt;
+
+&lt;p&gt;I just had to come up with a way to identify the files I wanted to include as snippets with as little work as possible, and that is where my little scripts name comes from! Introducing &lt;code class="codeblock"&gt;sniper&lt;/code&gt;, the handy-dandy tool for cloning your obsidian code blocks in Alfred snippets. All you have to do is prefix a code block with the Sniper keyword "snipe" in a markdown comment. This isn't a "smart" utility, so you got to make sure the comment only contains the word "snipe", and nothing else. Here's an example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/obsidian_codeblock.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -&gt; Features -&gt; Snippets -&gt; Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it matches your collection.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_snippets_collection.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;You also need to update &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it know where your Alfred config directory is. You can find where your alfred preferences file is by going to "Settings -&gt; Advanced -&gt; Syncing". I keep mine in &lt;code class="codeblock"&gt;.config&lt;/code&gt; with the rest of my dotfiles&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_preferences.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;My directory path looks like:&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.config/Alfred.alfredpreferences/snippets/Random Code Snippets&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Code&lt;/h2&gt;
+
+&lt;p&gt;OK, so with the basic setup figured out, you just need this snippet of code (snippets all the way down)!&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Script for swiping snippets (sniping) from obsidian into alfred&lt;/span&gt;
+
+&lt;span class="nv"&gt;ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.config/Alfred.alfredpreferences/snippets/Random Code Snippets&amp;quot;&lt;/span&gt;
+
+snipe &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nv"&gt;MARKDOWN_FILE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$0&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -c3-&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;basename &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;UUID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;uuidgen&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="nv"&gt;SNIPPET_FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt; [&lt;/span&gt;&lt;span class="nv"&gt;$UUID&lt;/span&gt;&lt;span class="s2"&gt;].json&amp;quot;&lt;/span&gt;
+
+    &lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;BEGIN { start=0 } /%%snipe%%/ { start=1; next } start &amp;amp;&amp;amp; /^```/ { code=1; start=0; next } code &amp;amp;&amp;amp; /^```/ { code=0; next } code { printf &amp;quot;%s\\n&amp;quot;, $0 } END { }&amp;#39;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$MARKDOWN_FILE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+
+    touch &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+
+    &lt;span class="nv"&gt;ENCODED_SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="p"&gt;//&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="se"&gt;\\\&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="c1"&gt;# Replace &amp;quot; with \&amp;quot;&lt;/span&gt;
+
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;{\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;alfredsnippet\&amp;quot; : {\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;snippet\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ENCODED_SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;uid\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$UUID&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;name\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;keyword\&amp;quot; : \&amp;quot;\&amp;quot;\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;}}\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Clear out anything already in directory&lt;/span&gt;
+rm &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;/&amp;quot;&lt;/span&gt;*.json
+
+&lt;span class="nv"&gt;FUNCDEFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;typeset&lt;/span&gt; -f snipe&lt;span class="k"&gt;)&lt;/span&gt; find . -name &lt;span class="s2"&gt;&amp;quot;*.md&amp;quot;&lt;/span&gt; -type f -exec sh -c &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;   eval &amp;quot;$FUNCDEFS&amp;quot; &amp;amp;&amp;amp;&lt;/span&gt;
+&lt;span class="s1"&gt;     unset -v FUNCDEFS &amp;amp;&amp;amp;&lt;/span&gt;
+&lt;span class="s1"&gt;     snipe &amp;quot;$@&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="se"&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I added this to a directory on my path &lt;code class="codeblock"&gt;~/bin&lt;/code&gt; so I can easily execute it. To use it:&lt;/p&gt;
+
+&lt;ol class="list-decimal"&gt;
+&lt;li&gt;Navigate to your Obsidian vault directory&lt;/li&gt;
+&lt;li&gt;Run the script (e.g. &lt;code class="codeblock"&gt;sniper&lt;/code&gt;) without any arguments&lt;/li&gt;
+&lt;li&gt;That's all. Note that this &lt;em&gt;erases&lt;/em&gt; anything already in the snippets collection, which is why I encourage you to create a new one.&lt;/li&gt;
+&lt;li&gt;Sometimes, I've noticed the snippets don't update immediately, so I had to clear Alfred's cache (Settings -&gt; Advanced -&gt; Clear Application Cache)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Notes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Yeah, this could probably be done with an Obsidian or Alfred extension, but this is one of the simplest possible options for me, and I like knowing what's going on.&lt;/li&gt;
+&lt;li&gt;This is not so much a tutorial, but if you have questions, let me know. ChatGPT helped me a lot with the scripting, but I learned a lot too.&lt;/li&gt;
+&lt;li&gt;I encourage you to take a look at this and play around with it. There are some limitations, like only allowing one snippet per file.
+The filename is also used as the snippet name, so if the file name doesn't really correspond with the snippet, that might be confusing.
+But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt; do (not)), it shouldn't be an issue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That's all for now. Happy hacking :P&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sun, 07 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/obsidian_sniper/article.html#5</guid></item><item><title>Writing a Discord bot with Python and aiocron</title><link>http://dizzard.net/articles/discord_bot/discord_bot.html</link><description>&lt;![CDATA[&lt;h1&gt;Writing a Discord bot with Python and aiocron&lt;/h1&gt;
+
+&lt;p&gt;I wanted to write a Discord bot to provide simple scheduled alerts for the &lt;a href="https://noisebridge.net"&gt;hackerspace&lt;/a&gt; I am a part of. We have a channel for the woodshop, and every so often, we need to empty the dust collector and scrap bins.&lt;/p&gt;
+
+&lt;p&gt;After some basic research, I found it was pretty straightforward how to set up a bot in the discord developer portal, so I'm not going to go through that here, but if you need help, you can check out &lt;a href="https://realpython.com/how-to-make-a-discord-bot-python/"&gt;this realpython article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Instead, I want to focus on a snag I ran into while trying to use &lt;a href="https://github.com/gawel/aiocron"&gt;aiocron&lt;/a&gt; with &lt;a href="https://discordpy.readthedocs.io/en/stable/"&gt;discord.py&lt;/a&gt;. The python discord library now offers some neat tricks for timing method runs with the annotation &lt;code class="codeblock"&gt;@tasks.loop(...)&lt;/code&gt;, but this doesn't let you &lt;em&gt;schedule&lt;/em&gt; async method calls by day or time, so you have to provide some extra code to make sure you start the loop at the right moment in time for it to work correctly. aiocron is neat because it uses crontab format for scheduling method calls. &lt;/p&gt;
+
+&lt;p&gt;Now, when I first tried to get this running, I encountered issues with the event loop. My understanding is that the discord library made &lt;a href="https://discordpy.readthedocs.io/en/stable/migrating.html?highlight=2%200#asyncio-event-loop-changes"&gt;some changes&lt;/a&gt; in it's 2.0 version that allows you to create your own asynchronous loop for running the bot. If you &lt;em&gt;don't&lt;/em&gt; use this loop, I'm not sure how you set up other asynchronous code.&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;discord&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;aiocron&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;asyncio&lt;/span&gt;
+
+&lt;span class="n"&gt;TOKEN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;DISCORD_TOKEN&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;GUILD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;DISCORD_GUILD&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;WOODSHOP_CHANNEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;WOODSHOP_CHANNEL&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;trash_message&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;This is your friendly reminder to take out the shop bins and empty the dust collector!&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;bot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;commands&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Bot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;case_insensitive&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;intents&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;discord&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Intents&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;help_command&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;loop&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;asyncio&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_event_loop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nd"&gt;@aiocron&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crontab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;0 12 * * 0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# every sunday at noon&lt;/span&gt;
+&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;trash_reminder&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;woodshop_channel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_channel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;WOODSHOP_CHANNEL&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="k"&gt;await&lt;/span&gt; &lt;span class="n"&gt;woodshop_channel&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;trash_message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;trash_reminder&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="k"&gt;await&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TOKEN&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run_until_complete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By using the variable &lt;code class="codeblock"&gt;loop&lt;/code&gt; as my async loop, I can provide that to the crontab annotation, and voila! Things start working.&lt;/p&gt;
+
+&lt;p&gt;Now, if you are like me and don't know that format off the top of your head, what I did is ask old ChatGPT, who gave a prompt answer and description. Work smarter, not harder!&lt;/p&gt;
+
+&lt;p&gt;Not so much of a tutorial, but I'm hoping someone finds this code snippet helpful, because I couldn't find an example of this myself. I did, however find &lt;a href="https://www.reddit.com/r/Discord_Bots/comments/vxknqz/aiocroncronjob_not_working_with_discordpy_v20/"&gt;some&lt;/a&gt; &lt;a href="https://github.com/Rapptz/discord.py/issues/7986"&gt;people&lt;/a&gt; running into similar issues.&lt;/p&gt;
+
+&lt;p&gt;Anyways, happy hacking!&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sat, 22 Apr 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/discord_bot/discord_bot.html#6</guid></item><item><title>This blog post is automatically published</title><link>http://dizzard.net/articles/automated_blogging/automated_blogging.html</link><description>&lt;![CDATA[&lt;h1&gt;Automated Blog Publishing&lt;/h1&gt;
+
+&lt;p&gt;Previously, I wrote a blog post about deploying my blog with Github Pages. Now, I want to be able to write blog posts from my phone and publish them without touch git. So I thought it would be neat if I could edit the files on my iPhone by connecting to one of my always-on raspberry pi's, and automate the deployment of the blog from the raspberry pi. If this works, I'll write more about it. I'm still testing things out, and I'm trying to get &lt;a href="https://github.com/gorakhargosh/watchdog"&gt;watchdog&lt;/a&gt; to handle the watching for me. If this post is live though, the automated publish worked!&lt;/p&gt;
+
+&lt;p&gt;P.S. it also handles blog updates (this is an edit to the original post)&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Thu, 09 Mar 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/automated_blogging/automated_blogging.html#7</guid></item><item><title>Earth 🪐 to Localhost</title><link>http://dizzard.net/articles/apple_file_protocol/apple_file_protocol.html</link><description>&lt;![CDATA[&lt;h1&gt;Earth 🪐 to Localhost...&lt;/h1&gt;
+
+&lt;p&gt;This is the first note I've written on my locally-hosted network attached storage setup. This is currently running on the &lt;a href="https://en.wikipedia.org/wiki/Apple_Filing_Protocol"&gt;Apple Filing Protocol&lt;/a&gt;. This is possible thanks to the reimplementation of the AFP protocol by the &lt;a href="https://netatalk.sourceforge.io/"&gt;Netatalk&lt;/a&gt; project, which is a "free and open source AFP fileserver."&lt;/p&gt;
+
+&lt;p&gt;AFP I guess is deprecated on Mac's, so they cannot &lt;em&gt;serve&lt;/em&gt; data via AFP, but they can still login to other networks running the protocol. I'm running this on my raspberry pi, which is awfully slow, but who cares? Once it's loaded, it's loaded. I've got access to my files, and they are mostly text, so it really doesn't matter.&lt;/p&gt;
+
+&lt;p&gt;There is a problem though. The iOS files app does &lt;em&gt;not&lt;/em&gt; support the AFP protocol. Even though it's Apple's own protocol, as far as I can tell, it &lt;em&gt;was&lt;/em&gt; never supported on mobile. So next step for me will be converting my notes file server to the Server Message Block (SMB) protocol. This was originally created by Microsoft, but an implementation called &lt;a href="https://ubuntu.com/server/docs/samba-file-server"&gt;Samba&lt;/a&gt; allows Unix-like devices to interface with Windows, and other Unix-like devices. Pretty neat! I don't use Window often, but I do have a PC, so I'd like it to be supported.&lt;/p&gt;
+
+&lt;h2&gt;An aside...&lt;/h2&gt;
+
+&lt;p&gt;Today is also the last day of January. One month down in 2023!&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Tue, 31 Jan 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/apple_file_protocol/apple_file_protocol.html#8</guid></item><item><title>Interesting Blogs and Bloggers</title><link>http://dizzard.net/articles/interesting_blogs/Interesting%20Blogs.html</link><description>&lt;![CDATA[&lt;h1&gt;Some Interesting Blogs I've Stumbled Upon&lt;/h1&gt;
+
+&lt;p&gt;I will update this from time to time as I find more people I want to share. These are mostly technology focused.&lt;/p&gt;
+
+&lt;h1&gt;MacOS App Developers&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ryanhanson.dev/"&gt;Ryan Hansen&lt;/a&gt; 
+&lt;ul&gt;
+&lt;li&gt;maker of rectangle.app&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://evantravers.com/"&gt;Evan Travers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;makes some interesting apps for productivity&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Digital Gardens&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://andymatuschak.org/"&gt;Andy Matuschak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.nikitavoloboev.xyz/"&gt;Nikita Voloboev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://Doubleloop.net"&gt;Double Loop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rachsmith.com/"&gt;Rach Smith&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jzhao.xyz/"&gt;Jackie Zhao&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Bloggers&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://darekkay.com/"&gt;Derek Kay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.codinghorror.com/"&gt;Jeff Atwood&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;founder of stack overflow&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ma.tt/"&gt;Matt Mulenwhegg&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;The founder of Wordpress/Automattic&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.arp242.net"&gt;Martin Tournoij&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;random little open source projects, like [[Goatcounter]]&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tpo.pe/"&gt;Tim Pope&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Pope is a total nut and the king of vim plugins&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Game Developers&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.stfj.net/"&gt;Zach Gage&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Made that iOS fishing game you liked so much&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Unix/Linux Developers and Ricers&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://waylonwalker.com/"&gt;Waylon Walker&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;My go to for #tmux keybinding help. He has some great guides for this. &lt;em&gt;Update ([[2022-12-17]])&lt;/em&gt;: these days I'm not using tmux, I replaced it with kitty terminal, which fits pretty much all my needs.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Obsidian&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kevinquinn.fun/"&gt;Kevin Quinn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chris-grieser.de/ca0f246f224c457b8d641a665dde1f7d"&gt;Chris Grieser (PseudoMeta)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Chris makes a lot of great plugins/addons for various apps like Obsidian and Alfred&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;VR/AR&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kguttag.com/"&gt;Karl Guttag&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/interesting_blogs/Interesting Blogs.html#9</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
+
+&lt;p&gt;What is a &lt;a href="https://hackerspaces.org/"&gt;hackerspace&lt;/a&gt; to me?&lt;/p&gt;
+
+&lt;p&gt;It's a free place for a community of individuals to gather, share knowledge and resources, and build the things they want to see in the world. It makes me think of co-housing in a lot of ways. Although there is no required &lt;em&gt;financial&lt;/em&gt; obligation, there is a requirement that you treat others well and share your knowledge and skills when you can. &lt;a href="https://noisebridge.net"&gt;Noisebridge&lt;/a&gt;, the hackerspace in San Francisco I've been finding myself at recently, has only one formal rule: Be excellent to each other. It may sound a bit cheesy, but for the most part, it seems to be working. The space has been running for 15 years.&lt;/p&gt;
+
+&lt;p&gt;NB is officially a 501(c)(3) non-profit organization, but the word &lt;em&gt;organization&lt;/em&gt; is loosely interpreted here. That is because it's also described as anarchist in its nature meaning there is no formal structure in the space. That's not to say there aren't regular meetings, but there is no hierarchy, no reports. People have self-assigned responsibilities, but there are no obligations. This I think is essential to any well functioning co-space, and I would think the same would be necessary for a healthy cohousing community (if you add a landlord, then the cohousing community just becomes an apartment building that happens to have laundry in the basement).&lt;/p&gt;
+
+&lt;p&gt;With any radically inclusive, shared space, you are bound to deal with something you don't like. Sometimes people will leave a mess, or you'll find something to be broken. Maybe someone doesn't put something back in the right place, or they might even steal it!&lt;/p&gt;
+
+&lt;p&gt;But with all this also comes radically wonderful things. People donate their time and resources to make it an amazing space. There is no other place in the city with access to as many resources as NB, paid or otherwise. With 3D printers, industrial laser cutters, full format laser and inkjet printers, an embroidery machine, screen-printing equipment, a &lt;em&gt;full&lt;/em&gt; woodshop, metal shop, and so much more, it really is a place where &lt;em&gt;anyone&lt;/em&gt; can come and build just about &lt;em&gt;anything&lt;/em&gt;. &lt;a href="https://www.humanmade.org/facility"&gt;Humanmade&lt;/a&gt;, which is also a non-for-profit makerspace in &lt;a href="https://en.wikipedia.org/wiki/South_of_Market,_San_Francisco"&gt;SF's SoMa district&lt;/a&gt; doesn't even have as many tools as NB, &lt;em&gt;and&lt;/em&gt; that place costs &lt;em&gt;$3000 a year&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Since these hackerspaces are freely accessible to all, they are very much a reflection of the city they are in. That comes with all its benefits and its baggage, and I'm here for both. This space is unique, and since it is ran by the community for the community, you have an equal opportunity to make it the kind of space you want it to be. If there is something that you want to see changed, you can change it without going through a bureaucratic process. You &lt;em&gt;just do it&lt;/em&gt;. And that sometimes leads to those conflicts where you find someone changed something you liked a certain way, but as long as the community continually communicates and tries to be excellent to each other, it works out. It's never going to be exactly how &lt;em&gt;you&lt;/em&gt; want it because it's not just your space. But the thing is, for just about everyone at these spaces — it is infeasible to have a space like this to yourself. You give up some control, and you get an awful lot in return.&lt;/p&gt;
+
+&lt;p&gt;The hackerspace fits into a theme I've been exploring this past year and I have to write more about as I continue exploring it in 2023. I'm not yet sure how to group these thoughts together, but it circles around some of the ideas I see in socialism, anarchism, communism in a general sense and more specifically third spaces, cohousing, community centers, resource sharing, donation circles, free and open source software, decentralized networks, and the small web. I'll try to share more. I think I need to sort some of these thoughts out, but I just want to find ways for people to share more, because I think it's good for us psychologically and it reduces waste.&lt;/p&gt;
+
+&lt;p&gt;Happy Holidays, see you in the new year 🥳!&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html#10</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
+
+&lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
+
+&lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
+
+&lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/goatcounter/goatcounter.html#11</guid></item><item><title>Deploy Github Pages with Jinja and Github Actions</title><link>http://dizzard.net/articles/gh-pages/Deploy%20Github%20Pages%20with%20Jinja%20and%20Github%20Actions.html</link><description>&lt;![CDATA[&lt;h1&gt;Deploy Github Pages with Jinja and GH Actions&lt;/h1&gt;
+
+&lt;p&gt;This blog, like many others is hosted on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Github Pages is a great (and free) way to post small static sites like personal websites. The annoying thing is that you have to push build code that would &lt;em&gt;usually&lt;/em&gt; be included in your &lt;code class="codeblock"&gt;.gitignore&lt;/code&gt; file. So if you don't want to have to build your site locally, and include the build files in your repository, there is an option for you that leverages Github Actions.&lt;/p&gt;
+
+&lt;p&gt;Now, if you haven't heard of &lt;a href="https://github.com/features/actions"&gt;Github Actions&lt;/a&gt;, you should check it out. It's Github's platform for CI/CD, and it's easily configurable with .yaml files. There's nothing special you have to do for a repository, you just include the action files in the &lt;code class="codeblock"&gt;.github/workflows&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/momja/momja.github.io"&gt;My site repository&lt;/a&gt; is currently being deployed with a &lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;github action&lt;/a&gt; written by &lt;a href="https://github.com/JamesIves"&gt;@JamesIves&lt;/a&gt;. The sample &lt;code class="codeblock"&gt;.yaml&lt;/code&gt; file looks like this:&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Build and Deploy&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;permissions&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;contents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;write&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;build-and-deploy&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;runs-on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu-latest&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Checkout 🛎️&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;actions/checkout@v3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Deploy 🚀&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;JamesIves/github-pages-deploy-action@v4.3.3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There's very little here we have to change to get this working for us.&lt;/p&gt;
+
+&lt;ol class="list-decimal"&gt;
+&lt;li&gt;&lt;p&gt;First, make sure this section matches the branch your github site is hosted on. You can check which branch is currently used by opening your github pages repository then:&lt;/p&gt;
+
+&lt;p&gt;Settings -&gt; Code and Automation -&gt; Pages -&gt; Source.&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages &amp;lt;- make sure this matches &amp;quot;branch&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/setting-gh-pages.jpg" alt="../../images/setting-gh-pages.jpg" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got &lt;a href="https://github.com/momja/momja.github.io/blob/master/package.json"&gt;all this configured&lt;/a&gt; in my 'package.json' file, so whenever I run &lt;code class="codeblock"&gt;npm run build&lt;/code&gt;, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running &lt;code class="codeblock"&gt;npm install&lt;/code&gt; assuming you've correctly set up your packages.&lt;/p&gt;
+
+&lt;p&gt;For Python, it is a little different. I'm not the biggest fan of dependency management in Python, but I recently came across a tool called &lt;a href="https://github.com/bndr/pipreqs"&gt;pipreqs&lt;/a&gt; which solves the challenges I associate with generating package requirements for Python. To build a requirements.txt file with pipreqs, just run &lt;code class="codeblock"&gt;pipreqs&lt;/code&gt; in your project directory. You will want to include this requirements file in your git commit, because we will then use it to install all the pip dependencies on the VM used by Github Actions!&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;becomes:&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;pip install -r requirements.txt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm install&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lastly, I didn't want the &lt;code class="codeblock"&gt;gh-pages&lt;/code&gt; branch to be updated each time a change is made to &lt;em&gt;any&lt;/em&gt; branch, so I changed the yaml field at the top of the file for when the action should be triggered:&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;becomes:&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;push&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;branches&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;master&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And there you have it! Check out the final file &lt;a href="https://github.com/momja/momja.github.io/blob/38e1a2985c1983cbd35c07d970318d8743cb63ba/.github/workflows/deploy-to-gh-pages.yml"&gt;here&lt;/a&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Tue, 14 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/gh-pages/Deploy Github Pages with Jinja and Github Actions.html#12</guid></item><item><title>Migrating from tmux to Kitty</title><link>http://dizzard.net/articles/tmux-kitty/tmux-kitty.html</link><description>&lt;![CDATA[&lt;h1&gt;Migrating from Tmux to Kitty&lt;/h1&gt;
+
+&lt;p&gt;So sitting at my workdesk waiting for my local changes to compile and deploy, I often find my mind wandering towards the world of &lt;a href="https://www.reddit.com/r/unixporn/"&gt;Unix ricing&lt;/a&gt;. Some people do it for beauty, others do it for maximizing their productivity. Regardless of the reason, before I go into any of this, let me preface the article by saying that all this is completely unnecessary. Pretty much any terminal will do the trick. But once again, I'm twiddling my thumbs waiting for deployment, so I need &lt;em&gt;something&lt;/em&gt; to do. Why not finally migrate my terminal work from &lt;a href="https://github.com/tmux/tmux"&gt;tmux&lt;/a&gt; in &lt;a href="https://iterm2.com/index.html"&gt;iTerm2&lt;/a&gt; to &lt;a href="https://sw.kovidgoyal.net/kitty/"&gt;Kitty&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;If you haven't heard of Kitty, first of all, I commend you for not wasting as much time as I do reading about development tools instead of actually working! Kitty is a modern GPU-accelerated terminal emulator available for Linux and macOS. It's written in C and python, and it's pretty extensible. It has &lt;a href="https://sw.kovidgoyal.net/kitty/kittens/custom/"&gt;support for plugins&lt;/a&gt; called kittens, and comes with some default ones like a theme-switcher and ssh utility.&lt;/p&gt;
+
+&lt;p&gt;Kitty offers much of the functionality of tmux - things like pane management, custom keybindings, remote control. &lt;em&gt;But&lt;/em&gt;, Kitty does have some distinct advantages in my mind. For one, Kitty is a terminal &lt;em&gt;emulator&lt;/em&gt;. Tmux is only a terminal &lt;em&gt;multiplexer&lt;/em&gt;, and thus also requires a terminal emulator. I'd prefer to simplify the number of tools I use for my work. Kitty can replace both tmux and iTerm2, and adds some features on top like the cool cat that it is. Already mentioned is plugin support, which iTerm2 does technically support, but I always got confused trying to configure it.&lt;/p&gt;
+
+&lt;p&gt;Next and most exciting is the inline native image support. Now some terminals support something called ==&lt;a href="#TODO"&gt;sixel graphics&lt;/a&gt;==, which I'll admit is pretty neat. Sixel to me is a bandage fix for graphic representation in the terminal because it's not representing imgages as native images, but rather performing some computation to build images out of special ASCII symbols, which means when you try to translate or transform the image in any way, things get weird. Why deal with that when kitty has your back? It can even render GIFs!&lt;/p&gt;
+
+&lt;pre class="codewrapper"&gt;&lt;code class="codeblock"&gt;kitty +kitten icat ~/Downloads/kitten_falling.gif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/animation.gif" alt="Kitty terminal output with the icat plugin" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another reason I think Kitty is great is that it's text file configurable, which makes it &lt;em&gt;way&lt;/em&gt; easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in &lt;a href="https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf"&gt;my dotfiles repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Reproducing my tmux configuration in Kitty&lt;/h2&gt;
+
+&lt;p&gt;I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing &lt;code class="codeblock"&gt;ctrl-[HJKL]&lt;/code&gt; to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press &lt;code class="codeblock"&gt;ctrl-opt-[HJKL]&lt;/code&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a new window splitting the space used by the existing one so that&lt;/span&gt;
+&lt;span class="c1"&gt;# the two windows are placed one above the other&lt;/span&gt;
+map ctrl+alt+k launch --location&lt;span class="o"&gt;=&lt;/span&gt;hsplit --cwd&lt;span class="o"&gt;=&lt;/span&gt;current
+
+&lt;span class="c1"&gt;# Create a new window splitting the space used by the existing one so that&lt;/span&gt;
+&lt;span class="c1"&gt;# the two windows are placed side by side&lt;/span&gt;
+map ctrl+alt+l launch --location&lt;span class="o"&gt;=&lt;/span&gt;vsplit --cwd&lt;span class="o"&gt;=&lt;/span&gt;current
+
+&lt;span class="c1"&gt;# Rotate the current split, chaging its split axis from vertical to&lt;/span&gt;
+&lt;span class="c1"&gt;# horizontal or vice versa&lt;/span&gt;
+map ctrl+shift+r layout_action rotate
+
+&lt;span class="c1"&gt;# Move the active window in the indicated direction&lt;/span&gt;
+map ctrl+shift+h move_window left
+map ctrl+shift+l move_window right
+map ctrl+shift+k move_window up
+map ctrl+shift+j move_window down
+
+&lt;span class="c1"&gt;# Switch focus to the neighboring window in the indicated direction&lt;/span&gt;
+map ctrl+h neighboring_window left
+map ctrl+l neighboring_window right
+map ctrl+k neighboring_window up
+map ctrl+j neighboring_window down
+
+&lt;span class="c1"&gt;# Switch tabs&lt;/span&gt;
+map ctrl+cmd+l next_tab
+map ctrl+cmd+h previous_tab
+
+enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/tmux-kitty/tmux-kitty.html#13</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/header.jpg" style="width:100%; height: auto;" alt=""&gt;&lt;/p&gt;
+
+&lt;h1&gt;
+    Path Planning : Bat Guy Vs. The Clown
+&lt;/h1&gt;
+
+&lt;h2&gt;
+    Max Omdal
+&lt;/h2&gt;
+
+&lt;p&gt;
+    This Path Planning project is an interactive simulation with several interactive parts. Primarily a superhero
+    and supervillain play a game of cat and mouse. Batma... err.. "Bat Guy" and "The Clown" are caught in this
+    battle. As Bat Guy, you have the ability to control bats by dropping signaling devices that they will navigate
+    their way through a maze of water towers to reach. You also will need to make use of your other Super gadgets,
+    like explosive projectiles, and miniature self-driving probes. Read on to learn about all the features in this
+    application, as well as how it was implemented.
+&lt;/p&gt;
+
+&lt;div class="py-5 flex justify-center"&gt;
+    &lt;a href="src/PathPlanningProcessing.zip"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex"&gt;
+        &lt;i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"&gt;&lt;/i&gt;
+        &lt;span&gt;Download Source&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Features
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;3D rendering and smooth camera navigation&lt;/li&gt;
+    &lt;li&gt;Improved Agent &amp; Scene Rendering&lt;/li&gt;
+    &lt;li&gt;Orientation Smooth&lt;/li&gt;
+    &lt;li&gt;User Scenario Editing&lt;/li&gt;
+    &lt;li&gt;Realtime User Interaction&lt;/li&gt;
+    &lt;li&gt;Multi-Agent Planning&lt;/li&gt;
+    &lt;li&gt;Crowd Simulation&lt;/li&gt;
+    &lt;li&gt;Press P to open Debug Mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+    Controls
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;To orbit the camera, use the arrow keys&lt;/li&gt;
+    &lt;li&gt;To move your character use WASD keys&lt;/li&gt;
+    &lt;li&gt;Use the left mouse button to set destinations and launch probes&lt;/li&gt;
+    &lt;li&gt;Use the right mouse button to throw explosive projectiles&lt;/li&gt;
+    &lt;li&gt;Press Q to drop a bat signal&lt;/li&gt;
+    &lt;li&gt;Press ENTER to activate bat signal. Uh Oh! The Clown has a tag on our bat signal, and when we activate it,
+        he'll track us down!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+    Path Planning &amp; 3D Rendering
+&lt;/h3&gt;
+
+&lt;p&gt;
+    This program uses the A* search algorithm with a probabilistic roadmap to provide a planning graph and a system
+    for an agent to travel from a start position to a goal position. The obstacles in the scene are all cylindrical.
+    The bats are simulated using a boids algorithm, and a global tethering point is progressed along a path. A force
+    is then applied to the boids to move it towards the tether point. Because the path planning does not directly
+    place each individual boid out of the way of obstacles, we also check for collisions with the obstacles to
+    avoid.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Note that while the rendering is in 3D, the path planning is still in 2 Dimensions. This reduces the complexity
+    of our roadmap, and lets us approximate each obstacle/agent as a circle.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/astar_demo.gif" alt=""&gt;
+&lt;img src="../../images/boids_tether.gif" alt="the tethering point demonstrated"&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    Crowd Simulation
+&lt;/h3&gt;
+
+&lt;p&gt;
+    There are two techniques used here for crowd simulation. The time-to-collision technique is used to handle
+    interactions between the probes and The Clown. When The Clown isn't moving, try sending a probe to his location.
+    You will see how it's path is blocked. Then, as already mentioned all bats are simulated with the boids
+    algorithm. They will all successfully avoid each other and obstacles. Multiple bats can share a single path, so
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/ttc_example.gif" alt=""&gt;
+&lt;img src="../../images/boids_separation.gif" alt=""&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    3D Modeling
+&lt;/h3&gt;
+
+&lt;p&gt;
+    Most of the 3D environment was made by myself, but for the characters, I started with a base model on &lt;a
+        href="https://free3d.com/3d-model/base-mesh-ready-to-be-rigged-15483.html"&gt;Free3D made by Prodigy114&lt;/a&gt; I
+    rigged, added some materials, and gave bat guy a cloak and mask.
+&lt;/p&gt;
+
+&lt;h3&gt;
+    Conclusions and Future Work
+&lt;/h3&gt;
+
+&lt;p&gt;
+    This demonstrates several concepts of Crowd simulation and Path planning. There are some known problems.
+    Sometimes, if you do not place at least one of the bat signals during each turn, it may crash the program.
+    Future work on this project could involve higher fidelity animated models, using voronoi maps for the bats to
+    increase their spacing between objects, and creating a response system to handle when the enemy is hit by one of
+    the player's weapons.
+&lt;/p&gt;
+
+&lt;h3&gt;
+    Demo
+&lt;/h3&gt;
+
+&lt;iframe width="875" height="579" src="https://www.youtube.com/embed/A5FhCbYbRVA" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Tue, 15 Sep 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/path_planning/path_planning.html#14</guid></item><item><title>Particle Simulation</title><link>http://dizzard.net/articles/particle_simulation/particle_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+    Particle Simulation and Flocking: Scarecrows
+&lt;/h1&gt;
+
+&lt;h2&gt;
+    Maxwell Omdal
+&lt;/h2&gt;
+
+&lt;p&gt;
+    This is an implementation of a particle system and boids algorithm.
+    The focus of my implementation was to provide the user with a system
+    for configuring causal interation. This was done by accounting for collisions
+    and providing an outlet class to resond to such collisions. Each particle
+    system can have its own CollisionTrigger that acts in response to each particle
+    collision with a set of rigidbodies. In my case, I used this for a rain Simulation
+    to spawn a splash effect when the rain hits the ground. Each collision can respond by
+    spawning its own particle system. This can be done recursively, giving artists the option
+    to make infinite particle system loops. Below is the source code.
+&lt;/p&gt;
+
+&lt;p&gt;
+    All models were generated in Blender. I found the site &lt;a href="https://www.scratchapixel.com/"&gt;ScratchAPixel&lt;/a&gt;
+    helpful for implementing
+    collision detection and raycasting. &lt;a href="http://www.kfish.org/boids/pseudocode.html"&gt;Conrad Parker's&lt;/a&gt;
+    notes on the Boids algorithm also proved useful.
+&lt;/p&gt;
+
+&lt;div class="py-5 flex justify-center"&gt;
+    &lt;a href="src/ParticleSimulator.zip"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex"&gt;
+        &lt;i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"&gt;&lt;/i&gt;
+        &lt;span&gt;Download Source&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Controls
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;To orbit the camera, use the arrow keys.&lt;/li&gt;
+    &lt;li&gt;To switch between the rain and flocking simulation, press SPACEBAR&lt;/li&gt;
+    &lt;li&gt;To interact with the flock, click on a surface. The birds will swarm&lt;/li&gt;
+    &lt;li&gt;To move the rain cloud, use the WASD keys&lt;/li&gt;
+    &lt;li&gt;Use the M and N keys to add or subtract boids from the scene. Total boids is displayed in the top left&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="../../images/camera_controls.gif"&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    Boids Algorithm: Crows Flocking
+&lt;/h3&gt;
+
+&lt;p&gt;
+    For the boids algorithm, I followed a standard implementation with the three rules:
+    match the flocks velocity, avoid others, and fly towards the center of mass. I wanted to make sure
+    the birds could break off into smaller groups, so I added a test for the distance between each bird,
+    so only birds close enough to each other could be affected by one another. I also added a fourth rule:
+    fly towards the tether. This allowed me to prevent the birds from flying too far away from the camera,
+    and also allowed for some interesting interaction. Lastly, I added collision detection for each bird,
+    so they could perch themselves on a surface when they intersect it.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/upclose_birds.gif"&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+    Interaction
+&lt;/h4&gt;
+
+&lt;p&gt;
+    To interact with the birds, you can click on the mesh, and a scarecrow will appear and the birds will swarm.
+    These birds aren't scared of no crow! It's more of a revenge of the birds thing.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/scarecrow.gif"&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+    Behavior and Boid Rendering
+&lt;/h4&gt;
+
+&lt;p&gt;
+    Other than the tether point, and a bounding box to keep the flock together, I wanted the birds to interact with
+    the environment. When they ground or the trees, or the roof of the house, they will check for collision. If a
+    bird
+    collides, they will land, and the bird's model will be switched out with a perched bird model. It's interesting
+    to watch
+    as the birds land, then take off again. Sometimes they will land, then fly for only a brief moment before
+    landing again,
+    as if they are searching for worms.
+&lt;/p&gt;
+
+&lt;p&gt;
+    The birds are also always oriented towards their flight path. Because birds will "soar" they will usually be
+    facing forward even
+    if they are dropping altitude. For this reason, the birds orientation is only altered along the Y axis. Their
+    velocities are also reduced
+    in the Y direction to encourage the "soaring" effect.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/bird_orientation.gif"&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    Particle Simulation: Rain
+&lt;/h3&gt;
+
+&lt;p&gt;
+    You can toggle to the rain sim by pressing SPACEBAR. The rain simulation uses a recursive particle emitter
+    system that lets the designer add child emitters whenever a collision occurs. Particles can be rendered as
+    textures,
+    or points. Because I was making a stylized rain simulation, I wanted to also add the ability to "streak" the
+    particle
+    along its path. The chimney on the house illustrates the use of a textured particle emitter.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/rain.gif"&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    Challenges, Efficiency and More
+&lt;/h3&gt;
+
+&lt;p&gt;
+    One thing that kept coming up was collision detection error. I actually use a decimated mesh for collision
+    detection to reduce the number of triangles I need to check for intersection. Also, in order to improve render
+    speeds, if a bird is greater than a certain distance from the camera, they are rendered as points instead of
+    meshes.
+    This did not yield big improvements (maybe 2-3 fps), so it might be better to switch back in the future.
+    Deciding how to organize the Particle and Boid classes also proved difficult because I wanted to make them
+    simple to get started, but extensible.
+&lt;/p&gt;
+
+&lt;h4&gt;
+    Frames Per Second
+&lt;/h4&gt;
+
+&lt;p&gt;
+    The flocking sim yields about 30-40 fps on my Macbook Pro 2016, and the rain sim slightly worse.
+    The flocking sim has 675 birds altogether (later, I was able to achieve 1000+ boids running at higher than 40
+    fps on a Desktop with a more powerful processor),
+    and the particle simulation has 1000-2000 particles drawn at a time. Rendering the smoke in the chimney is the
+    most expensive part of the rain sim.
+    I had a hard time capturing the frame rate, because when I used the video capture tool, my frame rate would
+    suddenly drop. I did take a picture here:
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/boids_sample.jpg" width="640" height="480"&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+    Demo
+&lt;/h3&gt;
+
+&lt;iframe width="795" height="582" src="https://www.youtube.com/embed/k8mOlx2oVY0" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+    At :13, I demonstrate placing a scarecrow to attract birds. Throughout the video, I orbit the view by using the
+    arrow keys. At :35 I press SPACEBAR to open the rain simulation.
+&lt;/p&gt;
+
+&lt;h3&gt;
+    Gallery
+&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="../../images/head_on.jpg"&gt;
+&lt;img src="../../images/ground_level.jpg"&gt;
+&lt;img src="../../images/smokestack.jpg"&gt;
+&lt;img src="../../images/side_rain.jpg"&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Sat, 15 Aug 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/particle_simulation/particle_simulation.html#15</guid></item><item><title>Fluid Simulation</title><link>http://dizzard.net/articles/fluid_simulation/fluid_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+    3D SPH Fluid Simulation for Painterly Effects
+&lt;/h1&gt;
+
+&lt;h2&gt;
+    A Project By Maxwell Omdal
+&lt;/h2&gt;
+
+&lt;div class="py-5 flex justify-center"&gt;
+    &lt;a href="src/SPHFluidProcessing.zip"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex"&gt;
+        &lt;i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"&gt;&lt;/i&gt;
+        &lt;span&gt;Download Source&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="py-5 flex justify-center"&gt;
+    &lt;a href="../../images/SPH_Fluid_Simulation.pdf"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex"&gt;
+        &lt;i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"&gt;&lt;/i&gt;
+        &lt;span&gt;Download Paper&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Controls
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;To orbit the camera, use the arrow keys.&lt;/li&gt;
+    &lt;li&gt;To interact with the painting, click and drag particles around the canvas&lt;/li&gt;
+    &lt;li&gt;To pause and view the painting, press SPACEBAR&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+    Demo
+&lt;/h3&gt;
+
+&lt;iframe style="width:50%; height:500px" src="https://www.youtube.com/embed/Z-ppDa-juNM" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe src="../../images/SPH_Fluid_Simulation.pdf" width="100%" height="1200px"&gt;
+&lt;/iframe&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Wed, 15 Jul 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/fluid_simulation/fluid_simulation.html#16</guid></item><item><title>Cloth Simulation</title><link>http://dizzard.net/articles/cloth_simulation/cloth_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+    Cloth Simulation Using Numerical Integration: Fans
+&lt;/h1&gt;
+
+&lt;h2&gt;
+    A Project By Maxwell Omdal &amp; David Kinney
+&lt;/h2&gt;
+
+&lt;p&gt;
+    With this project, we implement a cloth simulation using the midpoint integration technique. The cloth is first
+    defined
+    using a series of springs connected in a grid, and then using Hooke's law and numerical integration, we update the
+    position
+    and velocity of the cloth at each time step. However, in a vacuum, cloth does not behave very interestingly, so we
+    implemented
+    air drag and sphere-based collision detection. At the end, we'll introduce our attempt at collision detection on
+    more complex meshes
+    using a node-triangle intersection algorithm, and an octree to reduce computation.
+&lt;/p&gt;
+
+&lt;p&gt;
+    We downloaded this free image of the earth &lt;a href="http://planetpixelemporium.com/earth.html"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;div class="py-5 flex justify-center"&gt;
+    &lt;a href="src/ClothSimulatorProcessing.zip"
+        class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex"&gt;
+        &lt;i class="fa fa-download fill-current w-4 h-4 mr-2 my-auto"&gt;&lt;/i&gt;
+        &lt;span&gt;Download Source&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Controls
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;To orbit the camera, use the arrow keys.&lt;/li&gt;
+    &lt;li&gt;To interact with the cloth, click and drag around it and a fan will appear&lt;/li&gt;
+    &lt;li&gt;Reset the animation using the 'R' key&lt;/li&gt;
+    &lt;li&gt;To pause, press SPACEBAR&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+    User Interaction
+&lt;/h3&gt;
+
+&lt;p&gt;
+    We wanted a way for the user to interact with the cloth, and we wanted it to feel playful. Since we had an
+    implementation for air drag on the cloth, and a robust collision detection system, we decided we'd let users click
+    on the screen to cast a fan into the 3D space that would adjust the "wind" direction. To help users visualize the
+    direction of wind, we spawn a particle emitter at the fan's location and blow dust particles in the "wind"
+    direction.
+&lt;/p&gt;
+
+&lt;h3&gt;
+    Simulating Cloth
+&lt;/h3&gt;
+
+&lt;p&gt;
+    The cloth can be modeled as a collection of interconnected springs, and we track the nodes where the springs
+    connect. For each node, we have a velocity and a position attribute. Using numerical integration (the midpoint
+    method), we can estimate the continuous updates in the positions of each node using a discrete technique. Using
+    Hooke's law, as well as the masses assigned to each node, we can calculate every node's acceleration, and integrate
+    to get the velocity and position. For each frame, we can then define the number of time steps we would like to take,
+    or the number of discrete updates per frame. The cloth class is flexible, making it easy for us to add more nodes,
+    change the size, stretch, and color.
+&lt;/p&gt;
+
+&lt;p&gt;
+    The cloth successfully responds to collisions with spheres. If a cloth collides with a sphere, a portion of its
+    velocity is reflected, to imitate an elastic collision, and a portion of its velocity directed into the sphere is
+    lost, to emulate the transfer of energy to the mesh.
+&lt;/p&gt;
+
+&lt;div style="margin:auto"&gt;
+    &lt;iframe src="https://giphy.com/embed/kH0GU6PYsfsgCTGmlO" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="https://giphy.com/embed/gEYEsB2CgSXKMGp9lv" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="https://giphy.com/embed/fxfAt7kjCYiKwmJidx" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Air Drag
+&lt;/h3&gt;
+
+&lt;p&gt;
+    In addition to the per-vertex physics calculated for the springs, the user can also direct
+    a wind force by holding down the left mouse button near the center of the screen. This
+    places a fan at the mouse's current screen position and blows a current of air in its
+    direction. The force this places on the cloth is calculated using Raleigh's drag equation
+    and is applied to each triangle in its mesh.
+&lt;/p&gt;
+
+&lt;div style="margin:auto;width:70%;height:0;padding-bottom:56%;position:relative;"&gt;&lt;iframe
+        src="https://giphy.com/embed/JSw9YHlntDsw8m6kVh" width="100%" height="100%" style="position:absolute"
+        frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h3&gt;
+    Realistic Simulation
+&lt;/h3&gt;
+
+&lt;p&gt;
+    Although our simulation is only an approximation of real physical interactions, we wanted it to appear as natural
+    and realistic as possible. To do this, we compared the motion of a towel when a blowdryer was directed at it, and we
+    tried to match this motion as closely as possible with our fan interactions.
+&lt;/p&gt;
+
+&lt;div style="margin:auto"&gt;
+    &lt;iframe src="https://giphy.com/embed/RgasljzIadccUSrtDx" width="300" height="380" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="https://giphy.com/embed/SsISHSSeZnKDlb0SUW" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Full Demo&lt;/h3&gt;
+
+&lt;div style="margin-left:auto;margin-right:auto;width:50%;height:398;position:relative;"&gt;
+    &lt;iframe width="100%" height="100%" src="https://www.youtube.com/embed/IPdL07eQDjs" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;
+    Future Work: Octrees and Complex Meshes
+&lt;/h3&gt;
+
+&lt;p&gt;
+    We attempted to create a system for handling triangle-based mesh collisions with the cloth, but we fell short, after
+    not being able to find the proper collision response. One of the challenges with this type of approach is the
+    computational expense of testing thousands of triangles multiple times a frame for multiple nodes. If we have a
+    cloth made up of 2500 nodes, and a mesh with 5000 triangles it would require 2500*5000=12500000 collision tests. In
+    order to reduce this, we implemented octrees that recursively divides our mesh and greatly reduces the number of
+    computations by only checking the triangles in the octant that the node is in. So, for example, if we set the max
+    number of triangles per octant to 20, then there would be 2500*20=50000 triangle-line collision tests and about
+    2500*3=7500 line-box collision tests for a total of 57500 tests, which is only 0.46% of the tests required without
+    an octree. This is possible because the octree is computed at setup, and only has to be computed once.
+&lt;/p&gt;
+
+&lt;div style="margin:auto"&gt;
+    &lt;iframe src="https://giphy.com/embed/l10jtxmwWXiOttBE9Z" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="https://giphy.com/embed/htROHjPfBOCfUUjNby" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="https://giphy.com/embed/TJapj69j1l4MA076P7" width="360" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Unknown Author</dc:creator><pubDate>Mon, 15 Jun 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/cloth_simulation/cloth_simulation.html#17</guid></item></channel></rss>
