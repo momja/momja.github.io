@@ -170,7 +170,7 @@ def generate_rss():
         image="images/favicon.png",
     )
     for index, article in enumerate(articles_metadata, start=1):
-        article_link = f"http://dizzard.net/{article.get("path")}"
+        article_link = f"http://dizzard.net/{article.get('path')}"
         unique_id = f"{article_link}#{index}"
         pub_date_str = article.get("publish_date", "").strftime('%a, %d %b %Y %H:%M:%S +0000') if isinstance(article.get("publish_date", ""), datetime.date) else article.get("publish_date", "")
         
