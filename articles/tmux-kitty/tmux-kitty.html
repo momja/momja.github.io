@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migrating from tmux to Kitty</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-slate-800">
+    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
+        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
+            ← Back
+        </button>
+    </div>
+    <div class="m-4 md:flex md:justify-center">
+        <article class="prose lg:prose-xl dark:prose-invert">
+            <h1>Migrating from Tmux to Kitty</h1>
+
+<p>So sitting at my workdesk waiting for my local changes to compile and deploy, I often find my mind wandering towards the world of <a href="https://www.reddit.com/r/unixporn/">Unix ricing</a>. Some people do it for beauty, others do it for maximizing their productivity. Regardless of the reason, before I go into any of this, let me preface the article by saying that all this is completely unnecessary. Pretty much any terminal will do the trick. But once again, I'm twiddling my thumbs waiting for deployment, so I need <em>something</em> to do. Why not finally migrate my terminal work from <a href="https://github.com/tmux/tmux">tmux</a> in <a href="https://iterm2.com/index.html">iTerm2</a> to <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>?</p>
+
+<p>If you haven't heard of Kitty, first of all, I commend you for not wasting as much time as I do reading about development tools instead of actually working! Kitty is a modern GPU-accelerated terminal emulator available for Linux and macOS. It's written in C and python, and it's pretty extensible. It has <a href="https://sw.kovidgoyal.net/kitty/kittens/custom/">support for plugins</a> called kittens, and comes with some default ones like a theme-switcher and ssh utility.</p>
+
+<p>Kitty offers much of the functionality of tmux - things like pane management, custom keybindings, remote control. <em>But</em>, Kitty does have some distinct advantages in my mind. For one, Kitty is a terminal <em>emulator</em>. Tmux is only a terminal <em>multiplexer</em>, and thus also requires a terminal emulator. I'd prefer to simplify the number of tools I use for my work. Kitty can replace both tmux and iTerm2, and adds some features on top like the cool cat that it is. Already mentioned is plugin support, which iTerm2 does technically support, but I always got confused trying to configure it.</p>
+
+<p>Next and most exciting is the inline native image support. Now some terminals support something called ==<a href="#TODO">sixel graphics</a>==, which I'll admit is pretty neat. Sixel to me is a bandage fix for graphic representation in the terminal because it's not representing imgages as native images, but rather performing some computation to build images out of special ASCII symbols, which means when you try to translate or transform the image in any way, things get weird. Why deal with that when kitty has your back? It can even render GIFs!</p>
+
+<pre class="codewrapper"><code class="codeblock">kitty +kitten icat ~/Downloads/kitten_falling.gif
+</code></pre>
+
+<p><img src="http://dizzard.net/images/animation.gif" alt="Kitty terminal output with the icat plugin" /></p>
+
+<p>Another reason I think Kitty is great is that it's text file configurable, which makes it <em>way</em> easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in <a href="https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf">my dotfiles repository</a></p>
+
+<h2>Reproducing my tmux configuration in Kitty</h2>
+
+<p>I'd changed all the keybindings in tmux to match how I navigate everything else. And since I use vim keybindings in all my editors, I thought it would be nice to keep "HJKL" in use with tmux for navigating between panes and windows. I wanted to navigate between panes by simply pressing <code class="codeblock">ctrl-[HJKL]</code> to jump between windows vertically and horizontally, and if I wanted to create a new window, I'd press my tmux prefixer, followed by a directional key to specify where I wanted to add that new split. Kitty as far as I know doesn't have prefix keys like tmux, so I wasn't able to keep that around, but I'm OK with that. Instead, I just added another modifier key. So when I want to create a new pane, just press <code class="codeblock">ctrl-opt-[HJKL]</code>
+<br></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="c1"># Create a new window splitting the space used by the existing one so that</span>
+<span class="c1"># the two windows are placed one above the other</span>
+map ctrl+alt+k launch --location<span class="o">=</span>hsplit --cwd<span class="o">=</span>current
+
+<span class="c1"># Create a new window splitting the space used by the existing one so that</span>
+<span class="c1"># the two windows are placed side by side</span>
+map ctrl+alt+l launch --location<span class="o">=</span>vsplit --cwd<span class="o">=</span>current
+
+<span class="c1"># Rotate the current split, chaging its split axis from vertical to</span>
+<span class="c1"># horizontal or vice versa</span>
+map ctrl+shift+r layout_action rotate
+
+<span class="c1"># Move the active window in the indicated direction</span>
+map ctrl+shift+h move_window left
+map ctrl+shift+l move_window right
+map ctrl+shift+k move_window up
+map ctrl+shift+j move_window down
+
+<span class="c1"># Switch focus to the neighboring window in the indicated direction</span>
+map ctrl+h neighboring_window left
+map ctrl+l neighboring_window right
+map ctrl+k neighboring_window up
+map ctrl+j neighboring_window down
+
+<span class="c1"># Switch tabs</span>
+map ctrl+cmd+l next_tab
+map ctrl+cmd+h previous_tab
+
+enabled_layouts splits:split_axis<span class="o">=</span>horizontal
+</code></pre>
+</div>
+
+        </article>
+    </div>
+    <div class="p-5 m-4 md:flex md:justify-center">
+        <!-- kofi button -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I4QBRVN');kofiwidget2.draw();</script>
+    </div>
+
+</body>
+
+</html>
