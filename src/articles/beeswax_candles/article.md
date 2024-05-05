@@ -11,14 +11,14 @@ For [Sequoia Fabrica](https://sequoiafabrica.org), I'm running a candlestick mak
 
 ## Prerequisites
 You will need:
-- [ ] A burner (induction for portability)
-- [ ] Large boiler
-- [ ] 4 Deep jars (alternatively, a double boiler and 2 jars)
-- [ ] Scissors
-- [ ] Cotton wicks
-- [ ] Beeswax (_2-3lbs_)
-- [ ] Cold water
-- [ ] Washers or bolts (any small scrap of metal you can tie a string around)
+- A burner (induction for portability)
+- Large boiler
+- 4 Deep jars (alternatively, a double boiler and 2 jars)
+- Scissors
+- Cotton wicks
+- Beeswax (_2-3lbs_)
+- Cold water
+- Washers or bolts (any small scrap of metal you can tie a string around)
 
 ## Steps
 1. Heat the wax in a double-boiler style. If you don't have a double boiler, just fill jars with wax and place in a pot full of water. Beeswax melts at _[144 to 147 °F](https://en.wikipedia.org/wiki/Beeswax)_, keep this in mind while melting. Low and slow is better, so try not to exceed the temperature significantly. I think as long as the water is not at full boil, you should be in a good range.
