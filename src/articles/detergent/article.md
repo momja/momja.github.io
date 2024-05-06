@@ -1,7 +1,7 @@
 ---
 title: "Homemade Laundry Detergent Recipe for Lazy People"
 description: "A 3 Ingredient Recipe for Laumdy Detergent"
-publish_date: 2024-04-04
+publish_date: 2024-05-04
 ---
 
 # Homemade Laundry Detergent for Lazy People
