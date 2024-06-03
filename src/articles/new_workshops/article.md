@@ -1,7 +1,7 @@
 ---
 title: "Building a New Workshop in San Francisco"
 description: "A Makerspace-Type Space For Learning, Sharing and Doing"
-publish_date: {{2024-06-02}}
+publish_date: 2024-06-02
 ---
 
 # Building A New Workshop in San Francisco
