@@ -179,7 +179,7 @@ def generate_rss():
             title=article.get("title", "No Title"),
             link=article_link,
             description=content,
-            author_name=article.get("author", "Unknown Author"),
+            author_name=article.get("author", "Maxwell Omdal"),
             pubdate=datetime.datetime.strptime(pub_date_str, '%a, %d %b %Y %H:%M:%S +0000'),
             unique_id=unique_id,
         )
