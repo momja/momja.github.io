@@ -67,7 +67,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 
 &lt;p&gt;&lt;img src="http://dizzard.net/images/chest_incomplete.jpg" alt="Before" /&gt;
 &lt;img src="http://dizzard.net/images/chest_complete.jpg" alt="After" /&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/chest_of_drawers/article.html#1</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">21</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
 
 &lt;p&gt;San Francisco will soon be getting a new community workshop. As a part of an organization, myself and others are building &lt;a href="sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;. It will be a non-profit community workshop with the mission to provide access to tools and knowledge without the barriers to entry at many for-profit organizations. Since opening our doors in March, we've also distinguished ourselves by offering a wide variety of &lt;a href="https://bookwhen.com/sequoiafabrica#focus=ev-sl1e-20240604190000"&gt;workshops and classes&lt;/a&gt; which is all thanks to the members and volunteers who have founded and kept the space going.&lt;/p&gt;
 
@@ -78,7 +78,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;p&gt;I don't think the "class/event" structure is for everyone. Some spaces like &lt;a href="https://noisebridge.net"&gt;Noisebridge&lt;/a&gt;, which I've mentioned &lt;a href="http://dizzard.net/articles/shared_workshop/article.html"&gt;before&lt;/a&gt; haven't made that the priority focus, and that works for them. Some makerspaces, or whatever you choose to call them aren't prioritizing events as a way of serving the community. I wish there was more of this across the board, but I also understand some spaces might prefer to harbor an environment where members can just make use of the equipment at their disposal. Sequoia does give members 24/7 access to use the space for their personal projects, but  it is also made clear this is not a rental workshop. Members are as much volunteers as they are space users. So to be a member, you kind of have to buy in to the idea that what we're doing is of benefit to the community and you are down to help with that.&lt;/p&gt;
 
 &lt;p&gt;I like classes. I like taking them and I like teaching them. I'm not an expert craftsman, but you don't need to be an expert to teach a class, you just need to know a little more about the trade than what you will get to in the class. An elementary school math teach doesn't need to know Calculus to be a great teacher.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 02 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/new_workshops/article.html#2</guid></item><item><title>Homemade Laundry Detergent Recipe for Lazy People</title><link>http://dizzard.net/articles/detergent/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Homemade Laundry Detergent for Lazy People&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 02 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">20</guid></item><item><title>Homemade Laundry Detergent Recipe for Lazy People</title><link>http://dizzard.net/articles/detergent/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Homemade Laundry Detergent for Lazy People&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; parts Borax (400g)&lt;/li&gt;
@@ -99,10 +99,10 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;ul&gt;
 &lt;li&gt;I’ve tried using Zote soap, another popular laundry soap, but its way to hard to grind into a powder. The soap is not nearly as dry as fels naptha, the texture is slightly oily.&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/detergent/article.html#3</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">19</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
 
 &lt;p&gt;I took some time this weekend to add an RSS feed to this blog. I will eventually add a visible link, but for now, you can find it at &lt;a href="https://dizzard.net/rss"&gt;dizzard.net/rss&lt;/a&gt;. It may have some kinks to work out, but the solution was quick and dirty. I implemented it using &lt;a href="https://pypi.org/project/feedgen/"&gt;Feedgen&lt;/a&gt;. Like most of my personal projects these days, ChatGPT sped up the process significantly.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/rss_now/article.html#4</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Beeswax Candles (Dip)&lt;/h1&gt;
 
@@ -132,7 +132,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;li&gt;Now you start dipping. This is the repetitive part. Dip in the hot wax, let it drip off, dip in the cool water, let it drip off. Then repeat. &lt;/li&gt;
 &lt;li&gt;Continue step 4 until you have your desired candle size. The final candle should be between &lt;em&gt;18-20mm&lt;/em&gt; in diameter to fit in most candlestick holders. You can measure this with a calipers, or mark a string at a &lt;em&gt;56.5mm&lt;/em&gt; ($\pi \times 18$), and wrap around the candle.&lt;/li&gt;
 &lt;/ol&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 11 Dec 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/beeswax_candles/article.html#5</guid></item><item><title>What Does Apple Watch Do</title><link>http://dizzard.net/articles/apple_watch/article.html</link><description>&lt;![CDATA[&lt;p&gt;I’ve worn an Apple Watch on and off since the Series 2, which came out in 2016. I’ve owned two watches. One disappeared one day. I have no idea where it went. For a while, I wore two family members’ watches because they never used them. Then I bought my own. &lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 11 Dec 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">17</guid></item><item><title>What Does Apple Watch Do</title><link>http://dizzard.net/articles/apple_watch/article.html</link><description>&lt;![CDATA[&lt;p&gt;I’ve worn an Apple Watch on and off since the Series 2, which came out in 2016. I’ve owned two watches. One disappeared one day. I have no idea where it went. For a while, I wore two family members’ watches because they never used them. Then I bought my own. &lt;/p&gt;
 
 &lt;p&gt;Buying that watch was a really stupid move. I don’t think the Apple Watch is totally stupid, but I think for the vast majority of users, it’s just a glorified pager. &lt;/p&gt;
 
@@ -147,7 +147,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;p&gt;My least favorite, yet most common use of the watch is for field notifications I don’t need to be looking at in the first place. Why do I need my wrist to buzz every time I get an automated email to my work inbox that I don’t read anyways? Why read “Mom just sent you a photo. Open iPhone to see”? What’s that doing for me? Is it anything positive, or is it just getting me to check my devices more.&lt;/p&gt;
 
 &lt;p&gt;If you use the watch a lot for tracking workouts, or you have some health issues you want to monitor, I think you should by all means go for it and use a watch. But for any other purpose, I’d say it’s not worth the expense, nor is it worth the mental stress the notification machine puts on your brain.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 11 Nov 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/apple_watch/article.html#6</guid></item><item><title>Principles of Operating a Shared Workshop</title><link>http://dizzard.net/articles/shared_workshop/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Principles of Operating a Shared Workshop&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 11 Nov 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">16</guid></item><item><title>Principles of Operating a Shared Workshop</title><link>http://dizzard.net/articles/shared_workshop/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Principles of Operating a Shared Workshop&lt;/h1&gt;
 
 &lt;p&gt;These are some of the thoughts I have compiled over the last year volunteering my time helping maintain a wood-shop at my local hackerspace, &lt;a href="noisebridge.net"&gt;Noisebridge&lt;/a&gt;. Noisebridge is a very unique space in that it operates as an anarchist space with one guiding principle: &lt;em&gt;Be excellent to each other&lt;/em&gt;. There can often be conflict between passionate people at the space doing their best to make things better, and not being able to agree on what "better" really is. I'm putting &lt;em&gt;my&lt;/em&gt; thoughts down on what I've observed to work. I'm certain not everyone will agree.&lt;/p&gt;
 
@@ -210,7 +210,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;/blockquote&gt;
 
 &lt;p&gt;I agree with most of this, but I think &lt;em&gt;Buying in&lt;/em&gt; would need to be adjusted for a space that wants to welcome those who otherwise could not afford access to such a space, and I don't think the section in children should be just limited to kids. Everyone should have to show some basic competence with respect to safety and clean-up.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 08 Oct 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/shared_workshop/article.html#7</guid></item><item><title>The Green Imperative By Victor Papanek</title><link>http://dizzard.net/articles/the_green_imperative/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Green Imperative By Victor Papanek&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 08 Oct 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">15</guid></item><item><title>The Green Imperative By Victor Papanek</title><link>http://dizzard.net/articles/the_green_imperative/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Green Imperative By Victor Papanek&lt;/h1&gt;
 
 &lt;p&gt;The book focuses much more around Design than I initially expected. It's not very in your face about what I thought would be the immediate demand to put the environment first. &lt;a href="https://en.wikipedia.org/wiki/Victor_Papanek"&gt;Papanek&lt;/a&gt; instead meanders around the influence of design on consumption, with a particularly strong distaste for Mid-Century Modern design and the Bauhaus movement. The connection he draws between simple, undecorated furniture and human consumption is a little unclear to me, but he's spending a lot of time talking about how humans have a long tradition of adding superfluous decorations to objects that would otherwise be purely utility.&lt;/p&gt;
 
@@ -263,7 +263,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;/blockquote&gt;
 
 &lt;p&gt;GODDAMMIT! I feel like this entire book wss written just to piss me off. He rounds this section off by saying washing dishes by hand is more water-efficient than dishwashers. I’ll give him the benefit of the doubt here since this book came out in the ‘90’s, but modern dishwashers use significantly less water than hand washing no matter how you cut it.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 09 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/the_green_imperative/article.html#8</guid></item><item><title>How to capture code snippets from Obsidian and add to Alfred Snippets</title><link>http://dizzard.net/articles/obsidian_sniper/article.html</link><description>&lt;![CDATA[&lt;h1&gt;How to capture code snippets from Obsidian and add to Alfred Snippets&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 09 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">14</guid></item><item><title>How to capture code snippets from Obsidian and add to Alfred Snippets</title><link>http://dizzard.net/articles/obsidian_sniper/article.html</link><description>&lt;![CDATA[&lt;h1&gt;How to capture code snippets from Obsidian and add to Alfred Snippets&lt;/h1&gt;
 
 &lt;p&gt;At work, I'm often looking through my &lt;a href="https://obsidian.md/"&gt;Obsidian&lt;/a&gt; notes looking for a certain code snippet to run to update a build version, deploy my server, or some other mundane task I can't be bothered to memorize. And it's nice having obsidian because then not only do I have a home for these little snippets of code, but I can also provide some notes on the snippets, like what it does, why it's written a certain way, what to try if it fails, etc. Sometimes I need this context, but a lot of the times I just need the snippet of code.&lt;/p&gt;
 
@@ -354,7 +354,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;/ul&gt;
 
 &lt;p&gt;That's all for now. Happy hacking :P&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 07 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/obsidian_sniper/article.html#9</guid></item><item><title>Writing a Discord bot with Python and aiocron</title><link>http://dizzard.net/articles/discord_bot/discord_bot.html</link><description>&lt;![CDATA[&lt;h1&gt;Writing a Discord bot with Python and aiocron&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 07 May 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">13</guid></item><item><title>Writing a Discord bot with Python and aiocron</title><link>http://dizzard.net/articles/discord_bot/discord_bot.html</link><description>&lt;![CDATA[&lt;h1&gt;Writing a Discord bot with Python and aiocron&lt;/h1&gt;
 
 &lt;p&gt;I wanted to write a Discord bot to provide simple scheduled alerts for the &lt;a href="https://noisebridge.net"&gt;hackerspace&lt;/a&gt; I am a part of. We have a channel for the woodshop, and every so often, we need to empty the dust collector and scrap bins.&lt;/p&gt;
 
@@ -402,12 +402,12 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;Not so much of a tutorial, but I'm hoping someone finds this code snippet helpful, because I couldn't find an example of this myself. I did, however find &lt;a href="https://www.reddit.com/r/Discord_Bots/comments/vxknqz/aiocroncronjob_not_working_with_discordpy_v20/"&gt;some&lt;/a&gt; &lt;a href="https://github.com/Rapptz/discord.py/issues/7986"&gt;people&lt;/a&gt; running into similar issues.&lt;/p&gt;
 
 &lt;p&gt;Anyways, happy hacking!&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 22 Apr 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/discord_bot/discord_bot.html#10</guid></item><item><title>This blog post is automatically published</title><link>http://dizzard.net/articles/automated_blogging/automated_blogging.html</link><description>&lt;![CDATA[&lt;h1&gt;Automated Blog Publishing&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 22 Apr 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">12</guid></item><item><title>This blog post is automatically published</title><link>http://dizzard.net/articles/automated_blogging/automated_blogging.html</link><description>&lt;![CDATA[&lt;h1&gt;Automated Blog Publishing&lt;/h1&gt;
 
 &lt;p&gt;Previously, I wrote a blog post about deploying my blog with Github Pages. Now, I want to be able to write blog posts from my phone and publish them without touch git. So I thought it would be neat if I could edit the files on my iPhone by connecting to one of my always-on raspberry pi's, and automate the deployment of the blog from the raspberry pi. If this works, I'll write more about it. I'm still testing things out, and I'm trying to get &lt;a href="https://github.com/gorakhargosh/watchdog"&gt;watchdog&lt;/a&gt; to handle the watching for me. If this post is live though, the automated publish worked!&lt;/p&gt;
 
 &lt;p&gt;P.S. it also handles blog updates (this is an edit to the original post)&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Thu, 09 Mar 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/automated_blogging/automated_blogging.html#11</guid></item><item><title>Earth 🪐 to Localhost</title><link>http://dizzard.net/articles/apple_file_protocol/apple_file_protocol.html</link><description>&lt;![CDATA[&lt;h1&gt;Earth 🪐 to Localhost...&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Thu, 09 Mar 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">11</guid></item><item><title>Earth 🪐 to Localhost</title><link>http://dizzard.net/articles/apple_file_protocol/apple_file_protocol.html</link><description>&lt;![CDATA[&lt;h1&gt;Earth 🪐 to Localhost...&lt;/h1&gt;
 
 &lt;p&gt;This is the first note I've written on my locally-hosted network attached storage setup. This is currently running on the &lt;a href="https://en.wikipedia.org/wiki/Apple_Filing_Protocol"&gt;Apple Filing Protocol&lt;/a&gt;. This is possible thanks to the reimplementation of the AFP protocol by the &lt;a href="https://netatalk.sourceforge.io/"&gt;Netatalk&lt;/a&gt; project, which is a "free and open source AFP fileserver."&lt;/p&gt;
 
@@ -418,7 +418,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;h2&gt;An aside...&lt;/h2&gt;
 
 &lt;p&gt;Today is also the last day of January. One month down in 2023!&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 31 Jan 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/apple_file_protocol/apple_file_protocol.html#12</guid></item><item><title>Interesting Blogs and Bloggers</title><link>http://dizzard.net/articles/interesting_blogs/Interesting%20Blogs.html</link><description>&lt;![CDATA[&lt;h1&gt;Some Interesting Blogs I've Stumbled Upon&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 31 Jan 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">10</guid></item><item><title>Interesting Blogs and Bloggers</title><link>http://dizzard.net/articles/interesting_blogs/Interesting%20Blogs.html</link><description>&lt;![CDATA[&lt;h1&gt;Some Interesting Blogs I've Stumbled Upon&lt;/h1&gt;
 
 &lt;p&gt;I will update this from time to time as I find more people I want to share. These are mostly technology focused.&lt;/p&gt;
 
@@ -500,14 +500,14 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://kguttag.com/"&gt;Karl Guttag&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/interesting_blogs/Interesting Blogs.html#13</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">9</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
 
 &lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
 
 &lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
 
 &lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/goatcounter/goatcounter.html#14</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">8</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;a href="https://hackerspaces.org/"&gt;hackerspace&lt;/a&gt; to me?&lt;/p&gt;
 
@@ -524,7 +524,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;The hackerspace fits into a theme I've been exploring this past year and I have to write more about as I continue exploring it in 2023. I'm not yet sure how to group these thoughts together, but it circles around some of the ideas I see in socialism, anarchism, communism in a general sense and more specifically third spaces, cohousing, community centers, resource sharing, donation circles, free and open source software, decentralized networks, and the small web. I'll try to share more. I think I need to sort some of these thoughts out, but I just want to find ways for people to share more, because I think it's good for us psychologically and it reduces waste.&lt;/p&gt;
 
 &lt;p&gt;Happy Holidays, see you in the new year 🥳!&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html#15</guid></item><item><title>Deploy Github Pages with Jinja and Github Actions</title><link>http://dizzard.net/articles/gh-pages/Deploy%20Github%20Pages%20with%20Jinja%20and%20Github%20Actions.html</link><description>&lt;![CDATA[&lt;h1&gt;Deploy Github Pages with Jinja and GH Actions&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">7</guid></item><item><title>Deploy Github Pages with Jinja and Github Actions</title><link>http://dizzard.net/articles/gh-pages/Deploy%20Github%20Pages%20with%20Jinja%20and%20Github%20Actions.html</link><description>&lt;![CDATA[&lt;h1&gt;Deploy Github Pages with Jinja and GH Actions&lt;/h1&gt;
 
 &lt;p&gt;This blog, like many others is hosted on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Github Pages is a great (and free) way to post small static sites like personal websites. The annoying thing is that you have to push build code that would &lt;em&gt;usually&lt;/em&gt; be included in your &lt;code class="codeblock"&gt;.gitignore&lt;/code&gt; file. So if you don't want to have to build your site locally, and include the build files in your repository, there is an option for you that leverages Github Actions.&lt;/p&gt;
 
@@ -613,7 +613,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;/ol&gt;
 
 &lt;p&gt;And there you have it! Check out the final file &lt;a href="https://github.com/momja/momja.github.io/blob/38e1a2985c1983cbd35c07d970318d8743cb63ba/.github/workflows/deploy-to-gh-pages.yml"&gt;here&lt;/a&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 14 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/gh-pages/Deploy Github Pages with Jinja and Github Actions.html#16</guid></item><item><title>Migrating from tmux to Kitty</title><link>http://dizzard.net/articles/tmux-kitty/tmux-kitty.html</link><description>&lt;![CDATA[&lt;h1&gt;Migrating from Tmux to Kitty&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 14 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">6</guid></item><item><title>Migrating from tmux to Kitty</title><link>http://dizzard.net/articles/tmux-kitty/tmux-kitty.html</link><description>&lt;![CDATA[&lt;h1&gt;Migrating from Tmux to Kitty&lt;/h1&gt;
 
 &lt;p&gt;So sitting at my workdesk waiting for my local changes to compile and deploy, I often find my mind wandering towards the world of &lt;a href="https://www.reddit.com/r/unixporn/"&gt;Unix ricing&lt;/a&gt;. Some people do it for beauty, others do it for maximizing their productivity. Regardless of the reason, before I go into any of this, let me preface the article by saying that all this is completely unnecessary. Pretty much any terminal will do the trick. But once again, I'm twiddling my thumbs waiting for deployment, so I need &lt;em&gt;something&lt;/em&gt; to do. Why not finally migrate my terminal work from &lt;a href="https://github.com/tmux/tmux"&gt;tmux&lt;/a&gt; in &lt;a href="https://iterm2.com/index.html"&gt;iTerm2&lt;/a&gt; to &lt;a href="https://sw.kovidgoyal.net/kitty/"&gt;Kitty&lt;/a&gt;?&lt;/p&gt;
 
@@ -667,7 +667,7 @@ map ctrl+cmd+h previous_tab
 enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/tmux-kitty/tmux-kitty.html#17</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/header.jpg" style="width:100%; height: auto;" alt=""&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">5</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/header.jpg" style="width:100%; height: auto;" alt=""&gt;&lt;/p&gt;
 
 &lt;h1&gt;
     Path Planning : Bat Guy Vs. The Clown
@@ -786,7 +786,7 @@ enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 
 &lt;iframe width="875" height="579" src="https://www.youtube.com/embed/A5FhCbYbRVA" frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 15 Sep 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/path_planning/path_planning.html#18</guid></item><item><title>Particle Simulation</title><link>http://dizzard.net/articles/particle_simulation/particle_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 15 Sep 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">4</guid></item><item><title>Particle Simulation</title><link>http://dizzard.net/articles/particle_simulation/particle_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
     Particle Simulation and Flocking: Scarecrows
 &lt;/h1&gt;
 
@@ -952,7 +952,7 @@ enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 &lt;img src="../../images/ground_level.jpg"&gt;
 &lt;img src="../../images/smokestack.jpg"&gt;
 &lt;img src="../../images/side_rain.jpg"&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Aug 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/particle_simulation/particle_simulation.html#19</guid></item><item><title>Fluid Simulation</title><link>http://dizzard.net/articles/fluid_simulation/fluid_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Aug 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">3</guid></item><item><title>Fluid Simulation</title><link>http://dizzard.net/articles/fluid_simulation/fluid_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
     3D SPH Fluid Simulation for Painterly Effects
 &lt;/h1&gt;
 
@@ -995,7 +995,7 @@ enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 
 &lt;iframe src="../../images/SPH_Fluid_Simulation.pdf" width="100%" height="1200px"&gt;
 &lt;/iframe&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 15 Jul 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/fluid_simulation/fluid_simulation.html#20</guid></item><item><title>Cloth Simulation</title><link>http://dizzard.net/articles/cloth_simulation/cloth_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 15 Jul 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">2</guid></item><item><title>Cloth Simulation</title><link>http://dizzard.net/articles/cloth_simulation/cloth_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
     Cloth Simulation Using Numerical Integration: Fans
 &lt;/h1&gt;
 
@@ -1143,4 +1143,4 @@ enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
     &lt;iframe src="https://giphy.com/embed/TJapj69j1l4MA076P7" width="360" height="270" frameBorder="0"
         class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 15 Jun 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">http://dizzard.net/articles/cloth_simulation/cloth_simulation.html#21</guid></item></channel></rss>
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 15 Jun 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">1</guid></item></channel></rss>
