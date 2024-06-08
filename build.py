@@ -169,10 +169,15 @@ def generate_rss():
         description="Latest Articles from Max Omdal (dizzard.net)",
         image="images/favicon.png",
     )
-    for index, article in enumerate(articles_metadata, start=1):
+    # articles_metadata is sorted by publish date in reverse.
+    # We re-reverse it to add the feed items in the correct order
+    # Which is essential to have the right index (guid)
+    for index, article in enumerate(articles_metadata):
         article_link = f"http://dizzard.net/{article.get('path')}"
-        unique_id = f"{article_link}#{index}"
-        pub_date_str = article.get("publish_date", "").strftime('%a, %d %b %Y %H:%M:%S +0000') if isinstance(article.get("publish_date", ""), datetime.date) else article.get("publish_date", "")
+        unique_id = len(articles_metadata) - index
+        pub_date_str = article.get("publish_date", "").strftime('%a, %d %b %Y %H:%M:%S +0000') \
+            if isinstance(article.get("publish_date", ""), datetime.date) \
+            else article.get("publish_date", "")
         
         content = "<![CDATA[{}]]>".format(article.get("content", "")) 
         feed.add_item(
@@ -181,7 +186,7 @@ def generate_rss():
             description=content,
             author_name=article.get("author", "Maxwell Omdal"),
             pubdate=datetime.datetime.strptime(pub_date_str, '%a, %d %b %Y %H:%M:%S +0000'),
-            unique_id=unique_id,
+            unique_id=str(unique_id),
         )
     
     feed_path = "rss.xml"
