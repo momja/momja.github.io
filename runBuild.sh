@@ -1,4 +1,4 @@
-python build.py --full
+python build.py --full $1
 postcss style/tailwind.css -o static/tailwind.css
 mkdir -p static/images
 cp -r images/*.pdf static/images/

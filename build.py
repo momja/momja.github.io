@@ -23,8 +23,13 @@ articles_data = {}
 
 image_link_pattern = re.compile(r'!\[(.*?)\]\((.*?)\)')
 
+context = {}
+
 def replace_img_src(m):
     # Replace all occurrences of '../' in img path
+    if (context['dev']):
+        # We keep relative links on development
+        return '![{}]({})'.format(m.group(1), m.group(2))
     img_path = re.sub(r'\.\.\/', '', m.group(2))
     print(img_path)
     base_url = 'http://dizzard.net/'
@@ -198,8 +203,11 @@ def generate_rss():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Build Site')
     parser.add_argument('--full', dest='full', default=False, action='store_true')
+    parser.add_argument('--dev', dest='dev', default=False, action='store_true')
 
     args = parser.parse_args()
+
+    context['dev'] = args.dev
     # convert md pages to html
     # md_file_dirs = sorted(glob.glob(os.path.join(article_dir, "*/")), key=os.path.getmtime)
     # html_article_files = convertMDToHTML(md_file_dirs, builddir='src', outdir='/articles/', full=args.full)
