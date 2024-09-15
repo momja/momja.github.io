@@ -165,7 +165,7 @@ def render_md(site: Site, template, **kwargs):
     out = site.outpath / Path(template.name).with_suffix(".html")
     os.makedirs(out.parent, exist_ok=True)
     site.get_template("helper_templates/_article.html").stream(**kwargs).dump(str(out), encoding="utf-8")
-    
+
 
 def generate_rss():
     feed = feedgenerator.Rss201rev2Feed(
@@ -183,8 +183,8 @@ def generate_rss():
         pub_date_str = article.get("publish_date", "").strftime('%a, %d %b %Y %H:%M:%S +0000') \
             if isinstance(article.get("publish_date", ""), datetime.date) \
             else article.get("publish_date", "")
-        
-        content = "<![CDATA[{}]]>".format(article.get("content", "")) 
+
+        content = "<![CDATA[{}]]>".format(article.get("content", ""))
         feed.add_item(
             title=article.get("title", "No Title"),
             link=article_link,
@@ -193,7 +193,7 @@ def generate_rss():
             pubdate=datetime.datetime.strptime(pub_date_str, '%a, %d %b %Y %H:%M:%S +0000'),
             unique_id=str(unique_id),
         )
-    
+
     feed_path = "rss.xml"
     with open(feed_path, 'w') as f:
         feed.write(f, 'utf-8')
@@ -208,23 +208,20 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     context['dev'] = args.dev
-    # convert md pages to html
-    # md_file_dirs = sorted(glob.glob(os.path.join(article_dir, "*/")), key=os.path.getmtime)
-    # html_article_files = convertMDToHTML(md_file_dirs, builddir='src', outdir='/articles/', full=args.full)
 
     # build jinja templates
     project_data = projectJSONParser.parse('projects.json')
-    
+
     # print(list(zip(html_article_files, articles_data)))
 
     # add pygments css for code highlighting
-    # code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
-    # try: 
-    #     os.mkdir(build_path) 
-    # except OSError as error: 
-    #     print(error)
-    # with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
-    #     css_file.write(code_style)
+    code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
+    try:
+        os.mkdir(build_path)
+    except OSError as error:
+        print(error)
+    with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
+        css_file.write(code_style)
 
     site = Site.make_site(searchpath='src',
                           env_globals={'projects':project_data},
@@ -234,4 +231,3 @@ if __name__ == "__main__":
     site.render()
 
     generate_rss()
-
