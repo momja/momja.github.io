@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Tue, 17 Sep 2024 00:00:00 -0000</lastBuildDate><item><title>AI For Development</title><link>http://dizzard.net/articles/ai_development/article.html</link><description>&lt;![CDATA[&lt;h1&gt;AI For Development&lt;/h1&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Tue, 31 Dec 2024 00:00:00 -0000</lastBuildDate><item><title>New Year's Resolutions</title><link>http://dizzard.net/articles/resolutions/article.html</link><description>&lt;![CDATA[&lt;h1&gt;New Year's Resolutions&lt;/h1&gt;
+
+&lt;p&gt;For the past few years, I've written up some resolutions for myself.&lt;/p&gt;
+
+&lt;p&gt;Last years resolutions and reflections:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Exercise more&lt;/strong&gt;. I did pick up biking, which was a step in the right direction, but I walk less and seem to spend less time outside in general. I guess &lt;a href="https://dizzard.net/articles/new_workshops/article.html"&gt;opening a makerspace&lt;/a&gt; takes up a lot of free time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Join the 100 days to offload challenge&lt;/strong&gt;. I blogged 8/100 times. 2023 was 8 times. I’m trending flat! Well it’s supposed to be a challenge, and I’d rather fail again at a challenge than not try at all so I’m keeping it on the list. I have a couple blog posts locked and loaded for 2025 already. Maybe that's cheating, but it still got me writing more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read less news.&lt;/strong&gt; Despite this being a horrible year for news, I escaped the doom scroll that I fell into during the pandemic. It took a few years to escape it's gravitational pull, but I think I'm doing better. We will see how things go in 2025 :/.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be more intentional with time&lt;/strong&gt;. There's only so many hours in the day, and you have to make the most of it. I spent less time doom scrolling (positive), but more time scrolling overall (negative). I've deleted TikTok, YouTube and Facebook from my phone because I can't keep watching these 5 second videos at every otherwise quiet moment I have during the day.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So here’s my list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Join the &lt;a href=""&gt;#100DaysToOffload challenge&lt;/a&gt;&lt;/strong&gt; . This made the list last year and I only posted 8 times. I’m not too confident about it, but I want to try again. It's a stretch, I know, considering my blogging history. But what is there to lose? I tried last year and failure didn't make me run away from this blog.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be OK with the Silence&lt;/strong&gt;. This is similar to last year's goal of &lt;em&gt;Be more intentional with my time&lt;/em&gt;. But since that didn't work too well last, year, I'm going to try and narrow it down. What does the silence have to do with intentionality? Well, usually when there is any moment of quiet, a moment where I am not actively engaged in work or some variety of activity, I feel the need to pull out a screen and look at something. This is not good for my mental health or productivity. I need to be OK not always having something to do or something to look at. Relaxation is good. Enjoy the quiet times while you can.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eat Healthy more consistently&lt;/strong&gt;. I like to think I eat a rather healthy diet, but in busy weeks, everything falls off the rails and I'll eat anything in front of me. Even when I don't have to, there's something in my brain when I'm stressed that tells me to just eat, even when it's not something I want or I'm not hungry. I'm better about it when life is more routine, but I can't always rely on routine to keep me healthy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What didn't make the list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Make more stuff&lt;/strong&gt;. This was on the list back in [[News Years Resolutions 2023|2023]], I always want to make more, and I think I will do this naturally, I don't feel the need to keep an eye on this.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read more&lt;/strong&gt;. My reading habit has fallen off the rails since graduating College. I used to religiously track what I was reading, how much. That got me reading more, and consistently. Now I rarely pick up a book. I'll read my RSS feed, but that's the most I'll do. I'm currently Reading The Power Broker, but not on track to finish it in this century. In years past, I'd read 20-30 books, I'm not sure I've read more than 5 this year. I'm just telling myself - for now - that that is OK. Without diminishing the importance of reading, I feel like there are more important things I need to focus on right now.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exercise More&lt;/strong&gt;. Exercise is critical to well-being. I acknowledge I fell short of my goals for 2024, and I'll be working on that going forward. I'm still prioritizing diet over exercise right now. Because of my daily habits, and tendency to walk/bike everywhere, I'm going to get exercise in without trying, even if it's not as much as I would like.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What are your resolutions? Shoot me an &lt;a href="mailto://mjomdal@gmail.com"&gt;email&lt;/a&gt;.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 31 Dec 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">25</guid></item><item><title>AI For Development</title><link>http://dizzard.net/articles/ai_development/article.html</link><description>&lt;![CDATA[&lt;h1&gt;AI For Development&lt;/h1&gt;
 
 &lt;p&gt;I occasionally tinker on my computer after work hours on personal projects, albeit infrequently, especially when compared to the magnificent work done by some of the engineers I follow. Most of my time currently is wrapped in &lt;a href="https://sequoiafabrica.org"&gt;building a community makerspace&lt;/a&gt;, but there are some quiet evenings I find myself writing small utilities, or working on this blog. &lt;/p&gt;
 
@@ -171,11 +201,25 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;h2&gt;Steps&lt;/h2&gt;
 
 &lt;ol class="list-decimal"&gt;
-&lt;li&gt;Heat the wax in a double-boiler style. If you don't have a double boiler, just fill jars with wax and place in a pot full of water. Beeswax melts at &lt;em&gt;&lt;a href="https://en.wikipedia.org/wiki/Beeswax"&gt;144 to 147 °F&lt;/a&gt;&lt;/em&gt;, keep this in mind while melting. Low and slow is better, so try not to exceed the temperature significantly. I think as long as the water is not at full boil, you should be in a good range.&lt;/li&gt;
-&lt;li&gt;Once the wax is fully melted, prepare a container, or a couple jars with cold water. Don't make it &lt;em&gt;too&lt;/em&gt; cold, because that will cause issues later. Get some tap water, add one or two ice cubes.&lt;/li&gt;
-&lt;li&gt;Now, cut the string to be twice the depth of your melted beeswax, plus an extra &lt;em&gt;15-20cm&lt;/em&gt;. Tie to each end a couple washers. Since wax floats in water, this will help it sink.&lt;/li&gt;
-&lt;li&gt;Now you start dipping. This is the repetitive part. Dip in the hot wax, let it drip off, dip in the cool water, let it drip off. Then repeat. &lt;/li&gt;
-&lt;li&gt;Continue step 4 until you have your desired candle size. The final candle should be between &lt;em&gt;18-20mm&lt;/em&gt; in diameter to fit in most candlestick holders. You can measure this with a calipers, or mark a string at a &lt;em&gt;56.5mm&lt;/em&gt; ($\pi \times 18$), and wrap around the candle.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Heat the wax in a double-boiler style.
+If you don't have a double boiler, just fill jars with wax and place in a pot full of water.
+Beeswax melts at &lt;em&gt;&lt;a href="https://en.wikipedia.org/wiki/Beeswax"&gt;144 to 147 °F&lt;/a&gt;&lt;/em&gt;, keep this in mind while melting.
+Low and slow is better, so try not to exceed the temperature significantly.
+The water should never come to a boil.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Once the wax is fully melted, prepare a container, or a couple jars with cold water.
+Don't make it &lt;em&gt;too&lt;/em&gt; cold, because that will cause issues later.
+Get some tap water, add one or two ice cubes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now, cut the string to be twice the depth of your melted beeswax, plus an extra &lt;em&gt;15-20cm&lt;/em&gt;.
+Tie to each end a couple washers. Since wax floats in water, this will help it sink.
+The washers are optional.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now you start dipping.
+This is the repetitive part.
+Dip in the hot wax, let it drip off, dip in the cool water, let it drip off.
+The repeat.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Continue step 4 until you have your desired candle size.
+The final candle should be between &lt;em&gt;18-20mm&lt;/em&gt; in diameter to fit in most candlestick holders.
+You can measure this by marking a string at a &lt;em&gt;56.5mm&lt;/em&gt; ($pi times 18$), and wrap around the candle.
+Sometimes it's easiest just to start with a candlestick holder and work until you've got the size you want.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 11 Dec 2023 00:00:00 -0000</pubDate><guid isPermaLink="false">17</guid></item><item><title>What Does Apple Watch Do</title><link>http://dizzard.net/articles/apple_watch/article.html</link><description>&lt;![CDATA[&lt;p&gt;I’ve worn an Apple Watch on and off since the Series 2, which came out in 2016. I’ve owned two watches. One disappeared one day. I have no idea where it went. For a while, I wore two family members’ watches because they never used them. Then I bought my own. &lt;/p&gt;
 
