@@ -26,8 +26,8 @@ image_link_pattern = re.compile(r'!\[(.*?)\]\((.*?)\)')
 context = {}
 
 def replace_img_src(m):
-    # Replace all occurrences of '../' in img path
-    if (context['dev']):
+    # Replace all occurrences of '../' in img path unless it's a full URL
+    if (m.group(2).startswith("https://") or context['dev']):
         # We keep relative links on development
         return '![{}]({})'.format(m.group(1), m.group(2))
     img_path = re.sub(r'\.\.\/', '', m.group(2))

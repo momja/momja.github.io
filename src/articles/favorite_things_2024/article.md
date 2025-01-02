@@ -10,12 +10,14 @@ tags: [blog, 100DaysToOffload]
 # My Favorite Things of 2024
 
 Every year, the Tested network publishes a series of videos with the staff about their favorite things of the year. Here's all the ones from 2024:
+
 - [Norm](https://www.youtube.com/watch?v=12uvJkBL7mo)
 - [Josh](https://www.youtube.com/watch?v=j_88zIuh_xY&pp=ygUOVGVzdGVkIGluIDIwMjQ%3D)
 - [Adam](https://www.youtube.com/watch?v=qgrt7uoGm70&pp=ygUOVGVzdGVkIGluIDIwMjQ%3D)
 - [Kayte](https://www.youtube.com/watch?v=E2sBYsaW8h4&pp=ygUOVGVzdGVkIGluIDIwMjQ%3D)
 - [Sean](https://www.youtube.com/watch?v=Jhvq9M2TCjU&pp=ygUOVGVzdGVkIGluIDIwMjQ%3D)
 - [Joey](https://www.youtube.com/watch?v=Z_J1wXFXBoo&pp=ygUOVGVzdGVkIGluIDIwMjQ%3D)
+
 I really enjoy these videos. I'm a bit of a tool nerd, so it's a real treat seeing professionals describe some of the tools that have been the most satisfying and productive to use. I think the tools in someone's metaphorical tool belt also say a lot about that person's philosophy of work.
 
 So I thought I should share some my favorite things from 2024! It's not all tools, but a lot of them are.
