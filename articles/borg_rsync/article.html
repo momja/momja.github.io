@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syncing and Backups with Rsync and Borg</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-slate-800">
+    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
+        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
+            ← Back
+        </button>
+    </div>
+    <div class="m-4 md:flex md:justify-center">
+        <article class="prose lg:prose-xl dark:prose-invert">
+            <p><img src="http://dizzard.net/images/borg_and_rsync.png" alt="Borg And Rsync" /></p>
+
+<h1>Syncing and Backups with Rsync and Borg</h1>
+
+<p>I have a relatively simple self-hosting setup at home. My biggest and most important service is <a href="https://nextcloud.com">Nextcloud</a>. For quite some time, I've been running this with basically no backup, which is super risky, and I was starting to fear the day when the SSD fails. So to save myself from worrying, and save my previous photos and documents at some future date of failure, I decided to take some action while I was home for the holidays and had a little free time.</p>
+
+<h2>Cloud vs. Local</h2>
+
+<p>I considered a couple options for backups. One would be cloud provider solution, such as <a href="https://www.backblaze.com/">BackBlaze</a> or <a href="https://www.rsync.net/">Rsync.net</a>,  but I didn't think that was a good fit for a couple reasons. First, it's expensive, BackBlaze would be $12/mo for 2TB, and then more money any time you need to recover your data. Micro Center was selling a <a href="https://www.microcenter.com/product/629580/toshiba-canvio-advance-2tb-usb-31-(gen-1-type-a)-25-portable-external-hard-drive-red">2TB Hard Drive for $80</a>, amortized over a year of use, that would come out to &lt; $6/mo. So if I can get more than 6 months from a drive at that price point, it would be a better deal than BackBlaze already.</p>
+
+<p>So with that knowledge, I purchased a Toshiba Canvio 2TB Hard Drive at an even better deal of $70 at a Micro Center brick-and-morter store. One of the reasons I wanted to do this while I was home for the holidays is so I could setup my backup device in a different location than my actual server to satisfy the "1 copy off-site" part of the <a href="https://www.veeam.com/blog/321-backup-rule.html">3-2-1 Rule</a>. </p>
+
+<p>I also picked up a Raspberry Pi 5 with 4GB of memory, and a couple accessories to get things fully set up.</p>
+
+<h2>The Process</h2>
+
+<p>After doing a little research on file synchronization and backups, I came up with a two-step process to backup all my docker volumes. This way if something were to fail on my local device, I could restore it from the offsite backup, or even roll back to an old backup. The nice thing about having it all containerized is that, as long as I have my docker volumes and docker compose files, restoring the server should be fairly straightforward.</p>
+
+<p>I'm relying on two neat utilities called <a href="https://rsync.samba.org/">Rsync</a> and <a href="https://www.borgbackup.org/">Borg</a> which provide file synchronization and backup tools respectively. I use Rsync to transfer files over ssh to my offsite machine, then Borg to create a snapshot every week.</p>
+
+<h2>Backup Script</h2>
+
+<p>You can find the complete script <a href="https://gist.github.com/momja/83531e6af416d2afd207eaa5fca2572d">here</a>. Below is an illustrative version of the code.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="c1"># ----------------------</span>
+<span class="c1"># Abridged Backup Script</span>
+<span class="c1"># ----------------------</span>
+<span class="n">remote_backup_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;REMOTE_BACKUP_DIR&quot;</span><span class="p">)</span>
+<span class="n">local_backup_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;LOCAL_BACKUP_DIR&quot;</span><span class="p">)</span>
+<span class="n">borg_repo_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;BORG_REPO_DIR&quot;</span><span class="p">)</span>
+<span class="n">backup_drive</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;BACKUP_DRIVE&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">mount_drive</span><span class="p">():</span>
+    <span class="n">run_command</span><span class="p">(</span><span class="s2">&quot;mount /dev/sda1 /mnt/backup&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">sync_files</span><span class="p">():</span>
+    <span class="n">rsync_command</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;rsync -az --delete --exclude-from=&#39;/etc/backup-config/exclude-file.txt&#39; -e &#39;ssh -c aes128-ctr&#39; </span><span class="si">{</span><span class="n">remote_backup_dir</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">local_backup_dir</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">run_command</span><span class="p">(</span><span class="n">rsync_command</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rsync output:</span><span class="se">\n</span><span class="si">{</span><span class="n">output</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">backup_files</span><span class="p">():</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Backing up files...&quot;</span><span class="p">)</span>
+    <span class="n">borg_command</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;borg create --stats --progress &quot;</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">borg_repo_dir</span><span class="si">}</span><span class="s2">::dockerData-</span><span class="se">{{</span><span class="s2">now</span><span class="se">}}</span><span class="s2"> &quot;</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">local_backup_dir</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">run_command</span><span class="p">(</span><span class="n">borg_command</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Borg output:</span><span class="se">\n</span><span class="si">{</span><span class="n">output</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">unmount_drive</span><span class="p">():</span>
+    <span class="n">run_command</span><span class="p">(</span><span class="s2">&quot;umount /mnt/backup&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="c1"># setup parser</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">sync</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">backup</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Either --sync, --backup, or both must be specified.&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">mount_drive</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">sync</span><span class="p">:</span>
+            <span class="n">sync_files</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">backup</span><span class="p">:</span>
+            <span class="n">backup_files</span><span class="p">()</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">unmount_drive</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>In order for the backup script to work, you need to add some environment variables. I provide these in a <code class="codeblock">.env</code> file, but you could also add to a <code class="codeblock">.bashrc</code> file or just provide on each run.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="nv">REMOTE_BACKUP_DIR</span><span class="o">=</span>you@computer:/path/to/data/
+<span class="nv">LOCAL_BACKUP_DIR</span><span class="o">=</span>/mnt/backup/data
+<span class="nv">BORG_REPO_DIR</span><span class="o">=</span>/mnt/backup/data_borg
+<span class="nv">BACKUP_DRIVE</span><span class="o">=</span>/dev/sda1
+</code></pre>
+</div>
+
+<p>Before running, make sure you set correct permissions on both servers, and configure an ssh key for the offsite machine to access the main server.</p>
+
+<p>To automate the execution of the sync and backup, I've set up two cron jobs. One that runs on Sundays and performs synchronizations and snapshots. Then another that runs every other day and just performs synchronization. My idea is that if I were to break something on my primary server while doing some configuration or testing, the Rsync mirror will allow me to recover to a valid state, or repair accidentally deleted data. If something worse happens, like my SSD gets corrupted, I can restore from the Borg Snapshots, which is a little slower and a little more work.</p>
+
+<h2>Conclusion</h2>
+
+<p>This is not a perfect solution, it's not even foolproof. But it seems to work OK now. I have a little more testing to do before I'm comfortable with it, but it does feel like I can breath a little easier knowing if I F**k something up, I'll <em>probably</em> be able to recover from it. The next logical step would be to buy another drive so the offsite backup and synchronized repositories are on separate disks, then set up alerts to monitor for a failure so I don't need to manually check it. I'm not going to mess around with RAID right now, but maybe some day.</p>
+
+<p>Now, going back to the provider solution for a second. I still think it's a good idea to store your data with a secure cloud for another layer of redundancy, it's just not my first choice. Part of the reason I'm trying to better protect my data is because my family is running into issues with Amazon Photos and the <a href="https://www.reddit.com/r/gsuitelegacymigration/comments/uhzseu/comment/i79p2sn/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">lack of control</a> they give their users. So it just didn't feel right to rely on another cloud provider for a backup solution.</p>
+
+        </article>
+    </div>
+    <div class="p-5 m-4 md:flex md:justify-center">
+        <!-- kofi button -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I4QBRVN');kofiwidget2.draw();</script>
+    </div>
+
+</body>
+
+</html>

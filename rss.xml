@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Wed, 01 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>My Favorite Things of 2024</title><link>http://dizzard.net/articles/favorite_things_2024/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-09/29/22/enhanced/webdr14/anigif_original-5801-1443580997-15.gif" alt="" /&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Thu, 02 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.png" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
+
+&lt;p&gt;I have a relatively simple self-hosting setup at home. My biggest and most important service is &lt;a href="https://nextcloud.com"&gt;Nextcloud&lt;/a&gt;. For quite some time, I've been running this with basically no backup, which is super risky, and I was starting to fear the day when the SSD fails. So to save myself from worrying, and save my previous photos and documents at some future date of failure, I decided to take some action while I was home for the holidays and had a little free time.&lt;/p&gt;
+
+&lt;h2&gt;Cloud vs. Local&lt;/h2&gt;
+
+&lt;p&gt;I considered a couple options for backups. One would be cloud provider solution, such as &lt;a href="https://www.backblaze.com/"&gt;BackBlaze&lt;/a&gt; or &lt;a href="https://www.rsync.net/"&gt;Rsync.net&lt;/a&gt;,  but I didn't think that was a good fit for a couple reasons. First, it's expensive, BackBlaze would be $12/mo for 2TB, and then more money any time you need to recover your data. Micro Center was selling a &lt;a href="https://www.microcenter.com/product/629580/toshiba-canvio-advance-2tb-usb-31-(gen-1-type-a)-25-portable-external-hard-drive-red"&gt;2TB Hard Drive for $80&lt;/a&gt;, amortized over a year of use, that would come out to &amp;lt; $6/mo. So if I can get more than 6 months from a drive at that price point, it would be a better deal than BackBlaze already.&lt;/p&gt;
+
+&lt;p&gt;So with that knowledge, I purchased a Toshiba Canvio 2TB Hard Drive at an even better deal of $70 at a Micro Center brick-and-morter store. One of the reasons I wanted to do this while I was home for the holidays is so I could setup my backup device in a different location than my actual server to satisfy the "1 copy off-site" part of the &lt;a href="https://www.veeam.com/blog/321-backup-rule.html"&gt;3-2-1 Rule&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;I also picked up a Raspberry Pi 5 with 4GB of memory, and a couple accessories to get things fully set up.&lt;/p&gt;
+
+&lt;h2&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;After doing a little research on file synchronization and backups, I came up with a two-step process to backup all my docker volumes. This way if something were to fail on my local device, I could restore it from the offsite backup, or even roll back to an old backup. The nice thing about having it all containerized is that, as long as I have my docker volumes and docker compose files, restoring the server should be fairly straightforward.&lt;/p&gt;
+
+&lt;p&gt;I'm relying on two neat utilities called &lt;a href="https://rsync.samba.org/"&gt;Rsync&lt;/a&gt; and &lt;a href="https://www.borgbackup.org/"&gt;Borg&lt;/a&gt; which provide file synchronization and backup tools respectively. I use Rsync to transfer files over ssh to my offsite machine, then Borg to create a snapshot every week.&lt;/p&gt;
+
+&lt;h2&gt;Backup Script&lt;/h2&gt;
+
+&lt;p&gt;You can find the complete script &lt;a href="https://gist.github.com/momja/83531e6af416d2afd207eaa5fca2572d"&gt;here&lt;/a&gt;. Below is an illustrative version of the code.&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# ----------------------&lt;/span&gt;
+&lt;span class="c1"&gt;# Abridged Backup Script&lt;/span&gt;
+&lt;span class="c1"&gt;# ----------------------&lt;/span&gt;
+&lt;span class="n"&gt;remote_backup_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;REMOTE_BACKUP_DIR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;local_backup_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;LOCAL_BACKUP_DIR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;borg_repo_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;BORG_REPO_DIR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;backup_drive&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;BACKUP_DRIVE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;mount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;mount /dev/sda1 /mnt/backup&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;sync_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;rsync_command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+        &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -az --delete --exclude-from=&amp;#39;/etc/backup-config/exclude-file.txt&amp;#39; -e &amp;#39;ssh -c aes128-ctr&amp;#39; &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;remote_backup_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;local_backup_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rsync_command&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Rsync output:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;backup_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Backing up files...&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;borg_command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+        &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;borg create --stats --progress &amp;quot;&lt;/span&gt;
+        &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;borg_repo_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;::dockerData-&lt;/span&gt;&lt;span class="se"&gt;{{&lt;/span&gt;&lt;span class="s2"&gt;now&lt;/span&gt;&lt;span class="se"&gt;}}&lt;/span&gt;&lt;span class="s2"&gt; &amp;quot;&lt;/span&gt;
+        &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;local_backup_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;borg_command&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Borg output:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;unmount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;umount /mnt/backup&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;parser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="c1"&gt;# setup parser&lt;/span&gt;
+    &lt;span class="n"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;parser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parse_args&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sync&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;backup&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Either --sync, --backup, or both must be specified.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;mount_drive&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sync&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;sync_files&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;backup&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;backup_files&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;finally&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;unmount_drive&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In order for the backup script to work, you need to add some environment variables. I provide these in a &lt;code class="codeblock"&gt;.env&lt;/code&gt; file, but you could also add to a &lt;code class="codeblock"&gt;.bashrc&lt;/code&gt; file or just provide on each run.&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;REMOTE_BACKUP_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;you@computer:/path/to/data/
+&lt;span class="nv"&gt;LOCAL_BACKUP_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/mnt/backup/data
+&lt;span class="nv"&gt;BORG_REPO_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/mnt/backup/data_borg
+&lt;span class="nv"&gt;BACKUP_DRIVE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/sda1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Before running, make sure you set correct permissions on both servers, and configure an ssh key for the offsite machine to access the main server.&lt;/p&gt;
+
+&lt;p&gt;To automate the execution of the sync and backup, I've set up two cron jobs. One that runs on Sundays and performs synchronizations and snapshots. Then another that runs every other day and just performs synchronization. My idea is that if I were to break something on my primary server while doing some configuration or testing, the Rsync mirror will allow me to recover to a valid state, or repair accidentally deleted data. If something worse happens, like my SSD gets corrupted, I can restore from the Borg Snapshots, which is a little slower and a little more work.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is not a perfect solution, it's not even foolproof. But it seems to work OK now. I have a little more testing to do before I'm comfortable with it, but it does feel like I can breath a little easier knowing if I F**k something up, I'll &lt;em&gt;probably&lt;/em&gt; be able to recover from it. The next logical step would be to buy another drive so the offsite backup and synchronized repositories are on separate disks, then set up alerts to monitor for a failure so I don't need to manually check it. I'm not going to mess around with RAID right now, but maybe some day.&lt;/p&gt;
+
+&lt;p&gt;Now, going back to the provider solution for a second. I still think it's a good idea to store your data with a secure cloud for another layer of redundancy, it's just not my first choice. Part of the reason I'm trying to better protect my data is because my family is running into issues with Amazon Photos and the &lt;a href="https://www.reddit.com/r/gsuitelegacymigration/comments/uhzseu/comment/i79p2sn/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button"&gt;lack of control&lt;/a&gt; they give their users. So it just didn't feel right to rely on another cloud provider for a backup solution.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Thu, 02 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">27</guid></item><item><title>My Favorite Things of 2024</title><link>http://dizzard.net/articles/favorite_things_2024/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-09/29/22/enhanced/webdr14/anigif_original-5801-1443580997-15.gif" alt="" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;My Favorite Things of 2024&lt;/h1&gt;
 
