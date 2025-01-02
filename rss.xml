@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Thu, 02 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.png" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Thu, 02 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
 
