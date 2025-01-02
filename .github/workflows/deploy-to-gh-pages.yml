@@ -21,3 +21,10 @@ jobs:
         with:
           branch: gh-pages
           folder: static
+
+      - name: Process all files
+        uses: mfinelli/setup-imagemagick@v1        
+        run: |
+          mogrify -resize 720x720\> -format jpg -path static/images/ images/*.png
+          mogrify -resize 720x720\> -path static/images/ images/*.jpg
+          mogrify -resize 720x720\> -path static/images/ images/*.gif
