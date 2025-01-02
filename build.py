@@ -31,6 +31,8 @@ def replace_img_src(m):
         # We keep relative links on development
         return '![{}]({})'.format(m.group(1), m.group(2))
     img_path = re.sub(r'\.\.\/', '', m.group(2))
+    if img_path.endswith('.png'):
+        img_path = img_path[:-4] + '.jpg'
     print(img_path)
     base_url = 'http://dizzard.net/'
 
