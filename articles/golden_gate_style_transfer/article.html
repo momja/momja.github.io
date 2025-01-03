@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Style Transfer and CNC to Produce Printblocks</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-slate-800">
+    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
+        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
+            ← Back
+        </button>
+    </div>
+    <div class="m-4 md:flex md:justify-center">
+        <article class="prose lg:prose-xl dark:prose-invert">
+            <h1>Using Style Transfer to CNC Produce Printblocks</h1>
+
+<p>In college, I wrote a final paper about <a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf">Generative Adversarial Nets for Artistic Image-to-Image Translation</a> where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.</p>
+
+<p><img src="http://dizzard.net/images/gan_example.jpg" alt="../images/gan_example.png" /></p>
+
+<p>That college paper was much more down in the dirt with the model than what I've tried recently. For an event, I needed to create a bunch of printmaking blocks very quickly, and they needed to be centered around San Francisco Landmarks. To accomplish this, I took a look at diffusion models. Using Dall-E 3, I was able to apply a woodblock print style transfer, and with some further processing, I could vectorize the output and send it to a CNC machine to manufacture the stamp. In the example below, it shows the original public domain image, the result of style transfer on the image, then the linoleum block, and the final print.</p>
+
+<p><img src="http://dizzard.net/images/golden_gate_process.jpg" alt="" /></p>
+
+<h2>The Tools</h2>
+
+<p>I used OpenAI's ChatGPT interface to apply style transfer (I know, this is not to be confused with "Neural Style Transfer" which is a specific set of algorithms) There was quite a bit of clean up in Gimp, then Inkscape to remove blurry lines, clean up the fog. The stamp was carved on a Nomad 3 CNC with a 90º Vee Bit, with further cleanup by hand with some carving tools.</p>
+
+        </article>
+    </div>
+    <div class="p-5 m-4 md:flex md:justify-center">
+        <!-- kofi button -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I4QBRVN');kofiwidget2.draw();</script>
+    </div>
+
+</body>
+
+</html>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Thu, 02 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Fri, 03 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
+
+&lt;p&gt;In college, I wrote a final paper about &lt;a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf"&gt;Generative Adversarial Nets for Artistic Image-to-Image Translation&lt;/a&gt; where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/gan_example.jpg" alt="../images/gan_example.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;That college paper was much more down in the dirt with the model than what I've tried recently. For an event, I needed to create a bunch of printmaking blocks very quickly, and they needed to be centered around San Francisco Landmarks. To accomplish this, I took a look at diffusion models. Using Dall-E 3, I was able to apply a woodblock print style transfer, and with some further processing, I could vectorize the output and send it to a CNC machine to manufacture the stamp. In the example below, it shows the original public domain image, the result of style transfer on the image, then the linoleum block, and the final print.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/golden_gate_process.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;The Tools&lt;/h2&gt;
+
+&lt;p&gt;I used OpenAI's ChatGPT interface to apply style transfer (I know, this is not to be confused with "Neural Style Transfer" which is a specific set of algorithms) There was quite a bit of clean up in Gimp, then Inkscape to remove blurry lines, clean up the fog. The stamp was carved on a Nomad 3 CNC with a 90º Vee Bit, with further cleanup by hand with some carving tools.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
 
