@@ -28,7 +28,7 @@
         "end_date": "05/19",
         "image_path": "images/GAN.jpg",
         "description": "A comparison of the CycleGAN and DualGAN algorithms for style transfer applications",
-        "url": "images/FINAL_CycleGAN_on_Image_Transfer.pdf"
+        "url": "images/Final_CycleGAN_on_Image_Transfer.pdf"
     },
     {
         "name": "Yelp Rating Predictions",
