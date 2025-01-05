@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Fri, 03 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Sat, 04 Jan 2025 00:00:00 -0000</lastBuildDate><item><title>A Sneak Peak at a Sign</title><link>http://dizzard.net/articles/sequoia_sign/article.html</link><description>&lt;![CDATA[&lt;h1&gt;A Sneap Peak at a Sign&lt;/h1&gt;
+
+&lt;p&gt;I've been working on an entrance sign for &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;, and here is an early preview. There's some internals to this sign that will make the final project sing, but it's not quite ready yet. I think I'll do a full write up about it once it is complete.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/sequoia_sign.jpg" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">29</guid></item><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
 
 &lt;p&gt;In college, I wrote a final paper about &lt;a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf"&gt;Generative Adversarial Nets for Artistic Image-to-Image Translation&lt;/a&gt; where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.&lt;/p&gt;
 
