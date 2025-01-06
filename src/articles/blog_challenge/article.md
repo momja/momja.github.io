@@ -1,7 +1,7 @@
 ---
 title: "Blog Challenge"
 description: "From Bear Blog"
-publish_date: 2024-01-06
+publish_date: 2025-01-06
 tags: [100DaysToOffload, blog]
 ---
 I was inspired by other bloggers to share my answers to the [bear blog questions](https://blog.avas.space/bear-blog-challenge/) ([Adapted by Kev](https://kevquirk.com/blog/blog-questions-challenge)). So here are my responses.
