@@ -14,4 +14,4 @@ Some related links I found:
 - Cork, by all accounts I have found from 5 minutes of searching, is a pretty sustainable material [link](https://earthfriendlytips.com/is-cork-eco-friendly-everything-you-need-to-know/)
 - Cork is also derived from the bark of the [Quercus Suber](https://en.wikipedia.org/wiki/Quercus_suber) tree, which is a type of Oak tree!
 - Harvesting the cork does not require cutting down the tree. The bark is removed, and the tree remains to continue growing
-- Interesting Business Insider video on Cork Production in Portugal, the biggest producer of cork.
+- Interesting Business Insider [video](https://www.businessinsider.com/how-the-worlds-largest-cork-company-makes-wine-stoppers-2024-9?op=1) on Cork Production in Portugal, the biggest producer of cork.
