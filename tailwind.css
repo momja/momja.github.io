@@ -997,6 +997,9 @@ video {
 .absolute {
   position: absolute;
 }
+.relative {
+  position: relative;
+}
 .m-5 {
   margin: 1.25rem;
 }

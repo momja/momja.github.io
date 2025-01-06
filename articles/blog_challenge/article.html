@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Challenge</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <link rel="stylesheet" href="../../codestyle.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-slate-800">
+    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
+        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
+            ← Back
+        </button>
+    </div>
+    <div class="m-4 md:flex md:justify-center">
+        <article class="prose lg:prose-xl dark:prose-invert">
+            <p>I was inspired by other bloggers to share my answers to the <a href="https://blog.avas.space/bear-blog-challenge/">bear blog questions</a> (<a href="https://kevquirk.com/blog/blog-questions-challenge">Adapted by Kev</a>). So here are my responses.</p>
+
+<h2>Why did you start blogging in the first place?</h2>
+
+<p>I started my website in my last year of college as a way to place all my work from university and my brief stint in research in one place, so I can look back at and remember what I did. <a href="https://www.youtube.com/watch?v=VQgD2DCBnjQ">Here</a> are <a href="https://dl.acm.org/doi/10.1145/3488542">some</a> <a href="https://dizzard.net/articles/particle_simulation/particle_simulation.html">examples</a>. I don't do as much technically interesting things anymore, but as I started reading more of other's blogs, and getting on the <a href="https://fosstodon.org/@mjomdal">fediverse</a>, I became interested in sharing the projects I make, experiences I've had and lessons I've learned. In 2025, I've made <a href="https://dizzard.net/articles/resolutions/article.html">a resolution</a> to really ramp up my blogging.</p>
+
+<p>As another bonus, having blogs I can share with family and friends is really nice. If I want to <a href="https://dizzard.net/articles/chest_of_drawers/article.html">share a project</a>, or <a href="https://dizzard.net/articles/detergent/article.html">how to make detergent</a>, I just send a link to my blog post. It's a lot more fun than just sending a really long text.</p>
+
+<h2>What platform are you using to manage your blog and why did you choose it?</h2>
+
+<p>Everything is hosted on Github Pages. I've cut my teeth at <a href="https://sequoiafabrica.org">Sequoia Fabrica</a> self-hosting sites, and I also self-host a bunch of services behind Tailscale, So I'm sure I could figure out how to use a cloud provider to spin up my own hosting. But Github Pages is so damn easy, and it just works, so I don't see myself changing that for a while.</p>
+
+<p>All posts are published to my blog through git. I push a new commit, and a Github action builds and pushes changes to another branch that holds just the static content for the site. Everything is in a public repository <a href="https://github.com/momja/momja.github.io">here</a>. There's a python script I wrote that will take all the blog posts, convert from Markdown to HTML, and copy them to a static directory. There are some improvements yet to be made, and I'll incrementally revise it. I'm not interested in an overhaul. Even though I know there's some issues, it works well enough. All the shiny cool tools like Hugo, 11ty, BearBlog, etc. seem like a lot of fun, but I kind of like knowing <em>all</em> the steps from start to finish of how my blog gets published. Since the site is built as a bit of a playground for me, I prefer running it all myself.</p>
+
+<h2>Have you blogged on other platforms before?</h2>
+
+<p>No. I published one article on Medium which is rather embarrassing and should be deleted. </p>
+
+<h2>How do you write your posts? For example, in a local editing tool, or in a panel/dashboard that's part of your blog?</h2>
+
+<p>I write either in Obsidian, or Vim. Usually, the first draft is in Obsidian, I'll copy and paste to my site's directory, and edit in Vim. It would be cool to build a custom web portal to publish to my site. My least favorite part of the workflow now is adding images because everything is placed in one resources folder, then I need to provide the markdown file with the correct relative path, and type the name of the image in correctly. It seems simple, but I always mess this part up. </p>
+
+<h2>When do you feel most inspired to write?</h2>
+
+<p>I don't have much written down on this site as of now. I'm trying to change that. I like writing in the morning before work sometimes, but usually it's just when I think of something to blog about. I really enjoy sharing projects big and small. When I finish a project, I like to share it.</p>
+
+<h2>Do you publish immediately after writing, or do you let it simmer a bit as a draft?</h2>
+
+<p>No editing, no simmering, just press GO.</p>
+
+<h2>What's your favorite post on your blog?</h2>
+
+<p><a href="https://dizzard.net/articles/favorite_things_2024/article.html">My Favorite Things of 2024</a>. I wish more people would publish content like this. Stuff that's not YouTube affiliate, but actual tools, books, software that you liked using over the last year or so.</p>
+
+<h2>Any future plans for your blog? Maybe a redesign, a move to another platform, or adding a new feature?</h2>
+
+<p>No redesigns in my future. If anything, I want to rip out some of the original stylistic decisions I've made so it is even more bare bones. The only future plan that I care about this year is publishing more content.</p>
+
+<p>Oh! I suppose it <em>would</em> be nice to publish from mobile. Rigging a solution for that might be on my 2025 roadmap.</p>
+
+        </article>
+    </div>
+    <div class="p-5 m-4 md:flex md:justify-center">
+        <!-- kofi button -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I4QBRVN');kofiwidget2.draw();</script>
+    </div>
+
+</body>
+
+</html>

@@ -13,12 +13,12 @@
 &lt;li&gt;Harvesting the cork does not require cutting down the tree. The bark is removed, and the tree remains to continue growing&lt;/li&gt;
 &lt;li&gt;Interesting Business Insider &lt;a href="https://www.businessinsider.com/how-the-worlds-largest-cork-company-makes-wine-stoppers-2024-9?op=1"&gt;video&lt;/a&gt; on Cork Production in Portugal, the biggest producer of cork.&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 05 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">30</guid></item><item><title>A Sneak Peak at a Sign</title><link>http://dizzard.net/articles/sequoia_sign/article.html</link><description>&lt;![CDATA[&lt;h1&gt;A Sneap Peak at a Sign&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 05 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">31</guid></item><item><title>A Sneak Peak at a Sign</title><link>http://dizzard.net/articles/sequoia_sign/article.html</link><description>&lt;![CDATA[&lt;h1&gt;A Sneap Peak at a Sign&lt;/h1&gt;
 
 &lt;p&gt;I've been working on an entrance sign for &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;, and here is an early preview. There's some internals to this sign that will make the final project sing, but it's not quite ready yet. I think I'll do a full write up about it once it is complete.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="http://dizzard.net/images/sequoia_sign.jpg" alt="" /&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">29</guid></item><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">30</guid></item><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
 
 &lt;p&gt;In college, I wrote a final paper about &lt;a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf"&gt;Generative Adversarial Nets for Artistic Image-to-Image Translation&lt;/a&gt; where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.&lt;/p&gt;
 
@@ -31,7 +31,7 @@
 &lt;h2&gt;The Tools&lt;/h2&gt;
 
 &lt;p&gt;I used OpenAI's ChatGPT interface to apply style transfer (I know, this is not to be confused with "Neural Style Transfer" which is a specific set of algorithms) There was quite a bit of clean up in Gimp, then Inkscape to remove blurry lines, clean up the fog. The stamp was carved on a Nomad 3 CNC with a 90º Vee Bit, with further cleanup by hand with some carving tools.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">29</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
 
@@ -133,7 +133,7 @@
 &lt;p&gt;This is not a perfect solution, it's not even foolproof. But it seems to work OK now. I have a little more testing to do before I'm comfortable with it, but it does feel like I can breath a little easier knowing if I F**k something up, I'll &lt;em&gt;probably&lt;/em&gt; be able to recover from it. The next logical step would be to buy another drive so the offsite backup and synchronized repositories are on separate disks, then set up alerts to monitor for a failure so I don't need to manually check it. I'm not going to mess around with RAID right now, but maybe some day.&lt;/p&gt;
 
 &lt;p&gt;Now, going back to the provider solution for a second. I still think it's a good idea to store your data with a secure cloud for another layer of redundancy, it's just not my first choice. Part of the reason I'm trying to better protect my data is because my family is running into issues with Amazon Photos and the &lt;a href="https://www.reddit.com/r/gsuitelegacymigration/comments/uhzseu/comment/i79p2sn/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button"&gt;lack of control&lt;/a&gt; they give their users. So it just didn't feel right to rely on another cloud provider for a backup solution.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Thu, 02 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">27</guid></item><item><title>My Favorite Things of 2024</title><link>http://dizzard.net/articles/favorite_things_2024/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-09/29/22/enhanced/webdr14/anigif_original-5801-1443580997-15.gif" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Thu, 02 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>My Favorite Things of 2024</title><link>http://dizzard.net/articles/favorite_things_2024/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-09/29/22/enhanced/webdr14/anigif_original-5801-1443580997-15.gif" alt="" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;My Favorite Things of 2024&lt;/h1&gt;
 
@@ -165,7 +165,7 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Alright so that's the cut for 2024. Maybe I'll do this again at the end of the year/start of next year.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 01 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">26</guid></item><item><title>New Year's Resolutions</title><link>http://dizzard.net/articles/resolutions/article.html</link><description>&lt;![CDATA[&lt;h1&gt;New Year's Resolutions&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 01 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">27</guid></item><item><title>New Year's Resolutions</title><link>http://dizzard.net/articles/resolutions/article.html</link><description>&lt;![CDATA[&lt;h1&gt;New Year's Resolutions&lt;/h1&gt;
 
 &lt;p&gt;For the past few years, I've written up some resolutions for myself.&lt;/p&gt;
 
@@ -195,7 +195,7 @@
 &lt;/ul&gt;
 
 &lt;p&gt;What are your resolutions? Shoot me an &lt;a href="mailto://mjomdal@gmail.com"&gt;email&lt;/a&gt;.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 31 Dec 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">25</guid></item><item><title>AI For Development</title><link>http://dizzard.net/articles/ai_development/article.html</link><description>&lt;![CDATA[&lt;h1&gt;AI For Development&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 31 Dec 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">26</guid></item><item><title>AI For Development</title><link>http://dizzard.net/articles/ai_development/article.html</link><description>&lt;![CDATA[&lt;h1&gt;AI For Development&lt;/h1&gt;
 
 &lt;p&gt;I occasionally tinker on my computer after work hours on personal projects, albeit infrequently, especially when compared to the magnificent work done by some of the engineers I follow. Most of my time currently is wrapped in &lt;a href="https://sequoiafabrica.org"&gt;building a community makerspace&lt;/a&gt;, but there are some quiet evenings I find myself writing small utilities, or working on this blog. &lt;/p&gt;
 
@@ -204,7 +204,7 @@
 &lt;p&gt;What I want out of LLMs is a way to work &lt;em&gt;faster&lt;/em&gt;. I don't expect it to do my work for me, but if it can just get me started sometimes I'm able to get things done quicker. It's doing a bit more than covering boilerplate, and a bit less than implementing APIs. But ultimately, if I can just get things done faster, I can do more of the stuff I love. Sometimes that stuff is building more software projects, but a lot of the time, it's getting away from my desk. A lot of the programs I write are to make my life more fun or functional, like adding light strips with custom firmware to my room, or, to borrow a phrase from &lt;a href="https://automatetheboringstuff.com/"&gt;Al&lt;/a&gt;, automating the boring stuff. I've found LLM's to be &lt;em&gt;really poor&lt;/em&gt; at implementing new code, but it can usually get a refactor about 80% correct. So, that's 80% less time I have to spend refactoring (minus maybe 10% for the time it takes to review the bot's changes). That's a win. That's a speed improvement that makes me more likely to attempt something. It also means when I run into speedbumps because I don't know how to do something in a particular language, or I can't debug a stack trace, I'm able to get through those quicker.&lt;/p&gt;
 
 &lt;p&gt;I think Simon Willison has one of the most realistic grasps on &lt;a href="https://simonwillison.net/2023/Mar/27/ai-enhanced-development/"&gt;LLMs for software development&lt;/a&gt;. He writes really great quality long-format and short-format articles on the topic. He also references others in the field, so in a way the blog is a bit of an aggregator for content. I'd also give &lt;a href="https://www.scattered-thoughts.net/writing/speed-matters/"&gt;this article&lt;/a&gt; from &lt;a href="https://www.scattered-thoughts.net/"&gt;Jamie Brandon&lt;/a&gt; a read on why speed matters in software engineering projects. It's one of the very few fields where throughout a career you can expect to improve your productivity by a factor of 10.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 17 Sep 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">24</guid></item><item><title>Finished a Workbench</title><link>http://dizzard.net/articles/workbench/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Finished a Workbench&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 17 Sep 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">25</guid></item><item><title>Finished a Workbench</title><link>http://dizzard.net/articles/workbench/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Finished a Workbench&lt;/h1&gt;
 
 &lt;p&gt;I just finished constructing a workbench for &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica's&lt;/a&gt; woodshop. I'm fairly happy with it, it's one of my first large-scale projects. The table top was a challenge to assemble because it was all construction lumber. Working around knots and laminating all the boards together was really tough, but I'm happy with how it turned out.&lt;/p&gt;
 
@@ -232,7 +232,7 @@
 &lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_3.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_4.jpg" alt="" /&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">23</guid></item><item><title>Boquets to Art at the De Young Museum</title><link>http://dizzard.net/articles/blooming/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Boquets to Art at the De Young Museum&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">24</guid></item><item><title>Boquets to Art at the De Young Museum</title><link>http://dizzard.net/articles/blooming/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Boquets to Art at the De Young Museum&lt;/h1&gt;
 
 &lt;p&gt;This past weekend, my partner and I went to San Francisco's &lt;a href="https://famsf.org"&gt;De Young Museum&lt;/a&gt; to see the exhibition annual "Boquets to Art". It was a fun event that takes over the entire museum, pairing artwork to flower arrangements in whimsical and creative ways. Here are some pictures from the event.&lt;/p&gt;
 
@@ -240,7 +240,7 @@
 &lt;img src="http://dizzard.net/images/blooming_2.jpg" alt="" /&gt;
 &lt;img src="http://dizzard.net/images/blooming_3.jpg" alt="" /&gt;
 &lt;img src="http://dizzard.net/images/blooming_4.jpg" alt="" /&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 12 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">22</guid></item><item><title>Refinishing a Chest of Drawers Found on the Street</title><link>http://dizzard.net/articles/chest_of_drawers/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Refinishing a Chest of Drawers Found on the Street&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 12 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">23</guid></item><item><title>Refinishing a Chest of Drawers Found on the Street</title><link>http://dizzard.net/articles/chest_of_drawers/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Refinishing a Chest of Drawers Found on the Street&lt;/h1&gt;
 
 &lt;p&gt;Recently, while walking to the neighborhood library, I found a chest of drawers, or dresser in an alley with a free sticker on it.
 It was in rough shape.
@@ -308,7 +308,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 
 &lt;p&gt;&lt;img src="http://dizzard.net/images/chest_incomplete.jpg" alt="Before" /&gt;
 &lt;img src="http://dizzard.net/images/chest_complete.jpg" alt="After" /&gt;&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">21</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">22</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
 
 &lt;p&gt;San Francisco will soon be getting a new community workshop. As a part of an organization, myself and others are building &lt;a href="sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;. It will be a non-profit community workshop with the mission to provide access to tools and knowledge without the barriers to entry at many for-profit organizations. Since opening our doors in March, we've also distinguished ourselves by offering a wide variety of &lt;a href="https://bookwhen.com/sequoiafabrica#focus=ev-sl1e-20240604190000"&gt;workshops and classes&lt;/a&gt; which is all thanks to the members and volunteers who have founded and kept the space going.&lt;/p&gt;
 
@@ -319,7 +319,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;p&gt;I don't think the "class/event" structure is for everyone. Some spaces like &lt;a href="https://noisebridge.net"&gt;Noisebridge&lt;/a&gt;, which I've mentioned &lt;a href="http://dizzard.net/articles/shared_workshop/article.html"&gt;before&lt;/a&gt; haven't made that the priority focus, and that works for them. Some makerspaces, or whatever you choose to call them aren't prioritizing events as a way of serving the community. I wish there was more of this across the board, but I also understand some spaces might prefer to harbor an environment where members can just make use of the equipment at their disposal. Sequoia does give members 24/7 access to use the space for their personal projects, but  it is also made clear this is not a rental workshop. Members are as much volunteers as they are space users. So to be a member, you kind of have to buy in to the idea that what we're doing is of benefit to the community and you are down to help with that.&lt;/p&gt;
 
 &lt;p&gt;I like classes. I like taking them and I like teaching them. I'm not an expert craftsman, but you don't need to be an expert to teach a class, you just need to know a little more about the trade than what you will get to in the class. An elementary school math teach doesn't need to know Calculus to be a great teacher.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 02 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">20</guid></item><item><title>Homemade Laundry Detergent Recipe for Lazy People</title><link>http://dizzard.net/articles/detergent/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Homemade Laundry Detergent for Lazy People&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 02 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">21</guid></item><item><title>Homemade Laundry Detergent Recipe for Lazy People</title><link>http://dizzard.net/articles/detergent/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Homemade Laundry Detergent for Lazy People&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; parts Borax (400g)&lt;/li&gt;
@@ -340,10 +340,49 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 &lt;ul&gt;
 &lt;li&gt;I’ve tried using Zote soap, another popular laundry soap, but its way to hard to grind into a powder. The soap is not nearly as dry as fels naptha, the texture is slightly oily.&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">19</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">20</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
 
 &lt;p&gt;I took some time this weekend to add an RSS feed to this blog. I will eventually add a visible link, but for now, you can find it at &lt;a href="https://dizzard.net/rss"&gt;dizzard.net/rss&lt;/a&gt;. It may have some kinks to work out, but the solution was quick and dirty. I implemented it using &lt;a href="https://pypi.org/project/feedgen/"&gt;Feedgen&lt;/a&gt;. Like most of my personal projects these days, ChatGPT sped up the process significantly.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">19</guid></item><item><title>Blog Challenge</title><link>http://dizzard.net/articles/blog_challenge/article.html</link><description>&lt;![CDATA[&lt;p&gt;I was inspired by other bloggers to share my answers to the &lt;a href="https://blog.avas.space/bear-blog-challenge/"&gt;bear blog questions&lt;/a&gt; (&lt;a href="https://kevquirk.com/blog/blog-questions-challenge"&gt;Adapted by Kev&lt;/a&gt;). So here are my responses.&lt;/p&gt;
+
+&lt;h2&gt;Why did you start blogging in the first place?&lt;/h2&gt;
+
+&lt;p&gt;I started my website in my last year of college as a way to place all my work from university and my brief stint in research in one place, so I can look back at and remember what I did. &lt;a href="https://www.youtube.com/watch?v=VQgD2DCBnjQ"&gt;Here&lt;/a&gt; are &lt;a href="https://dl.acm.org/doi/10.1145/3488542"&gt;some&lt;/a&gt; &lt;a href="https://dizzard.net/articles/particle_simulation/particle_simulation.html"&gt;examples&lt;/a&gt;. I don't do as much technically interesting things anymore, but as I started reading more of other's blogs, and getting on the &lt;a href="https://fosstodon.org/@mjomdal"&gt;fediverse&lt;/a&gt;, I became interested in sharing the projects I make, experiences I've had and lessons I've learned. In 2025, I've made &lt;a href="https://dizzard.net/articles/resolutions/article.html"&gt;a resolution&lt;/a&gt; to really ramp up my blogging.&lt;/p&gt;
+
+&lt;p&gt;As another bonus, having blogs I can share with family and friends is really nice. If I want to &lt;a href="https://dizzard.net/articles/chest_of_drawers/article.html"&gt;share a project&lt;/a&gt;, or &lt;a href="https://dizzard.net/articles/detergent/article.html"&gt;how to make detergent&lt;/a&gt;, I just send a link to my blog post. It's a lot more fun than just sending a really long text.&lt;/p&gt;
+
+&lt;h2&gt;What platform are you using to manage your blog and why did you choose it?&lt;/h2&gt;
+
+&lt;p&gt;Everything is hosted on Github Pages. I've cut my teeth at &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt; self-hosting sites, and I also self-host a bunch of services behind Tailscale, So I'm sure I could figure out how to use a cloud provider to spin up my own hosting. But Github Pages is so damn easy, and it just works, so I don't see myself changing that for a while.&lt;/p&gt;
+
+&lt;p&gt;All posts are published to my blog through git. I push a new commit, and a Github action builds and pushes changes to another branch that holds just the static content for the site. Everything is in a public repository &lt;a href="https://github.com/momja/momja.github.io"&gt;here&lt;/a&gt;. There's a python script I wrote that will take all the blog posts, convert from Markdown to HTML, and copy them to a static directory. There are some improvements yet to be made, and I'll incrementally revise it. I'm not interested in an overhaul. Even though I know there's some issues, it works well enough. All the shiny cool tools like Hugo, 11ty, BearBlog, etc. seem like a lot of fun, but I kind of like knowing &lt;em&gt;all&lt;/em&gt; the steps from start to finish of how my blog gets published. Since the site is built as a bit of a playground for me, I prefer running it all myself.&lt;/p&gt;
+
+&lt;h2&gt;Have you blogged on other platforms before?&lt;/h2&gt;
+
+&lt;p&gt;No. I published one article on Medium which is rather embarrassing and should be deleted. &lt;/p&gt;
+
+&lt;h2&gt;How do you write your posts? For example, in a local editing tool, or in a panel/dashboard that's part of your blog?&lt;/h2&gt;
+
+&lt;p&gt;I write either in Obsidian, or Vim. Usually, the first draft is in Obsidian, I'll copy and paste to my site's directory, and edit in Vim. It would be cool to build a custom web portal to publish to my site. My least favorite part of the workflow now is adding images because everything is placed in one resources folder, then I need to provide the markdown file with the correct relative path, and type the name of the image in correctly. It seems simple, but I always mess this part up. &lt;/p&gt;
+
+&lt;h2&gt;When do you feel most inspired to write?&lt;/h2&gt;
+
+&lt;p&gt;I don't have much written down on this site as of now. I'm trying to change that. I like writing in the morning before work sometimes, but usually it's just when I think of something to blog about. I really enjoy sharing projects big and small. When I finish a project, I like to share it.&lt;/p&gt;
+
+&lt;h2&gt;Do you publish immediately after writing, or do you let it simmer a bit as a draft?&lt;/h2&gt;
+
+&lt;p&gt;No editing, no simmering, just press GO.&lt;/p&gt;
+
+&lt;h2&gt;What's your favorite post on your blog?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://dizzard.net/articles/favorite_things_2024/article.html"&gt;My Favorite Things of 2024&lt;/a&gt;. I wish more people would publish content like this. Stuff that's not YouTube affiliate, but actual tools, books, software that you liked using over the last year or so.&lt;/p&gt;
+
+&lt;h2&gt;Any future plans for your blog? Maybe a redesign, a move to another platform, or adding a new feature?&lt;/h2&gt;
+
+&lt;p&gt;No redesigns in my future. If anything, I want to rip out some of the original stylistic decisions I've made so it is even more bare bones. The only future plan that I care about this year is publishing more content.&lt;/p&gt;
+
+&lt;p&gt;Oh! I suppose it &lt;em&gt;would&lt;/em&gt; be nice to publish from mobile. Rigging a solution for that might be on my 2025 roadmap.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 06 Jan 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Beeswax Candles (Dip)&lt;/h1&gt;
 
