@@ -1,4 +1,10 @@
 # My Personal Website
+## How do I build the static site?
+From the parent directory, run
+```bash
+> ./runBuild.sh
+```
+
 ## Creating a new article
 Articles should be placed in `.src/articles/article_name` the directory should contain...
 
