@@ -13,6 +13,7 @@ from pygments import formatters
 import datetime
 import feedgenerator
 import re
+import shutil
 
 import projectJSONParser
 
@@ -30,13 +31,16 @@ def replace_img_src(m):
     if (m.group(2).startswith("https://") or context['dev']):
         # We keep relative links on development
         return '![{}]({})'.format(m.group(1), m.group(2))
-    img_path = re.sub(r'\.\.\/', '', m.group(2))
-    if img_path.endswith('.png'):
-        img_path = img_path[:-4] + '.jpg'
-    print(img_path)
-    base_url = 'http://dizzard.net/'
+    elif m.group(2).startswith('../'):
+        img_path = re.sub(r'\.\.\/', '', m.group(2))
+        if img_path.endswith('.png'):
+            img_path = img_path[:-4] + '.jpg'
+        print(img_path)
+        base_url = 'http://dizzard.net/'
 
-    return '![{}]({})'.format(m.group(1), os.path.join(base_url, img_path))
+        return '![{}]({})'.format(m.group(1), os.path.join(base_url, img_path))
+    else:
+        return '![{}]({})'.format(m.group(1), m.group(2))
 
 
 markdowner = md.Markdown(
@@ -84,6 +88,7 @@ def md_context(filename, include_content=True):
             markdown_content = re.sub(image_link_pattern, replace_img_src, post.content)
             article_data['content'] = markdowner.convert(markdown_content)
         article_data.update(post.metadata)
+        print(article_data.keys())
         return article_data
 
     markdown_content = Path(filename).read_text()
@@ -202,6 +207,18 @@ def generate_rss():
         print(f"RSS feed generated and saved to {feed_path}")
 
 
+def copy_file(env, template, **kwargs):
+    """Simple file copy without any template processing"""
+    source = template.filename
+    dest = template.destination
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    shutil.copy2(source, dest)
+
+class CustomSite(Site):
+    def is_template(self, filename):
+        # Only treat .md, .html files as templates
+        return filename.endswith(('.md', '.html'))
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Build Site')
     parser.add_argument('--full', dest='full', default=False, action='store_true')
@@ -225,11 +242,31 @@ if __name__ == "__main__":
     with open(os.path.join(build_path, 'codestyle.css'), 'w+') as css_file:
         css_file.write(code_style)
 
-    site = Site.make_site(searchpath='src',
-                          env_globals={'projects':project_data},
-                          outpath=build_path,
-                          contexts=[(r"articles/.*\.md", md_context_for_template), (r"articles/.*\.html", html_context), ('index.html', article_metadata)],
-                          rules=[(r"articles/.*\.md", render_md), (r"articles/.*\.html", render_md)])
+    site = CustomSite.make_site(
+        searchpath='src',
+        env_globals={'projects': project_data},
+        outpath=build_path,
+        contexts=[
+            (r"articles/.*\.md", md_context_for_template),
+            (r"articles/.*\.html", html_context),
+            ('index.html', article_metadata)
+        ],
+        rules=[
+            (r"articles/.*\.md", render_md),
+            (r"articles/.*\.html", render_md),
+        ]
+    )
+
+    # Then handle copying of other files as before
+    for root, dirs, files in os.walk('src'):
+        for file in files:
+            if file.endswith(('.jpg', '.jpeg', '.png', '.gif', '.heic', '.HEIC')):
+                src_path = os.path.join(root, file)
+                rel_path = os.path.relpath(src_path, 'src')
+                dest_path = os.path.join(build_path, rel_path)
+                os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+                shutil.copy2(src_path, dest_path)
+
     site.render()
 
     generate_rss()
