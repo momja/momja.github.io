@@ -1,26 +1,26 @@
 {% macro insert_articles(articles) %}
 
-<ol class="w-full">
+<ol class="md:w-2/3 mx-auto">
     {% for article in articles %} {% if article.publish_date %}
     <li class="scale-normal hover:scale-up w-full my-8">
         <a href="{{ article.path }}">
             <div class="container">
                 <div class="flex">
-<div class="w-2/3">
-                   <h3 class="text-lg">
-                       {{ article.title }}
-                   </h3>
-                   <h4 class="text-sm">
-                       {{ article.description }}
-                   </h4>
+                    <div class="w-2/3">
+                        <h3 class="text-lg">
+                            {{ article.title }}
+                        </h3>
+                        <h4 class="text-sm">
+                            {{ article.description }}
+                        </h4>
+                    </div>
+                    <div class="w-1/3 text-right">
+                        <span class="text-xs md:text-sm">
+                            {{article.date}}
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="w-1/3 text-right">
-                <span class="text-xs md:text-sm">
-                    {{article.date}}
-                </span>
-            </div>
-</div>
-</div>
         </a>
     </li>
     {% endif %} {% endfor %}
