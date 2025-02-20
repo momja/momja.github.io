@@ -1179,9 +1179,9 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -1470,6 +1470,10 @@ input:checked + .slider:before {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:w-1\/2 {
