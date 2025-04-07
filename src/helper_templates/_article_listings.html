@@ -1,9 +1,9 @@
 {% macro insert_articles(articles) %}
 
-<ol class="md:w-2/3 mx-auto">
+<ol class="md:w-2/3 mx-auto text-yellow-900 dark:text-yellow-50">
     {% for article in articles %} {% if article.publish_date %}
-    <li class="scale-normal hover:scale-up w-full my-8">
-        <a href="{{ article.path }}">
+    <li class="scale-normal w-full my-3">
+        <a class="no-underline hover:underline" href="{{ article.path }}">
             <div class="container">
                 <div class="flex">
                     <div class="w-2/3">

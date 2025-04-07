@@ -36,10 +36,10 @@
     </style>
 </head>
 
-<body>
+<body class="paper-texture paper-texture-text bg-yellow-50 dark:bg-slate-800">
     <div class='h-16'></div>
 
-    <div>
+    <div class="text-yellow-900 dark:text-blue-50">
         <div class="flex flex-col h-auto items-center bg-color-gray-500">
             <!-- <div class="shadow-lg w-64 h-64 bg-cover bg-top bg-center m-5 rounded-full" style="background-image: url('images/profile.jpg')"> -->
             <!-- </div> -->
@@ -48,7 +48,7 @@
                     <p class="fadeIn-fast text-4xl text-center md:text-5xl font-extrabold">
                         Maxwell Omdal
                     </p>
-                    <p class="fadeIn-slow text-xl text-center md:text-2xl text-indigo-800 font-extrabold">
+                    <p class="fadeIn-slow text-xl text-center md:text-2xl text-indigo-800 dark:text-indigo-50 font-extrabold">
                         I’m building new things. Currently curious about maker culture, woodworking, and resource sharing.
                     </p>
                     <div class="py-5 flex justify-center">
@@ -74,37 +74,30 @@
         </div>
     </div>
 
-    {% if articles|length > 0 %}
-    <h2 class="text-3xl text-center font-bold m-10">
+    <h2 class="text-3xl text-center font-bold my-2 mx-auto text-indigo-800 dark:text-indigo-50">
         Articles
     </h2>
 
     <hr>
 
-
-    <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="container my-2 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
             {% import "helper_templates/_article_listings.html" as article_listings %} {{ article_listings.insert_articles(articles) }}
         </div>
     </div>
 
-    {% endif %}
-
-    {% if projects|length > 0 %}
-    <h2 class="text-3xl text-center font-bold m-10">
+    <h2 class="text-3xl text-center font-bold my-2 mx-auto text-indigo-800 dark:text-indigo-50">
         Projects
     </h2>
 
     <hr>
 
-    <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="container my-2 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
             {% import "helper_templates/_projects.html" as project_template %}
             {{ project_template.insertProjects() }}
         </div>
     </div>
-
-    {% endif %}
 </body>
 
 </html>
