@@ -53,6 +53,18 @@ momja.github.io/
 │       └── deploy-to-gh-pages.yml    # GitHub Actions deployment config
 ├── article_template/
 │   └── article.md                     # Template for new articles
+├── blog-cms/                          # Self-hosted blog CMS (NEW)
+│   ├── app/                           # Flask application
+│   │   ├── main.py                    # Main Flask app
+│   │   ├── git_manager.py             # Git operations handler
+│   │   ├── post_manager.py            # Blog post CRUD
+│   │   ├── templates/                 # HTML templates
+│   │   └── static/                    # Static assets
+│   ├── Dockerfile                     # Docker configuration
+│   ├── docker-compose.yml             # Docker Compose with Traefik
+│   ├── requirements.txt               # Python dependencies
+│   ├── README.md                      # CMS documentation
+│   └── DEPLOYMENT.md                  # Deployment guide
 ├── favicon/                           # Favicon files (various sizes)
 ├── images/                            # All site images and media
 ├── src/                               # Source files for site generation
@@ -415,6 +427,71 @@ watchdog==4.0.0           # File system monitoring
 - **Custom Domain:** Configured via `CNAME` file
 - **Base URL:** `http://dizzard.net/`
 - **SSL:** Automatic via GitHub Pages
+
+## Blog CMS (Content Management System)
+
+The repository includes a self-hosted blog CMS in the `blog-cms/` directory. This is a separate Docker application for managing blog content via a web interface.
+
+### CMS Features
+
+- **WYSIWYG Editor** - Quill-based rich text editor with markdown support
+- **Mobile-Friendly** - Responsive design with mobile image capture
+- **Git Integration** - Automatic branching, committing, merging, and pushing
+- **Image Management** - Upload images directly from any device
+- **Live Preview** - See posts before publishing
+- **Docker Deployment** - Ready for Traefik reverse proxy
+
+### CMS Architecture
+
+**Backend:**
+- Flask web application
+- GitPython for git operations
+- Frontmatter parsing for metadata
+- Markdown rendering
+
+**Frontend:**
+- Bootstrap 5 responsive UI
+- Quill WYSIWYG editor
+- Turndown (HTML to Markdown)
+- Showdown (Markdown to HTML)
+
+### CMS Workflow
+
+1. **Create Post** → Creates git branch `blog/post-slug`
+2. **Edit Content** → Uses WYSIWYG or markdown editor
+3. **Upload Images** → Saves to `images/` directory
+4. **Preview** → Renders post as it will appear
+5. **Save** → Commits changes to post's branch
+6. **Publish** → Merges to master and pushes to GitHub
+
+### Deployment
+
+The CMS is designed to run on a home server with Docker and Traefik:
+
+```bash
+cd blog-cms
+cp .env.example .env
+# Edit .env with your credentials
+docker-compose up -d
+```
+
+See `blog-cms/README.md` and `blog-cms/DEPLOYMENT.md` for full deployment instructions.
+
+### CMS Security
+
+- Basic HTTP authentication
+- HTTPS via Traefik + Let's Encrypt
+- Optional IP whitelisting
+- Rate limiting support
+- Git credentials isolated in container
+
+### Important Notes
+
+- The CMS operates directly on this repository
+- It must have write access to `src/articles/` and `images/`
+- Git push requires SSH keys or credentials
+- Changes are committed and pushed automatically
+- GitHub Actions deploys published posts
 
 ## Testing and Debugging
 
