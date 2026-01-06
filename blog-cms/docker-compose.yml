@@ -3,39 +3,36 @@ version: '3.8'
 services:
   blog-cms:
     build: .
-    container_name: blog-cms
+    container_name: ${CONTAINER_NAME:-blog-cms}
     restart: unless-stopped
     volumes:
-      # Mount the blog repository (adjust path to your actual repo location)
-      - /path/to/your/blog/repo:/repo
-      # Mount SSH keys for git push (if using SSH)
-      - ~/.ssh:/root/.ssh:ro
-      # Or mount git credentials
-      - ~/.gitconfig:/root/.gitconfig:ro
+      # Mount the blog repository
+      - ${HOST_REPO_PATH}:/repo
+      # Mount SSH keys for git push
+      - ${HOST_SSH_PATH}:/home/appuser/.ssh:ro
+      # Mount git credentials
+      - ${HOST_GITCONFIG_PATH}:/home/appuser/.gitconfig:ro
     environment:
-      # Repository path inside container
-      - REPO_PATH=/repo
-      # CMS credentials (change these!)
-      - CMS_USERNAME=admin
-      - CMS_PASSWORD=changeme_secure_password
-      # Flask secret key (generate a random one!)
-      - SECRET_KEY=change-this-to-a-random-secret-key
-      # Git configuration
-      - GIT_AUTHOR_NAME=Blog CMS
-      - GIT_AUTHOR_EMAIL=cms@yourdomain.com
-      - GIT_COMMITTER_NAME=Blog CMS
-      - GIT_COMMITTER_EMAIL=cms@yourdomain.com
+      # Load from .env file
+      - REPO_PATH=${REPO_PATH}
+      - CMS_USERNAME=${CMS_USERNAME}
+      - CMS_PASSWORD=${CMS_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+      - GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME}
+      - GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL}
+      - GIT_COMMITTER_NAME=${GIT_COMMITTER_NAME}
+      - GIT_COMMITTER_EMAIL=${GIT_COMMITTER_EMAIL}
     networks:
-      - traefik-network
+      - lan
     labels:
       # Enable Traefik
       - "traefik.enable=true"
 
       # Router configuration
-      - "traefik.http.routers.blog-cms.rule=Host(`cms.yourdomain.com`)"
-      - "traefik.http.routers.blog-cms.entrypoints=websecure"
+      - "traefik.http.routers.blog-cms.rule=Host(`${TRAEFIK_DOMAIN}`)"
+      - "traefik.http.routers.blog-cms.entrypoints=https"
       - "traefik.http.routers.blog-cms.tls=true"
-      - "traefik.http.routers.blog-cms.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.blog-cms.tls.certresolver=${TRAEFIK_CERT_RESOLVER:-letsencrypt}"
 
       # Service configuration
       - "traefik.http.services.blog-cms.loadbalancer.server.port=5000"
@@ -45,5 +42,5 @@ services:
       # - "traefik.http.middlewares.blog-cms-ratelimit.ratelimit.average=100"
 
 networks:
-  traefik-network:
+  lan:
     external: true

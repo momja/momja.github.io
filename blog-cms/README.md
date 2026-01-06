@@ -59,43 +59,45 @@ cp .env.example .env
 nano .env
 ```
 
-Update the following values:
+Update the following values in `.env`:
+
+**Docker Volume Paths:**
+- `HOST_REPO_PATH` - Full path to your blog repository (e.g., `/home/user/blog-repo`)
+- `HOST_SSH_PATH` - Path to your SSH keys (e.g., `/home/user/.ssh`)
+- `HOST_GITCONFIG_PATH` - Path to your gitconfig (e.g., `/home/user/.gitconfig`)
+
+**Container Configuration:**
+- `CONTAINER_NAME` - Container name (defaults to `blog-cms`)
+- `DOCKER_NETWORK` - Docker network name (defaults to `lan`)
+
+**CMS Authentication:**
 - `CMS_USERNAME` - Your admin username
 - `CMS_PASSWORD` - Secure password for CMS access
+
+**Security:**
 - `SECRET_KEY` - Generate with: `python -c "import secrets; print(secrets.token_hex(32))"`
-- `TRAEFIK_DOMAIN` - Your CMS subdomain (e.g., cms.yourdomain.com)
 
-3. **Update docker-compose.yml:**
+**Git Configuration:**
+- `GIT_AUTHOR_NAME` - Git author name for commits
+- `GIT_AUTHOR_EMAIL` - Git author email for commits
 
-Edit the volumes section to point to your actual blog repository:
+**Traefik:**
+- `TRAEFIK_DOMAIN` - Your CMS subdomain (e.g., `cms.yourdomain.com`)
+- `TRAEFIK_CERT_RESOLVER` - Certificate resolver (defaults to `letsencrypt`)
 
-```yaml
-volumes:
-  - /path/to/momja.github.io:/repo  # Update this path!
-  - ~/.ssh:/root/.ssh:ro
-  - ~/.gitconfig:/root/.gitconfig:ro
-```
-
-Update the Traefik labels with your domain:
-
-```yaml
-labels:
-  - "traefik.http.routers.blog-cms.rule=Host(`cms.yourdomain.com`)"
-```
-
-4. **Ensure Traefik network exists:**
+3. **Ensure Traefik network exists:**
 
 ```bash
 docker network create traefik-network
 ```
 
-5. **Build and start the CMS:**
+4. **Build and start the CMS:**
 
 ```bash
 docker-compose up -d
 ```
 
-6. **Access the CMS:**
+5. **Access the CMS:**
 
 Navigate to `https://cms.yourdomain.com` and log in with your credentials.
 
