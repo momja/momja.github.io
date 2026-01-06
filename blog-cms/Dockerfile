@@ -23,11 +23,11 @@ RUN groupadd -g 1002 appuser && \
     useradd -u 1001 -g 1002 -m -s /bin/bash appuser && \
     chown -R appuser:appuser /app /repo
 
-# Expose port
-EXPOSE 5000
-
 # Switch to appuser
 USER appuser
+
+# Expose port
+EXPOSE 5000
 
 # Set environment variables
 ENV FLASK_APP=main.py

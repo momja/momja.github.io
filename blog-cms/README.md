@@ -59,6 +59,7 @@ cp .env.example .env
 nano .env
 ```
 
+<<<<<<< Updated upstream
 Update the following values in `.env`:
 
 **Docker Volume Paths:**
@@ -86,18 +87,53 @@ Update the following values in `.env`:
 - `TRAEFIK_CERT_RESOLVER` - Certificate resolver (defaults to `letsencrypt`)
 
 3. **Ensure Traefik network exists:**
+=======
+Update the following values:
+- `CMS_USERNAME` - Your admin username
+- `CMS_PASSWORD` - Secure password for CMS access
+- `SECRET_KEY` - Generate with: `python -c "import secrets; print(secrets.token_hex(32))"`
+- `TRAEFIK_DOMAIN` - Your CMS subdomain (e.g., cms.yourdomain.com)
+
+3. **Update docker-compose.yml:**
+
+Edit the volumes section to point to your actual blog repository:
+
+```yaml
+volumes:
+  - /path/to/momja.github.io:/repo  # Update this path!
+  - ~/.ssh:/root/.ssh:ro
+  - ~/.gitconfig:/root/.gitconfig:ro
+```
+
+Update the Traefik labels with your domain:
+
+```yaml
+labels:
+  - "traefik.http.routers.blog-cms.rule=Host(`cms.yourdomain.com`)"
+```
+
+4. **Ensure Traefik network exists:**
+>>>>>>> Stashed changes
 
 ```bash
 docker network create traefik-network
 ```
 
+<<<<<<< Updated upstream
 4. **Build and start the CMS:**
+=======
+5. **Build and start the CMS:**
+>>>>>>> Stashed changes
 
 ```bash
 docker-compose up -d
 ```
 
+<<<<<<< Updated upstream
 5. **Access the CMS:**
+=======
+6. **Access the CMS:**
+>>>>>>> Stashed changes
 
 Navigate to `https://cms.yourdomain.com` and log in with your credentials.
 
