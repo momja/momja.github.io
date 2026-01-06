@@ -220,14 +220,20 @@ def update_post_api(slug):
 def delete_post_api(slug):
     """API endpoint to delete a post."""
     try:
+        # Delete the post files
         success, message = post_manager.delete_post(slug)
 
         if not success:
             return jsonify({'error': message}), 400
 
+        # Delete the associated branch if it exists
+        branch_name = f"blog/{slug}"
+        if branch_name in git_manager.list_branches():
+            git_manager.delete_branch(branch_name, force=True)
+
         return jsonify({
             'success': True,
-            'message': 'Post deleted successfully'
+            'message': 'Post and branch deleted successfully'
         })
 
     except Exception as e:

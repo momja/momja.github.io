@@ -93,3 +93,29 @@ class GitManager:
             if branch.name != 'master' and branch.name.startswith('blog/'):
                 branches.append(branch.name)
         return branches
+
+    def delete_branch(self, branch_name, force=False):
+        """Delete a local branch and optionally push deletion to remote."""
+        try:
+            # Make sure we're not on the branch we're trying to delete
+            current_branch = self.get_current_branch()
+            if current_branch == branch_name:
+                # Checkout master first
+                master = self.repo.heads.master
+                master.checkout()
+
+            # Delete local branch
+            if branch_name in [head.name for head in self.repo.heads]:
+                self.repo.delete_head(branch_name, force=force)
+
+            # Try to delete remote branch (it's okay if it doesn't exist)
+            try:
+                origin = self.repo.remotes.origin
+                origin.push(refspec=f":{branch_name}")
+            except Exception as e:
+                # Remote branch might not exist, that's okay
+                pass
+
+            return True, f"Deleted branch: {branch_name}"
+        except Exception as e:
+            return False, str(e)
