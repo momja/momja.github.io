@@ -86,57 +86,52 @@ nano .env
 Update these values in `.env`:
 
 ```bash
-# Repository path (from step 3)
-REPO_PATH=/home/user/repositories/yourblog
+# ===== Docker Volume Paths =====
+# Path to your blog repository on the host (from step 3)
+HOST_REPO_PATH=/home/user/repositories/yourblog
 
-# CMS credentials
+# Path to SSH keys on host machine (for git push)
+HOST_SSH_PATH=/home/user/.ssh
+
+# Path to git config on host machine
+HOST_GITCONFIG_PATH=/home/user/.gitconfig
+
+# ===== Container Configuration =====
+# Container name (optional, defaults to blog-cms)
+CONTAINER_NAME=blog-cms
+
+# Docker network name (should match your Traefik network)
+DOCKER_NETWORK=traefik-network
+
+# ===== Repository Configuration =====
+# Internal repository path (inside container, don't change)
+REPO_PATH=/repo
+
+# ===== CMS Authentication =====
 CMS_USERNAME=admin
 CMS_PASSWORD=your_secure_password_here
 
-# Secret key (from above)
+# ===== Flask Secret Key =====
+# Use the secret key generated above
 SECRET_KEY=your_generated_secret_key_here
 
-# Git configuration
+# ===== Git Configuration =====
 GIT_AUTHOR_NAME=Blog CMS
 GIT_AUTHOR_EMAIL=cms@yourdomain.com
 GIT_COMMITTER_NAME=Blog CMS
 GIT_COMMITTER_EMAIL=cms@yourdomain.com
 
-# Your domain
+# ===== Traefik Configuration =====
+# Your CMS domain
 TRAEFIK_DOMAIN=cms.yourdomain.com
+
+# TLS cert resolver (defaults to letsencrypt)
+TRAEFIK_CERT_RESOLVER=letsencrypt
 ```
 
-### 5. Update docker-compose.yml
+**Important:** All configuration is now done via the `.env` file. You no longer need to edit `docker-compose.yml` manually.
 
-Edit `docker-compose.yml`:
-
-```bash
-nano docker-compose.yml
-```
-
-Update the volumes section with your actual paths:
-
-```yaml
-volumes:
-  # Update this to your blog repository path
-  - /home/user/repositories/yourblog:/repo
-
-  # Mount SSH keys (for git push)
-  - ~/.ssh:/root/.ssh:ro
-
-  # Mount git config
-  - ~/.gitconfig:/root/.gitconfig:ro
-```
-
-Update the Traefik labels with your domain:
-
-```yaml
-labels:
-  - "traefik.http.routers.blog-cms.rule=Host(`cms.yourdomain.com`)"
-  # ... other labels
-```
-
-### 6. Create Traefik Network
+### 5. Create Traefik Network
 
 ```bash
 # Create the network if it doesn't exist
@@ -146,7 +141,7 @@ docker network create traefik-network
 docker network ls | grep traefik
 ```
 
-### 7. Configure DNS
+### 6. Configure DNS
 
 Point your subdomain to your server:
 
@@ -159,7 +154,7 @@ TTL: 3600
 
 Wait for DNS propagation (check with `dig cms.yourdomain.com`).
 
-### 8. Build and Start the CMS
+### 7. Build and Start the CMS
 
 ```bash
 # Build the Docker image
@@ -172,7 +167,7 @@ docker-compose up -d
 docker-compose logs -f blog-cms
 ```
 
-### 9. Verify Deployment
+### 8. Verify Deployment
 
 ```bash
 # Check container status
@@ -189,7 +184,7 @@ docker exec -it blog-cms ssh -T git@github.com
 docker exec -it blog-cms ls -la /repo
 ```
 
-### 10. Access the CMS
+### 9. Access the CMS
 
 1. Open your browser to `https://cms.yourdomain.com`
 2. Log in with your credentials from `.env`
