@@ -46,7 +46,24 @@ class PostManager:
                 continue
 
         # Sort by publish date (newest first)
-        posts.sort(key=lambda x: x.get('publish_date') or datetime.min, reverse=True)
+        # Normalize dates to datetime objects for proper comparison
+        def get_sort_date(post):
+            date = post.get('publish_date')
+            if date is None:
+                return datetime.min
+            if isinstance(date, str):
+                try:
+                    return datetime.strptime(date, '%Y-%m-%d')
+                except:
+                    return datetime.min
+            if isinstance(date, datetime):
+                return date
+            # Handle datetime.date objects
+            if hasattr(date, 'year'):
+                return datetime(date.year, date.month, date.day)
+            return datetime.min
+
+        posts.sort(key=get_sort_date, reverse=True)
 
         return posts
 
