@@ -83,7 +83,21 @@ def new_post():
 @require_auth
 def edit_post(slug):
     """Edit existing post page."""
+    # Try to get the post from current branch
     post = post_manager.get_post(slug)
+
+    # If not found, check if there's an unpublished branch for this post
+    if not post:
+        branch_name = f"blog/{slug}"
+
+        # Check if the branch exists
+        if branch_name in git_manager.list_branches():
+            # Checkout the branch to access the post
+            success, message = git_manager.checkout_branch(branch_name)
+
+            if success:
+                # Try to get the post again from the checked out branch
+                post = post_manager.get_post(slug)
 
     if not post:
         return "Post not found", 404
@@ -95,7 +109,21 @@ def edit_post(slug):
 @require_auth
 def preview_post(slug):
     """Preview post as it will appear on blog."""
+    # Try to get the post from current branch
     post = post_manager.get_post(slug)
+
+    # If not found, check if there's an unpublished branch for this post
+    if not post:
+        branch_name = f"blog/{slug}"
+
+        # Check if the branch exists
+        if branch_name in git_manager.list_branches():
+            # Checkout the branch to access the post
+            success, message = git_manager.checkout_branch(branch_name)
+
+            if success:
+                # Try to get the post again from the checked out branch
+                post = post_manager.get_post(slug)
 
     if not post:
         return "Post not found", 404
