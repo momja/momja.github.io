@@ -220,20 +220,47 @@ def update_post_api(slug):
 def delete_post_api(slug):
     """API endpoint to delete a post."""
     try:
-        # Delete the post files
+        current_branch = git_manager.get_current_branch()
+        branch_name = f"blog/{slug}"
+
+        # Delete the post files from current branch
         success, message = post_manager.delete_post(slug)
 
         if not success:
             return jsonify({'error': message}), 400
 
+        # Commit the deletion on current branch
+        article_dir = os.path.join(ARTICLES_PATH, slug)
+        git_manager.commit_changes([article_dir], f"Delete blog post: {slug}")
+
+        # If post exists on master, delete it from there too
+        if current_branch != 'master':
+            # Checkout master
+            git_manager.checkout_branch('master')
+
+            # Check if post exists on master
+            if post_manager.get_post(slug):
+                # Delete from master
+                post_manager.delete_post(slug)
+                git_manager.commit_changes([article_dir], f"Delete blog post: {slug}")
+
+            # Go back to original branch or master if we deleted the branch
+            if current_branch == branch_name:
+                # Stay on master since we're about to delete this branch
+                pass
+            else:
+                git_manager.checkout_branch(current_branch)
+
+        # Push master to update remote
+        git_manager.push_to_remote('master')
+
         # Delete the associated branch if it exists
-        branch_name = f"blog/{slug}"
         if branch_name in git_manager.list_branches():
             git_manager.delete_branch(branch_name, force=True)
 
         return jsonify({
             'success': True,
-            'message': 'Post and branch deleted successfully'
+            'message': 'Post deleted from all branches'
         })
 
     except Exception as e:
@@ -289,6 +316,9 @@ def publish_post(slug):
         success, message = git_manager.push_to_remote('master')
         if not success:
             return jsonify({'error': message}), 500
+
+        # Delete the branch now that it's published and merged
+        git_manager.delete_branch(branch_name, force=True)
 
         return jsonify({
             'success': True,
