@@ -20,6 +20,6 @@ In my mental model, a "workflow" is something that I do on a computer, or IRL th
 
 Now that we have that out of the way, let me explain what diz.flow can do. In "move" mode, you can drop in images (mainly screenshots in my case), arrange multiple images if you like, then in the "draw" mode, you add sequential annotations by click-and-dragging bounding boxes, then providing an optional text blurb and hitting `ENTER`. When you are done, hit `ESC`, and you will exit the "flow". If you need to add multiple flows in one view, you can immediately start making more bounding boxes and it will automatically create another flow in a different color. Each bounding box in the flow is connect using a directional arrow.
 
-!\[image\](../images/annotated-flow.png)
+![image](annotated-flow.png)
 
 That's it! It saves me SECONDS every time I want to create one of these annotated screenshots. Not much really, but I've already noticed, that the "annoyance" barrier to quickly creating something like this to share with someone has dropped low enough where I'm making them all the time already.
