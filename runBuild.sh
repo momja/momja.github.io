@@ -2,9 +2,10 @@ python build.py --full $1
 postcss style/tailwind.css -o static/tailwind.css
 mkdir -p static/images
 echo "copying resources"
-cp -r images/*.pdf static/images/
-cp -r images/*.mp4 static/images/
-cp -r images/*.mov static/images/
+cp -r images/*.jpg images/*.jpeg images/*.png images/*.gif images/*.HEIC static/images/ 2>/dev/null || true
+cp -r images/*.pdf static/images/ 2>/dev/null || true
+cp -r images/*.mp4 static/images/ 2>/dev/null || true
+cp -r images/*.mov static/images/ 2>/dev/null || true
 cp -r favicon/144x144.png static/favicon.png
 cp -r rss.xml static/rss.xml
 echo "resizing images"
