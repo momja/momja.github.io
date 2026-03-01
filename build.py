@@ -1,6 +1,6 @@
 from genericpath import exists
 from tokenize import String
-from cv2 import Formatter_FMT_CSV
+# from cv2 import Formatter_FMT_CSV  # Unused import
 from staticjinja import Site
 import frontmatter
 import yaml
@@ -147,6 +147,10 @@ def article_metadata(template):
                 article_file = article_file[0]
             data = md_context(article_file, True)
             if data["publish_date"]:
+                # Handle both string and datetime publish_date
+                if isinstance(data["publish_date"], str):
+                    # Parse string date to datetime
+                    data["publish_date"] = datetime.datetime.strptime(data["publish_date"], '%Y-%m-%d').date()
                 data["date"] = data["publish_date"].strftime('%b %d %Y')
             data["path"] = os.path.join("articles", os.path.basename(os.path.split(dir)[0]), os.path.basename(os.path.splitext(article_file)[0]) + '.html')
             articles_metadata.append(data)

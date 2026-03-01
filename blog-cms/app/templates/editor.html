@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog CMS - {{ 'Edit' if mode == 'edit' else 'New' }} Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Quill WYSIWYG Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <style>
+        #editor-container {
+            height: 400px;
+        }
+        .ql-editor {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            #editor-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <i class="bi bi-arrow-left"></i> Back to Posts
+            </a>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <h2 class="mb-4">{{ 'Edit Post' if mode == 'edit' else 'New Post' }}</h2>
+
+        <form id="post-form">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="title" name="title"
+                                       value="{{ post.title if post else '' }}" required>
+                            </div>
+
+                            {% if mode == 'new' %}
+                            <div class="mb-3">
+                                <label for="slug" class="form-label">Slug (URL-friendly name)</label>
+                                <input type="text" class="form-control" id="slug" name="slug"
+                                       placeholder="my_awesome_post" required>
+                                <small class="text-muted">Use lowercase letters, numbers, underscores, and hyphens only</small>
+                            </div>
+                            {% endif %}
+
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description"
+                                          rows="2" required>{{ post.description if post else '' }}</textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="publish_date" class="form-label">Publish Date</label>
+                                <input type="date" class="form-control" id="publish_date" name="publish_date"
+                                       value="{{ post.publish_date if post else '' }}" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>Content</span>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <input type="radio" class="btn-check" name="editor-mode" id="wysiwyg-mode" checked>
+                                <label class="btn btn-outline-primary" for="wysiwyg-mode">WYSIWYG</label>
+
+                                <input type="radio" class="btn-check" name="editor-mode" id="markdown-mode">
+                                <label class="btn btn-outline-primary" for="markdown-mode">Markdown</label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- Quill Editor -->
+                            <div id="editor-container"></div>
+
+                            <!-- Markdown Editor (hidden by default) -->
+                            <textarea id="markdown-editor" class="form-control d-none" rows="15"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2 mb-3">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save"></i> Save
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="previewPost()">
+                            <i class="bi bi-eye"></i> Preview
+                        </button>
+                        <a href="/" class="btn btn-outline-secondary">Cancel</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card sticky-top" style="top: 20px;">
+                        <div class="card-header">
+                            <i class="bi bi-image"></i> Upload Image
+                        </div>
+                        <div class="card-body">
+                            <input type="file" class="form-control mb-2" id="image-upload" accept="image/*" capture="environment">
+                            <button type="button" class="btn btn-sm btn-outline-primary w-100" onclick="uploadImage()">
+                                <i class="bi bi-upload"></i> Upload & Insert
+                            </button>
+                            <div id="upload-status" class="mt-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <i class="bi bi-info-circle"></i> Tips
+                        </div>
+                        <div class="card-body">
+                            <ul class="small mb-0">
+                                <li>Images will be uploaded to the site's images directory</li>
+                                <li>Use the WYSIWYG editor for easy formatting</li>
+                                <li>Switch to Markdown mode for direct markdown editing</li>
+                                <li>On mobile, you can capture photos directly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script>
+        // Initialize Quill editor
+        const quill = new Quill('#editor-container', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': [1, 2, 3, false] }],
+                    ['bold', 'italic', 'underline', 'strike'],
+                    ['blockquote', 'code-block'],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    ['link', 'image'],
+                    ['clean']
+                ]
+            }
+        });
+
+        // Initialize converters
+        const turndownService = new TurndownService();
+        const showdownConverter = new showdown.Converter();
+
+        // Load existing content if editing
+        {% if post %}
+        const initialContent = {{ post.content|tojson }};
+        const initialHtml = showdownConverter.makeHtml(initialContent);
+        quill.root.innerHTML = initialHtml;
+        document.getElementById('markdown-editor').value = initialContent;
+        {% else %}
+        // Auto-generate slug from title
+        document.getElementById('title').addEventListener('input', function(e) {
+            const slug = e.target.value
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, '_')
+                .replace(/^_+|_+$/g, '');
+            document.getElementById('slug').value = slug;
+        });
+        {% endif %}
+
+        // Auto-set publish date to today if creating new post
+        {% if mode == 'new' %}
+        document.getElementById('publish_date').value = new Date().toISOString().split('T')[0];
+        {% endif %}
+
+        // Editor mode switching
+        document.getElementById('wysiwyg-mode').addEventListener('change', function() {
+            if (this.checked) {
+                const markdown = document.getElementById('markdown-editor').value;
+                const html = showdownConverter.makeHtml(markdown);
+                quill.root.innerHTML = html;
+                document.getElementById('editor-container').classList.remove('d-none');
+                document.getElementById('markdown-editor').classList.add('d-none');
+            }
+        });
+
+        document.getElementById('markdown-mode').addEventListener('change', function() {
+            if (this.checked) {
+                const html = quill.root.innerHTML;
+                const markdown = turndownService.turndown(html);
+                document.getElementById('markdown-editor').value = markdown;
+                document.getElementById('editor-container').classList.add('d-none');
+                document.getElementById('markdown-editor').classList.remove('d-none');
+            }
+        });
+
+        // Form submission
+        document.getElementById('post-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get content based on current mode
+            let content;
+            if (document.getElementById('markdown-mode').checked) {
+                content = document.getElementById('markdown-editor').value;
+            } else {
+                const html = quill.root.innerHTML;
+                content = turndownService.turndown(html);
+            }
+
+            const data = {
+                title: document.getElementById('title').value,
+                description: document.getElementById('description').value,
+                content: content,
+                publish_date: document.getElementById('publish_date').value
+            };
+
+            {% if mode == 'new' %}
+            data.slug = document.getElementById('slug').value;
+            const url = '/api/posts';
+            const method = 'POST';
+            {% else %}
+            const url = '/api/posts/{{ post.slug }}';
+            const method = 'PUT';
+            {% endif %}
+
+            fetch(url, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Post saved successfully!');
+                    window.location.href = '/';
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(error => {
+                alert('Error saving post: ' + error);
+            });
+        });
+
+        function uploadImage() {
+            const fileInput = document.getElementById('image-upload');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert('Please select an image first');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', file);
+            {% if post %}
+            formData.append('slug', '{{ post.slug }}');
+            {% else %}
+            formData.append('slug', document.getElementById('slug').value || 'temp');
+            {% endif %}
+
+            const statusDiv = document.getElementById('upload-status');
+            statusDiv.innerHTML = '<div class="spinner-border spinner-border-sm"></div> Uploading...';
+
+            fetch('/api/upload-image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Insert image into editor
+                    const range = quill.getSelection(true);
+                    quill.insertEmbed(range.index, 'image', data.path);
+
+                    statusDiv.innerHTML = '<div class="alert alert-success p-2 small">Image uploaded!</div>';
+                    fileInput.value = '';
+
+                    setTimeout(() => {
+                        statusDiv.innerHTML = '';
+                    }, 3000);
+                } else {
+                    statusDiv.innerHTML = '<div class="alert alert-danger p-2 small">Error: ' + data.error + '</div>';
+                }
+            })
+            .catch(error => {
+                statusDiv.innerHTML = '<div class="alert alert-danger p-2 small">Upload failed</div>';
+            });
+        }
+
+        function previewPost() {
+            // Get current content
+            let content;
+            if (document.getElementById('markdown-mode').checked) {
+                content = document.getElementById('markdown-editor').value;
+            } else {
+                const html = quill.root.innerHTML;
+                content = turndownService.turndown(html);
+            }
+
+            // Open preview in new window
+            const previewWindow = window.open('', '_blank');
+            previewWindow.document.write('<h1>Generating preview...</h1>');
+
+            fetch('/api/preview', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: content })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const title = document.getElementById('title').value;
+                    const publishDate = document.getElementById('publish_date').value;
+
+                    previewWindow.document.open();
+                    previewWindow.document.write(`
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>${title}</title>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+                            <style>
+                                body { background: #fefcf9; color: #1a1a1a; padding: 40px 20px; }
+                                .article { max-width: 800px; margin: 0 auto; }
+                            </style>
+                        </head>
+                        <body>
+                            <div class="article">
+                                <p class="text-muted small">Published: ${publishDate}</p>
+                                ${data.html}
+                            </div>
+                        </body>
+                        </html>
+                    `);
+                    previewWindow.document.close();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
