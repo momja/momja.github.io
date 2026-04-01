@@ -43,11 +43,11 @@
 <p>Now, when I first tried to get this running, I encountered issues with the event loop. My understanding is that the discord library made <a href="https://discordpy.readthedocs.io/en/stable/migrating.html?highlight=2%200#asyncio-event-loop-changes">some changes</a> in it's 2.0 version that allows you to create your own asynchronous loop for running the bot. If you <em>don't</em> use this loop, I'm not sure how you set up other asynchronous code.</p>
 
 <div class="codehilite">
-<pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="kn">import</span> <span class="nn">discord</span>
-<span class="kn">import</span> <span class="nn">aiocron</span>
-<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">aiocron</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 
 <span class="n">TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;DISCORD_TOKEN&#39;</span><span class="p">)</span>
 <span class="n">GUILD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;DISCORD_GUILD&#39;</span><span class="p">)</span>
@@ -60,11 +60,11 @@
 <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
 
 <span class="nd">@aiocron</span><span class="o">.</span><span class="n">crontab</span><span class="p">(</span><span class="s1">&#39;0 12 * * 0&#39;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span> <span class="c1"># every sunday at noon</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">trash_reminder</span><span class="p">():</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">trash_reminder</span><span class="p">():</span>
     <span class="n">woodshop_channel</span> <span class="o">=</span> <span class="n">bot</span><span class="o">.</span><span class="n">get_channel</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">WOODSHOP_CHANNEL</span><span class="p">))</span>
     <span class="k">await</span> <span class="n">woodshop_channel</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">trash_message</span><span class="p">)</span>
 
-<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">bot</span><span class="p">:</span>
         <span class="n">trash_reminder</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
         <span class="k">await</span> <span class="n">bot</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">TOKEN</span><span class="p">)</span>

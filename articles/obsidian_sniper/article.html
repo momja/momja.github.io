@@ -68,38 +68,38 @@
 
 <span class="nv">ALFRED_SNIPPETS_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.config/Alfred.alfredpreferences/snippets/Random Code Snippets&quot;</span>
 
-snipe <span class="o">()</span> <span class="o">{</span>
-    <span class="nv">MARKDOWN_FILE</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$0</span> <span class="p">|</span> cut -c3-<span class="k">)</span>
-    <span class="nv">FILENAME</span><span class="o">=</span><span class="k">$(</span>basename <span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span>
-    <span class="nv">UUID</span><span class="o">=</span><span class="k">$(</span>uuidgen<span class="k">)</span>
-    <span class="nv">SNIPPET_FILENAME</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">/</span><span class="nv">$FILENAME</span><span class="s2"> [</span><span class="nv">$UUID</span><span class="s2">].json&quot;</span>
+snipe<span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="nv">MARKDOWN_FILE</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$0</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-c3-<span class="k">)</span>
+<span class="w">    </span><span class="nv">FILENAME</span><span class="o">=</span><span class="k">$(</span>basename<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span>
+<span class="w">    </span><span class="nv">UUID</span><span class="o">=</span><span class="k">$(</span>uuidgen<span class="k">)</span>
+<span class="w">    </span><span class="nv">SNIPPET_FILENAME</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">/</span><span class="nv">$FILENAME</span><span class="s2"> [</span><span class="nv">$UUID</span><span class="s2">].json&quot;</span>
 
-    <span class="nv">SNIPPET</span><span class="o">=</span><span class="k">$(</span>awk <span class="s1">&#39;BEGIN { start=0 } /%%snipe%%/ { start=1; next } start &amp;&amp; /^```/ { code=1; start=0; next } code &amp;&amp; /^```/ { code=0; next } code { printf &quot;%s\\n&quot;, $0 } END { }&#39;</span> <span class="s2">&quot;</span><span class="nv">$MARKDOWN_FILE</span><span class="s2">&quot;</span><span class="k">)</span>
+<span class="w">    </span><span class="nv">SNIPPET</span><span class="o">=</span><span class="k">$(</span>awk<span class="w"> </span><span class="s1">&#39;BEGIN { start=0 } /%%snipe%%/ { start=1; next } start &amp;&amp; /^```/ { code=1; start=0; next } code &amp;&amp; /^```/ { code=0; next } code { printf &quot;%s\\n&quot;, $0 } END { }&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$MARKDOWN_FILE</span><span class="s2">&quot;</span><span class="k">)</span>
 
-    <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&quot;</span><span class="nv">$SNIPPET</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-        <span class="k">return</span> <span class="m">1</span>
-    <span class="k">fi</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SNIPPET</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="k">fi</span>
 
-    touch <span class="s2">&quot;</span><span class="nv">$SNIPPET_FILENAME</span><span class="s2">&quot;</span>
+<span class="w">    </span>touch<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SNIPPET_FILENAME</span><span class="s2">&quot;</span>
 
-    <span class="nv">ENCODED_SNIPPET</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SNIPPET</span><span class="p">//</span><span class="se">\&quot;</span><span class="p">/</span><span class="se">\\\&quot;</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># Replace &quot; with \&quot;</span>
+<span class="w">    </span><span class="nv">ENCODED_SNIPPET</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SNIPPET</span><span class="p">//</span><span class="se">\&quot;</span><span class="p">/</span><span class="se">\\\&quot;</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">  </span><span class="c1"># Replace &quot; with \&quot;</span>
 
-    <span class="nb">printf</span> <span class="s2">&quot;{\n&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;\&quot;alfredsnippet\&quot; : {\n&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;\&quot;snippet\&quot; : \&quot;%s\&quot;,\n&quot;</span> <span class="s2">&quot;</span><span class="nv">$ENCODED_SNIPPET</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;\&quot;uid\&quot; : \&quot;%s\&quot;,\n&quot;</span> <span class="nv">$UUID</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;\&quot;name\&quot; : \&quot;%s\&quot;,\n&quot;</span> <span class="s2">&quot;</span><span class="nv">$FILENAME</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;\&quot;keyword\&quot; : \&quot;\&quot;\n&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
-    <span class="nb">printf</span> <span class="s2">&quot;}}\n&quot;</span> &gt;&gt; <span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;{\n&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\&quot;alfredsnippet\&quot; : {\n&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\&quot;snippet\&quot; : \&quot;%s\&quot;,\n&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ENCODED_SNIPPET</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\&quot;uid\&quot; : \&quot;%s\&quot;,\n&quot;</span><span class="w"> </span><span class="nv">$UUID</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\&quot;name\&quot; : \&quot;%s\&quot;,\n&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$FILENAME</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\&quot;keyword\&quot; : \&quot;\&quot;\n&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
+<span class="w">    </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;}}\n&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$SNIPPET_FILENAME</span>
 <span class="o">}</span>
 
 <span class="c1"># Clear out anything already in directory</span>
-rm <span class="s2">&quot;</span><span class="nv">$ALFRED_SNIPPETS_DIR</span><span class="s2">/&quot;</span>*.json
+rm<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ALFRED_SNIPPETS_DIR</span><span class="s2">/&quot;</span>*.json
 
-<span class="nv">FUNCDEFS</span><span class="o">=</span><span class="k">$(</span><span class="nb">typeset</span> -f snipe<span class="k">)</span> find . -name <span class="s2">&quot;*.md&quot;</span> -type f -exec sh -c <span class="s1">&#39;</span>
+<span class="nv">FUNCDEFS</span><span class="o">=</span><span class="k">$(</span><span class="nb">typeset</span><span class="w"> </span>-f<span class="w"> </span>snipe<span class="k">)</span><span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.md&quot;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;</span>
 <span class="s1">   eval &quot;$FUNCDEFS&quot; &amp;&amp;</span>
 <span class="s1">     unset -v FUNCDEFS &amp;&amp;</span>
-<span class="s1">     snipe &quot;$@&quot;&#39;</span> <span class="o">{}</span> <span class="s2">&quot;</span><span class="nv">$ALFRED_SNIPPETS_DIR</span><span class="s2">&quot;</span> <span class="se">\;</span>
+<span class="s1">     snipe &quot;$@&quot;&#39;</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ALFRED_SNIPPETS_DIR</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\;</span>
 </code></pre>
 </div>
 

@@ -72,14 +72,7 @@ I’ve found many dressers on the street (I think this is the third one I’ve b
 
 &lt;p&gt;&lt;img src="IMG_3585.jpeg" alt="IMG_3585.jpeg" /&gt;
 You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 17 Feb 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">34</guid></item><item><title>I Made a Sign</title><link>http://dizzard.net/articles/signage/article.html</link><description>&lt;![CDATA[&lt;h1&gt;I Made a Sign&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src="http://dizzard.net/images/sign.jpg" alt="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;I made a sign! It has LED lighting inside it, I haven't figured out how to power it safely while it's outside though. That might have to wait until I can seek help from a professional.&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cvlFr1VB9fk?si=gnbmLnTdTNfr9gea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 29 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">33</guid></item><item><title>Oh Blogging, What a Bother!</title><link>http://dizzard.net/articles/oh_blogging_what_a_bother/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Oh Blogging, What a Bother!&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 17 Feb 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">34</guid></item><item><title>Oh Blogging, What a Bother!</title><link>http://dizzard.net/articles/oh_blogging_what_a_bother/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Oh Blogging, What a Bother!&lt;/h1&gt;
 
 &lt;p&gt;Sometimes, I'm not so certain if I enjoy blogging, or if I enjoy the &lt;em&gt;idea&lt;/em&gt; of blogging. I know I like making things, both physical and digital, I know I like reading blogs, so why would I &lt;em&gt;not&lt;/em&gt; enjoy blogging? I'm not sure, but I'm starting to question it. Maybe what I really need is time away from screens after a day job spent in front of them. It's also been an awfully busy start to 2025, with some stressful national politics.&lt;/p&gt;
 
@@ -88,6 +81,13 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 &lt;p&gt;I'm just not sure. And maybe that's OK too! I'm still here writing something, aren't I? What I really think I would like to have on this blog is documentation of the &lt;em&gt;in-real-life&lt;/em&gt; things I've built. I see two great benefits to this. The first being a personal log of my creations, a way to reflect and consider how the quality and complexity of projects I take on changes and grows. The other is being able to hopefully inspire others to build things themselves! I see a lot of blogs about digital technology, photography, current events, and sometimes art. What about the makerspace movement? What about everyone's own personal &lt;a href="https://hackaday.com/"&gt;Hackadays&lt;/a&gt;. That's the type of blog I'd like to read more of. There's plenty of YouTube channels in that vein, but I don't need any more video in my life! I don't need to tell you, dear reader, that YouTube and blogging are far from the same thing.&lt;/p&gt;
 
 &lt;p&gt;Do you have any blogs to recommend to me?&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 29 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">33</guid></item><item><title>I Made a Sign</title><link>http://dizzard.net/articles/signage/article.html</link><description>&lt;![CDATA[&lt;h1&gt;I Made a Sign&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src="http://dizzard.net/images/sign.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I made a sign! It has LED lighting inside it, I haven't figured out how to power it safely while it's outside though. That might have to wait until I can seek help from a professional.&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cvlFr1VB9fk?si=gnbmLnTdTNfr9gea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 29 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">32</guid></item><item><title>Blog Challenge</title><link>http://dizzard.net/articles/blog_challenge/article.html</link><description>&lt;![CDATA[&lt;p&gt;I was inspired by other bloggers to share my answers to the &lt;a href="https://blog.avas.space/bear-blog-challenge/"&gt;bear blog questions&lt;/a&gt; (&lt;a href="https://kevquirk.com/blog/blog-questions-challenge"&gt;Adapted by Kev&lt;/a&gt;). So here are my responses.&lt;/p&gt;
 
 &lt;h2&gt;Why did you start blogging in the first place?&lt;/h2&gt;
@@ -192,11 +192,11 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 &lt;span class="n"&gt;borg_repo_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;BORG_REPO_DIR&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;backup_drive&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;BACKUP_DRIVE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;mount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;mount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;mount /dev/sda1 /mnt/backup&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;sync_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;sync_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;rsync_command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
         &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rsync -az --delete --exclude-from=&amp;#39;/etc/backup-config/exclude-file.txt&amp;#39; -e &amp;#39;ssh -c aes128-ctr&amp;#39; &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;remote_backup_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;local_backup_dir&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
     &lt;span class="p"&gt;)&lt;/span&gt;
@@ -204,7 +204,7 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
     &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Rsync output:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;backup_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;backup_files&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Backing up files...&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;borg_command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
         &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;borg create --stats --progress &amp;quot;&lt;/span&gt;
@@ -215,11 +215,11 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
     &lt;span class="n"&gt;logging&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Borg output:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;unmount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;unmount_drive&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;run_command&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;umount /mnt/backup&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;parser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="c1"&gt;# setup parser&lt;/span&gt;
     &lt;span class="n"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;parser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parse_args&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
@@ -682,38 +682,38 @@ Sometimes it's easiest just to start with a candlestick holder and work until yo
 
 &lt;span class="nv"&gt;ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.config/Alfred.alfredpreferences/snippets/Random Code Snippets&amp;quot;&lt;/span&gt;
 
-snipe &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="nv"&gt;MARKDOWN_FILE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$0&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -c3-&lt;span class="k"&gt;)&lt;/span&gt;
-    &lt;span class="nv"&gt;FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;basename &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
-    &lt;span class="nv"&gt;UUID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;uuidgen&lt;span class="k"&gt;)&lt;/span&gt;
-    &lt;span class="nv"&gt;SNIPPET_FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt; [&lt;/span&gt;&lt;span class="nv"&gt;$UUID&lt;/span&gt;&lt;span class="s2"&gt;].json&amp;quot;&lt;/span&gt;
+snipe&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;MARKDOWN_FILE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;cut&lt;span class="w"&gt; &lt;/span&gt;-c3-&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;basename&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;UUID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;uuidgen&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;SNIPPET_FILENAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt; [&lt;/span&gt;&lt;span class="nv"&gt;$UUID&lt;/span&gt;&lt;span class="s2"&gt;].json&amp;quot;&lt;/span&gt;
 
-    &lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;awk &lt;span class="s1"&gt;&amp;#39;BEGIN { start=0 } /%%snipe%%/ { start=1; next } start &amp;amp;&amp;amp; /^```/ { code=1; start=0; next } code &amp;amp;&amp;amp; /^```/ { code=0; next } code { printf &amp;quot;%s\\n&amp;quot;, $0 } END { }&amp;#39;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$MARKDOWN_FILE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;awk&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;BEGIN { start=0 } /%%snipe%%/ { start=1; next } start &amp;amp;&amp;amp; /^```/ { code=1; start=0; next } code &amp;amp;&amp;amp; /^```/ { code=0; next } code { printf &amp;quot;%s\\n&amp;quot;, $0 } END { }&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$MARKDOWN_FILE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
-    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-z&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;fi&lt;/span&gt;
 
-    touch &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;touch&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 
-    &lt;span class="nv"&gt;ENCODED_SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="p"&gt;//&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="se"&gt;\\\&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="c1"&gt;# Replace &amp;quot; with \&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;ENCODED_SNIPPET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;SNIPPET&lt;/span&gt;&lt;span class="p"&gt;//&lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="se"&gt;\\\&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;# Replace &amp;quot; with \&amp;quot;&lt;/span&gt;
 
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;{\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;alfredsnippet\&amp;quot; : {\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;snippet\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ENCODED_SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;uid\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$UUID&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;name\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;keyword\&amp;quot; : \&amp;quot;\&amp;quot;\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
-    &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;}}\n&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;{\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&amp;quot;alfredsnippet\&amp;quot; : {\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&amp;quot;snippet\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ENCODED_SNIPPET&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&amp;quot;uid\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$UUID&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&amp;quot;name\&amp;quot; : \&amp;quot;%s\&amp;quot;,\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$FILENAME&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\&amp;quot;keyword\&amp;quot; : \&amp;quot;\&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;}}\n&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNIPPET_FILENAME&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Clear out anything already in directory&lt;/span&gt;
-rm &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;/&amp;quot;&lt;/span&gt;*.json
+rm&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;/&amp;quot;&lt;/span&gt;*.json
 
-&lt;span class="nv"&gt;FUNCDEFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;typeset&lt;/span&gt; -f snipe&lt;span class="k"&gt;)&lt;/span&gt; find . -name &lt;span class="s2"&gt;&amp;quot;*.md&amp;quot;&lt;/span&gt; -type f -exec sh -c &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="nv"&gt;FUNCDEFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;typeset&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-f&lt;span class="w"&gt; &lt;/span&gt;snipe&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;find&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;*.md&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-type&lt;span class="w"&gt; &lt;/span&gt;f&lt;span class="w"&gt; &lt;/span&gt;-exec&lt;span class="w"&gt; &lt;/span&gt;sh&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
 &lt;span class="s1"&gt;   eval &amp;quot;$FUNCDEFS&amp;quot; &amp;amp;&amp;amp;&lt;/span&gt;
 &lt;span class="s1"&gt;     unset -v FUNCDEFS &amp;amp;&amp;amp;&lt;/span&gt;
-&lt;span class="s1"&gt;     snipe &amp;quot;$@&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="se"&gt;\;&lt;/span&gt;
+&lt;span class="s1"&gt;     snipe &amp;quot;$@&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ALFRED_SNIPPETS_DIR&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -748,11 +748,11 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;Now, when I first tried to get this running, I encountered issues with the event loop. My understanding is that the discord library made &lt;a href="https://discordpy.readthedocs.io/en/stable/migrating.html?highlight=2%200#asyncio-event-loop-changes"&gt;some changes&lt;/a&gt; in it's 2.0 version that allows you to create your own asynchronous loop for running the bot. If you &lt;em&gt;don't&lt;/em&gt; use this loop, I'm not sure how you set up other asynchronous code.&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;os&lt;/span&gt;
 
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;discord&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;aiocron&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;asyncio&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;discord&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;aiocron&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;asyncio&lt;/span&gt;
 
 &lt;span class="n"&gt;TOKEN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;DISCORD_TOKEN&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;GUILD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;DISCORD_GUILD&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -765,11 +765,11 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;span class="n"&gt;loop&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;asyncio&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_event_loop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
 &lt;span class="nd"&gt;@aiocron&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crontab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;0 12 * * 0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# every sunday at noon&lt;/span&gt;
-&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;trash_reminder&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;trash_reminder&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;woodshop_channel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_channel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;WOODSHOP_CHANNEL&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="k"&gt;await&lt;/span&gt; &lt;span class="n"&gt;woodshop_channel&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;trash_message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="k"&gt;async&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;trash_reminder&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
         &lt;span class="k"&gt;await&lt;/span&gt; &lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TOKEN&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -916,27 +916,27 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;&lt;a href="https://github.com/momja/momja.github.io"&gt;My site repository&lt;/a&gt; is currently being deployed with a &lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;github action&lt;/a&gt; written by &lt;a href="https://github.com/JamesIves"&gt;@JamesIves&lt;/a&gt;. The sample &lt;code class="codeblock"&gt;.yaml&lt;/code&gt; file looks like this:&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Build and Deploy&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Build and Deploy&lt;/span&gt;
+&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;
 &lt;span class="nt"&gt;permissions&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;contents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;write&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nt"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;build-and-deploy&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;runs-on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu-latest&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Checkout 🛎️&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;actions/checkout@v3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;contents&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;write&lt;/span&gt;
+&lt;span class="nt"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;build-and-deploy&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;runs-on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;ubuntu-latest&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Checkout 🛎️&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;actions/checkout@v3&lt;/span&gt;
 
-&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;
 
-&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Deploy 🚀&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;JamesIves/github-pages-deploy-action@v4.3.3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Deploy 🚀&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;JamesIves/github-pages-deploy-action@v4.3.3&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages&lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -948,9 +948,9 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;Settings -&gt; Code and Automation -&gt; Pages -&gt; Source.&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages &amp;lt;- make sure this matches &amp;quot;branch&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;gh-pages &amp;lt;- make sure this matches &amp;quot;branch&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;folder&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;build&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -960,37 +960,37 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;For Python, it is a little different. I'm not the biggest fan of dependency management in Python, but I recently came across a tool called &lt;a href="https://github.com/bndr/pipreqs"&gt;pipreqs&lt;/a&gt; which solves the challenges I associate with generating package requirements for Python. To build a requirements.txt file with pipreqs, just run &lt;code class="codeblock"&gt;pipreqs&lt;/code&gt; in your project directory. You will want to include this requirements file in your git commit, because we will then use it to install all the pip dependencies on the VM used by Github Actions!&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm ci&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;becomes:&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;pip install -r requirements.txt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm install&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Install and Build 🔧&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;|&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;pip install -r requirements.txt&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm install&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="no"&gt;npm run build&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Lastly, I didn't want the &lt;code class="codeblock"&gt;gh-pages&lt;/code&gt; branch to be updated each time a change is made to &lt;em&gt;any&lt;/em&gt; branch, so I changed the yaml field at the top of the file for when the action should be triggered:&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;push&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;becomes:&lt;/p&gt;
 
 &lt;div class="codehilite"&gt;
-&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;push&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;branches&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;master&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;push&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nt"&gt;branches&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p p-Indicator"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;master&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -1021,33 +1021,33 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;div class="codehilite"&gt;
 &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a new window splitting the space used by the existing one so that&lt;/span&gt;
 &lt;span class="c1"&gt;# the two windows are placed one above the other&lt;/span&gt;
-map ctrl+alt+k launch --location&lt;span class="o"&gt;=&lt;/span&gt;hsplit --cwd&lt;span class="o"&gt;=&lt;/span&gt;current
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+alt+k&lt;span class="w"&gt; &lt;/span&gt;launch&lt;span class="w"&gt; &lt;/span&gt;--location&lt;span class="o"&gt;=&lt;/span&gt;hsplit&lt;span class="w"&gt; &lt;/span&gt;--cwd&lt;span class="o"&gt;=&lt;/span&gt;current
 
 &lt;span class="c1"&gt;# Create a new window splitting the space used by the existing one so that&lt;/span&gt;
 &lt;span class="c1"&gt;# the two windows are placed side by side&lt;/span&gt;
-map ctrl+alt+l launch --location&lt;span class="o"&gt;=&lt;/span&gt;vsplit --cwd&lt;span class="o"&gt;=&lt;/span&gt;current
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+alt+l&lt;span class="w"&gt; &lt;/span&gt;launch&lt;span class="w"&gt; &lt;/span&gt;--location&lt;span class="o"&gt;=&lt;/span&gt;vsplit&lt;span class="w"&gt; &lt;/span&gt;--cwd&lt;span class="o"&gt;=&lt;/span&gt;current
 
 &lt;span class="c1"&gt;# Rotate the current split, chaging its split axis from vertical to&lt;/span&gt;
 &lt;span class="c1"&gt;# horizontal or vice versa&lt;/span&gt;
-map ctrl+shift+r layout_action rotate
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+shift+r&lt;span class="w"&gt; &lt;/span&gt;layout_action&lt;span class="w"&gt; &lt;/span&gt;rotate
 
 &lt;span class="c1"&gt;# Move the active window in the indicated direction&lt;/span&gt;
-map ctrl+shift+h move_window left
-map ctrl+shift+l move_window right
-map ctrl+shift+k move_window up
-map ctrl+shift+j move_window down
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+shift+h&lt;span class="w"&gt; &lt;/span&gt;move_window&lt;span class="w"&gt; &lt;/span&gt;left
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+shift+l&lt;span class="w"&gt; &lt;/span&gt;move_window&lt;span class="w"&gt; &lt;/span&gt;right
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+shift+k&lt;span class="w"&gt; &lt;/span&gt;move_window&lt;span class="w"&gt; &lt;/span&gt;up
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+shift+j&lt;span class="w"&gt; &lt;/span&gt;move_window&lt;span class="w"&gt; &lt;/span&gt;down
 
 &lt;span class="c1"&gt;# Switch focus to the neighboring window in the indicated direction&lt;/span&gt;
-map ctrl+h neighboring_window left
-map ctrl+l neighboring_window right
-map ctrl+k neighboring_window up
-map ctrl+j neighboring_window down
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+h&lt;span class="w"&gt; &lt;/span&gt;neighboring_window&lt;span class="w"&gt; &lt;/span&gt;left
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+l&lt;span class="w"&gt; &lt;/span&gt;neighboring_window&lt;span class="w"&gt; &lt;/span&gt;right
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+k&lt;span class="w"&gt; &lt;/span&gt;neighboring_window&lt;span class="w"&gt; &lt;/span&gt;up
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+j&lt;span class="w"&gt; &lt;/span&gt;neighboring_window&lt;span class="w"&gt; &lt;/span&gt;down
 
 &lt;span class="c1"&gt;# Switch tabs&lt;/span&gt;
-map ctrl+cmd+l next_tab
-map ctrl+cmd+h previous_tab
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+cmd+l&lt;span class="w"&gt; &lt;/span&gt;next_tab
+map&lt;span class="w"&gt; &lt;/span&gt;ctrl+cmd+h&lt;span class="w"&gt; &lt;/span&gt;previous_tab
 
-enabled_layouts splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
+enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">5</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/header.jpg" style="width:100%; height: auto;" alt=""&gt;&lt;/p&gt;
