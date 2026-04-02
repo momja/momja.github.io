@@ -9,9 +9,9 @@ cp -r images/*.mov static/images/ 2>/dev/null || true
 cp -r favicon/144x144.png static/favicon.png
 cp -r rss.xml static/rss.xml
 echo "resizing images"
-# mogrify -resize 720x720\> -path static/images/ images/*.jpg
-# mogrify -resize 720x720\> -path static/images/ images/*.gif
-# mogrify -resize 720x720\> -format jpg -path static/images/ images/*.png
-# mogrify -resize 720x720\> -format jpg -path static/images/ images/*.HEIC
+mogrify -resize 720x720\> -path static/images/ images/*.jpg
+mogrify -resize 720x720\> -path static/images/ images/*.gif
+mogrify -resize 720x720\> -format jpg -path static/images/ images/*.png
+mogrify -resize 720x720\> -format jpg -path static/images/ images/*.HEIC
 
 echo "Website is published locally at file://$(dirname $(realpath "$0"))/static/index.html"

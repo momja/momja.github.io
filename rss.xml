@@ -57,7 +57,7 @@ I’ve found many dressers on the street (I think this is the third one I’ve b
 You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 17 Feb 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">34</guid></item><item><title>I Made a Sign</title><link>http://dizzard.net/articles/signage/article.html</link><description>&lt;![CDATA[&lt;h1&gt;I Made a Sign&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src="../../images/sign.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/sign.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I made a sign! It has LED lighting inside it, I haven't figured out how to power it safely while it's outside though. That might have to wait until I can seek help from a professional.&lt;/p&gt;
 
@@ -114,7 +114,7 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 
 &lt;p&gt;I was waiting for paint to dry, so to keep my hands busy I made this little cork board to display some of my and my partner's pins (yeah I know, it's pretty empty as-is). It's just cork adhered to a hardboard backing. I cut it out on the bandsaw.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/corkboard.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/corkboard.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some related links I found:&lt;/p&gt;
 
@@ -128,21 +128,21 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 
 &lt;p&gt;I've been working on an entrance sign for &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;, and here is an early preview. There's some internals to this sign that will make the final project sing, but it's not quite ready yet. I think I'll do a full write up about it once it is complete.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/sequoia_sign.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/sequoia_sign.jpg" alt="" /&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">29</guid></item><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
 
 &lt;p&gt;In college, I wrote a final paper about &lt;a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf"&gt;Generative Adversarial Nets for Artistic Image-to-Image Translation&lt;/a&gt; where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/gan_example.png" alt="../images/gan_example.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/gan_example.jpg" alt="../images/gan_example.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;That college paper was much more down in the dirt with the model than what I've tried recently. For an event, I needed to create a bunch of printmaking blocks very quickly, and they needed to be centered around San Francisco Landmarks. To accomplish this, I took a look at diffusion models. Using Dall-E 3, I was able to apply a woodblock print style transfer, and with some further processing, I could vectorize the output and send it to a CNC machine to manufacture the stamp. In the example below, it shows the original public domain image, the result of style transfer on the image, then the linoleum block, and the final print.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/golden_gate_process.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/golden_gate_process.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;h2&gt;The Tools&lt;/h2&gt;
 
 &lt;p&gt;I used OpenAI's ChatGPT interface to apply style transfer (I know, this is not to be confused with "Neural Style Transfer" which is a specific set of algorithms) There was quite a bit of clean up in Gimp, then Inkscape to remove blurry lines, clean up the fog. The stamp was carved on a Nomad 3 CNC with a 90º Vee Bit, with further cleanup by hand with some carving tools.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/borg_and_rsync.png" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
 
@@ -336,21 +336,21 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 &lt;h2&gt;What's Next&lt;/h2&gt;
 
 &lt;p&gt;I think the next thing is going to be two portable square tables that will be placed on quality casters. Then if you need more space, just roll them out of the room. If you need more worktop, bring 'em back in.
-&lt;img src="../../images/workbench_1.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;img src="http://dizzard.net/images/workbench_1.jpg" alt="" /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/workbench_2.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_2.jpg" alt="" /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/workbench_3.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_3.jpg" alt="" /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/workbench_4.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_4.jpg" alt="" /&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">23</guid></item><item><title>Boquets to Art at the De Young Museum</title><link>http://dizzard.net/articles/blooming/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Boquets to Art at the De Young Museum&lt;/h1&gt;
 
 &lt;p&gt;This past weekend, my partner and I went to San Francisco's &lt;a href="https://famsf.org"&gt;De Young Museum&lt;/a&gt; to see the exhibition annual "Boquets to Art". It was a fun event that takes over the entire museum, pairing artwork to flower arrangements in whimsical and creative ways. Here are some pictures from the event.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/blooming_1.jpg" alt="" /&gt;
-&lt;img src="../../images/blooming_2.jpg" alt="" /&gt;
-&lt;img src="../../images/blooming_3.jpg" alt="" /&gt;
-&lt;img src="../../images/blooming_4.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/blooming_1.jpg" alt="" /&gt;
+&lt;img src="http://dizzard.net/images/blooming_2.jpg" alt="" /&gt;
+&lt;img src="http://dizzard.net/images/blooming_3.jpg" alt="" /&gt;
+&lt;img src="http://dizzard.net/images/blooming_4.jpg" alt="" /&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 12 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">22</guid></item><item><title>Refinishing a Chest of Drawers Found on the Street</title><link>http://dizzard.net/articles/chest_of_drawers/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Refinishing a Chest of Drawers Found on the Street&lt;/h1&gt;
 
 &lt;p&gt;Recently, while walking to the neighborhood library, I found a chest of drawers, or dresser in an alley with a free sticker on it.
@@ -417,8 +417,8 @@ However, it's quite expensive. When I last bought it, a quart was $46 on Amazon!
 &lt;p&gt;Anyway, without further ado, here's the final product!
 Notice some of the drawers are sagging, I think I can replace the drawer slides at a later date, but for now I'm happy to lubricate it with a little wax and call them good.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/chest_incomplete.jpg" alt="Before" /&gt;
-&lt;img src="../../images/chest_complete.jpg" alt="After" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/chest_incomplete.jpg" alt="Before" /&gt;
+&lt;img src="http://dizzard.net/images/chest_complete.jpg" alt="After" /&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">21</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
 
 &lt;p&gt;San Francisco will soon be getting a new community workshop. As a part of an organization, myself and others are building &lt;a href="sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;. It will be a non-profit community workshop with the mission to provide access to tools and knowledge without the barriers to entry at many for-profit organizations. Since opening our doors in March, we've also distinguished ourselves by offering a wide variety of &lt;a href="https://bookwhen.com/sequoiafabrica#focus=ev-sl1e-20240604190000"&gt;workshops and classes&lt;/a&gt; which is all thanks to the members and volunteers who have founded and kept the space going.&lt;/p&gt;
@@ -454,7 +454,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">19</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
 
 &lt;p&gt;I took some time this weekend to add an RSS feed to this blog. I will eventually add a visible link, but for now, you can find it at &lt;a href="https://dizzard.net/rss"&gt;dizzard.net/rss&lt;/a&gt;. It may have some kinks to work out, but the solution was quick and dirty. I implemented it using &lt;a href="https://pypi.org/project/feedgen/"&gt;Feedgen&lt;/a&gt;. Like most of my personal projects these days, ChatGPT sped up the process significantly.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;h1&gt;Beeswax Candles (Dip)&lt;/h1&gt;
 
@@ -637,15 +637,15 @@ Sometimes it's easiest just to start with a candlestick holder and work until yo
 
 &lt;p&gt;I just had to come up with a way to identify the files I wanted to include as snippets with as little work as possible, and that is where my little scripts name comes from! Introducing &lt;code class="codeblock"&gt;sniper&lt;/code&gt;, the handy-dandy tool for cloning your obsidian code blocks in Alfred snippets. All you have to do is prefix a code block with the Sniper keyword "snipe" in a markdown comment. This isn't a "smart" utility, so you got to make sure the comment only contains the word "snipe", and nothing else. Here's an example:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/obsidian_codeblock.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/obsidian_codeblock.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -&gt; Features -&gt; Snippets -&gt; Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it matches your collection.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/alfred_snippets_collection.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_snippets_collection.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;You also need to update &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it know where your Alfred config directory is. You can find where your alfred preferences file is by going to "Settings -&gt; Advanced -&gt; Syncing". I keep mine in &lt;code class="codeblock"&gt;.config&lt;/code&gt; with the rest of my dotfiles&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/alfred_preferences.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_preferences.jpg" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;My directory path looks like:&lt;/p&gt;
 
@@ -937,7 +937,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src="../../images/setting-gh-pages.jpg" alt="../../images/setting-gh-pages.jpg" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/setting-gh-pages.jpg" alt="../../images/setting-gh-pages.jpg" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got &lt;a href="https://github.com/momja/momja.github.io/blob/master/package.json"&gt;all this configured&lt;/a&gt; in my 'package.json' file, so whenever I run &lt;code class="codeblock"&gt;npm run build&lt;/code&gt;, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running &lt;code class="codeblock"&gt;npm install&lt;/code&gt; assuming you've correctly set up your packages.&lt;/p&gt;
 
 &lt;p&gt;For Python, it is a little different. I'm not the biggest fan of dependency management in Python, but I recently came across a tool called &lt;a href="https://github.com/bndr/pipreqs"&gt;pipreqs&lt;/a&gt; which solves the challenges I associate with generating package requirements for Python. To build a requirements.txt file with pipreqs, just run &lt;code class="codeblock"&gt;pipreqs&lt;/code&gt; in your project directory. You will want to include this requirements file in your git commit, because we will then use it to install all the pip dependencies on the VM used by Github Actions!&lt;/p&gt;
@@ -992,7 +992,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;pre class="codewrapper"&gt;&lt;code class="codeblock"&gt;kitty +kitten icat ~/Downloads/kitten_falling.gif
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src="../../images/animation.gif" alt="Kitty terminal output with the icat plugin" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://dizzard.net/images/animation.gif" alt="Kitty terminal output with the icat plugin" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another reason I think Kitty is great is that it's text file configurable, which makes it &lt;em&gt;way&lt;/em&gt; easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in &lt;a href="https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf"&gt;my dotfiles repository&lt;/a&gt;&lt;/p&gt;
 

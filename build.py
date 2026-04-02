@@ -235,8 +235,6 @@ if __name__ == "__main__":
     # build jinja templates
     project_data = projectJSONParser.parse('projects.json')
 
-    # print(list(zip(html_article_files, articles_data)))
-
     # add pygments css for code highlighting
     code_style = formatters.HtmlFormatter(style='dracula').get_style_defs('.codehilite')
     try:
