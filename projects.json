@@ -1,4 +1,13 @@
-[{
+[
+    {
+        "name": "Sequoia Fabrica Makerspace",
+        "start_date": "04/24",
+        "end_date": "01/26",
+        "image_path": "images/sign.jpg",
+        "description": "A non-profit makerspace dedicated to fostering innovation and creativity. I served as President from it's inception in 2024-25, board member from 2025-26.",
+        "url": "https://sequoiafabrica.org"
+    },
+    {
         "name": "2021 IEEE VR: Virtual Reality Demonstrator",
         "start_date": "01/21",
         "end_date": "03/21",

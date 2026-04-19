@@ -6,7 +6,7 @@ From the parent directory, run
 ```
 
 ## Creating a new article
-Articles should be placed in `.src/articles/article_name` the directory should contain...
+Articles should be placed in `./src/articles/article_name` the directory should contain...
 
 if the articles is in html, two files:
 1. markdown file with the article contents, and
