@@ -1,0 +1,17 @@
+---
+description: A great terminal app, purpose built for agent-based development
+publish_date: '2026-06-21'
+title: Supacode fits the interface to the task
+---
+
+A while ago I watched this talk from **Lucas Meijer** on how [he develops with Pi](<Lucas Meijer>). Although I haven't really used Pi for anything, something I did take away from this video was the terminal emulator he was using. It's called \[Supacode\](https://supacode.sh).
+
+I really was intrigued by it's operating paradigm. Supacode (gosh, I really don't like the name though. So cheesy!) Is built around worktrees. [Worktrees](https://git-scm.com/docs/git-worktree) have become all the rage with coding agents, but I'd already been using them for managing multiple feature branches before all this AI stuff came along. I loved having such clean separation between what I was working on. If a P1 bug was reported in the middle of developing a feature, pivoting was trivial, and it didn't require futzing around with `git stash`, and accidentally losing my working changes because I couldn't remember it's position in the stash. Worktrees let me just keep all the working changes in the branch untouched, because I will just fix the bug in another branch.
+
+Another reason I loved worktrees was because of how damn slow it is to switch between branches at my day job. We have a massive repo, with a thousand engineers all developing on it daily. It's slow. There's a lot of internal infrastructure around how we use git with CI/CD that makes it even slower. So I don't like switching branches, especially between different release versions. With worktrees, if I'm working on two features at once, I can switch contexts without switching branches. It's great!
+
+Supacode makes this ten times greater. Now that everyone and their dog are using `[INSERT YOUR CODING AGENT HERE]` for everything, tracking what you are working on, and what code changes you have floating around is significantly more challenging. Supacode automatically tracks your worktrees and displays them as separate tabs, each with their own terminal workspace. It matches how I'd already been working really well. I especially like that I can easily create new worktrees with setup scripts.
+
+The software also does some fancy stuff with ordering tabs by running agents, and alerting you when an agent needs a response. Surely useful, but not what I find so alluring. It's really *just* the by-default separation of worktrees into workspaces. I had a script in Kitty that would create a separate terminal pane for each worktree, but this turns it up a notch.
+
+Supacode isn't really a drop-in terminal replacement. It's built with [libghostty](https://github.com/ghostty-org/ghostty) (also all the rage right now), and you certainly _could_ use it for all your terminal needs. Since each terminal is tied to a worktree display-wise, I still use [Kitty](https://sw.kovidgoyal.net/kitty/) for all my ssh sessions, logs, etc. I also really like Kitty, but it feels kind of weird having two terminal emulators, both with multiplexing support, _and_ and IDE running on my desktop all at once, so I'm not exactly sure what the future holds. I could probably kludge something together so Supacode fully supersedes Kitty, or maybe I'll try the oft discussed [cmux](https://cmux.com/) sometime and see how that suits me. For now, I'm pretty happy with what I've got going.
