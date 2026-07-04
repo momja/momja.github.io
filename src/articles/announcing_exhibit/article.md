@@ -12,19 +12,24 @@ It is heavily inspired by Simon Willison's [tools aggregator](https://tools.simo
 
 Exhibit is built to host your personal store of tools, whether you custom-built them, generated them via AI, or imported them from someone else’s site. It’s the home for those niche HTML/CSS/JS apps that serve highly specific purposes.
 
-I use my instance to keep a variety of small utilities in one place. Examples of how artifacts I keep include:
-- A mortgage calculator, configured to my personal financial situation
-- Copy-paste utilities (still working on CSP policies to allow this)
-- Small test projects and prototypes
+I use my instance to keep a variety of small utilities in one place. Examples of artifacts I keep include:
+
+  
+
+*   Financial calculators
+*   Clipboard utilities (Still working on some CSP related issues with copy/paste)
+*   Small test projects and prototypes
 
 Exhibit is just a dedicated place for all your little tools. It's like a media library.
 
 Exhibit sandboxes each artifact in an `<iframe>` with it's own [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP). This allows the artifact owner (you) to create network policies that allow network requests to certain origins to be made. **By default, all network requests are blocked**. So if you save another website by URL, you can rest assured that anything you do in your artifact won't make its way to the broader internet. The flip side of this strict security is that importing external sites can break and may require some manual fiddling to get working. I'm exploring ways to make that import process smoother.
 
-There's a lot more I'm looking forward to adding to Exhibit, starting with tags support. Beyond that, I'm look into:
-- Multi-user setups
-- Shared/public artifacts
-- Better URL scraping
-- and [other stuff](https://github.com/momja/Exhibit/blob/main/issues.jsonl). I'm starting small, and I'll continue to build as I (and hopefully others) find more ways to get value out of it.
+There's a lot more I'm looking forward to adding to Exhibit, starting with tags support. Beyond that, I'm looking into:
+
+  
+
+*   Multi-user setups
+*   Shared/public artifacts
+*   Robust URL scraping
 
 The project repo is hosted [here](https://github.com/momja/Exhibit)
