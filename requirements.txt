@@ -3,7 +3,7 @@ easywatch==0.0.5
 feedgen==1.0.0
 feedgenerator==2.1.0
 Jinja2==3.1.6
-lxml==5.2.1
+lxml==6.1.0
 markdown2==2.4.13
 MarkupSafe==2.1.5
 numpy==1.26.4
