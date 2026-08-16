@@ -76,7 +76,7 @@ momja.github.io/
 │   ├── helper_templates/              # Jinja2 partial templates
 │   │   ├── _article.html             # Article page layout
 │   │   ├── _article_listings.html    # Article cards for index
-│   │   ├── _project_card.html        # Project card component
+│   │   ├── _project_card.html        # One project row in the dense index
 │   │   ├── _projects.html            # Projects section
 │   │   └── _theme_toggle.html        # Dark mode toggle
 │   ├── index.html                     # Main landing page template
@@ -380,23 +380,49 @@ watchdog==4.0.0           # File system monitoring
 
 ## Styling System
 
-### Tailwind CSS
+The page shell is hand-written CSS in `style/tailwind.css`, not Tailwind
+utility classes. It is a small fixed set of components whose exact metrics
+matter, and the halftone orb reads the paper colour back out of the custom
+properties at runtime. Tailwind still carries the article body through the
+typography plugin, and article *content* files still use utility classes.
 
 **Configuration (`tailwind.config.js`):**
 - Content paths: `./static/**/*.{html,js}`
 - Plugins: `@tailwindcss/typography`
-- Theme: Extended default theme
+- Dark mode: Tailwind's default `media` strategy, matching the
+  `prefers-color-scheme` queries in the hand-written CSS
 
-**Custom Classes:**
-- `.paper-texture` - Background texture effect
-- `.paper-texture-text` - Text styling for paper effect
-- `.prose` - Typography plugin for article content
-- `.dark:*` - Dark mode variants
+**Design tokens** (`:root` in `style/tailwind.css`, overridden under
+`@media (prefers-color-scheme: dark)`):
+- `--ink` body text, rules, borders
+- `--sub` dates and blurbs
+- `--paper` page stock — **the orb renderer parses this at runtime**, so
+  changing it here is enough; do not hard-code the hex in the script
+- `--panel` raised surfaces (the icon strip)
+- `--hair` row separators, `--row` row hover, `--hot` hovered title
+- `--amber` / `--magenta` / `--indigo` the topbar gradient
 
-**Color Scheme:**
-- Light: `bg-yellow-50` (paper-like)
-- Dark: `bg-slate-800`
-- Accent: Indigo palette (`indigo-800`, `indigo-50`, etc.)
+**Components:**
+- `.topbar` - gradient rule across the top of every page
+- `.hero` / `.orb` / `.links` - landing page header and social icon strip
+- `.section-head` + `.dot-icon` - halftone swatch section markers
+- `.index` - the dense one-line-per-row article and project list
+- `.wrap` (index, 760px) / `.article-wrap` (articles, 900px) - page measures.
+  They differ because `prose-xl` runs ~838px and overflows the narrower one.
+- `.prose` - typography plugin, fed the tokens above
+- `.scale-normal` / `.scale-up` - retained only because several existing
+  article HTML files use them on download buttons
+
+**Typefaces** (Google Fonts, linked from both page shells):
+- Space Grotesk - headings and article body
+- Space Mono - UI, index rows, code
+- VT323 - dates and section labels
+
+**The halftone orb** is inlined at the foot of `src/index.html`. It rasterises
+a three-ink halftone at half resolution and upscales with
+`image-rendering: pixelated`, so the buffer must stay an integer fraction of
+the laid-out size. It honours `prefers-reduced-motion`, parks on
+`document.hidden`, and re-develops on a colour-scheme change.
 
 ### Code Highlighting
 

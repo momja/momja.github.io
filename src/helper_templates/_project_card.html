@@ -1,29 +1,18 @@
 {% macro insert_project(project) -%}
-
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="{{ project.url }}">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="{{project.image_path}}">
-            </a>
+{#- The gutter is sized for a date, so projects show a year span rather than
+    the "Apr 24 — Jan 26" display_date, which overruns it. Single-year
+    projects print the one year instead of repeating it either side of a
+    dash. Descriptions are stripped of markup because the whole row is a
+    link, and a couple of them carry an inline <a> that would otherwise
+    nest inside it. -#}
+{%- set start_year = project.start_date.strftime('%Y') -%}
+{%- set end_year = project.end_date.strftime('%Y') -%}
+<li>
+    <a href="{{ project.url }}">
+        <span class="id-tag">{% if start_year == end_year %}{{ start_year }}{% else %}{{ start_year }} — {{ end_year }}{% endif %}</span>
+        <div class="body">
+            <h3>{{ project.name }}</h3>{% if project.description %}<p>{{ project.description|striptags }}</p>{% endif %}
         </div>
-
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="{{ project.url }}">
-            {{project.name}}
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            {{project.display_date}}
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                {{project.description}}
-            </p>
-        </div>
-    </article>
-</div>
-
-{% endmacro %}
+    </a>
+</li>
+{%- endmacro %}

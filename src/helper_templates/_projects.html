@@ -1,8 +1,10 @@
 {% macro insertProjects() -%}
 {% import "helper_templates/_project_card.html" as project_card %}
 
+<ol class="index">
 {% for project in projects -%}
     {{ project_card.insert_project(project) }}
 {% endfor %}
+</ol>
 
 {% endmacro %}
