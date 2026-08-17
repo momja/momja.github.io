@@ -8,8 +8,6 @@
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
-    --paper-texture-light: #f8f5f0;
-    --paper-texture-dark: #1e293b;
 }
 
 [data-theme="dark"] {
@@ -18,29 +16,6 @@
     --font-color: #e1e1ff;
     --bg-color: #161625;
     --heading-color: #818cab;
-}
-
-/* Paper texture effect using CSS only */
-.paper-texture {
-    background-image:
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700" opacity="1"><defs><filter id="nnnoise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence><feSpecularLighting surfaceScale="16" specularConstant="3" specularExponent="20" lighting-color="%23d6ae3d" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting"><feDistantLight azimuth="3" elevation="117"></feDistantLight></feSpecularLighting><feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="specularLighting" result="colormatrix"></feColorMatrix></filter></defs><rect width="700" height="700" fill="%23f2f1efff"></rect><rect width="700" height="700" fill="%23d6ae3d" filter="url(%23nnnoise-filter)"></rect></svg>');
-    background-size: 400px 400px, 30px 30px, cover, 200px 200px, 200px 200px;
-    background-blend-mode: multiply, normal, screen, normal;
-}
-
-/* Dark-mode texture is baked into dark colors directly rather than relying on
-   multiply-blend cancellation, since the light texture's blend against a dark
-   backdrop renders as harsh white speckling in some browsers. Also keep
-   specularConstant low: the filter chain never references SourceGraphic, so
-   the rect's fill color has no effect on the noise itself - only lowering
-   specularConstant tones down the speckle brightness. */
-@media (prefers-color-scheme: dark) {
-    .paper-texture {
-        background-image:
-            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 700" width="700" height="700"><defs><filter id="nnnoise-filter-dark" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence><feSpecularLighting surfaceScale="16" specularConstant="0.55" specularExponent="20" lighting-color="%23475569" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting"><feDistantLight azimuth="3" elevation="117"></feDistantLight></feSpecularLighting><feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="specularLighting" result="colormatrix"></feColorMatrix></filter></defs><rect width="700" height="700" fill="%231e293b"></rect><rect width="700" height="700" fill="%23273548" filter="url(%23nnnoise-filter-dark)"></rect></svg>');
-        background-size: 400px 400px;
-        background-blend-mode: normal;
-    }
 }
 
 .theme {
@@ -129,95 +104,370 @@ input:checked+.slider:before {
     }
 }
 
-.fadeIn-fast {
-    opacity: 0;
-    -webkit-animation-fill-mode: forwards;
-    /* Chrome 16+, Safari 4+ */
-    -moz-animation-fill-mode: forwards;
-    /* FF 5+ */
-    -o-animation-fill-mode: forwards;
-    /* Not implemented yet */
-    -ms-animation-fill-mode: forwards;
-    /* IE 10+ */
-    animation-fill-mode: forwards;
-    /* When the spec is finished */
-    text-transform: none;
-    animation: fadeIn ease 0.5s forwards;
-    animation-delay: 1s;
-    -webkit-animation: fadeIn ease 0.5s forwards;
-    -webkit-animation-delay: 1s;
-}
-
-.fadeIn-slow {
-    opacity: 0;
-    -webkit-animation-fill-mode: forwards;
-    /* Chrome 16+, Safari 4+ */
-    -moz-animation-fill-mode: forwards;
-    /* FF 5+ */
-    -o-animation-fill-mode: forwards;
-    /* Not implemented yet */
-    -ms-animation-fill-mode: forwards;
-    /* IE 10+ */
-    animation-fill-mode: forwards;
-    /* When the spec is finished */
-    text-transform: none;
-    animation: fadeIn ease 1s forwards;
-    animation-delay: 1.5s;
-    -webkit-animation: fadeIn ease 1s forwards;
-    -webkit-animation-delay: 1.5s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 /* .codehilite {
     padding: 1em;
     margin: 1em;
 } */
+
+/* ==========================================================================
+   Dense halftone theme
+   --------------------------------------------------------------------------
+   The site shell is hand-written CSS rather than Tailwind utilities: it is a
+   small, fixed set of components (hero, icon strip, index row) whose exact
+   metrics matter, and the halftone orb needs to read the paper colour back
+   out of these custom properties at runtime. Tailwind still carries the
+   article body through the typography plugin.
+   ========================================================================== */
+
+:root {
+    --ink:   #221f1a;   /* body text, rules, borders */
+    --sub:   #5b5346;   /* dates, blurbs */
+    --paper: #f4f0e6;   /* page stock — the orb reads this at runtime */
+    --panel: #ffffff;   /* raised surfaces (the icon strip) */
+    --hair:  #ded6c5;   /* row separators */
+    --row:   #efe9db;   /* row hover wash */
+    --hot:   #a1490f;   /* hovered title */
+
+    --magenta: #c53d8f;
+    --indigo:  #4548a8;
+    --amber:   #d9910c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ink:   #ece7db;
+        --sub:   #a0968a;
+        --paper: #191713;
+        --panel: #24211c;
+        --hair:  #3a352c;
+        --row:   #221f1a;
+        --hot:   #e8a23c;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--paper);
+    color: var(--ink);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Very light grain over everything, kept subtle so it never fights text.
+   Multiply darkens, which does nothing useful on dark stock, so the dark
+   scheme screens the same noise to lift it instead. */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.07;
+    mix-blend-mode: multiply;
+    z-index: 50;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-color-scheme: dark) {
+    body::after { mix-blend-mode: screen; opacity: 0.05; }
+}
+
+.topbar {
+    height: 6px;
+    background: linear-gradient(90deg, var(--indigo), var(--magenta), var(--amber));
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 14px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* No smooth gradient sits underneath the orb — every pixel of colour is an
+   ink dot rasterised by the renderer inlined at the foot of index.html. */
+.orb {
+    flex: none;
+    width: 160px;
+    height: 160px;
+}
+
+.orb canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+.hero h1 {
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    max-width: 480px;
+    margin: 0 0 16px;
+}
+
+/* One segmented strip rather than four labelled pills: the marks are
+   self-identifying, so the labels were spending ~440px of hero width to say
+   what the glyphs already say. Hairline dividers keep it one object. */
+.links {
+    display: inline-flex;
+    width: fit-content;
+    background: var(--panel);
+    border: 2px solid var(--ink);
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    text-decoration: none;
+    color: var(--ink);
+    border-left: 1px solid var(--ink);
+}
+
+.links a:first-child { border-left: 0; }
+.links a:hover { background: var(--ink); color: var(--paper); }
+
+/* Icons inherit currentColor so they invert with the cell on hover. */
+.links svg { flex: none; width: 15px; height: 15px; display: block; }
+
+/* ---------- index ---------- */
+
+.wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 8px 24px 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* The dot-screen swatch carries the section on its own — no bar, no chip. */
+.section-head {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 28px 0 5px;
+    font-family: 'VT323', ui-monospace, monospace;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+/* the orb sets the hero's height, so the first head needs less air than the
+   one that has to separate two lists */
+.wrap > .section-head:first-child { margin-top: 14px; }
+
+.section-head .dot-icon {
+    flex: none;
+    width: 11px;
+    height: 11px;
+    background-image: radial-gradient(circle, var(--ink) 45%, transparent 46%);
+    background-size: 4px 4px;
+}
+
+/* No cards. One row is one line: date in a fixed monospace gutter so titles
+   align down the page, then title and blurb sharing the remaining track. The
+   blurb is the only part that can afford to run out of room, so it clips with
+   an ellipsis rather than wrapping the row onto a second line. */
+.index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+
+.index li { border-bottom: 1px solid var(--hair); }
+
+.index a {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 5px 2px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.index .id-tag {
+    flex: none;
+    width: 84px;
+    font-family: 'VT323', ui-monospace, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--sub);
+    white-space: nowrap;
+}
+
+.index .body {
+    min-width: 0;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.index h3 {
+    display: inline;
+    margin: 0;
+    font-family: 'Space Mono', ui-monospace, monospace;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink);
+}
+
+.index p {
+    display: inline;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--sub);
+}
+
+.index p::before { content: " — "; color: var(--hair); }
+.index li:hover { background: var(--row); }
+.index li:hover h3 { color: var(--hot); }
+
+.pixel-mark {
+    font-family: 'VT323', ui-monospace, monospace;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--sub);
+    margin-top: 40px;
+}
+
+/* ---------- article page ---------- */
+
+/* Articles get their own measure: .wrap is sized for the index, and
+   prose-xl's 80ch runs about 838px, which overflows it. */
+.article-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8px 24px 80px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 560px) {
+    .article-wrap { padding: 4px 18px 56px; }
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Space Mono', ui-monospace, monospace;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--panel);
+    border: 2px solid var(--ink);
+    padding: 6px 11px;
+}
+
+.back-link:hover { background: var(--ink); color: var(--paper); }
+
+.article-date {
+    font-family: 'VT323', ui-monospace, monospace;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sub);
+}
+
+/* Hand the typography plugin our tokens rather than fighting its output, so
+   the article body tracks the same palette in both schemes. */
+.prose {
+    /* The shell is monospaced, but a full article set in Space Mono is
+       exhausting to read — so the body drops to the sans that is already
+       loaded for the headings. Code keeps the mono face below. */
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+
+    --tw-prose-body: var(--ink);
+    --tw-prose-headings: var(--ink);
+    --tw-prose-lead: var(--sub);
+    --tw-prose-links: var(--ink);
+    --tw-prose-bold: var(--ink);
+    --tw-prose-counters: var(--sub);
+    --tw-prose-bullets: var(--sub);
+    --tw-prose-hr: var(--hair);
+    --tw-prose-quotes: var(--ink);
+    --tw-prose-quote-borders: var(--hair);
+    --tw-prose-captions: var(--sub);
+    --tw-prose-code: var(--ink);
+    --tw-prose-th-borders: var(--hair);
+    --tw-prose-td-borders: var(--hair);
+}
+
+.prose :is(h1, h2, h3, h4) {
+    letter-spacing: -0.01em;
+}
+
+.prose :is(code, pre, kbd, samp) {
+    font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---------- tablet ---------- */
+
+@media (max-width: 820px) {
+    .hero { gap: 20px; padding: 32px 20px 14px; }
+    .orb { width: 132px; height: 132px; }
+    .hero h1 { font-size: 30px; }
+    .wrap { padding: 8px 20px 64px; }
+}
+
+/* ---------- phone ---------- */
+
+@media (max-width: 560px) {
+    /* Side by side leaves the copy about 165px wide at 375px, which is
+       unreadable — so the orb stacks above it. The orb centres but the copy
+       stays left-aligned, since centring the whole hero turns the tagline
+       into a ragged centred block. */
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding: 26px 18px 20px;
+    }
+
+    .orb { width: 112px; height: 112px; margin: 0 auto 2px; }
+    .hero h1 { font-size: 26px; line-height: 1.15; }
+    .hero p { font-size: 13px; margin-bottom: 14px; }
+
+    /* the strip only grows enough to make each cell a comfortable tap target */
+    .links a { width: 52px; height: 40px; }
+    .links svg { width: 17px; height: 17px; }
+
+    .wrap { padding: 4px 18px 56px; }
+    .section-head { margin: 26px 0 4px; }
+
+    /* At 390px the blurb only survives about eight characters before the
+       ellipsis, which is worse than not showing it — so the row drops to
+       date + title and stays a single line. */
+    .index a { gap: 9px; padding: 7px 2px; }
+    .index .id-tag { width: 68px; font-size: 13px; }
+    .index h3 { font-size: 13px; }
+    .index p { display: none; }
+
+    .pixel-mark { margin-top: 32px; }
+}
