@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../../tailwind.css">
     <link rel="stylesheet" href="../../codestyle.css">
     <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=VT323&display=swap">
+    <!-- Article bodies still use Font Awesome icons on their download buttons. -->
     <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
     <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <style>
@@ -16,23 +20,18 @@
             list-style-type: decimal;
         }
     </style>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
 </head>
 
-<body class="paper-texture paper-texture-text bg-yellow-50 dark:bg-slate-800">
-    <div class='back-button mt-8 text-center md:text-left md:ml-8'>
-        <button class="bg-transparent text-slate-900 dark:text-white" onclick="goBack()">
-            ← Back
-        </button>
-    </div>
-    <div class="m-4 md:flex md:justify-center">
-        <article class="prose lg:prose-xl dark:prose-invert">
-            <p class="text-sm text-gray-600 dark:text-gray-400">Published: 2025-01-29</p>
-            <h1>Oh Blogging, What a Bother!</h1>
+<body>
+    <div class="topbar"></div>
+
+    <div class="article-wrap">
+        <p style="margin: 24px 0 0"><a class="back-link" href="../../index.html">← Index</a></p>
+
+        <div class="md:flex md:justify-center">
+            <article class="prose lg:prose-xl dark:prose-invert">
+                <p class="article-date">Published 2025-01-29</p>
+                <h1>Oh Blogging, What a Bother!</h1>
 
 <p>Sometimes, I'm not so certain if I enjoy blogging, or if I enjoy the <em>idea</em> of blogging. I know I like making things, both physical and digital, I know I like reading blogs, so why would I <em>not</em> enjoy blogging? I'm not sure, but I'm starting to question it. Maybe what I really need is time away from screens after a day job spent in front of them. It's also been an awfully busy start to 2025, with some stressful national politics.</p>
 
@@ -42,11 +41,9 @@
 
 <p>Do you have any blogs to recommend to me?</p>
 
-        </article>
+            </article>
+        </div>
     </div>
-    <!-- <div class="p-5 m-4 md:flex md:justify-center">
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#000000', 'I2I4QBRVN');kofiwidget2.draw();</script>
-    </div> -->
 
 </body>
 

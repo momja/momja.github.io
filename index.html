@@ -1,1307 +1,851 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html>
-<!--<![endif]-->
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Maxwell Omdal</title>
-    <meta name="description" content="">
+    <meta name="description" content="Maxwell Omdal — building new things. Writing about maker culture, woodworking, and resource sharing.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <!-- <script src="./script.js" async defer></script> -->
-    <script src="https://kit.fontawesome.com/675a0d1294.js" crossorigin="anonymous"></script>
+    <link rel="alternate" type="application/rss+xml" title="Maxwell Omdal" href="/rss.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=VT323&display=swap">
     <script data-goatcounter="https://dizzard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-    <!-- <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script> -->
-    <!-- <script language="javascript" type="text/javascript" src="backdrop.js"></script> -->
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        #sketch-holder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-    </style>
 </head>
 
-<body class="paper-texture paper-texture-text bg-yellow-50 dark:bg-slate-800">
-    <div class='h-16'></div>
+<body>
+    <div class="topbar"></div>
 
-    <div class="text-yellow-900 dark:text-blue-50">
-        <div class="flex flex-col h-auto items-center bg-color-gray-500">
-            <!-- <div class="shadow-lg w-64 h-64 bg-cover bg-top bg-center m-5 rounded-full" style="background-image: url('images/profile.jpg')"> -->
-            <!-- </div> -->
-            <div class="w-full">
-                <div class="px-8">
-                    <p class="fadeIn-fast text-4xl text-center md:text-5xl font-extrabold">
-                        Maxwell Omdal
-                    </p>
-                    <p class="fadeIn-slow text-xl text-center md:text-2xl text-indigo-800 dark:text-indigo-50 font-extrabold">
-                        I’m building new things. Currently curious about maker culture, woodworking, and resource sharing.
-                    </p>
-                    <div class="py-5 flex justify-center">
-                        <a href="https://www.linkedin.com/in/maxwell-o-38a969101/" class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
-                            <i class="fab fa-linkedin fill-current w-4 h-4 md:mr-2 my-auto"></i>
-                            <span class="hidden md:inline-block">LinkedIn</span>
-                        </a>
-                        <a href="mailto:mjomdal@gmail.com" class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
-                            <i class="far fa-hand-peace fill-current w-4 h-4 md:mr-2 my-auto"></i>
-                            <span class="hidden md:inline-block">mjomdal@gmail.com</span>
-                        </a>
-                        <a href="https://github.com/momja" class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
-                            <i class="fab fa-github fill-current w-4 h-4 md:mr-2 my-auto text-center inline-block"></i>
-                            <span class="hidden md:inline-block">GitHub</span>
-                        </a>
-                        <a rel="me" href="https://fosstodon.org/@mjomdal" class="scale-normal hover:scale-up bg-indigo-100 hover:bg-indigo-200 text-gray-800 text-center font-bold py-2 px-4 mx-2 rounded inline-flex">
-                            <i class="fab fa-mastodon fill-current w-4 h-4 md:mr-2 my-auto text-center inline-block"></i>
-                            <span class="hidden md:inline-block">Mastodon</span>
-                        </a>
-                    </div>
-                </div>
+    <div class="hero">
+        <div class="orb"><canvas id="orb"></canvas></div>
+        <div class="hero-text">
+            <h1>Maxwell Omdal</h1>
+            <p>I’m building new things. Currently curious about maker culture, woodworking, and resource sharing.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/maxwell-o-38a969101/" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm6 0h3.8v1.65h.06c.53-1 1.83-2.06 3.77-2.06C20.4 8.59 21 10.9 21 14.02V21h-4v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V21H9V9z"/></svg></a>
+                <a href="mailto:mjomdal@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15"/><path d="M2.6 5.4 12 13l9.4-7.6"/></svg></a>
+                <a href="https://github.com/momja" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.9 3.17 9.06 7.57 10.53.55.1.75-.24.75-.53l-.02-1.87c-3.07.67-3.72-1.48-3.72-1.48-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.67.08-.67 1.11.08 1.7 1.14 1.7 1.14.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.46-.28-5.05-1.23-5.05-5.48 0-1.21.43-2.2 1.14-2.98-.11-.28-.5-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.5 10.5 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.22 2.66.11 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.6 5.2-5.07 5.47.4.35.76 1.03.76 2.08l-.01 3.08c0 .3.2.64.76.53 4.4-1.47 7.56-5.63 7.56-10.53C23.1 5.33 18.27.5 12 .5z"/></svg></a>
+                <a rel="me" href="https://fosstodon.org/@mjomdal" title="Mastodon" aria-label="Mastodon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 8.2c0-4.2-2.8-5.4-2.8-5.4C17.4 2.2 15 2 12.5 2h-.06C9.94 2 7.5 2.2 6.1 2.8c0 0-2.8 1.2-2.8 5.4v3.2c0 4.2.7 7.7 4.7 8.8 1.9.5 3.5.6 4.8.55 2.4-.14 3.7-.86 3.7-.86l-.08-1.74s-1.7.54-3.6.47c-1.9-.06-3.9-.2-4.2-2.55a4.8 4.8 0 0 1-.04-.65s1.86.45 4.2.56c1.44.07 2.78-.08 4.15-.25 2.62-.31 4.9-1.93 5.2-3.41.46-2.33.42-5.7.42-5.7zm-3.4 5.66h-2.12V8.7c0-1.09-.46-1.64-1.38-1.64-1.01 0-1.52.65-1.52 1.95v2.82h-2.1V9.01c0-1.3-.51-1.95-1.53-1.95-.91 0-1.37.55-1.37 1.64v5.16H6.05V8.55c0-1.09.28-1.95.83-2.59a2.9 2.9 0 0 1 2.26-.96c1.05 0 1.85.4 2.37 1.21l.53.88.53-.88c.52-.81 1.32-1.21 2.37-1.21.92 0 1.67.32 2.26.96.55.64.83 1.5.83 2.59v5.31z"/></svg></a>
             </div>
         </div>
     </div>
 
-    <h2 class="text-3xl text-center font-bold my-2 mx-auto text-indigo-800 dark:text-indigo-50">
-        Articles
-    </h2>
+    <div class="wrap">
+        <div class="section-head"><span class="dot-icon"></span> Articles</div>
+        
+        
 
-    <hr>
-
-    <div class="container my-2 mx-auto px-4 md:px-12">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">
-             
-
-<ol class="md:w-2/3 mx-auto text-yellow-900 dark:text-yellow-50">
-     
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/using_llms_to_investigate_and_reproduce_complex_bugs/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Using LLMs to Investigate And Reproduce Complex Bugs
-                        </h3>
-                        <h4 class="text-sm">
-                            LLMs can be expensive, so lets talk about how to get to RCAs quickly without wasting money
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jul 05 2026
-                        </span>
-                    </div>
-                </div>
+<ol class="index">
+    
+    <li>
+        <a href="articles/using_llms_to_investigate_and_reproduce_complex_bugs/article.html">
+            <span class="id-tag">2026.07.05</span>
+            <div class="body">
+                <h3>Using LLMs to Investigate And Reproduce Complex Bugs</h3><p>LLMs can be expensive, so lets talk about how to get to RCAs quickly without wasting money</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/announcing_exhibit/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Announcing: Exhibit
-                        </h3>
-                        <h4 class="text-sm">
-                            An HTML artifact library
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jul 04 2026
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/announcing_exhibit/article.html">
+            <span class="id-tag">2026.07.04</span>
+            <div class="body">
+                <h3>Announcing: Exhibit</h3><p>An HTML artifact library</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/xai_leans_into_grok_images/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            XAI leans into Grok Images
-                        </h3>
-                        <h4 class="text-sm">
-                            The first trillion dollar porn generator!
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 26 2026
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/xai_leans_into_grok_images/article.html">
+            <span class="id-tag">2026.06.26</span>
+            <div class="body">
+                <h3>XAI leans into Grok Images</h3><p>The first trillion dollar porn generator!</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/supacode_fits_the_interface_to_the_task/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Supacode fits the interface to the task
-                        </h3>
-                        <h4 class="text-sm">
-                            A great terminal app, purpose built for agent-based development
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 21 2026
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/supacode_fits_the_interface_to_the_task/article.html">
+            <span class="id-tag">2026.06.21</span>
+            <div class="body">
+                <h3>Supacode fits the interface to the task</h3><p>A great terminal app, purpose built for agent-based development</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/on_the_fly_digital_events_flyers/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            On-the-fly Digital Events Flyers
-                        </h3>
-                        <h4 class="text-sm">
-                            A small business idea to aid small venue operators
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Apr 01 2026
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/on_the_fly_digital_events_flyers/article.html">
+            <span class="id-tag">2026.04.01</span>
+            <div class="body">
+                <h3>On-the-fly Digital Events Flyers</h3><p>A small business idea to aid small venue operators</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/new_workflow_annotation_tool_diz_flow/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            New Workflow Annotation Tool: diz.flow
-                        </h3>
-                        <h4 class="text-sm">
-                            I vibe-coded a workflow annotation tool in order to minimize the amount of clicks it takes to go from screenshots to workflow description for knowledge sharing
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Feb 20 2026
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/new_workflow_annotation_tool_diz_flow/article.html">
+            <span class="id-tag">2026.02.20</span>
+            <div class="body">
+                <h3>New Workflow Annotation Tool: diz.flow</h3><p>I vibe-coded a workflow annotation tool in order to minimize the amount of clicks it takes to go from screenshots to workflow description for knowledge sharing</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/paper/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Website refresh
-                        </h3>
-                        <h4 class="text-sm">
-                            New Colors and spacing
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Apr 04 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/paper/article.html">
+            <span class="id-tag">2025.04.04</span>
+            <div class="body">
+                <h3>Website refresh</h3><p>New Colors and spacing</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/Incantations_on_teaching/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Thoughts on Teaching Others
-                        </h3>
-                        <h4 class="text-sm">
-                            Some mid-week thoughts
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Feb 19 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/Incantations_on_teaching/article.html">
+            <span class="id-tag">2025.02.19</span>
+            <div class="body">
+                <h3>Thoughts on Teaching Others</h3><p>Some mid-week thoughts</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/Chest_of_drawers_2/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Chest of Drawers 2
-                        </h3>
-                        <h4 class="text-sm">
-                            Refinishing another chest of drawers left on the street in the neighborhood
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Feb 17 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/Chest_of_drawers_2/article.html">
+            <span class="id-tag">2025.02.17</span>
+            <div class="body">
+                <h3>Chest of Drawers 2</h3><p>Refinishing another chest of drawers left on the street in the neighborhood</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/oh_blogging_what_a_bother/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Oh Blogging, What a Bother!
-                        </h3>
-                        <h4 class="text-sm">
-                            Mid-blog crisis
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 29 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/oh_blogging_what_a_bother/article.html">
+            <span class="id-tag">2025.01.29</span>
+            <div class="body">
+                <h3>Oh Blogging, What a Bother!</h3><p>Mid-blog crisis</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/signage/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            I Made a Sign
-                        </h3>
-                        <h4 class="text-sm">
-                            
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 29 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/signage/article.html">
+            <span class="id-tag">2025.01.29</span>
+            <div class="body">
+                <h3>I Made a Sign</h3>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/blog_challenge/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Blog Challenge
-                        </h3>
-                        <h4 class="text-sm">
-                            From Bear Blog
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 06 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/blog_challenge/article.html">
+            <span class="id-tag">2025.01.06</span>
+            <div class="body">
+                <h3>Blog Challenge</h3><p>From Bear Blog</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/10_minute_corkboard/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            10 Minute Mini Corkboard Enamel Pin Display
-                        </h3>
-                        <h4 class="text-sm">
-                            A quick project between projects
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 05 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/10_minute_corkboard/article.html">
+            <span class="id-tag">2025.01.05</span>
+            <div class="body">
+                <h3>10 Minute Mini Corkboard Enamel Pin Display</h3><p>A quick project between projects</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/sequoia_sign/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            A Sneak Peak at a Sign
-                        </h3>
-                        <h4 class="text-sm">
-                            An Early Preview of a Woodworking Project
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 04 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/sequoia_sign/article.html">
+            <span class="id-tag">2025.01.04</span>
+            <div class="body">
+                <h3>A Sneak Peak at a Sign</h3><p>An Early Preview of a Woodworking Project</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/golden_gate_style_transfer/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Using Style Transfer and CNC to Produce Printblocks
-                        </h3>
-                        <h4 class="text-sm">
-                            A new way to make prints
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 03 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/golden_gate_style_transfer/article.html">
+            <span class="id-tag">2025.01.03</span>
+            <div class="body">
+                <h3>Using Style Transfer and CNC to Produce Printblocks</h3><p>A new way to make prints</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/borg_rsync/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Syncing and Backups with Rsync and Borg
-                        </h3>
-                        <h4 class="text-sm">
-                            Creating a self-hosted remote backup for data recovery
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 02 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/borg_rsync/article.html">
+            <span class="id-tag">2025.01.02</span>
+            <div class="body">
+                <h3>Syncing and Backups with Rsync and Borg</h3><p>Creating a self-hosted remote backup for data recovery</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/favorite_things_2024/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            My Favorite Things of 2024
-                        </h3>
-                        <h4 class="text-sm">
-                            Some Tools and Tech
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 01 2025
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/favorite_things_2024/article.html">
+            <span class="id-tag">2025.01.01</span>
+            <div class="body">
+                <h3>My Favorite Things of 2024</h3><p>Some Tools and Tech</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/resolutions/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            New Year's Resolutions
-                        </h3>
-                        <h4 class="text-sm">
-                            2024 Recapped and Goals for 2025
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Dec 31 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/resolutions/article.html">
+            <span class="id-tag">2024.12.31</span>
+            <div class="body">
+                <h3>New Year's Resolutions</h3><p>2024 Recapped and Goals for 2025</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/ai_development/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            AI For Development
-                        </h3>
-                        <h4 class="text-sm">
-                            Thoughts on these changes
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Sep 17 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/ai_development/article.html">
+            <span class="id-tag">2024.09.17</span>
+            <div class="body">
+                <h3>AI For Development</h3><p>Thoughts on these changes</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/workbench/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Finished a Workbench
-                        </h3>
-                        <h4 class="text-sm">
-                            For Sequoia Fabrica's Workbench
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 15 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/workbench/article.html">
+            <span class="id-tag">2024.06.15</span>
+            <div class="body">
+                <h3>Finished a Workbench</h3><p>For Sequoia Fabrica's Workbench</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/blooming/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Boquets to Art at the De Young Museum
-                        </h3>
-                        <h4 class="text-sm">
-                            A weekend excursion to see an exhibition
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 12 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/blooming/article.html">
+            <span class="id-tag">2024.06.12</span>
+            <div class="body">
+                <h3>Boquets to Art at the De Young Museum</h3><p>A weekend excursion to see an exhibition</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/chest_of_drawers/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Refinishing a Chest of Drawers Found on the Street
-                        </h3>
-                        <h4 class="text-sm">
-                            You know what they say about one man's trash
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 04 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/chest_of_drawers/article.html">
+            <span class="id-tag">2024.06.04</span>
+            <div class="body">
+                <h3>Refinishing a Chest of Drawers Found on the Street</h3><p>You know what they say about one man's trash</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/new_workshops/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Building a New Workshop in San Francisco
-                        </h3>
-                        <h4 class="text-sm">
-                            A Makerspace-Type Space For Learning, Sharing and Doing
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 02 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/new_workshops/article.html">
+            <span class="id-tag">2024.06.02</span>
+            <div class="body">
+                <h3>Building a New Workshop in San Francisco</h3><p>A Makerspace-Type Space For Learning, Sharing and Doing</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/detergent/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Homemade Laundry Detergent Recipe for Lazy People
-                        </h3>
-                        <h4 class="text-sm">
-                            A 3 Ingredient Recipe for Laumdy Detergent
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            May 04 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/detergent/article.html">
+            <span class="id-tag">2024.05.04</span>
+            <div class="body">
+                <h3>Homemade Laundry Detergent Recipe for Lazy People</h3><p>A 3 Ingredient Recipe for Laumdy Detergent</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/rss_now/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            This is now available on RSS!
-                        </h3>
-                        <h4 class="text-sm">
-                            Adding an RSS feed to my blog
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Apr 22 2024
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/rss_now/article.html">
+            <span class="id-tag">2024.04.22</span>
+            <div class="body">
+                <h3>This is now available on RSS!</h3><p>Adding an RSS feed to my blog</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/beeswax_candles/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            How to make Beeswax Candles
-                        </h3>
-                        <h4 class="text-sm">
-                            My recipe for making beeswax candles
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Dec 11 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/beeswax_candles/article.html">
+            <span class="id-tag">2023.12.11</span>
+            <div class="body">
+                <h3>How to make Beeswax Candles</h3><p>My recipe for making beeswax candles</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/apple_watch/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            What Does Apple Watch Do
-                        </h3>
-                        <h4 class="text-sm">
-                            Do they really do what we need?
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Nov 11 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/apple_watch/article.html">
+            <span class="id-tag">2023.11.11</span>
+            <div class="body">
+                <h3>What Does Apple Watch Do</h3><p>Do they really do what we need?</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/shared_workshop/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Principles of Operating a Shared Workshop
-                        </h3>
-                        <h4 class="text-sm">
-                            My thoughts from a year helping out at a hackerspace
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Oct 08 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/shared_workshop/article.html">
+            <span class="id-tag">2023.10.08</span>
+            <div class="body">
+                <h3>Principles of Operating a Shared Workshop</h3><p>My thoughts from a year helping out at a hackerspace</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/the_green_imperative/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            The Green Imperative By Victor Papanek
-                        </h3>
-                        <h4 class="text-sm">
-                            Book Notes
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            May 09 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/the_green_imperative/article.html">
+            <span class="id-tag">2023.05.09</span>
+            <div class="body">
+                <h3>The Green Imperative By Victor Papanek</h3><p>Book Notes</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/obsidian_sniper/article.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            How to capture code snippets from Obsidian and add to Alfred Snippets
-                        </h3>
-                        <h4 class="text-sm">
-                            A simple way to flag certain snippets you'd like to see appear in Alfred
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            May 07 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/obsidian_sniper/article.html">
+            <span class="id-tag">2023.05.07</span>
+            <div class="body">
+                <h3>How to capture code snippets from Obsidian and add to Alfred Snippets</h3><p>A simple way to flag certain snippets you'd like to see appear in Alfred</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/discord_bot/discord_bot.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Writing a Discord bot with Python and aiocron
-                        </h3>
-                        <h4 class="text-sm">
-                            A quick example with discord.py's 2.0 framework
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Apr 22 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/discord_bot/discord_bot.html">
+            <span class="id-tag">2023.04.22</span>
+            <div class="body">
+                <h3>Writing a Discord bot with Python and aiocron</h3><p>A quick example with discord.py's 2.0 framework</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/automated_blogging/automated_blogging.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            This blog post is automatically published
-                        </h3>
-                        <h4 class="text-sm">
-                            Well.. At least it's supposed to be
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Mar 09 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/automated_blogging/automated_blogging.html">
+            <span class="id-tag">2023.03.09</span>
+            <div class="body">
+                <h3>This blog post is automatically published</h3><p>Well.. At least it's supposed to be</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/apple_file_protocol/apple_file_protocol.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Earth 🪐 to Localhost
-                        </h3>
-                        <h4 class="text-sm">
-                            Setting up a NAS with Apple Filing Protocol
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jan 31 2023
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/apple_file_protocol/apple_file_protocol.html">
+            <span class="id-tag">2023.01.31</span>
+            <div class="body">
+                <h3>Earth 🪐 to Localhost</h3><p>Setting up a NAS with Apple Filing Protocol</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/interesting_blogs/Interesting Blogs.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Interesting Blogs and Bloggers
-                        </h3>
-                        <h4 class="text-sm">
-                            Just some bloggers I really like
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Dec 27 2022
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/interesting_blogs/Interesting Blogs.html">
+            <span class="id-tag">2022.12.27</span>
+            <div class="body">
+                <h3>Interesting Blogs and Bloggers</h3><p>Just some bloggers I really like</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/goatcounter/goatcounter.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            I'm Counting Goats!
-                        </h3>
-                        <h4 class="text-sm">
-                            🐐
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Dec 21 2022
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/goatcounter/goatcounter.html">
+            <span class="id-tag">2022.12.21</span>
+            <div class="body">
+                <h3>I'm Counting Goats!</h3><p>🐐</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/hackerspaces/hackerspaces_to_me.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Thoughts on Hackerspaces
-                        </h3>
-                        <h4 class="text-sm">
-                            And some other stuff too
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Dec 21 2022
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/hackerspaces/hackerspaces_to_me.html">
+            <span class="id-tag">2022.12.21</span>
+            <div class="body">
+                <h3>Thoughts on Hackerspaces</h3><p>And some other stuff too</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/gh-pages/Deploy Github Pages with Jinja and Github Actions.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Deploy Github Pages with Jinja and Github Actions
-                        </h3>
-                        <h4 class="text-sm">
-                            Github Pages with Jinja and TailwindCSS
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 14 2022
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/gh-pages/Deploy Github Pages with Jinja and Github Actions.html">
+            <span class="id-tag">2022.06.14</span>
+            <div class="body">
+                <h3>Deploy Github Pages with Jinja and Github Actions</h3><p>Github Pages with Jinja and TailwindCSS</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/tmux-kitty/tmux-kitty.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Migrating from tmux to Kitty
-                        </h3>
-                        <h4 class="text-sm">
-                            .txt config files should rule all
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 12 2022
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/tmux-kitty/tmux-kitty.html">
+            <span class="id-tag">2022.06.12</span>
+            <div class="body">
+                <h3>Migrating from tmux to Kitty</h3><p>.txt config files should rule all</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/path_planning/path_planning.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Path Planning
-                        </h3>
-                        <h4 class="text-sm">
-                            A* Path Planning
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Sep 15 2020
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/path_planning/path_planning.html">
+            <span class="id-tag">2020.09.15</span>
+            <div class="body">
+                <h3>Path Planning</h3><p>A* Path Planning</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/particle_simulation/particle_simulation.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Particle Simulation
-                        </h3>
-                        <h4 class="text-sm">
-                            Particle Simulation
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Aug 15 2020
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/particle_simulation/particle_simulation.html">
+            <span class="id-tag">2020.08.15</span>
+            <div class="body">
+                <h3>Particle Simulation</h3><p>Particle Simulation</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/fluid_simulation/fluid_simulation.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Fluid Simulation
-                        </h3>
-                        <h4 class="text-sm">
-                            Fluid Simulation
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jul 15 2020
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/fluid_simulation/fluid_simulation.html">
+            <span class="id-tag">2020.07.15</span>
+            <div class="body">
+                <h3>Fluid Simulation</h3><p>Fluid Simulation</p>
             </div>
         </a>
     </li>
-      
-    <li class="scale-normal w-full my-3">
-        <a class="no-underline hover:underline" href="articles/cloth_simulation/cloth_simulation.html">
-            <div class="container">
-                <div class="flex">
-                    <div class="w-2/3">
-                        <h3 class="text-lg">
-                            Cloth Simulation
-                        </h3>
-                        <h4 class="text-sm">
-                            Cloth Simulation
-                        </h4>
-                    </div>
-                    <div class="w-1/3 text-right">
-                        <span class="text-xs md:text-sm">
-                            Jun 15 2020
-                        </span>
-                    </div>
-                </div>
+    
+    <li>
+        <a href="articles/cloth_simulation/cloth_simulation.html">
+            <span class="id-tag">2020.06.15</span>
+            <div class="body">
+                <h3>Cloth Simulation</h3><p>Cloth Simulation</p>
             </div>
         </a>
     </li>
-     
+    
 </ol>
 
 
+
+        <div class="section-head"><span class="dot-icon"></span> Projects</div>
+        
+        
+
+<ol class="index">
+<li>
+    <a href="https://sequoiafabrica.org">
+        <span class="id-tag">2024 — 2026</span>
+        <div class="body">
+            <h3>Sequoia Fabrica Makerspace</h3><p>A non-profit makerspace dedicated to fostering innovation and creativity. I served as President from it's inception in 2024-25, board member from 2025-26.</p>
         </div>
+    </a>
+</li>
+<li>
+    <a href="https://www.youtube.com/watch?v=VQgD2DCBnjQ">
+        <span class="id-tag">2021</span>
+        <div class="body">
+            <h3>2021 IEEE VR: Virtual Reality Demonstrator</h3><p>A tool for creating spatial presentations in VR, presented as an extended abstract for IEEE VR 2021</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="articles/particle_simulation/particle_simulation.html">
+        <span class="id-tag">2020</span>
+        <div class="body">
+            <h3>Particle Simulation</h3><p>A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="articles/path_planning/path_planning.html">
+        <span class="id-tag">2020</span>
+        <div class="body">
+            <h3>Path Planning Game</h3><p>An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="https://dl.acm.org/doi/10.1145/3488542">
+        <span class="id-tag">2020 — 2021</span>
+        <div class="body">
+            <h3>AR Physicalizations</h3><p>Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="https://github.com/momja/CPU-Raytracer">
+        <span class="id-tag">2020</span>
+        <div class="body">
+            <h3>CPU Raytracer</h3><p>A raytracer from scratch written in C++ on up to two cores with multiple samples per pixel</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="articles/yelp_dataset_analysis/analysis.html">
+        <span class="id-tag">2020</span>
+        <div class="body">
+            <h3>Yelp Rating Predictions</h3><p>Applying the slope one algorithm to predict restaurant ratings, based on the Yelp Open Dataset</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="images/Final_CycleGAN_on_Image_Transfer.pdf">
+        <span class="id-tag">2019</span>
+        <div class="body">
+            <h3>Generative Adversarial Networks</h3><p>A comparison of the CycleGAN and DualGAN algorithms for style transfer applications</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
+        <span class="id-tag">2017</span>
+        <div class="body">
+            <h3>Bucketz</h3><p>An iOS game built with Swift and SpriteKit</p>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="https://dizzard.net/dineDice/">
+        <span class="id-tag">2017</span>
+        <div class="body">
+            <h3>DineDice</h3><p>A randomized local restaurant recommender</p>
+        </div>
+    </a>
+</li>
+
+</ol>
+
+
+
+        <div class="pixel-mark">·  ·  ·  X + X  ·  ·  ·</div>
     </div>
 
-    <h2 class="text-3xl text-center font-bold my-2 mx-auto text-indigo-800 dark:text-indigo-50">
-        Projects
-    </h2>
+<script>
+/*
+  Animated halftone gradient renderer.
 
-    <hr>
+  There is no smooth gradient being covered up here — the gradient is BUILT
+  out of dots. We rasterise at half resolution and upscale with
+  image-rendering: pixelated, so every dot edge is a hard, aliased pixel step
+  rather than an antialiased curve.
 
-    <div class="container my-2 mx-auto px-4 md:px-12">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">
-            
-            
+  Two motions, deliberately independent of each other:
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://sequoiafabrica.org">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/sign.jpg">
-            </a>
-        </div>
+    ROTATION is in the colour field. The three lobes sit 120° apart on a ring
+    and the whole ring turns clockwise, so the colours migrate around the orb.
+    The dot lattices do NOT turn — a printing screen is fixed to the paper, so
+    the colour field sweeps THROUGH a stationary raster. That is what makes
+    individual pixels appear to migrate rather than the image simply spinning.
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://sequoiafabrica.org">
-            Sequoia Fabrica Makerspace
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Apr 24 — Jan 26
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A non-profit makerspace dedicated to fostering innovation and creativity. I served as President from it's inception in 2024-25, board member from 2025-26.
-            </p>
-        </div>
-    </article>
-</div>
+    LIGHT is fixed to the screen, up and to the left. It does not rotate with
+    the colour, so the orb reads as a lit sphere that things move across,
+    rather than a flat disc being turned.
 
+  Per output pixel, per frame:
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://www.youtube.com/watch?v=VQgD2DCBnjQ">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/virtualdemonstrator_sample.jpg">
-            </a>
-        </div>
+    1. Each ink is a lobe of coverage in [0,1], its centre rigidly rotated
+       about the disc centre, plus a small per-ink wobble so the spin is not
+       mechanically perfect.
+    2. A scrolling value-noise field warps that coverage, sampled in the
+       CO-ROTATING frame so the boil travels with the colour instead of
+       fighting it. Coverage sits near the dot threshold in a lot of places,
+       so a tiny wobble flips individual dots on and off.
+    3. Each ink screens on its own lattice, rotated to its own angle
+       (7° / 37° / 67° — the classic offset-print spread that keeps the
+       screens out of phase so they weave instead of moiré) and its own cell
+       pitch, so the three rasters never line up.
+    4. Within a cell, the pixel's normalised distance from the cell centre is
+       the threshold. Ink is laid down when coverage > distance², which makes
+       dot AREA proportional to coverage — the actual halftone relationship.
+    5. A static per-pixel grain jitters that threshold. Deliberately static,
+       not per-frame: animating it too would turn the orb into TV snow.
+       Holding it still means dots flip in coherent flowing clusters.
+    6. Inks never composite. Stacking them would be physically honest but
+       subtractively converges on brown, so instead the ink whose dot the
+       pixel sits deepest inside claims that pixel outright. Colour mixes
+       OPTICALLY — pure dots resolved by the eye, riso-style.
+    7. Shading is CEL-BANDED, not smooth. Lambert against a sphere normal is
+       quantised into four steps and each ink picks one of four hand-authored
+       shades of ITSELF. The shades are hand-picked rather than mixed toward
+       any shared dark: blending amber toward grey lands on brown, and
+       pulling every ink toward a common plum washes the whole shadow side
+       purple. Each ramp instead darkens within its OWN hue family — amber
+       through rust to brick, magenta through berry, indigo through deep
+       blue — so shadows stay saturated and distinct. The band edges are
+       dithered by the same static grain, so terraces break into pixel
+       stipple rather than hard arcs.
+    8. Every pixel EASES to its target rather than snapping, fading down to
+       bare paper before committing a new colour so no intermediate is ever
+       a blend of two inks. Side effect, and the nicest one: because all the
+       state starts at zero, the orb develops up out of blank paper on load
+       like a print coming through.
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://www.youtube.com/watch?v=VQgD2DCBnjQ">
-            2021 IEEE VR: Virtual Reality Demonstrator
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jan 21 — Mar 21
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A tool for creating spatial presentations in VR, presented as an extended abstract for IEEE VR 2021
-            </p>
-        </div>
-    </article>
-</div>
+  Runs at a deliberate 12fps: the steppy cadence suits the raster look and
+  costs ~1.7ms/frame. Honours prefers-reduced-motion, parks when tab hidden.
+*/
+(function () {
+  var canvas = document.getElementById('orb');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
 
+  // The pixels fade toward bare stock, so the renderer has to know what the
+  // stock currently is — read it off the same custom property the stylesheet
+  // uses rather than duplicating the hex here and letting the two drift.
+  var PAPER = [244, 240, 230];
+  function readPaper() {
+    var hex = getComputedStyle(document.documentElement)
+      .getPropertyValue('--paper').trim();
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex);
+    if (!m) return;
+    var n = parseInt(m[1], 16);
+    PAPER = [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+  readPaper();
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="articles/particle_simulation/particle_simulation.html">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/smokestack.jpg">
-            </a>
-        </div>
+  // Lobes sit 120° apart on a ring of radius 0.62, at 210° / 330° / 90°.
+  // v points DOWN, so 90° is the BOTTOM of the disc: amber upper-left,
+  // magenta upper-right, indigo bottom. Even spacing is what lets a rigid
+  // rotation of the ring read as the whole colour wheel turning.
+  //
+  // The hues are spaced roughly 120° apart on the colour wheel too, and that
+  // is load-bearing. An earlier amber/coral/indigo set split the disc evenly
+  // by pixel count, but amber and coral are neighbouring hues whose shadow
+  // ramps both fall toward rust — so two thirds of the wheel read as one
+  // warm wash and only blue looked like it arrived from a side. Pushing the
+  // middle ink to magenta gives each colour its own edge to enter from.
+  //
+  // shades: [deep, shadow, base, highlight] — hand-authored per ink.
+  var INKS = [
+    { // amber -> rust -> deep brick
+      shades: [[150, 48, 52], [186, 86, 28], [217, 145, 12], [243, 205, 99]],
+      ang:  7, cell: 4.2, cx: -0.537, cy: -0.310, rad: 1.35, gain: 0.95, ph: 0.0
+    },
+    { // magenta -> fuchsia -> deep berry
+      shades: [[110, 24, 92], [160, 38, 120], [197, 61, 143], [240, 150, 205]],
+      ang: 37, cell: 3.6, cx:  0.537, cy: -0.310, rad: 1.35, gain: 0.95, ph: 2.1
+    },
+    { // indigo -> deep blue-violet
+      shades: [[38, 36, 110], [51, 48, 138], [69, 72, 168], [142, 145, 224]],
+      ang: 67, cell: 4.8, cx:  0.000, cy:  0.620, rad: 1.35, gain: 0.95, ph: 4.2
+    }
+  ];
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="articles/particle_simulation/particle_simulation.html">
-            Particle Simulation
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jul 20 — Aug 20
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A particle system capable of complex behavior, such as billboarding, streaking, texturing, and more written in Processing
-            </p>
-        </div>
-    </article>
-</div>
+  // Buffer resolution. Derived from the laid-out width at 1:2 so the upscale
+  // is always a clean integer — at a fractional ratio some dots land on one
+  // device pixel and some on two, which reads as a wobbly, uneven raster.
+  var SIZE  = 80;
+  var FPS   = 12;
+  var ROT_SECONDS = 42;   // one full clockwise revolution
+  var WOBBLE_AMP  = 0.06; // small per-ink wander on top of the rotation
+  var FLOW_AMP    = 0.30; // how hard the noise field warps coverage
+  var GRAIN_AMP   = 0.16; // static dither on the dot threshold
+  var BAND_DITHER = 0.14; // static dither on the cel-shading band edges
+  var RISE = 0.22;        // per-frame ease toward full ink
+  var FALL = 0.34;        // per-frame ease back out to paper
 
+  // Light: fixed to the screen, upper-left and slightly toward the viewer.
+  var LN = Math.sqrt(0.55 * 0.55 + 0.55 * 0.55 + 0.62 * 0.62);
+  var LX = -0.55 / LN, LY = -0.55 / LN, LZ = 0.62 / LN;
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="articles/path_planning/path_planning.html">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/header.jpg">
-            </a>
-        </div>
+  function smoothstep(t) {
+    t = t < 0 ? 0 : t > 1 ? 1 : t;
+    return t * t * (3 - 2 * t);
+  }
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="articles/path_planning/path_planning.html">
-            Path Planning Game
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jun 20 — Jul 20
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                An interactive program demonstrating A* path planning and probabilistic roadmaps. Written in Java with Processing, which is based on OpenGL
-            </p>
-        </div>
-    </article>
-</div>
+  // fast integer hash -> [0,1)
+  function hash2(i, j) {
+    var n = (i * 374761393 + j * 668265263) | 0;
+    n = ((n ^ (n >> 13)) * 1274126177) | 0;
+    return ((n ^ (n >> 16)) >>> 0) / 4294967296;
+  }
 
+  // smooth 2D value noise, for the flow field
+  function vnoise(x, y) {
+    var i = Math.floor(x), j = Math.floor(y);
+    var fx = x - i, fy = y - j;
+    var ux = fx * fx * (3 - 2 * fx);
+    var uy = fy * fy * (3 - 2 * fy);
+    var a = hash2(i, j),     b = hash2(i + 1, j);
+    var c = hash2(i, j + 1), d = hash2(i + 1, j + 1);
+    return a * (1 - ux) * (1 - uy) + b * ux * (1 - uy)
+         + c * (1 - ux) * uy       + d * ux * uy;
+  }
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://dl.acm.org/doi/10.1145/3488542">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/ar_localization.jpg">
-            </a>
-        </div>
+  // static per-pixel grain
+  function grain(x, y) { return hash2(x * 7919 + 13, y * 104729 + 7); }
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://dl.acm.org/doi/10.1145/3488542">
-            AR Physicalizations
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Apr 20 — May 21
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                Using Vuforia AR SDK, building a system for combining biogeochemistry data with physical geospatial models
-            </p>
-        </div>
-    </article>
-</div>
+  var img, data;
 
+  // Per-pixel fade state. `held` is the palette entry a pixel is currently
+  // showing (-1 = bare paper); `level` is how far it has faded up to it.
+  // A pixel never cross-fades from one ink straight to another — it eases
+  // back down to paper first, commits the new colour, then eases up. That
+  // keeps every intermediate a tint of ONE ink against the stock, so fading
+  // can never manufacture the muddy in-between colours we spent so long
+  // designing out. It also means the whole orb develops up from blank paper
+  // on load, since every pixel starts at level 0.
+  var level, held;
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://github.com/momja/CPU-Raytracer">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/raytracer.jpg">
-            </a>
-        </div>
+  // Size the buffer to half the element's laid-out width, so the CSS upscale
+  // is exactly 2x at every breakpoint. Returns false if nothing changed.
+  function resize() {
+    var w = canvas.clientWidth || 160;
+    var n = Math.max(40, Math.round(w / 2));
+    if (n === SIZE && img) return false;
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://github.com/momja/CPU-Raytracer">
-            CPU Raytracer
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jan 20 — Mar 20
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A raytracer from scratch written in C++ on up to two cores with multiple samples per pixel
-            </p>
-        </div>
-    </article>
-</div>
+    SIZE = n;
+    canvas.width = canvas.height = SIZE;
+    img   = ctx.createImageData(SIZE, SIZE);
+    data  = img.data;
+    level = new Float32Array(SIZE * SIZE);
+    held  = new Int8Array(SIZE * SIZE).fill(-1);
+    return true;
+  }
+  resize();
 
+  var inks = INKS.map(function (k) {
+    var a = k.ang * Math.PI / 180;
+    return Object.assign({}, k, { sin: Math.sin(a), cos: Math.cos(a) });
+  });
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="articles/yelp_dataset_analysis/analysis.html">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/avg_rating_per_user.jpg">
-            </a>
-        </div>
+  function frame(t) {
+    // rigid clockwise rotation of the whole lobe ring.
+    // v points down, so a standard +theta rotation reads as clockwise.
+    var th = t * (2 * Math.PI / ROT_SECONDS);
+    var ct = Math.cos(th), st = Math.sin(th);
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="articles/yelp_dataset_analysis/analysis.html">
-            Yelp Rating Predictions
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jan 20 — Mar 20
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                Applying the slope one algorithm to predict restaurant ratings, based on <a href='https://www.yelp.com/dataset'> the Yelp Open Dataset </a>
-            </p>
-        </div>
-    </article>
-</div>
+    for (var n = 0; n < inks.length; n++) {
+      var q = inks[n];
+      q.ox = q.cx * ct - q.cy * st + Math.cos(t * 0.31 + q.ph) * WOBBLE_AMP;
+      q.oy = q.cx * st + q.cy * ct + Math.sin(t * 0.37 + q.ph) * WOBBLE_AMP;
+    }
 
+    for (var py = 0; py < SIZE; py++) {
+      for (var px = 0; px < SIZE; px++) {
+        // normalised disc coords, -1..1
+        var u = ((px + 0.5) / SIZE) * 2 - 1;
+        var v = ((py + 0.5) / SIZE) * 2 - 1;
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="images/Final_CycleGAN_on_Image_Transfer.pdf">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/GAN.jpg">
-            </a>
-        </div>
+        // global falloff: the orb dissolves into bare paper at its rim
+        var edge = 1 - smoothstep((Math.sqrt(u * u + v * v) - 0.70) / 0.40);
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="images/Final_CycleGAN_on_Image_Transfer.pdf">
-            Generative Adversarial Networks
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jan 19 — May 19
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A comparison of the CycleGAN and DualGAN algorithms for style transfer applications
-            </p>
-        </div>
-    </article>
-</div>
+        // --- lighting: lambert against a sphere normal, screen-fixed
+        var nz  = Math.sqrt(Math.max(0, 1 - u * u - v * v));
+        var lam = u * LX + v * LY + nz * LZ;
+        if (lam < 0) lam = 0;
+        var lit = 0.18 + 0.82 * lam;
 
+        // quantise to four cel bands, dithered so terraces stipple
+        var band = lit + (grain(px * 3 + 91, py * 3 + 17) - 0.5) * BAND_DITHER;
+        var bi = band < 0.34 ? 0 : band < 0.56 ? 1 : band < 0.80 ? 2 : 3;
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/bucketz2.jpg">
-            </a>
-        </div>
+        // flow field sampled in the co-rotating frame
+        var fu =  u * ct + v * st;
+        var fv = -u * st + v * ct;
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://apps.apple.com/us/app/bucketz-a-sorting-game/id1264740130">
-            Bucketz
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jun 17 — Aug 17
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                An iOS game built with Swift and SpriteKit
-            </p>
-        </div>
-    </article>
-</div>
+        var winner = -1, bestBite = 0;
 
+        for (var i = 0; i < inks.length; i++) {
+          var k = inks[i];
 
-<div class="scale-normal hover:scale-up my-4 px-4 w-full md:w-1/2 lg:my-4 lg:px-5 lg:w-1/3">
-    <article class="overflow-hidden rounded-lg shadow-lg">
-        <div class="bg-gray-100">
-            <a href="https://dizzard.net/dineDice/">
-                <img alt="Project Img" class="block object-cover h-56 w-full" src="images/dinedice_logo.jpg">
-            </a>
-        </div>
+          // --- 1. coverage from this ink's rotating lobe
+          var dx = u - k.ox, dy = v - k.oy;
+          var cov = smoothstep(1 - Math.sqrt(dx * dx + dy * dy) / k.rad) * k.gain * edge;
 
-        <header class="flex items-center justify-between leading-tight p-2 md:p-4 bg-gray-100 h-12">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="https://dizzard.net/dineDice/">
-            DineDice
-            </a>
-        </h1>
-        <p class="text-grey text-xs text-right">
-            Jan 17 — Feb 17
-        </p>
-        </header>
-        <div class="flex justify-between leading-tight border-t-2 p-2 bg-gray-100 h-24">
-            <p class="text-grey text-sm">
-                A randomized local restaurant recommender
-            </p>
-        </div>
-    </article>
-</div>
+          // --- 2. warp with the co-rotating flow field (the "boil")
+          var flow = vnoise(fu * 1.6 + t * 0.10 + i * 11.3,
+                            fv * 1.6 - t * 0.07 + i * 7.7) - 0.5;
+          cov += flow * FLOW_AMP * edge;
 
+          // --- 3. the lit side thins its screen, so paper lifts through
+          //         and the highlight gains luminosity from bare stock
+          cov *= (1.16 - 0.34 * lit);
+          if (cov <= 0.015) continue;
 
+          // --- 4. this ink's own rotated dot lattice (fixed to the paper)
+          var rx = (px * k.cos - py * k.sin) / k.cell;
+          var ry = (px * k.sin + py * k.cos) / k.cell;
+          var fx = rx - Math.floor(rx) - 0.5;
+          var fy = ry - Math.floor(ry) - 0.5;
 
+          // --- 5. threshold = distance to cell centre, so dot area
+          //         tracks coverage; static grain dithers the edge
+          var dist = Math.sqrt(fx * fx + fy * fy) / 0.7071;
+          var jit  = (grain(px + i * 53, py - i * 17) - 0.5) * GRAIN_AMP;
 
+          // --- 6. deepest ink claims the pixel outright, unmixed
+          var bite = (cov + jit) - dist * dist;
+          if (bite > bestBite) { bestBite = bite; winner = i; }
+        }
 
-        </div>
-    </div>
+        // --- 7. ease this pixel toward its target instead of snapping.
+        //         Encode ink+band as one palette key so a change in either
+        //         triggers a fade.
+        var idx = py * SIZE + px;
+        var key = winner < 0 ? -1 : winner * 4 + bi;
+
+        if (held[idx] === key) {
+          level[idx] += (1 - level[idx]) * RISE;      // settle up to full
+        } else {
+          level[idx] -= level[idx] * FALL;            // retreat to paper...
+          if (level[idx] < 0.06) held[idx] = key;     // ...then take the new colour
+        }
+
+        var hk  = held[idx];
+        var rgb = hk < 0 ? PAPER : INKS[hk >> 2].shades[hk & 3];
+        var f   = hk < 0 ? 0 : level[idx];
+
+        var o = idx * 4;
+        data[o]     = PAPER[0] + (rgb[0] - PAPER[0]) * f;
+        data[o + 1] = PAPER[1] + (rgb[1] - PAPER[1]) * f;
+        data[o + 2] = PAPER[2] + (rgb[2] - PAPER[2]) * f;
+        data[o + 3] = 255;
+      }
+    }
+
+    ctx.putImageData(img, 0, 0);
+  }
+
+  function settle() {
+    // The fade state starts blank, so run the pixels up to full at a fixed
+    // instant rather than presenting an empty canvas.
+    for (var s = 0; s < 30; s++) frame(0);
+  }
+
+  var motion = window.matchMedia
+    && window.matchMedia('(prefers-reduced-motion: reduce)');
+  var scheme = window.matchMedia
+    && window.matchMedia('(prefers-color-scheme: dark)');
+
+  // A scheme flip changes the stock underneath every dot, so re-read it and
+  // let the orb develop up again rather than leaving the old paper baked in.
+  function onScheme() {
+    readPaper();
+    if (held)  held.fill(-1);
+    if (level) level.fill(0);
+    if (motion && motion.matches) settle();
+  }
+  if (scheme) {
+    if (scheme.addEventListener) scheme.addEventListener('change', onScheme);
+    else if (scheme.addListener) scheme.addListener(onScheme);
+  }
+
+  if (motion && motion.matches) {
+    settle();
+    window.addEventListener('resize', function () {
+      if (resize()) settle();
+    });
+    return;
+  }
+
+  var t0 = null, last = -1e9;
+  function loop(now) {
+    requestAnimationFrame(loop);
+    if (document.hidden) return;              // park while tab is hidden
+    if (t0 === null) t0 = now;
+    if (now - last < 1000 / FPS) return;      // throttle to 12fps
+    last = now;
+    resize();                                 // cheap no-op unless the
+    frame((now - t0) / 1000);                 // breakpoint actually changed
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
 </body>
 
 </html>
