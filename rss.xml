@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Sun, 05 Jul 2026 00:00:00 -0000</lastBuildDate><item><title>Using LLMs to Investigate And Reproduce Complex Bugs</title><link>http://dizzard.net/articles/using_llms_to_investigate_and_reproduce_complex_bugs/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;em&gt;This blog post is based on a presentation I recently gave to our engineering team at my day job. I wanted to share more broadly, so I used Gemini to do the slides → blog post translation, then I heavily edited it to make it my own voice and strip it of anything specific to my company. Much of this is specifically about Claude Code.&lt;/em&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Sun, 30 Aug 2026 00:00:00 -0000</lastBuildDate><item><title>The Prompt-to-App Landscape</title><link>http://dizzard.net/articles/the_prompt_to_app_landscape/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Prompt-to-App Landscape&lt;/h1&gt;
+
+&lt;p&gt;I've been building a piece of open source software called &lt;a href="https://github.com/momja/Exhibit"&gt;Exhibit&lt;/a&gt;. It's all about leveraging AI for making and using small apps that make your life better. It's become the first thing I reach for when I need to solve a problem, whether it be a one-off or evergreen task, Exhibit's artifacts can help me solve it.&lt;/p&gt;
+
+&lt;p&gt;As I try to understand how &lt;em&gt;others&lt;/em&gt; may find this useful, I've been taking a look at the landscape of prompt-to-app tools. Here are some notes on products in the space, and at the end I'll outline why I still think Exhibit is worth building.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://val.town"&gt;Val Town&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Val Town is how developers and operators instantly ship websites, automations, and &lt;a href="https://www.val.town/discover"&gt;other tools&lt;/a&gt; to live URLs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Val Town is very cool. They've done a lot of work to safely run AI-generated code in a sandboxed cloud environment. As of right now, Exhibit has no comparable server-side solution, as Artifacts are designed to be client-heavy, server-light. Exhibit's servers are primarily responsible for providing data synchronization across devices. This client-first approach means Exhibit cannot do all the fancy server stuff, like schedule actions or server-side integrations with other platforms. This constraint also buys Exhibit's artifacts immense flexibility. An artifact does not contain proprietary code. It's not complicated. It's a single .html file that you can copy and run anywhere. Also while Val Town is built for engineers, with technical language and tools, Exhibit aims to be for anyone.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://v0.app"&gt;v0&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;v0 is an AI agent that helps anyone create real code and full-stack apps and agents.
+  Ship features, refine designs, update copy, and create live prototypes, all with a prompt. Deploy to production immediately, or open a pull request for review.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;v0 seems very capable at building full-fledged production applications and websites. It has all sorts of integrations and the expertise of Vercel behind it.&lt;/p&gt;
+
+&lt;p&gt;The site has an embedded VsCode editor, so you can manually view and edit the source. You can connect to a variety of databases, AI providers, sync with a github repo, and more. Of course, this is a Vercel product, so it's clearly focused on React and Next.js.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://lovable.com"&gt;Lovable&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bring a new product, internal tool, or entire company to life.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lovable is maybe the most separated from the world of engineering in terms of it's UX. I would say it leans heavily into vibe coding, with a focus on tools geared at helping people build businesses or commercial solutions.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://replit.com"&gt;Replit&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Turn ideas into apps in minutes — no coding needed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Replit has a full prompt-to-app pipeline, but you can also go deeper with their cloud IDE if you want to do more traditional engineering. From what I've read, Replit seems a bit more accessible in terms of source code about what's being built under the hood than, say, Lovable.&lt;/p&gt;
+
+&lt;h2&gt;More Prompt-to-app Software&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bolt.new"&gt;Bolt.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://phoenix.new"&gt;Phoenix.new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://app.emergent.sh/"&gt;Emergent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rork.com"&gt;Rork&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://glide.app"&gt;Glide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Why Build Exhibit?&lt;/h2&gt;
+
+&lt;p&gt;Clearly there are a &lt;em&gt;lot&lt;/em&gt; of similar products in this space. That may at times feel discouraging. Lucky for me, right now I'm just building Exhibit for fun. So if no one else ever uses it, no harm done! Despite my freeing attitude, I do think Exhibit stands out for a couple reasons.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zero lock-in&lt;/strong&gt;: Exhibit is the most flexible of all these, because it's the simplest. There's no 'magic sauce' to an artifact, it's just HTML/CSS/JS, and as of right now, it's always a single file. That means you can download that file, run it locally, email it to your buddy, or take it to a different Exhibit instance. I think all these other platforms don't hide the source code for your project, but I believe they hope to keep you on their platform with their deployment infrastructure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;No Servers Necessary&lt;/strong&gt;: If I just want to share a grocery shopping app with my family, why do I need to setup a database? That's actually where I first bounced off v0, because I couldn't get &lt;a href="https://neon.com/"&gt;Neon&lt;/a&gt; to work out of the box and I gave up. Exhibit doesn't do that. It just uses &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"&gt;localStorage&lt;/a&gt;, a standardized web API. If I really want to defend Exhibit's existence, I should tell you we do have a &lt;em&gt;little&lt;/em&gt; magic here, in that an artifact's localStorage is proxied to Exhibit's servers, so you get the same state in your artifacts, regardless of which device/browser you use. It's simple, but you can do a lot with it. If it's just an application for yourself, or a few other people, you probably don't &lt;em&gt;need&lt;/em&gt; a real database!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Front-End Security:&lt;/strong&gt; Running untrusted code is a security risk. Exhibit runs Artifacts in a sandboxed iframe with a user-adjustible security policy. Say you have a really private Artifact, like a health tracker for your newborn. You &lt;em&gt;don't&lt;/em&gt; want that having any way of getting exposed to someone else on the internet. That's no problem with Exhibit. Just specify which websites you want to allow your Artifact to reach out to, and everything is blocked by default. This is a common risk with AI-generated code, as tricks like &lt;a href="https://owasp.org/www-community/attacks/PromptInjection"&gt;prompt injection&lt;/a&gt; can spoil your agent into writing source code that may &lt;em&gt;try&lt;/em&gt; to leak your data. A sandbox helps prevent that worst-case scenario from happening.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Self Host&lt;/strong&gt;: None of these other options are self-hostable. You can &lt;a href="https://github.com/momja/Exhibit/blob/main/docs/deployment.md"&gt;deploy Exhibit yourself&lt;/a&gt; to truly own your software.&lt;/p&gt;
+
+&lt;p&gt;If you read this, let me know what you want to see from Exhibit! It's early days, I barely have a demo ready. If you &lt;em&gt;would&lt;/em&gt;like to try it, you can &lt;a href="https://github.com/momja/Exhibit/blob/main/docs/deployment.md"&gt;host it&lt;/a&gt; yourself, or send me an &lt;a href="mailto:me@maxomdal.com"&gt;email&lt;/a&gt; for the hosted demo.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 30 Aug 2026 00:00:00 -0000</pubDate><guid isPermaLink="false">43</guid></item><item><title>Using LLMs to Investigate And Reproduce Complex Bugs</title><link>http://dizzard.net/articles/using_llms_to_investigate_and_reproduce_complex_bugs/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;em&gt;This blog post is based on a presentation I recently gave to our engineering team at my day job. I wanted to share more broadly, so I used Gemini to do the slides → blog post translation, then I heavily edited it to make it my own voice and strip it of anything specific to my company. Much of this is specifically about Claude Code.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1&gt;Using LLMs to Investigate And Reproduce Complex Bugs With Reasonable Token Spend&lt;/h1&gt;
 
