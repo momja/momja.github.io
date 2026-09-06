@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Sun, 30 Aug 2026 00:00:00 -0000</lastBuildDate><item><title>The Prompt-to-App Landscape</title><link>http://dizzard.net/articles/the_prompt_to_app_landscape/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Prompt-to-App Landscape&lt;/h1&gt;
+<rss version="2.0"><channel><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link><image><url>http://dizzard.net/images/favicon.png</url><title>Dizzard's RSS Feed</title><link>http://dizzard.net/</link></image><description>Latest Articles from Max Omdal (dizzard.net)</description><lastBuildDate>Sun, 06 Sep 2026 00:00:00 -0000</lastBuildDate><item><title>Small Apps Deserve Simplicity</title><link>http://dizzard.net/articles/small-apps-deserve-simplicity/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Small Apps Deserve Simplicity&lt;/h1&gt;
+
+&lt;p&gt;I am convinced that &lt;a href="https://www.ajwaxman.com/writing/software-for-one"&gt;personal software&lt;/a&gt; is the next step for personal computing. We see companies like &lt;a href="https://val.town"&gt;val town&lt;/a&gt;, and &lt;a href="https://lovable.com"&gt;lovable&lt;/a&gt; building prompt-to-app tools so anyone can vibe their way to an app.&lt;/p&gt;
+
+&lt;p&gt;That's awesome. Let's say I want to make an app to keep a running tally of my total running distance. Should be easy, let's just pop into Lovable walk through what I'd do.&lt;/p&gt;
+
+&lt;p&gt;First, I'll give a prompt to get started:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Make a run log tracker. I just want to insert the number of miles I've ran every day and see it on a timeline&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Alright, nice it looks pretty good.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./image1.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;But when I open it on mobile, none of my data is there. Where did it go?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./image2.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh – I guess Lovable's agent is telling me everything is in localStorage, so nothing is synced. That's alright, I'll ask it to implement cloud sync. Typing that into the chat now and… enter.&lt;/p&gt;
+
+&lt;p&gt;OK, I'm waiting for the agent to build cloud sync. This is taking a long time! I thought this would make my life easier! Also why are there so many files and settings for this tiny app? Maybe I should've kept track in a notebook, that might have been easier…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./image3.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, the agent is done. That took a while, but it looks like it delivered. Now there's a sign-in pop-up. But this all feels a little much! Why do I need a sign-in for such a small app that's just for me? No one else is &lt;em&gt;ever&lt;/em&gt; going to use this!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./image4.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lovable accomplished what I wanted it to. It just doesn't &lt;em&gt;feel&lt;/em&gt; the way I want it to. Personal software shouldn't require an authentication layer. By its very definition, no one else is going to use it. Instead of making the software more complicated, I want a place to safely run &lt;em&gt;simpler&lt;/em&gt; software that I completely control. I want to be able to mold software as easy as one could mold a piece of clay. &lt;strong&gt;Personal Software should have weight.&lt;/strong&gt; It shouldn't be buried in abstractions, complex cloud deployments or configurations. Imagine if you had to complete a sign-in every time you wanted to write in your pen and paper journal – no thanks!&lt;/p&gt;
+
+&lt;p&gt;The fundamental issue I'm picking with apps like Lovable is that they aren't designed around building &lt;em&gt;personal&lt;/em&gt; software. Instead, they have chosen to focus on customers building &lt;em&gt;professional&lt;/em&gt; software. Software that lives in a cloud, has generic interfaces that work OK for everyone, but not perfect for anyone. In other words, Lovable just makes it easier to build SaaS. This is an obvious choice for a VC-backed company.&lt;/p&gt;
+
+&lt;p&gt;I'm not sure a VC-backed company would or even &lt;em&gt;could&lt;/em&gt; ever focus on a platform for buildling personal software. It's not as defensible. Selling to businesses is just good business because there's no better way to make money than to help other businesses make more money. A prompt-to-app platform for personal software could, by it's definition, not have the same appeal.&lt;/p&gt;
+
+&lt;p&gt;Anyway, all because it's not a billion dollar business doesn't mean we shouldn't have more options for individuals, especially those who aren't software professionals, to build software that benefits their lives on a small, individual scale. I would love to live in a world where more software is local-first, personalized, and simple. We give up so much of our lives to software that we have no say or control over. To bring back to the physicalization analogy, it would be like having Ikea design our entire kitchen, followed by them deciding where ever pan, plate, and knife belongs. Every person's home is completely different, I just want it to be easier for software to feel the same.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 06 Sep 2026 00:00:00 -0000</pubDate><guid isPermaLink="false">44</guid></item><item><title>The Prompt-to-App Landscape</title><link>http://dizzard.net/articles/the_prompt_to_app_landscape/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Prompt-to-App Landscape&lt;/h1&gt;
 
 &lt;p&gt;I've been building a piece of open source software called &lt;a href="https://github.com/momja/Exhibit"&gt;Exhibit&lt;/a&gt;. It's all about leveraging AI for making and using small apps that make your life better. It's become the first thing I reach for when I need to solve a problem, whether it be a one-off or evergreen task, Exhibit's artifacts can help me solve it.&lt;/p&gt;
 
