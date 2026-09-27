@@ -17,6 +17,9 @@ import shutil
 
 import projectJSONParser
 
+from convert_images import BASE_URL as SITE_BASE_URL
+from convert_images import pictureify_html
+
 build_path = "./static"
 html_article_dir = "articles/"
 articles_metadata = []
@@ -33,10 +36,7 @@ def replace_img_src(m):
         return '![{}]({})'.format(m.group(1), m.group(2))
     elif m.group(2).startswith('../'):
         img_path = re.sub(r'\.\.\/', '', m.group(2))
-        if img_path.endswith('.png'):
-            img_path = img_path[:-4] + '.jpg'
-        print(img_path)
-        base_url = 'http://dizzard.net/'
+        base_url = SITE_BASE_URL
 
         return '![{}]({})'.format(m.group(1), os.path.join(base_url, img_path))
     else:
@@ -52,6 +52,16 @@ markdowner = md.Markdown(
             'ol': 'list-decimal'},
         'cuddled-lists': None},
     safe_mode=False)
+
+def page_dir_for_source(filename):
+    """Static-relative output directory for an article source file
+    (e.g. 'src/articles/blooming/article.md' -> 'articles/blooming')."""
+    try:
+        rel = os.path.relpath(filename, 'src')
+    except ValueError:
+        rel = filename
+    return os.path.dirname(rel)
+
 
 def md_context_for_template(template):
     """
@@ -86,7 +96,8 @@ def md_context(filename, include_content=True):
             raise Exception(f"metadata is not present in a YAML file or as frontmatter for {filename}. Please update.")
         if include_content:
             markdown_content = re.sub(image_link_pattern, replace_img_src, post.content)
-            article_data['content'] = markdowner.convert(markdown_content)
+            article_data['content'] = pictureify_html(
+                markdowner.convert(markdown_content), page_dir_for_source(filename))
         article_data.update(post.metadata)
         print(article_data.keys())
         return article_data
@@ -94,7 +105,8 @@ def md_context(filename, include_content=True):
     markdown_content = Path(filename).read_text()
     if include_content:
         markdown_content = re.sub(image_link_pattern, replace_img_src, markdown_content)
-        article_data['content'] = markdowner.convert(markdown_content)
+        article_data['content'] = pictureify_html(
+            markdowner.convert(markdown_content), page_dir_for_source(filename))
     with open(metadata_file, 'r') as f:
         metadata = yaml.load(f, Loader=yaml.Loader)
         article_data.update(metadata)
@@ -113,7 +125,8 @@ def html_context(template):
         dict: Article data with HTML content.
     """
     html_content = Path(template.filename).read_text()
-    article_data = {"content": html_content}
+    article_data = {"content": pictureify_html(
+        html_content, page_dir_for_source(template.filename))}
     metadata_file = os.path.splitext(template.filename)[0] + ".yml"
     try:
         with open(metadata_file, 'r') as f:
@@ -259,15 +272,8 @@ if __name__ == "__main__":
         ]
     )
 
-    # Then handle copying of other files as before
-    for root, dirs, files in os.walk('src'):
-        for file in files:
-            if file.endswith(('.jpg', '.jpeg', '.png', '.gif', '.heic', '.HEIC')):
-                src_path = os.path.join(root, file)
-                rel_path = os.path.relpath(src_path, 'src')
-                dest_path = os.path.join(build_path, rel_path)
-                os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-                shutil.copy2(src_path, dest_path)
+    # Article images are converted to AVIF/WebP by convert_images.py
+    # (run before this script); nothing to copy here.
 
     site.render()
 

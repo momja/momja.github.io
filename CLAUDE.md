@@ -32,15 +32,15 @@ This is a personal portfolio and blog website for Maxwell Omdal (dizzard.net), b
    - Outputs to `static/` directory
 
 2. **Asset Processing (`runBuild.sh`):**
+   - Converts article images to AVIF + WebP via `convert_images.py`
    - Runs Python build script
    - Compiles Tailwind CSS via PostCSS
-   - Copies static assets (images, PDFs, videos, favicon)
+   - Copies static assets (PDFs, videos, favicon)
    - Generates RSS feed
-   - (Optional) Image resizing with ImageMagick (currently commented out)
 
 3. **Deployment (`.github/workflows/deploy-to-gh-pages.yml`):**
    - Triggers on push to `master` branch
-   - Installs dependencies (Python, npm, ImageMagick)
+   - Installs dependencies (Python, npm)
    - Runs build process
    - Deploys `static/` folder to `gh-pages` branch
 
@@ -118,16 +118,21 @@ Main build orchestration script. Key functions:
 - Uses frontmatter-style metadata (YAML header) OR separate `.yml` files
 - Image paths are rewritten in production builds (`../images/` → `http://dizzard.net/images/`)
 - Development mode (`--dev` flag) preserves relative paths
-- Automatically converts PNG to JPG in image links
 - Sorts articles by `publish_date` in reverse chronological order
+
+#### `convert_images.py`
+Converts every raster image under `images/` and `src/articles/` to AVIF
++ WebP mirrors under `static/`, and rewrites rendered `<img>` tags as
+`<picture>` elements (AVIF source, WebP fallback `<img>`; animated GIFs
+keep the original GIF as final fallback). Run before `build.py`.
 
 #### `runBuild.sh`
 Bash script that orchestrates the full build:
-1. Runs `build.py` with optional `--dev` flag
-2. Compiles Tailwind CSS via PostCSS
-3. Copies static assets (PDFs, videos, favicon)
-4. Copies RSS feed to static directory
-5. (Commented out) Image resizing with ImageMagick
+1. Converts images to AVIF/WebP (`convert_images.py`)
+2. Runs `build.py` with optional `--dev` flag
+3. Compiles Tailwind CSS via PostCSS
+4. Copies static assets (PDFs, videos, favicon)
+5. Copies RSS feed to static directory
 
 #### `projectJSONParser.py`
 Parses `projects.json` with custom date handling:
@@ -299,8 +304,10 @@ npm run build
 3. **Images:**
    - Store in top-level `images/` directory
    - Reference with relative path: `../images/filename.jpg`
-   - Build process handles path rewriting
-   - PNG references auto-converted to JPG in production
+   - Article-local images live next to the article (e.g. `src/articles/name/photo.jpeg`) and are referenced by bare filename
+   - On build, `convert_images.py` emits `<basename>.avif` + `<basename>.webp` mirrors under `static/` (full resolution, no shrinking; cached by mtime)
+   - Rendered `<img>` tags become `<picture>` elements: AVIF first, WebP fallback; animated GIFs keep the original GIF as final fallback
+   - Only the basename matters, not the extension: `header.jpg` in an article resolves to the `header.png` source
 
 4. **Code Blocks:**
    - Use fenced code blocks with language specifiers
@@ -349,7 +356,7 @@ markdown2==2.4.13         # Markdown to HTML conversion
 MarkupSafe==2.1.5         # Jinja2 dependency
 numpy==1.26.4             # Numeric operations (unused currently)
 opencv-python==4.5.5.64   # Image processing (unused currently)
-Pygments==2.13.0          # Syntax highlighting
+Pygments==2.20.0          # Syntax highlighting
 python-dateutil==2.9.0    # Date parsing
 python-frontmatter==1.0.0 # YAML frontmatter parsing
 pytz==2024.1              # Timezone handling
@@ -439,8 +446,7 @@ the laid-out size. It honours `prefers-reduced-motion`, parks on
 
 **Steps:**
 1. Checkout repository
-2. Install ImageMagick (system dependency)
-3. Install Python dependencies (`pip install -r requirements.txt`)
+2. Install Python dependencies (`pip install -r requirements.txt`)
 4. Install Node dependencies (`npm install`)
 5. Run build (`npm run build`)
 6. Deploy `static/` folder to `gh-pages` branch
@@ -645,9 +651,8 @@ Build script supports `--dev` flag for development:
    - Update Python and Node dependencies separately
 
 2. **Image Optimization:**
-   - ImageMagick resize commented out in `runBuild.sh`
-   - Consider enabling for large image sets
-   - Current approach: manual optimization before upload
+   - `convert_images.py` handles AVIF/WebP conversion with mtime caching
+   - No resizing is applied; originals stay full resolution in the repo
 
 3. **RSS Feed Validation:**
    - Validate at https://validator.w3.org/feed/
