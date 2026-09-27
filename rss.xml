@@ -13,21 +13,21 @@
 
 &lt;p&gt;Alright, nice it looks pretty good.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./image1.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="./image1.avif" type="image/avif"&gt;&lt;source srcset="./image1.webp" type="image/webp"&gt;&lt;img src="./image1.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;But when I open it on mobile, none of my data is there. Where did it go?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./image2.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="./image2.avif" type="image/avif"&gt;&lt;source srcset="./image2.webp" type="image/webp"&gt;&lt;img src="./image2.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh – I guess Lovable's agent is telling me everything is in localStorage, so nothing is synced. That's alright, I'll ask it to implement cloud sync. Typing that into the chat now and… enter.&lt;/p&gt;
 
 &lt;p&gt;OK, I'm waiting for the agent to build cloud sync. This is taking a long time! I thought this would make my life easier! Also why are there so many files and settings for this tiny app? Maybe I should've kept track in a notebook, that might have been easier…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./image3.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="./image3.avif" type="image/avif"&gt;&lt;source srcset="./image3.webp" type="image/webp"&gt;&lt;img src="./image3.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally, the agent is done. That took a while, but it looks like it delivered. Now there's a sign-in pop-up. But this all feels a little much! Why do I need a sign-in for such a small app that's just for me? No one else is &lt;em&gt;ever&lt;/em&gt; going to use this!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="./image4.png" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="./image4.avif" type="image/avif"&gt;&lt;source srcset="./image4.webp" type="image/webp"&gt;&lt;img src="./image4.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Lovable accomplished what I wanted it to. It just doesn't &lt;em&gt;feel&lt;/em&gt; the way I want it to. Personal software shouldn't require an authentication layer. By its very definition, no one else is going to use it. Instead of making the software more complicated, I want a place to safely run &lt;em&gt;simpler&lt;/em&gt; software that I completely control. I want to be able to mold software as easy as one could mold a piece of clay. &lt;strong&gt;Personal Software should have weight.&lt;/strong&gt; It shouldn't be buried in abstractions, complex cloud deployments or configurations. Imagine if you had to complete a sign-in every time you wanted to write in your pen and paper journal – no thanks!&lt;/p&gt;
 
@@ -305,7 +305,7 @@
 
 &lt;p&gt;Now that we have that out of the way, let me explain what diz.flow can do. In "move" mode, you can drop in images (mainly screenshots in my case), arrange multiple images if you like, then in the "draw" mode, you add sequential annotations by click-and-dragging bounding boxes, then providing an optional text blurb and hitting &lt;code class="codeblock"&gt;ENTER&lt;/code&gt;. When you are done, hit &lt;code class="codeblock"&gt;ESC&lt;/code&gt;, and you will exit the "flow". If you need to add multiple flows in one view, you can immediately start making more bounding boxes and it will automatically create another flow in a different color. Each bounding box in the flow is connect using a directional arrow.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="annotated-flow.png" alt="image" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="annotated-flow.avif" type="image/avif"&gt;&lt;source srcset="annotated-flow.webp" type="image/webp"&gt;&lt;img src="annotated-flow.webp" alt="image"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;That's it! It saves me SECONDS every time I want to create one of these annotated screenshots. Not much really, but I've already noticed, that the "annoyance" barrier to quickly creating something like this to share with someone has dropped low enough where I'm making them all the time already.&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 20 Feb 2026 00:00:00 -0000</pubDate><guid isPermaLink="false">37</guid></item><item><title>Website refresh</title><link>http://dizzard.net/articles/paper/article.html</link><description>&lt;![CDATA[&lt;p&gt;I did a quick refresh of my website. I did some changes to the formatting, and I was also curious about how SVG noise works, so I added some texture to the background. I kind of like it, although I think there is more tweaking required. I'm trying to go for this paper-y feel, as if it were e-ink, or well, actually paper. I really enjoy skeumorphic design in digital media.&lt;/p&gt;
@@ -336,17 +336,17 @@
 
 &lt;p&gt;I went down the restoration rabbit hole last week. I think it’s the last time. I appreciate that &lt;em&gt;other&lt;/em&gt; people are skilled enough to take some ugly dresser and make it beautiful, but the mess is too much for me to handle. I &lt;em&gt;hate&lt;/em&gt; using chemical strippers, and I hate the cleanup. And for some reason I can’t be bothered to put an apron or some work clothes on, so I ruined multiple pairs of pants in the process. Anyway, here are some before and after shots.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3496.jpeg" alt="IMG_3496.jpeg" /&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3496.avif" type="image/avif"&gt;&lt;source srcset="IMG_3496.webp" type="image/webp"&gt;&lt;img src="IMG_3496.webp" alt="IMG_3496.jpeg"&gt;&lt;/picture&gt;
 This was right when I got it. There was a just-hatched spider egg on the underside of the chest and I had yet to find that. I know pine is not selected for its natural beauty, but this mucus green color? Yuck 🤮!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3498.jpeg" alt="IMG_3498.jpeg" /&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3498.avif" type="image/avif"&gt;&lt;source srcset="IMG_3498.webp" type="image/webp"&gt;&lt;img src="IMG_3498.webp" alt="IMG_3498.jpeg"&gt;&lt;/picture&gt;
 I’ve found many dressers on the street (I think this is the third one I’ve brought home), and this one was the lowest quality. No interesting flourishes, cheap wood, friction-fit drawers, etc. But I still liked it enough to take it home. They’re all snowflakes, right?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3499.jpeg" alt="IMG_3499.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3499.avif" type="image/avif"&gt;&lt;source srcset="IMG_3499.webp" type="image/webp"&gt;&lt;img src="IMG_3499.webp" alt="IMG_3499.jpeg"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;After several passes with Citristrip, the supposedly friendly paint stripper, I started wrapping it in cellophane to keep the stripper from drying out. This worked mildly better than without, but still a disgusting and messy process.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3509.jpeg" alt="IMG_3509.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3509.avif" type="image/avif"&gt;&lt;source srcset="IMG_3509.webp" type="image/webp"&gt;&lt;img src="IMG_3509.webp" alt="IMG_3509.jpeg"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Now I’m paint free! After most of it was removed with chemical stripper, I hauled it over to &lt;a href="https://sequoiafabrica.org"&gt;the makerspace&lt;/a&gt; where I took my trusty RO sander and got to work. Obligatory reminder for readers to always wear a mask and use dust collection!&lt;/p&gt;
 
@@ -360,9 +360,9 @@ I’ve found many dressers on the street (I think this is the third one I’ve b
 
 &lt;p&gt;I then went digging for some knobs, and I didn't have any at home, so I thought it would be a good opportunity to visit San Francisco's famed &lt;a href="https://buildingresources.org/"&gt;second-hand builder's supply store&lt;/a&gt;. It's a good visit if you live in the area. Lots of interesting bits and bobs torn off old San Francisco homes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3584.jpeg" alt="IMG_3584" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3584.avif" type="image/avif"&gt;&lt;source srcset="IMG_3584.webp" type="image/webp"&gt;&lt;img src="IMG_3584.webp" alt="IMG_3584"&gt;&lt;/picture&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="IMG_3585.jpeg" alt="IMG_3585.jpeg" /&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="IMG_3585.avif" type="image/avif"&gt;&lt;source srcset="IMG_3585.webp" type="image/webp"&gt;&lt;img src="IMG_3585.webp" alt="IMG_3585.jpeg"&gt;&lt;/picture&gt;
 You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 17 Feb 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">34</guid></item><item><title>Oh Blogging, What a Bother!</title><link>http://dizzard.net/articles/oh_blogging_what_a_bother/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Oh Blogging, What a Bother!&lt;/h1&gt;
 
@@ -375,7 +375,7 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 &lt;p&gt;Do you have any blogs to recommend to me?&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 29 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">33</guid></item><item><title>I Made a Sign</title><link>http://dizzard.net/articles/signage/article.html</link><description>&lt;![CDATA[&lt;h1&gt;I Made a Sign&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/sign.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/sign.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/sign.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/sign.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;I made a sign! It has LED lighting inside it, I haven't figured out how to power it safely while it's outside though. That might have to wait until I can seek help from a professional.&lt;/p&gt;
 
@@ -423,7 +423,7 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 
 &lt;p&gt;I was waiting for paint to dry, so to keep my hands busy I made this little cork board to display some of my and my partner's pins (yeah I know, it's pretty empty as-is). It's just cork adhered to a hardboard backing. I cut it out on the bandsaw.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/corkboard.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/corkboard.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/corkboard.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/corkboard.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Some related links I found:&lt;/p&gt;
 
@@ -437,21 +437,21 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 
 &lt;p&gt;I've been working on an entrance sign for &lt;a href="https://sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;, and here is an early preview. There's some internals to this sign that will make the final project sing, but it's not quite ready yet. I think I'll do a full write up about it once it is complete.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/sequoia_sign.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/sequoia_sign.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/sequoia_sign.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/sequoia_sign.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">29</guid></item><item><title>Using Style Transfer and CNC to Produce Printblocks</title><link>http://dizzard.net/articles/golden_gate_style_transfer/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Using Style Transfer to CNC Produce Printblocks&lt;/h1&gt;
 
 &lt;p&gt;In college, I wrote a final paper about &lt;a href="https://dizzard.net/images/Final__CycleGAN_on_Image_Transfer.pdf"&gt;Generative Adversarial Nets for Artistic Image-to-Image Translation&lt;/a&gt; where I explored how GANs can be used for image style transfer. In my experiments, I never got great results.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/gan_example.jpg" alt="../images/gan_example.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/gan_example.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/gan_example.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/gan_example.webp" alt="../images/gan_example.png"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;That college paper was much more down in the dirt with the model than what I've tried recently. For an event, I needed to create a bunch of printmaking blocks very quickly, and they needed to be centered around San Francisco Landmarks. To accomplish this, I took a look at diffusion models. Using Dall-E 3, I was able to apply a woodblock print style transfer, and with some further processing, I could vectorize the output and send it to a CNC machine to manufacture the stamp. In the example below, it shows the original public domain image, the result of style transfer on the image, then the linoleum block, and the final print.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/golden_gate_process.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/golden_gate_process.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/golden_gate_process.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/golden_gate_process.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h2&gt;The Tools&lt;/h2&gt;
 
 &lt;p&gt;I used OpenAI's ChatGPT interface to apply style transfer (I know, this is not to be confused with "Neural Style Transfer" which is a specific set of algorithms) There was quite a bit of clean up in Gimp, then Inkscape to remove blurry lines, clean up the fog. The stamp was carved on a Nomad 3 CNC with a 90º Vee Bit, with further cleanup by hand with some carving tools.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.jpg" alt="Borg And Rsync" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Fri, 03 Jan 2025 00:00:00 -0000</pubDate><guid isPermaLink="false">28</guid></item><item><title>Syncing and Backups with Rsync and Borg</title><link>http://dizzard.net/articles/borg_rsync/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/borg_and_rsync.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/borg_and_rsync.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/borg_and_rsync.webp" alt="Borg And Rsync"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h1&gt;Syncing and Backups with Rsync and Borg&lt;/h1&gt;
 
@@ -645,21 +645,21 @@ You can still see some corners where I didn't get all the paint off.&lt;/p&gt;
 &lt;h2&gt;What's Next&lt;/h2&gt;
 
 &lt;p&gt;I think the next thing is going to be two portable square tables that will be placed on quality casters. Then if you need more space, just roll them out of the room. If you need more worktop, bring 'em back in.
-&lt;img src="http://dizzard.net/images/workbench_1.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/workbench_1.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/workbench_1.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/workbench_1.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_2.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/workbench_2.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/workbench_2.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/workbench_2.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_3.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/workbench_3.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/workbench_3.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/workbench_3.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/workbench_4.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/workbench_4.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/workbench_4.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/workbench_4.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">23</guid></item><item><title>Boquets to Art at the De Young Museum</title><link>http://dizzard.net/articles/blooming/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Boquets to Art at the De Young Museum&lt;/h1&gt;
 
 &lt;p&gt;This past weekend, my partner and I went to San Francisco's &lt;a href="https://famsf.org"&gt;De Young Museum&lt;/a&gt; to see the exhibition annual "Boquets to Art". It was a fun event that takes over the entire museum, pairing artwork to flower arrangements in whimsical and creative ways. Here are some pictures from the event.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/blooming_1.jpg" alt="" /&gt;
-&lt;img src="http://dizzard.net/images/blooming_2.jpg" alt="" /&gt;
-&lt;img src="http://dizzard.net/images/blooming_3.jpg" alt="" /&gt;
-&lt;img src="http://dizzard.net/images/blooming_4.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/blooming_1.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/blooming_1.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/blooming_1.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/blooming_2.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/blooming_2.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/blooming_2.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/blooming_3.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/blooming_3.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/blooming_3.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/blooming_4.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/blooming_4.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/blooming_4.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 12 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">22</guid></item><item><title>Refinishing a Chest of Drawers Found on the Street</title><link>http://dizzard.net/articles/chest_of_drawers/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Refinishing a Chest of Drawers Found on the Street&lt;/h1&gt;
 
 &lt;p&gt;Recently, while walking to the neighborhood library, I found a chest of drawers, or dresser in an alley with a free sticker on it.
@@ -726,8 +726,8 @@ However, it's quite expensive. When I last bought it, a quart was $46 on Amazon!
 &lt;p&gt;Anyway, without further ado, here's the final product!
 Notice some of the drawers are sagging, I think I can replace the drawer slides at a later date, but for now I'm happy to lubricate it with a little wax and call them good.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/chest_incomplete.jpg" alt="Before" /&gt;
-&lt;img src="http://dizzard.net/images/chest_complete.jpg" alt="After" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/chest_incomplete.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/chest_incomplete.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/chest_incomplete.webp" alt="Before"&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/chest_complete.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/chest_complete.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/chest_complete.webp" alt="After"&gt;&lt;/picture&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 04 Jun 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">21</guid></item><item><title>Building a New Workshop in San Francisco</title><link>http://dizzard.net/articles/new_workshops/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Building A New Workshop in San Francisco&lt;/h1&gt;
 
 &lt;p&gt;San Francisco will soon be getting a new community workshop. As a part of an organization, myself and others are building &lt;a href="sequoiafabrica.org"&gt;Sequoia Fabrica&lt;/a&gt;. It will be a non-profit community workshop with the mission to provide access to tools and knowledge without the barriers to entry at many for-profit organizations. Since opening our doors in March, we've also distinguished ourselves by offering a wide variety of &lt;a href="https://bookwhen.com/sequoiafabrica#focus=ev-sl1e-20240604190000"&gt;workshops and classes&lt;/a&gt; which is all thanks to the members and volunteers who have founded and kept the space going.&lt;/p&gt;
@@ -763,7 +763,7 @@ Notice some of the drawers are sagging, I think I can replace the drawer slides 
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 04 May 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">19</guid></item><item><title>This is now available on RSS!</title><link>http://dizzard.net/articles/rss_now/article.html</link><description>&lt;![CDATA[&lt;h1&gt;This Blog is now available via RSS!&lt;/h1&gt;
 
 &lt;p&gt;I took some time this weekend to add an RSS feed to this blog. I will eventually add a visible link, but for now, you can find it at &lt;a href="https://dizzard.net/rss"&gt;dizzard.net/rss&lt;/a&gt;. It may have some kinks to work out, but the solution was quick and dirty. I implemented it using &lt;a href="https://pypi.org/project/feedgen/"&gt;Feedgen&lt;/a&gt;. Like most of my personal projects these days, ChatGPT sped up the process significantly.&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="http://dizzard.net/images/candlesticks.jpg" alt="" /&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Mon, 22 Apr 2024 00:00:00 -0000</pubDate><guid isPermaLink="false">18</guid></item><item><title>How to make Beeswax Candles</title><link>http://dizzard.net/articles/beeswax_candles/article.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/candlesticks.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/candlesticks.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/candlesticks.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h1&gt;Beeswax Candles (Dip)&lt;/h1&gt;
 
@@ -946,15 +946,15 @@ Sometimes it's easiest just to start with a candlestick holder and work until yo
 
 &lt;p&gt;I just had to come up with a way to identify the files I wanted to include as snippets with as little work as possible, and that is where my little scripts name comes from! Introducing &lt;code class="codeblock"&gt;sniper&lt;/code&gt;, the handy-dandy tool for cloning your obsidian code blocks in Alfred snippets. All you have to do is prefix a code block with the Sniper keyword "snipe" in a markdown comment. This isn't a "smart" utility, so you got to make sure the comment only contains the word "snipe", and nothing else. Here's an example:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/obsidian_codeblock.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/obsidian_codeblock.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/obsidian_codeblock.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/obsidian_codeblock.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;To get your flagged snippets to appear in alfred, you will first want to create a new snippets group. Open up "Settings -&gt; Features -&gt; Snippets -&gt; Collections" and click the little "+" button. Then type in the name of the collection. I named mine "Random Code Snippets", but you can name it whatever you want, just make sure to update the bash script variable &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it matches your collection.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_snippets_collection.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/alfred_snippets_collection.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/alfred_snippets_collection.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/alfred_snippets_collection.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;You also need to update &lt;code class="codeblock"&gt;$ALFRED_SNIPPETS_DIR&lt;/code&gt; so it know where your Alfred config directory is. You can find where your alfred preferences file is by going to "Settings -&gt; Advanced -&gt; Syncing". I keep mine in &lt;code class="codeblock"&gt;.config&lt;/code&gt; with the rest of my dotfiles&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/alfred_preferences.jpg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/alfred_preferences.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/alfred_preferences.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/alfred_preferences.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;My directory path looks like:&lt;/p&gt;
 
@@ -1175,14 +1175,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://kguttag.com/"&gt;Karl Guttag&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">9</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
-
-&lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
-
-&lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
-
-&lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">8</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">9</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;a href="https://hackerspaces.org/"&gt;hackerspace&lt;/a&gt; to me?&lt;/p&gt;
 
@@ -1199,6 +1192,13 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;The hackerspace fits into a theme I've been exploring this past year and I have to write more about as I continue exploring it in 2023. I'm not yet sure how to group these thoughts together, but it circles around some of the ideas I see in socialism, anarchism, communism in a general sense and more specifically third spaces, cohousing, community centers, resource sharing, donation circles, free and open source software, decentralized networks, and the small web. I'll try to share more. I think I need to sort some of these thoughts out, but I just want to find ways for people to share more, because I think it's good for us psychologically and it reduces waste.&lt;/p&gt;
 
 &lt;p&gt;Happy Holidays, see you in the new year 🥳!&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">8</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
+
+&lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
+
+&lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
+
+&lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">7</guid></item><item><title>Deploy Github Pages with Jinja and Github Actions</title><link>http://dizzard.net/articles/gh-pages/Deploy%20Github%20Pages%20with%20Jinja%20and%20Github%20Actions.html</link><description>&lt;![CDATA[&lt;h1&gt;Deploy Github Pages with Jinja and GH Actions&lt;/h1&gt;
 
 &lt;p&gt;This blog, like many others is hosted on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Github Pages is a great (and free) way to post small static sites like personal websites. The annoying thing is that you have to push build code that would &lt;em&gt;usually&lt;/em&gt; be included in your &lt;code class="codeblock"&gt;.gitignore&lt;/code&gt; file. So if you don't want to have to build your site locally, and include the build files in your repository, there is an option for you that leverages Github Actions.&lt;/p&gt;
@@ -1246,7 +1246,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/setting-gh-pages.jpg" alt="../../images/setting-gh-pages.jpg" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/setting-gh-pages.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/setting-gh-pages.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/setting-gh-pages.webp" alt="../../images/setting-gh-pages.jpg"&gt;&lt;/picture&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Now we need to update the "Install and Build 🔧" section. There are a couple things we have to do for this to work, and it will vary for you depending on how your site is being built. I'm generating the static pages of my site using the Jinja web templating engine, and then I inject style with Postcss and Tailwind. This means I need to run a python script to generate the HTML files, then run a postcss injection to transform my css. I've got &lt;a href="https://github.com/momja/momja.github.io/blob/master/package.json"&gt;all this configured&lt;/a&gt; in my 'package.json' file, so whenever I run &lt;code class="codeblock"&gt;npm run build&lt;/code&gt;, all this is taken care of. At least that all happens smoothly locally. When running this on some ephemeral virtual machine, you have to actually make sure all the dependencies are downloaded first. For the postcss dependencies, that's as simple as running &lt;code class="codeblock"&gt;npm install&lt;/code&gt; assuming you've correctly set up your packages.&lt;/p&gt;
 
 &lt;p&gt;For Python, it is a little different. I'm not the biggest fan of dependency management in Python, but I recently came across a tool called &lt;a href="https://github.com/bndr/pipreqs"&gt;pipreqs&lt;/a&gt; which solves the challenges I associate with generating package requirements for Python. To build a requirements.txt file with pipreqs, just run &lt;code class="codeblock"&gt;pipreqs&lt;/code&gt; in your project directory. You will want to include this requirements file in your git commit, because we will then use it to install all the pip dependencies on the VM used by Github Actions!&lt;/p&gt;
@@ -1301,7 +1301,7 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;pre class="codewrapper"&gt;&lt;code class="codeblock"&gt;kitty +kitten icat ~/Downloads/kitten_falling.gif
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src="http://dizzard.net/images/animation.gif" alt="Kitty terminal output with the icat plugin" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="http://dizzard.net/images/animation.avif" type="image/avif"&gt;&lt;source srcset="http://dizzard.net/images/animation.webp" type="image/webp"&gt;&lt;img src="http://dizzard.net/images/animation.gif" alt="Kitty terminal output with the icat plugin"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;Another reason I think Kitty is great is that it's text file configurable, which makes it &lt;em&gt;way&lt;/em&gt; easier to share configurations between my work and personal computer. You can find an up-to-date copy of my kitten config file in &lt;a href="https://github.com/momja/dotfiles/blob/master/kitty/kitty.conf"&gt;my dotfiles repository&lt;/a&gt;&lt;/p&gt;
 
@@ -1342,7 +1342,7 @@ map&lt;span class="w"&gt; &lt;/span&gt;ctrl+cmd+h&lt;span class="w"&gt; &lt;/spa
 enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span class="o"&gt;=&lt;/span&gt;horizontal
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">5</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;img src="../../images/header.jpg" style="width:100%; height: auto;" alt=""&gt;&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 12 Jun 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">5</guid></item><item><title>Path Planning</title><link>http://dizzard.net/articles/path_planning/path_planning.html</link><description>&lt;![CDATA[&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/header.avif" type="image/avif"&gt;&lt;source srcset="../../images/header.webp" type="image/webp"&gt;&lt;img src="../../images/header.webp" style="width:100%; height: auto;" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h1&gt;
     Path Planning : Bat Guy Vs. The Clown
@@ -1416,8 +1416,8 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     of our roadmap, and lets us approximate each obstacle/agent as a circle.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/astar_demo.gif" alt=""&gt;
-&lt;img src="../../images/boids_tether.gif" alt="the tethering point demonstrated"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/astar_demo.avif" type="image/avif"&gt;&lt;source srcset="../../images/astar_demo.webp" type="image/webp"&gt;&lt;img src="../../images/astar_demo.gif" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="../../images/boids_tether.avif" type="image/avif"&gt;&lt;source srcset="../../images/boids_tether.webp" type="image/webp"&gt;&lt;img src="../../images/boids_tether.gif" alt="the tethering point demonstrated"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     Crowd Simulation
@@ -1430,8 +1430,8 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     algorithm. They will all successfully avoid each other and obstacles. Multiple bats can share a single path, so
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/ttc_example.gif" alt=""&gt;
-&lt;img src="../../images/boids_separation.gif" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/ttc_example.avif" type="image/avif"&gt;&lt;source srcset="../../images/ttc_example.webp" type="image/webp"&gt;&lt;img src="../../images/ttc_example.gif" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="../../images/boids_separation.avif" type="image/avif"&gt;&lt;source srcset="../../images/boids_separation.webp" type="image/webp"&gt;&lt;img src="../../images/boids_separation.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     3D Modeling
@@ -1508,7 +1508,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     &lt;li&gt;Use the M and N keys to add or subtract boids from the scene. Total boids is displayed in the top left&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src="../../images/camera_controls.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/camera_controls.avif" type="image/avif"&gt;&lt;source srcset="../../images/camera_controls.webp" type="image/webp"&gt;&lt;img src="../../images/camera_controls.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     Boids Algorithm: Crows Flocking
@@ -1524,7 +1524,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     so they could perch themselves on a surface when they intersect it.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/upclose_birds.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/upclose_birds.avif" type="image/avif"&gt;&lt;source srcset="../../images/upclose_birds.webp" type="image/webp"&gt;&lt;img src="../../images/upclose_birds.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h4&gt;
     Interaction
@@ -1535,7 +1535,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     These birds aren't scared of no crow! It's more of a revenge of the birds thing.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/scarecrow.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/scarecrow.avif" type="image/avif"&gt;&lt;source srcset="../../images/scarecrow.webp" type="image/webp"&gt;&lt;img src="../../images/scarecrow.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h4&gt;
     Behavior and Boid Rendering
@@ -1560,7 +1560,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     in the Y direction to encourage the "soaring" effect.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/bird_orientation.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/bird_orientation.avif" type="image/avif"&gt;&lt;source srcset="../../images/bird_orientation.webp" type="image/webp"&gt;&lt;img src="../../images/bird_orientation.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     Particle Simulation: Rain
@@ -1575,7 +1575,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     along its path. The chimney on the house illustrates the use of a textured particle emitter.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/rain.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/rain.avif" type="image/avif"&gt;&lt;source srcset="../../images/rain.webp" type="image/webp"&gt;&lt;img src="../../images/rain.gif" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     Challenges, Efficiency and More
@@ -1605,7 +1605,7 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     suddenly drop. I did take a picture here:
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="../../images/boids_sample.jpg" width="640" height="480"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/boid_sample.avif" type="image/avif"&gt;&lt;source srcset="../../images/boid_sample.webp" type="image/webp"&gt;&lt;img src="../../images/boid_sample.webp" width="640" height="480" alt="Boids flocking simulation running at 42 FPS"&gt;&lt;/picture&gt;&lt;/p&gt;
 
 &lt;h3&gt;
     Demo
@@ -1623,10 +1623,10 @@ enabled_layouts&lt;span class="w"&gt; &lt;/span&gt;splits:split_axis&lt;span cla
     Gallery
 &lt;/h3&gt;
 
-&lt;p&gt;&lt;img src="../../images/head_on.jpg"&gt;
-&lt;img src="../../images/ground_level.jpg"&gt;
-&lt;img src="../../images/smokestack.jpg"&gt;
-&lt;img src="../../images/side_rain.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source srcset="../../images/head_on.avif" type="image/avif"&gt;&lt;source srcset="../../images/head_on.webp" type="image/webp"&gt;&lt;img src="../../images/head_on.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="../../images/ground_level.avif" type="image/avif"&gt;&lt;source srcset="../../images/ground_level.webp" type="image/webp"&gt;&lt;img src="../../images/ground_level.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="../../images/smokestack.avif" type="image/avif"&gt;&lt;source srcset="../../images/smokestack.webp" type="image/webp"&gt;&lt;img src="../../images/smokestack.webp" alt=""&gt;&lt;/picture&gt;
+&lt;picture&gt;&lt;source srcset="../../images/side_rain.avif" type="image/avif"&gt;&lt;source srcset="../../images/side_rain.webp" type="image/webp"&gt;&lt;img src="../../images/side_rain.webp" alt=""&gt;&lt;/picture&gt;&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sat, 15 Aug 2020 00:00:00 -0000</pubDate><guid isPermaLink="false">3</guid></item><item><title>Fluid Simulation</title><link>http://dizzard.net/articles/fluid_simulation/fluid_simulation.html</link><description>&lt;![CDATA[&lt;h1&gt;
     3D SPH Fluid Simulation for Painterly Effects
 &lt;/h1&gt;
