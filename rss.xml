@@ -36,6 +36,19 @@
 &lt;p&gt;I'm not sure a VC-backed company would or even &lt;em&gt;could&lt;/em&gt; ever focus on a platform for buildling personal software. It's not as defensible. Selling to businesses is just good business because there's no better way to make money than to help other businesses make more money. A prompt-to-app platform for personal software could, by it's definition, not have the same appeal.&lt;/p&gt;
 
 &lt;p&gt;Anyway, all because it's not a billion dollar business doesn't mean we shouldn't have more options for individuals, especially those who aren't software professionals, to build software that benefits their lives on a small, individual scale. I would love to live in a world where more software is local-first, personalized, and simple. We give up so much of our lives to software that we have no say or control over. To bring back to the physicalization analogy, it would be like having Ikea design our entire kitchen, followed by them deciding where ever pan, plate, and knife belongs. Every person's home is completely different, I just want it to be easier for software to feel the same.&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 06 Sep 2026 00:00:00 -0000</pubDate><guid isPermaLink="false">45</guid></item><item><title>Crafting Software Can Be As Accessible As Design</title><link>http://dizzard.net/articles/software_like_graphic_design/article.html</link><description>&lt;![CDATA[&lt;h1&gt;Crafting Software Can Be As Accessible As Design&lt;/h1&gt;
+
+&lt;p&gt;I was reading this old &lt;a href="https://replit.com/news/funding-announcement"&gt;funding announcement&lt;/a&gt; from Replit. I'm not sure why, don't ask.&lt;/p&gt;
+
+&lt;p&gt;There was this paragraph I ran across while skimming (emphasis mine)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Replit hopes to stand out from the competition by being the coding agent for non-technical workers, like sales staff, marketers and small business owners. Instead of working inside a code editor, &lt;strong&gt;the company wants to make building apps and software more like graphic design&lt;/strong&gt;. With Agent 4, users can start by choosing from a series of buttons to tell the agent what they want to create, including spreadsheets, data visualizations, 3D games, and more. The idea is to provide the easiest user interface to navigate, from brainstorming and iterating to deploying the app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;More like graphic design... I like that. Anyone can download GIMP, or a Photoshop clone and make something to convey a message. A flier for their party, garage sale sign, etc. You don't even need a computer, just a pen and paper will do. In that sense, graphic design is extremely accessible.&lt;/p&gt;
+
+&lt;p&gt;But that doesn't make it easy to make &lt;em&gt;good&lt;/em&gt; design. Software like Canva tries to make it easy, and I believe it does help. I really like this idea that we can have something similar for software.&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Sun, 06 Sep 2026 00:00:00 -0000</pubDate><guid isPermaLink="false">44</guid></item><item><title>The Prompt-to-App Landscape</title><link>http://dizzard.net/articles/the_prompt_to_app_landscape/article.html</link><description>&lt;![CDATA[&lt;h1&gt;The Prompt-to-App Landscape&lt;/h1&gt;
 
 &lt;p&gt;I've been building a piece of open source software called &lt;a href="https://github.com/momja/Exhibit"&gt;Exhibit&lt;/a&gt;. It's all about leveraging AI for making and using small apps that make your life better. It's become the first thing I reach for when I need to solve a problem, whether it be a one-off or evergreen task, Exhibit's artifacts can help me solve it.&lt;/p&gt;
@@ -1175,7 +1188,14 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://kguttag.com/"&gt;Karl Guttag&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">9</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Tue, 27 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">9</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
+
+&lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
+
+&lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
+
+&lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
+]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">8</guid></item><item><title>Thoughts on Hackerspaces</title><link>http://dizzard.net/articles/hackerspaces/hackerspaces_to_me.html</link><description>&lt;![CDATA[&lt;h1&gt;Thoughts on Hackerspaces&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;a href="https://hackerspaces.org/"&gt;hackerspace&lt;/a&gt; to me?&lt;/p&gt;
 
@@ -1192,13 +1212,6 @@ But hey if you keep atomic notes (which I &lt;em&gt;totally definitely&lt;/em&gt
 &lt;p&gt;The hackerspace fits into a theme I've been exploring this past year and I have to write more about as I continue exploring it in 2023. I'm not yet sure how to group these thoughts together, but it circles around some of the ideas I see in socialism, anarchism, communism in a general sense and more specifically third spaces, cohousing, community centers, resource sharing, donation circles, free and open source software, decentralized networks, and the small web. I'll try to share more. I think I need to sort some of these thoughts out, but I just want to find ways for people to share more, because I think it's good for us psychologically and it reduces waste.&lt;/p&gt;
 
 &lt;p&gt;Happy Holidays, see you in the new year 🥳!&lt;/p&gt;
-]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">8</guid></item><item><title>I'm Counting Goats!</title><link>http://dizzard.net/articles/goatcounter/goatcounter.html</link><description>&lt;![CDATA[&lt;h1&gt;I'm Counting Goats!&lt;/h1&gt;
-
-&lt;p&gt;Queue “I’ll be watching you” by The Police, because I’m now spying on all the viewers of this blog!&lt;/p&gt;
-
-&lt;p&gt;Just kidding. Well, sort of. I wanted to have some metric of how many people are viewing my blog, not because I’m going to sell ad space, or leverage that information for some other malicious reason. I just wanted to know if anyone reads it! And like I said, to respect my readers’ privacy, I wanted to take as little data as possible. That’s why I decided to use &lt;a href="https://www.goatcounter.com/"&gt;GoatCounter&lt;/a&gt;. It keeps a count of when someone’s checking out my site, but it’s not tracking all the personal data that google analytics is going to.&lt;/p&gt;
-
-&lt;p&gt;It was super easy to set up, you can inspect this page and see the script yourself. It’s just one line :).&lt;/p&gt;
 ]]&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maxwell Omdal</dc:creator><pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate><guid isPermaLink="false">7</guid></item><item><title>Deploy Github Pages with Jinja and Github Actions</title><link>http://dizzard.net/articles/gh-pages/Deploy%20Github%20Pages%20with%20Jinja%20and%20Github%20Actions.html</link><description>&lt;![CDATA[&lt;h1&gt;Deploy Github Pages with Jinja and GH Actions&lt;/h1&gt;
 
 &lt;p&gt;This blog, like many others is hosted on &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;. Github Pages is a great (and free) way to post small static sites like personal websites. The annoying thing is that you have to push build code that would &lt;em&gt;usually&lt;/em&gt; be included in your &lt;code class="codeblock"&gt;.gitignore&lt;/code&gt; file. So if you don't want to have to build your site locally, and include the build files in your repository, there is an option for you that leverages Github Actions.&lt;/p&gt;
