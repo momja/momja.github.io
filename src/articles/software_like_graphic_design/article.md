@@ -1,7 +1,7 @@
 ---
 title: "Crafting Software Can Be As Accessible As Design"
 description: "Can making software be as easy as designing a flier?"
-publish_date: 2026-09-06
+publish_date: 2026-10-28
 ---
 
 # Crafting Software Can Be As Accessible As Design
